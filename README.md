@@ -1,77 +1,91 @@
 # AI Brief News Agent
 
-A lightweight routine for **Claude Code** that turns the AI newsletters in your Outlook into a single, brand-styled **one-page PDF** — split into **AI Tips** (how-to) and **AI News** (the news + what it means for *you*). Built for the Impact Makers team as a personal-development habit.
+A routine for **Claude Code** that turns the AI newsletters in your inbox into a single, brand-styled **one-page PDF** — split into **AI Tips** (step-by-step how-to) and **AI News** (the news + *what it means for you* as a PM / Consultant / AI Engineer). Built for the Impact Makers team as a personal-development habit.
 
-![One page. Two sections. On brand.](docs/sample.png)
+![Sample brief](docs/sample.png)
 
-## What it produces
+## What you get
+A one-page, Impact Makers–branded PDF (Poppins font; gold / black / dark-blue) saved to a folder of your choice, named for the day's content, e.g.
+`Picking the Right Gemini Models, Building Design Systems & Auditing Agents_7_24_26.pdf`
 
-A one-page PDF in Impact Makers brand style (Poppins font; gold / black / dark-blue palette) containing:
+---
 
-- **AI Tips** — step-by-step ways to use AI better, pulled from that day's newsletters (with copy-paste prompts where useful).
-- **AI News** — each item states the news, then *"What it means for you"* through a Product Manager / Consultant / AI Engineer lens.
+## ⚠️ Before it can work: you must feed it newsletters
 
-Files are named for the day's content so they catch the eye in your folder, e.g.:
-> `Picking the Right Gemini Models, Building Design Systems & Auditing Agents_7_24_26.pdf`
+**The agent does not browse the web.** It only reads AI newsletters that land in one dedicated Outlook folder. So the quality of your brief depends entirely on this setup. Do these one-time steps first.
 
-## How it works
+### Step 1 — Subscribe to a few AI newsletters
+Pick 2–4 so there's daily material. Recommended (all free):
+| Newsletter | Focus | Sign up |
+|---|---|---|
+| **The Neuron** | Daily AI news + a practical "AI skill of the day" | theneurondaily.com |
+| **The Rundown AI** | Daily AI news + tools + how-tos | therundown.ai |
+| **TLDR AI** | Short, technical AI/ML news | tldr.tech/ai |
+| **Morning Brew** | General business (AI-adjacent bits only) | morningbrew.com |
 
-```
-Outlook folder (forwarded newsletters)
-        │   Claude Code reads & classifies (AI Tips / AI News)
-        ▼
-content/<date>.json   ← the day's curated content
-        │   build/build_brief.py  +  template/brief_template.html  +  fonts/Poppins
-        ▼
-One-page PDF  →  your "AI News & Tips" folder
-```
+> Tip: subscribe using the **email address you'll route from** (see Step 3).
 
-The heavy lifting (reading mail, judging what matters, writing the "what it means for you" lines, and crafting the title) is done by Claude Code following **[INSTRUCTIONS.md](INSTRUCTIONS.md)**. The Python script just renders the curated content into the branded PDF.
+### Step 2 — Create a dedicated Outlook folder
+In your **work** Outlook, make a folder named exactly **`Claude AI News Recap`** (Right-click your mailbox → *Create new folder*). This is the only folder the agent reads.
 
-## Setup
+### Step 3 — Route the newsletters into that folder
+Choose whichever matches where you subscribed:
 
+**A) You subscribed with your personal Outlook** — create a forwarding rule:
+1. outlook.com → ⚙️ → **Mail → Rules → + Add new rule**.
+2. Name it `Forward AI News`.
+3. Condition **From** = your newsletter senders (add each one).
+4. Action **Forward to** = your work address.
+5. Save. *(New mail only; forwarding rules can't run on old mail.)*
+
+**B) You subscribed with Gmail** — Gmail → ⚙️ **See all settings → Forwarding and POP/IMAP → Add a forwarding address** (verify it), then **Filters → Create filter** (From = the senders) → **Forward it to** your work address.
+
+**C) You subscribed with your work email directly** — just add an inbox rule that **moves** messages from those senders into `Claude AI News Recap`.
+
+### Step 4 — Keep them out of Junk
+If a newsletter lands in Junk, right-click it → **Junk → Never block sender**, or add the sender to **Safe Senders**.
+🔒 *The agent never reads your Junk folder — that's deliberate, for security — so anything stuck in Junk is invisible to it.*
+
+---
+
+## Technical setup (one-time)
 1. **Clone this repo.**
-2. **Forward your AI newsletters into one Outlook folder.** In your personal Outlook, create a rule: *From = your newsletter senders → Forward to your work address*, and (optionally) file them into a dedicated folder like `Claude AI News Recap`.
-   - ⚠️ Keep newsletters out of Junk — the agent never reads Junk for safety.
-3. **Enable the Microsoft 365 connector** in Claude (read access to mail).
-4. **Install Chrome** (or Edge) — used to render the PDF.
-5. *(Optional)* `pip install pypdf` for the one-page sanity check.
-6. **Set your output folder** — edit `OUTPUT_DIR` in `build/build_brief.py`, or set the `AI_BRIEF_OUTPUT_DIR` environment variable.
+2. **Enable the Microsoft 365 connector** in Claude (read access to mail).
+3. **Install Google Chrome** (or Edge) — used to render the PDF.
+4. *(Optional)* `pip install pypdf` for a one-page sanity check.
+5. **Set your output folder** — edit `OUTPUT_DIR` in `build/build_brief.py`, or set the `AI_BRIEF_OUTPUT_DIR` environment variable (e.g. `...\Desktop\AI News & Tips`).
 
-## Usage
-
-Ask Claude Code:
-
+## Using it
+Tell Claude Code:
 > "Run the AI Brief routine for today."
 
-Claude will follow `INSTRUCTIONS.md`: pull the day's newsletters, classify them, write today's `content/<date>.json`, and build the PDF. Or run the render step yourself once the JSON exists:
-
+Claude follows [`INSTRUCTIONS.md`](INSTRUCTIONS.md): reads the folder, classifies into AI Tips / AI News, writes `content/<date>.json`, and builds the PDF. To re-render an existing content file yourself:
 ```bash
 python build/build_brief.py content/2026-07-24.json
 ```
 
-## Repo layout
+**Want it to run automatically every morning?** See **[ROUTINE.md](ROUTINE.md)** — it has the copy-paste prompt and step-by-step scheduling instructions (including a ready-made `/ai-brief` command).
 
+## Repo layout
 | Path | Purpose |
 |---|---|
-| `INSTRUCTIONS.md` | The daily routine Claude Code follows (start here). |
-| `template/brief_template.html` | The one-page layout + brand CSS (`{{placeholders}}`). |
-| `build/build_brief.py` | Renders a content JSON → branded one-page PDF via headless Chrome. |
-| `content/2026-07-24.json` | Example / template of the day's content. |
-| `fonts/` | Poppins (SIL Open Font License) — the !m brand font, bundled for portability. |
+| `INSTRUCTIONS.md` | The daily routine Claude Code follows. |
+| `ROUTINE.md` | How to run it as a scheduled routine + the prompt. |
+| `template/brief_template.html` | One-page layout + brand CSS. |
+| `build/build_brief.py` | Renders a content JSON → branded PDF via headless Chrome. |
+| `content/2026-07-24.json` | Example of the day's content. |
+| `.claude/commands/ai-brief.md` | Bundled `/ai-brief` slash command. |
+| `fonts/` | Poppins (SIL Open Font License) — the !m brand font. |
 
 ## Customizing
-
-- **Reader lens:** change "PM / Consultant / AI Engineer" in `INSTRUCTIONS.md` and the template subtitle to fit whoever's reading.
-- **Sources:** add/remove newsletters in `INSTRUCTIONS.md` → CONFIG.
-- **Styling:** all colors, spacing, and fonts live in `template/brief_template.html`.
+- **Reader lens:** change "PM / Consultant / AI Engineer" in `INSTRUCTIONS.md` and the template subtitle.
+- **Sources:** add/remove newsletters in `INSTRUCTIONS.md` → CONFIG and in your forwarding rule.
+- **Styling:** all colors/spacing/fonts live in `template/brief_template.html`.
 
 ## Brand & safety
-
 - **Font:** Poppins only (the !m standard brand font). Aptos is reserved for email signatures.
-- **Colors:** Gold `#D8A928` · Black `#262626` · Dark Blue `#264966` (+ supporting grays and tertiary green/terracotta/lilac).
-- **Read-only mail:** the routine searches and reads mail; it never deletes, moves, or sends. It never reads the Junk folder.
+- **Colors:** Gold `#D8A928` · Black `#262626` · Dark Blue `#264966` (+ supporting grays; tertiary green/terracotta/lilac).
+- **Read-only mail:** the routine searches and reads mail; it never deletes, moves, or sends — and never reads Junk.
 
 ## License
-
 Code and templates: internal Impact Makers use. Poppins font: [SIL Open Font License 1.1](fonts/).
