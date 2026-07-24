@@ -53,7 +53,8 @@ If a newsletter lands in Junk, right-click it → **Junk → Never block sender*
 2. **Enable the Microsoft 365 connector** in Claude (read access to mail).
 3. **Install Google Chrome** (or Edge) — used to render the PDF.
 4. *(Optional)* `pip install pypdf` for a one-page sanity check.
-5. **Set your output folder** — edit `OUTPUT_DIR` in `build/build_brief.py`, or set the `AI_BRIEF_OUTPUT_DIR` environment variable (e.g. `...\Desktop\AI News & Tips`).
+5. **Choose the folder on your computer where the PDFs will be saved.** This is a local folder on *your* machine (e.g. `Desktop\AI News & Tips`) — create it wherever you'd like your briefs to collect. Then point the agent at it: edit `OUTPUT_DIR` in `build/build_brief.py`, **or** set the `AI_BRIEF_OUTPUT_DIR` environment variable to that path.
+   - *If the folder doesn't exist yet, the build script creates it automatically — but pick the location you actually want, so your PDFs don't end up somewhere unexpected.*
 
 ## Using it
 Tell Claude Code:
