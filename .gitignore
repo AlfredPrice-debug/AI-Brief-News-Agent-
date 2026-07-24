@@ -1,0 +1,10 @@
+# transient render artifact
+build/_render.html
+
+# python
+__pycache__/
+*.pyc
+
+# OS
+Thumbs.db
+.DS_Store
