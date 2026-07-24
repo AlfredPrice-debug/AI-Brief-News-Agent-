@@ -1,6 +1,9 @@
 # transient render artifact
 build/_render.html
 
+# scheduled-run log
+briefs/run-log.txt
+
 # python
 __pycache__/
 *.pyc

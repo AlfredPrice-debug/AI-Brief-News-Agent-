@@ -82,18 +82,38 @@ This repo ships a slash command at `.claude/commands/ai-brief.md`. Because it li
 
 Keep your machine on and signed in at that time, with the Microsoft 365 connector enabled. Check `/schedule` again anytime to list, edit, or run it.
 
-### Option B — Windows Task Scheduler (most reliable, fully local)
-Runs the Claude Code CLI headless each morning. Requires the `claude` CLI installed and logged in.
+### Option B — Windows Task Scheduler (runs even with Claude Code closed)
+This starts a fresh headless `claude` process each morning, so **you don't need to keep a Claude Code window open.** Requires: the `claude` CLI installed & logged in, the machine on + logged in (locked is fine), and the tools pre-authorized (see *Permissions* below).
 
-1. Save the prompt from section 1 to a file, e.g. `prompt.txt` in this repo.
-2. Open **Task Scheduler → Create Basic Task**.
-3. Trigger: **Daily**, 7:00 AM (set "weekdays only" under the trigger if you prefer).
-4. Action: **Start a program**
-   - **Program/script:** `claude`
-   - **Add arguments:** `-p "$(type prompt.txt)"`  *(or paste the prompt inline in quotes)*
-   - **Start in:** the full path to this repo, e.g. `C:\Users\<you>\AI-Brief-News-Agent`
-5. Under the task's **Conditions**, tick *"Wake the computer to run this task"* if you want it to fire while asleep.
+**Easiest — the bundled installer** (run once, from this repo folder; no admin needed):
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\install-task.ps1
+```
+It registers a task named **"AI Brief Daily"** for weekdays at 7:00 AM that runs `run-brief.ps1` (which calls Claude with `prompt.txt`). Test it right away:
+```powershell
+Start-ScheduledTask -TaskName "AI Brief Daily"
+```
+Then check `briefs\run-log.txt` and your output folder. Remove it anytime:
+```powershell
+Unregister-ScheduledTask -TaskName "AI Brief Daily" -Confirm:$false
+```
+
+**Or by hand (Task Scheduler GUI):**
+1. Open **Task Scheduler → Create Task…** (not "Basic Task").
+2. **General:** name it `AI Brief Daily`; select **Run only when user is logged on**.
+3. **Triggers → New:** *Weekly*, Mon–Fri, **7:00 AM**.
+4. **Actions → New:** *Start a program* →
+   - **Program/script:** `powershell.exe`
+   - **Add arguments:** `-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File "run-brief.ps1"`
+   - **Start in:** the full path to this repo (e.g. `C:\Users\<you>\AI-Brief-News-Agent`).
+5. **Conditions:** tick **Wake the computer to run this task**; untick *Start the task only if on AC power* if you want it on battery.
 6. Save.
+
+**Permissions for unattended runs.** With no one to click "approve", pre-authorize the routine's tools ONE of two ways:
+- **Scoped allowlist (safer):** run it manually once with `/ai-brief` and choose **"always allow"** for each tool — that records an allowlist your future runs reuse.
+- **Full bypass (simplest, less safe):** add `--dangerously-skip-permissions` to the `claude` line in `run-brief.ps1`. Only if you accept the run can use any tool unprompted.
+
+> **You can close Claude Code.** The task launches its own `claude` process — no interactive window needed. You DO need to stay **logged in** (locked is fine) so OneDrive and the mail connector are available.
 
 ### Option C — Manual daily (no scheduling)
 Open this repo in Claude Code and run `/ai-brief` (or paste the prompt). Takes a few seconds and keeps you in control of timing.
