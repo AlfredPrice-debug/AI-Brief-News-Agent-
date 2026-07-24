@@ -65,7 +65,9 @@ Claude follows [`INSTRUCTIONS.md`](INSTRUCTIONS.md): reads the folder, classifie
 python build/build_brief.py content/2026-07-24.json
 ```
 
-**Want it to run automatically every morning?** See **[ROUTINE.md](ROUTINE.md)** — it has the copy-paste prompt and step-by-step scheduling instructions (including a ready-made `/ai-brief` command).
+**Reading it away from your desk.** The routine also (optionally) **emails you a copy** and **pushes the PDF to `briefs/` on GitHub**, and because the output folder is in OneDrive the PDF **syncs to the cloud** automatically — so you can read the brief on your phone via email, GitHub, or the OneDrive app.
+
+**Want it to run automatically every morning?** See **[ROUTINE.md](ROUTINE.md)** — it has the copy-paste prompt, scheduling instructions (including a ready-made `/ai-brief` command), and how to keep it running while you're away (leave the laptop on and locked — don't log out).
 
 ## Repo layout
 | Path | Purpose |
@@ -76,6 +78,7 @@ python build/build_brief.py content/2026-07-24.json
 | `build/build_brief.py` | Renders a content JSON → branded PDF via headless Chrome. |
 | `content/2026-07-24.json` | Example of the day's content. |
 | `.claude/commands/ai-brief.md` | Bundled `/ai-brief` slash command. |
+| `briefs/` | Generated PDFs pushed here for remote access. |
 | `fonts/` | Poppins (SIL Open Font License) — the !m brand font. |
 
 ## Customizing

@@ -4,6 +4,16 @@ This turns the AI Brief into something that runs on a schedule (or with one comm
 
 > **Important — this runs on your computer.** The brief is rendered locally (headless Chrome) and saved to a local folder, so the routine has to run **on your machine with the Microsoft 365 connector enabled and your computer on** at the scheduled time. A purely cloud-based routine can't reach your local Chrome or your output folder.
 
+## Reading briefs while you're away
+
+Every brief is saved to a **OneDrive** folder, so it syncs to the cloud automatically — view it at **onedrive.com** or the **OneDrive mobile app** on your phone. The routine also emails you a copy and pushes the PDF to GitHub (step 9 of the prompt). But a brief is only *generated* if your computer is running the routine. So if you'll be away:
+
+- ✅ **Leave the laptop ON, plugged in, and LOGGED IN with the screen locked** (`Win`+`L`). Locking keeps your session — and OneDrive — alive.
+- 🚫 **Do NOT sign out / log off.** That ends your user session: OneDrive stops syncing and per-user scheduled tasks won't run, so the brief won't be made or won't reach the cloud.
+- 💤 **Disable sleep/hibernate** for those days (Settings → Power → *put to sleep = Never* while plugged in), or tick *"Wake the computer to run this task"* on the scheduled task (Option B below).
+
+If leaving the laptop on isn't possible, the local routine can't produce briefs while away — that needs an always-on/cloud setup, which is a separate, larger project (it requires server-side mailbox access via Microsoft Graph and an Anthropic API key).
+
 ---
 
 ## 1. The prompt
@@ -14,8 +24,9 @@ Copy this. Edit the two bracketed bits — the **folder name** (if you named you
 Run the daily AI Brief routine for me, following INSTRUCTIONS.md in this repo.
 
 1. Search my Outlook folder "Claude AI News Recap" for newsletters received in the
-   last 24 hours (newest first). NEVER read the Junk folder. Stay read-only on mail —
-   do not delete, move, or send anything.
+   last 24 hours (newest first). NEVER read the Junk folder. Stay read-only on existing
+   mail — do not delete or move anything. (The only message you may send is the delivery
+   email to my own work address in step 9.)
 2. Read each newsletter. If a body is large HTML that would overflow context, hand the
    saved file to a subagent to slice it in ~80,000-char spans and summarize it
    (headlines, facts, any "skill/tip of the day" with verbatim prompts, notable tools).
@@ -30,9 +41,17 @@ Run the daily AI Brief routine for me, following INSTRUCTIONS.md in this repo.
 6. Save the curated content to content/<today's date YYYY-MM-DD>.json using the schema in
    the example content file.
 7. Build the PDF:  python build/build_brief.py content/<today's date>.json
-8. Confirm the PDF is one page, then reply with the title and the saved file path.
+8. Confirm the PDF is one page.
+9. Deliver it (so I can read it away from my desk):
+   a) EMAIL: send me an HTML copy at my own work address. Use the title as the subject and
+      the AI Tips + AI News as a clean HTML body (headings, bold, lists only — email strips
+      CSS, so this is a readable text version, not the styled PDF).
+   b) GITHUB: copy the PDF into this repo's briefs/ folder, then git add, commit, and push
+      so it's downloadable from GitHub on any device.
+10. Reply with the title, the saved local path, and confirm the email + GitHub push.
 
-If there were no new newsletters in the last 24 hours, tell me that instead of inventing content.
+If there were no new newsletters in the last 24 hours, tell me that instead of inventing
+content — and do not send an email or push anything.
 ```
 
 ---

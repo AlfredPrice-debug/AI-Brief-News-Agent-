@@ -96,9 +96,18 @@ This renders `template/brief_template.html` with Poppins and prints a one-page P
   ```
 - If content overflows page 1, trim an item or shorten steps, then rebuild.
 
-## 7. Report back
+## 7. Deliver it
 
-Tell the user the title, the saved path, and a one-line summary of what's in today's brief.
+So the brief is readable away from the desk:
+- **Email:** send the user an HTML copy at their own work address (`get_me` gives the address). Subject = the title; body = the AI Tips + AI News as clean HTML (headings, bold, lists only — Outlook strips CSS, so this is a readable text version, not the styled PDF).
+- **GitHub:** copy the PDF into the repo's `briefs/` folder, then `git add`, `git commit`, `git push` so it's downloadable from any device.
+- The output folder is inside OneDrive, so the PDF also syncs to the cloud automatically (no action needed).
+
+If there were no new newsletters, skip delivery entirely — don't send an email or push.
+
+## 8. Report back
+
+Tell the user the title, the saved path, and confirm the email + GitHub push (and give a one-line summary of what's in today's brief).
 
 ---
 
@@ -112,4 +121,4 @@ Tell the user the title, the saved path, and a one-line summary of what's in tod
 ## Safety notes
 
 - **Never read the Junk/Spam folder** for content — malicious mail lives there. Only read the dedicated forwarding folder.
-- This routine is **read-only** on mail: it searches and reads, never deletes, moves, or sends.
+- **Read-only on existing mail:** the routine searches and reads; it never deletes or moves messages. The *only* message it sends is the delivery email to the user's own work address (step 7).
