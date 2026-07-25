@@ -1,0 +1,53 @@
+{
+  "title": "ChatGPT Gets a Health Brain, Video AI Learns to Run Robots & Cognition Buys Poke",
+  "date_display": "Saturday, July 25, 2026",
+  "date_slug": "7_25_26",
+  "sources": "<b>The Neuron</b> (Jul 23–24), <b>The Rundown AI</b> (Jul 24)",
+  "tips": [
+    {
+      "heading": "Run a \"Decision Audit\" before you merge AI-written code",
+      "steps": [
+        "Lock the key decisions yourself first: desired behavior, constraints, architecture.",
+        "After the agent finishes, have it list every meaningful decision, assumption, and shortcut it made — review that list, not the full diff.",
+        "Apply the <b>pride gate</b>: would it confidently stand behind this in production? If not, fix it before you merge."
+      ],
+      "prompt": "Before I merge this work, audit the decisions you made: 1) List every meaningful decision, assumption, shortcut, or interpretation you made. 2) For each, explain why, what alternatives you considered, and your confidence. 3) Flag anything that fixes the immediate example but not the general problem. 4) Identify remaining edge cases or technical debt. 5) Pride gate: are you proud of this branch — would you stand behind it in production? Be candid. Don't change any code yet — wait for my review."
+    },
+    {
+      "heading": "Edit video hands-free with Descript + ChatGPT",
+      "steps": [
+        "Record in Descript's desktop app (camera and/or screen), then duplicate the project before editing.",
+        "On the duplicate, run <b>Remove filler words</b> and <b>Shorten word gaps</b> (cuts pauses over 1 sec); enable \"avoid harsh cuts\" for natural-sounding edits.",
+        "Run <b>Edit for Clarity</b> on Low and review the AI's suggested trims.",
+        "Connect the Descript plugin in ChatGPT/Codex and teach it your editing process for fully hands-free passes."
+      ]
+    },
+    {
+      "heading": "Build an \"AI fluency\" habit, not just AI access",
+      "steps": [
+        "Treat AI as an amplifier, not a crutch — \"AI did it\" isn't an acceptable excuse for bad output.",
+        "Block <b>2 hours/week</b> to find one tedious task to automate; share the result with your team.",
+        "If you get an AI tools budget, tie every dollar to a named problem you're solving — not just access for access's sake."
+      ]
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>ChatGPT can now read your medical records.</b> OpenAI's new \"Health\" feature connects Apple Health and medical-record providers so ChatGPT can answer questions grounded in your meds, visits, labs, and activity — OpenAI says it won't train on this data or use it for ads.",
+      "means": "Expect clients to start asking about AI + sensitive personal data. It's a good live example for discovery conversations on data governance and where \"AI assistant\" ends and \"medical advice\" begins."
+    },
+    {
+      "body": "<b>Black Forest Labs' FLUX 3 crosses from video into factory robots.</b> The same visual-AI model generating 20-second video clips also powers FLUX-mimic, which taught an Audi production robot a new task from ~30 minutes of demo data instead of 30+ hours.",
+      "means": "Physical-process automation is getting a lot more approachable to prototype. Worth flagging to any client with manufacturing, logistics, or physical-ops pain points — the barrier to a pilot just dropped."
+    },
+    {
+      "body": "<b>Cognition (maker of Devin) acquired The Interaction Company</b>, folding its proactive personal-agent app <b>Poke</b> into its coding-agent platform.",
+      "means": "Another sign standalone AI-agent apps are getting absorbed into larger platforms. If you're recommending point-solution agent tools to clients, ask about acquisition risk and vendor lock-in before committing."
+    },
+    {
+      "body": "<b>AI chip startup Etched raised $300M</b>, now valued at $10.3B just weeks after leaving stealth.",
+      "means": "Industry-funding noise — interesting for context on where infrastructure money is flowing, but unlikely to change your day-to-day work.",
+      "low": true
+    }
+  ]
+}

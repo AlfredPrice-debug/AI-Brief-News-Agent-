@@ -15,7 +15,7 @@ What it does:
 Config: edit OUTPUT_DIR below, or set env var AI_BRIEF_OUTPUT_DIR.
 Chrome: auto-detected; override with env var CHROME_PATH.
 """
-import json, os, re, subprocess, sys
+import glob, json, os, re, shutil, subprocess, sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
@@ -35,13 +35,22 @@ CHROME_CANDIDATES = [
     os.path.expandvars(r"%LOCALAPPDATA%\Google\Chrome\Application\chrome.exe"),
     r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
     r"C:\Program Files\Microsoft\Edge\Application\msedge.exe",
+    "google-chrome", "google-chrome-stable", "chromium", "chromium-browser",
 ]
 
 
 def find_chrome() -> str:
     for c in CHROME_CANDIDATES:
-        if c and Path(c).is_file():
+        if not c:
+            continue
+        if Path(c).is_file():
             return c
+        found = shutil.which(c)
+        if found:
+            return found
+    # Playwright-bundled Chromium (used in sandboxed/CI environments)
+    for c in sorted(glob.glob("/opt/pw-browsers/chromium-*/chrome-linux/chrome")):
+        return c
     sys.exit("ERROR: Chrome/Edge not found. Set CHROME_PATH env var.")
 
 
@@ -107,11 +116,12 @@ def main():
 
     out_pdf = Path(OUTPUT_DIR) / safe_filename(content["title"], content["date_slug"])
     chrome = find_chrome()
-    subprocess.run(
-        [chrome, "--headless=new", "--disable-gpu", "--no-pdf-header-footer",
-         f"--print-to-pdf={out_pdf}", tmp_html.as_uri()],
-        check=True, capture_output=True,
-    )
+    cmd = [chrome, "--headless=new", "--disable-gpu", "--no-pdf-header-footer",
+           f"--print-to-pdf={out_pdf}", tmp_html.as_uri()]
+    if hasattr(os, "geteuid") and os.geteuid() == 0:
+        # Chrome refuses to run as root without this (common in sandboxed/CI environments).
+        cmd.insert(1, "--no-sandbox")
+    subprocess.run(cmd, check=True, capture_output=True)
     print(f"Saved: {out_pdf}")
 
 
