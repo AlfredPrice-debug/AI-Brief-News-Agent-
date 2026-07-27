@@ -1,6 +1,9 @@
 # transient render artifact
 build/_render.html
 
+# local stand-in output dir (cloud sessions without access to the user's OneDrive folder)
+build/local_output/
+
 # scheduled-run log
 briefs/run-log.txt
 
