@@ -1,3 +1,14 @@
 {
-  "days": {}
+  "days": {
+    "2026-07-28": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-07-28T07:00:00-04:00",
+          "status": "skipped_no_mail",
+          "covered": []
+        }
+      ]
+    }
+  }
 }
