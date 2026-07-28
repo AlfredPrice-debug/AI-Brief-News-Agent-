@@ -10,15 +10,17 @@ What it does:
   2. Loads brand colors/fonts from build/brand.json if present, else the bundled
      Impact Makers defaults (Poppins; gold/black/dark-blue).
   3. Renders template/brief_template.html (page 1: AI Tips + AI News;
-     page 2: Beyond AI) and prints it to PDF via headless Chrome.
-  4. Saves it to every configured output folder that exists on this machine,
+     page 2: Beyond AI) and prints it to PDF via headless Chrome/Chromium.
+  4. Saves it into this repo's briefs/ folder (or every folder configured via
+     AI_BRIEF_OUTPUT_DIR, colon/semicolon-separated, if you want extra copies),
      using an eye-catching, content-based filename:
         "<Title>_<M_D_YY>_run<N>.pdf"
 
-Config: set AI_BRIEF_OUTPUT_DIR to a colon/semicolon-separated list of folders
-to override OUTPUT_DIRS below. Chrome: auto-detected; override with CHROME_PATH.
+This runs as a cloud Routine — there's no local desktop to save a copy to, so
+briefs/ (committed and pushed to GitHub) is the only delivery surface. Chrome:
+auto-detected; override with CHROME_PATH.
 """
-import json, os, re, subprocess, sys
+import json, os, re, shutil, subprocess, sys
 from datetime import datetime
 from pathlib import Path
 
@@ -27,12 +29,9 @@ TEMPLATE = REPO / "template" / "brief_template.html"
 FONT_DIR = REPO / "fonts"
 BRAND_CACHE = REPO / "build" / "brand.json"
 
-# Default output folders (personal-development briefs). Both are written if both exist;
-# override with AI_BRIEF_OUTPUT_DIR (colon or semicolon separated).
-DEFAULT_OUTPUT_DIRS = [
-    r"C:\Users\AlfredPrice\OneDrive - IM\Desktop\AI News & Tips",
-    r"C:\Users\alfre\OneDrive\Desktop\Claude Work\AI News Briefs",
-]
+# Default output folder: this repo's briefs/, which gets committed and pushed.
+# Override (or add extra copies) with AI_BRIEF_OUTPUT_DIR (colon/semicolon separated).
+DEFAULT_OUTPUT_DIRS = [str(REPO / "briefs")]
 
 # Bundled Impact Makers brand defaults, used when build/brand.json is absent
 # or the brand folder couldn't be read (see INSTRUCTIONS.md > Brand styling).
@@ -50,6 +49,15 @@ BRAND_DEFAULTS = {
 
 CHROME_CANDIDATES = [
     os.environ.get("CHROME_PATH", ""),
+    # Linux / cloud run environment
+    shutil.which("google-chrome") or "",
+    shutil.which("google-chrome-stable") or "",
+    shutil.which("chromium") or "",
+    shutil.which("chromium-browser") or "",
+    "/usr/bin/google-chrome",
+    "/usr/bin/chromium",
+    "/usr/bin/chromium-browser",
+    # Windows (only relevant if this is ever run locally instead of in the cloud)
     r"C:\Program Files\Google\Chrome\Application\chrome.exe",
     r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
     os.path.expandvars(r"%LOCALAPPDATA%\Google\Chrome\Application\chrome.exe"),
@@ -62,7 +70,12 @@ def find_chrome() -> str:
     for c in CHROME_CANDIDATES:
         if c and Path(c).is_file():
             return c
-    sys.exit("ERROR: Chrome/Edge not found. Set CHROME_PATH env var.")
+    # Playwright-bundled Chromium (present in some cloud run environments)
+    for base in (Path("/opt/pw-browsers"),):
+        if base.is_dir():
+            for candidate in sorted(base.glob("chromium-*/chrome-linux/chrome")):
+                return str(candidate)
+    sys.exit("ERROR: Chrome/Chromium not found. Set CHROME_PATH env var.")
 
 
 def esc(text: str) -> str:
@@ -213,11 +226,15 @@ def main():
         os.makedirs(targets[0], exist_ok=True)
         print(f"NOTE: no configured output folder existed; created {targets[0]}")
 
+    # --no-sandbox is required when this runs as root in a cloud container (the
+    # common case for the scheduled Routine); harmless otherwise. Safe here since
+    # we're only rendering a static file:// page we generated ourselves, not
+    # arbitrary/untrusted web content.
     for d in targets:
         os.makedirs(d, exist_ok=True)
         out_pdf = Path(d) / filename
         subprocess.run(
-            [chrome, "--headless=new", "--disable-gpu", "--no-pdf-header-footer",
+            [chrome, "--headless=new", "--disable-gpu", "--no-sandbox", "--no-pdf-header-footer",
              f"--print-to-pdf={out_pdf}", tmp_html.as_uri()],
             check=True, capture_output=True,
         )
