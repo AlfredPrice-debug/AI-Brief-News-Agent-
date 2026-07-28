@@ -1,33 +1,29 @@
 # Make the AI Brief a Daily Routine
 
-This turns the AI Brief into something that runs **three times a day** (7:00 AM, 1:00 PM, 5:00 PM Eastern, weekdays) instead of you asking each time — so nothing that lands mid-day is missed. Below are: **(1) the prompt**, **(2) a ready-made `/ai-brief` command**, and **(3) three ways to schedule it**.
+This turns the AI Brief into something that runs **three times a day** (7:00 AM, 1:00 PM, 5:00 PM Eastern, weekdays) instead of you asking each time — so nothing that lands mid-day is missed. Below are: **(1) the prompt**, **(2) a ready-made `/ai-brief` command**, and **(3) how it's scheduled**.
 
 Each run reads `state/run-log.json` to figure out its own run number and what's already been covered today, so the three runs never duplicate a story — a run with no new mail, or too little material to be worth sending, skips delivery on its own (see `INSTRUCTIONS.md`).
 
-> **Important — this runs on your computer.** The brief is rendered locally (headless Chrome) and saved to a local folder, so the routine has to run **on your machine with the Microsoft 365 connector enabled and your computer on** at the scheduled time. A purely cloud-based routine can't reach your local Chrome or your output folder.
+> **This runs in the cloud, not on your laptop.** It's set up as a Claude Code Remote **Routine** — a scheduled job that fires in an Anthropic-hosted cloud environment. That means: no local Chrome, no local desktop folder, and (as of this setup) no send-mail tool available on the Microsoft 365 connector. Delivery is **git push to `briefs/`** in this repo, plus **the run's own final reply**, which the Routine platform turns into its completion notification (email today; you can also turn on push) — see `INSTRUCTIONS.md` > *Delivery*.
 
 ## Reading briefs while you're away
 
-Every brief is saved to a **OneDrive** folder, so it syncs to the cloud automatically — view it at **onedrive.com** or the **OneDrive mobile app** on your phone. The routine also emails you a copy and pushes the PDF to GitHub (step 9 of the prompt). But a brief is only *generated* if your computer is running the routine. So if you'll be away:
-
-- ✅ **Leave the laptop ON, plugged in, and LOGGED IN with the screen locked** (`Win`+`L`). Locking keeps your session — and OneDrive — alive.
-- 🚫 **Do NOT sign out / log off.** That ends your user session: OneDrive stops syncing and per-user scheduled tasks won't run, so the brief won't be made or won't reach the cloud.
-- 💤 **Disable sleep/hibernate** for those days (Settings → Power → *put to sleep = Never* while plugged in), or tick *"Wake the computer to run this task"* on the scheduled task (Option B below).
-
-If leaving the laptop on isn't possible, the local routine can't produce briefs while away — that needs an always-on/cloud setup, which is a separate, larger project (it requires server-side mailbox access via Microsoft Graph and an Anthropic API key).
+Every run pushes the PDF straight to `briefs/` in this repo — open it on GitHub from your phone any time, no laptop required. You'll also get a notification (currently email, from the Routine itself) each time it fires, with the title, the TL;DR, and a link straight to the pushed PDF. Because this runs in the cloud, it fires on schedule whether or not your laptop is on.
 
 ---
 
 ## 1. The prompt
 
-This is also `prompt.txt` in this repo (used verbatim by the scheduled runs — see Option B). Paste it into Claude Code, or just run `/ai-brief`:
+This is also `prompt.txt` in this repo (the exact text the Routine sends on each firing). Paste it into Claude Code, or just run `/ai-brief`:
 
 ```
 Run the AI Brief routine for me, following INSTRUCTIONS.md in this repo (v2).
 
-This routine runs three times on weekdays: 7:00 AM, 1:00 PM, and 5:00 PM Eastern
-(America/New_York). Figure out which run this is and act accordingly — do not assume
-it's the first run of the day.
+This runs as a cloud Routine three times on weekdays: 7:00 AM, 1:00 PM, and 5:00 PM
+Eastern (America/New_York). Figure out which run this is and act accordingly — do not
+assume it's the first run of the day. There is no local desktop and no send-mail tool
+available: delivery is git push plus your own final reply, which the Routine turns into
+its completion notification to me — see the last step.
 
 1. Read state/run-log.json (create it as {"days": {}} if absent). Work out today's run
    number and the timestamp of the last successful run — on the very first run of the
@@ -35,15 +31,17 @@ it's the first run of the day.
 2. Search ONLY my Outlook folder "Claude AI News Recap" for messages received since that
    timestamp, newest first. NEVER read Junk or Deleted Items. NEVER search the Inbox or
    any other folder. Stay read-only on existing mail — do not delete, move, flag, or mark
-   anything read. (The only message you may send is the single delivery email in step 10.)
-3. If there are zero new messages: log a skipped run to state/run-log.json, send nothing,
-   push nothing, and tell me "No new newsletters since [last run time]." Stop.
+   anything read, and do not send any mail (there's no send-mail tool available, and none
+   is needed).
+3. If there are zero new messages: log a skipped run to state/run-log.json, push nothing,
+   and reply "No new newsletters since [last run time]." Stop.
 4. Read each newsletter. If a body is large HTML that would overflow context, hand the
    saved file to a subagent to slice it in ~80,000-char spans and summarize it (headlines,
    facts, any skill/tip of the day with verbatim prompts, notable tools). Discard ads,
    sponsor blocks, and newsletter housekeeping.
 5. Classify into three buckets:
-   - AI TIPS — imperative title + 2-4 numbered steps that stand alone without the source.
+   - AI TIPS — things that help me use AI better or signal a change to act on. Write each
+     as a short imperative title + 2-4 numbered steps that stand alone without the source.
      Capture any copy-paste prompt verbatim in a monospace block — never paraphrase it.
    - AI NEWS — headline + 1-2 sentences of fact, then a "What it means for you" line
      through my lens as a [Product Manager / Consultant]. Mark low-impact items "low": true.
@@ -58,19 +56,17 @@ it's the first run of the day.
 7. Curate to the page budget: page 1 = AI Tips (target 3, min 2) + AI News (target 3-4);
    page 2 = Beyond AI (target 4-5). A third page only on a genuinely heavy news day. Cut
    lowest-impact items first; never shrink type to force a fit.
-8. Write a title (no date — it's also the email subject) and three TL;DR bullets.
+8. Write a title (no date) and three TL;DR bullets.
 9. Save to content/<today YYYY-MM-DD>-run<N>.json using the schema in
    content/2026-07-24-run1.json, with run, runTime, and fingerprints filled in.
-10. Build:  python build/build_brief.py content/<file>.json
+10. Build:  python build/build_brief.py content/<file>.json — writes straight into briefs/.
 11. Verify the page count before delivering anything — never ship an unverified PDF.
-12. Copy the PDF to whichever configured desktop folder(s) exist on this machine (both if
-    both exist; create the second and note it if neither exists).
-13. Copy it into this repo's briefs/ folder, then git add, commit
-    ("brief: YYYY-MM-DD run <N> - <title>"), and push — retry once with pull --rebase if
-    rejected. Update state/run-log.json with this run's entry and fingerprints.
-14. Email me ONE HTML copy: title as subject, PDF attached, GitHub link at the bottom.
-15. Reply with the title, run number/time, newsletters read, items deduped out, local
-    path(s), and confirmation of email/attachment/push.
+12. git add, commit ("brief: YYYY-MM-DD run <N> - <title>"), and push the PDF plus the
+    updated content JSON and state/run-log.json — retry once with pull --rebase if
+    rejected; report the git failure clearly if it still fails.
+13. Reply with the title, the three TL;DR bullets, a GitHub link to the pushed PDF, run
+    number/time, newsletters read, and items deduped out. Keep it tight — this reply
+    becomes my notification, not an internal report.
 
 Never supplement thin source material with model knowledge or web search — if the day is
 quiet, ship a short brief or skip the run per step 6.
@@ -86,80 +82,48 @@ This repo ships a slash command at `.claude/commands/ai-brief.md`. Because it li
 /ai-brief
 ```
 
-…and Claude runs the prompt above. This is the simplest daily habit — open the repo each morning and run `/ai-brief`.
+…and Claude runs the prompt above. Handy for a manual test run before trusting the schedule.
 
 ---
 
-## 3. Schedule it
+## 3. How it's scheduled
 
-### Option A — Claude Code's `/schedule` (easiest)
-1. In Claude Code (opened in this repo), run:
-   ```
-   /schedule
-   ```
-2. Choose **create a new routine**.
-3. Paste **the prompt** from section 1 as the task.
-4. Set the cadence to **three separate routines**: weekdays at 7:00 AM, 1:00 PM, and 5:00 PM Eastern. (`/schedule` creates one routine per cadence — repeat steps 2-5 three times, same prompt each time.)
-5. Confirm.
+This repo's Routine is a **Claude Code Remote Routine** (not a local Task Scheduler job) — three separate triggers, one per firing time, all pointed at the same cloud environment and running the same prompt above:
 
-Keep your machine on and signed in at those times, with the Microsoft 365 connector enabled. Check `/schedule` again anytime to list, edit, or run them. Each run reads `state/run-log.json` to know its own run number, so it doesn't matter which routine fires — the prompt figures out run 1/2/3 for itself.
+| Trigger | Cron (UTC) | Eastern time |
+|---|---|---|
+| Run 1 | `0 11 * * 1-5` | 7:00 AM, weekdays |
+| Run 2 | `0 17 * * 1-5` | 1:00 PM, weekdays |
+| Run 3 | `0 21 * * 1-5` | 5:00 PM, weekdays |
 
-### Option B — Windows Task Scheduler (runs even with Claude Code closed)
-This starts a fresh headless `claude` process each morning, so **you don't need to keep a Claude Code window open.** Requires: the `claude` CLI installed & logged in, the machine on + logged in (locked is fine), and the tools pre-authorized (see *Permissions* below).
+The UTC hours above assume Eastern Daylight Time (UTC-4). Eastern switches to Standard Time (UTC-5) in the fall — the cron expressions need to shift by one hour then (e.g. run 1 becomes `0 12 * * 1-5`). There's no automatic DST adjustment on cron triggers, so this needs a manual nudge twice a year.
 
-**Easiest — the bundled installer** (run once, from this repo folder; no admin needed):
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\install-task.ps1
-```
-It registers a task named **"AI Brief 3x Daily"** with three weekday triggers — **7:00 AM, 1:00 PM, and 5:00 PM** — that all run `run-brief.ps1` (which calls Claude with `prompt.txt`; the prompt itself works out the run number from `state/run-log.json`, so the same script serves all three firings). Test it right away:
-```powershell
-Start-ScheduledTask -TaskName "AI Brief 3x Daily"
-```
-Then check `briefs\run-log.txt` and your output folder(s). Remove it anytime:
-```powershell
-Unregister-ScheduledTask -TaskName "AI Brief 3x Daily" -Confirm:$false
-```
+Manage the triggers with `/schedule` in Claude Code, or ask Claude to list/update/delete them directly (they're named `Ai Daily News Brief Agent`, runs 1-3). Each run reads `state/run-log.json` to know its own run number, so it doesn't matter which trigger fires — the prompt figures out run 1/2/3 for itself.
 
-**Or by hand (Task Scheduler GUI):**
-1. Open **Task Scheduler → Create Task…** (not "Basic Task").
-2. **General:** name it `AI Brief 3x Daily`; select **Run only when user is logged on**.
-3. **Triggers → New:** *Weekly*, Mon–Fri, **7:00 AM** — then add two more triggers the same way for **1:00 PM** and **5:00 PM**.
-4. **Actions → New:** *Start a program* →
-   - **Program/script:** `powershell.exe`
-   - **Add arguments:** `-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File "run-brief.ps1"`
-   - **Start in:** the full path to this repo (e.g. `C:\Users\<you>\AI-Brief-News-Agent`).
-5. **Conditions:** tick **Wake the computer to run this task**; untick *Start the task only if on AC power* if you want it on battery.
-6. Save.
+### Alternative: running it locally instead
 
-**Permissions for unattended runs.** With no one to click "approve", pre-authorize the routine's tools ONE of two ways:
-- **Scoped allowlist (safer):** run it manually once with `/ai-brief` and choose **"always allow"** for each tool — that records an allowlist your future runs reuse.
-- **Full bypass (simplest, less safe):** add `--dangerously-skip-permissions` to the `claude` line in `run-brief.ps1`. Only if you accept the run can use any tool unprompted.
-
-> **You can close Claude Code.** The task launches its own `claude` process — no interactive window needed. You DO need to stay **logged in** (locked is fine) so OneDrive and the mail connector are available.
-
-### Option C — Manual daily (no scheduling)
-Open this repo in Claude Code and run `/ai-brief` (or paste the prompt). Takes a few seconds and keeps you in control of timing.
+The repo still ships `install-task.ps1` / `run-brief.ps1` for registering a Windows Task Scheduler job, if you'd rather run this on your own machine (e.g. to also get a copy synced to a local OneDrive folder). **Note:** `INSTRUCTIONS.md` and `build/build_brief.py` are currently written for the cloud setup above — no local-folder-copy step, no email step. If you want a local run to save a copy to a desktop folder and/or actually send mail, you'll need to add those steps back (`build/build_brief.py` accepts `AI_BRIEF_OUTPUT_DIR` for extra output folders, and a real send-mail tool would need to be available in that environment).
 
 ---
-
-## Recommended cadence
-Weekdays, 7:00 AM / 1:00 PM / 5:00 PM Eastern — matches when Superhuman AI and Morning Brew tend to land mid-day, which a single morning run would miss. Weekends are usually quiet, so most people skip them.
 
 ## First run — test before you trust it
-Run it **manually once** (Option C) and confirm:
-- it finds your newsletters in the folder,
-- the PDF lands in your output folder(s) with an eye-catching name,
-- it's 2 pages (page 1 AI, page 2 Beyond AI) and on-brand,
-- `state/run-log.json` picked up a new entry for the run.
 
-Then turn on the schedule. Run it a second time later the same day to confirm dedup works (it should report 0 new items, or only genuinely new stories, not repeats).
+Run it **manually once** (`/ai-brief`) and confirm:
+- it finds your newsletters in the folder,
+- the PDF lands in `briefs/` with an eye-catching name and gets pushed to GitHub,
+- it's 2 pages (page 1 AI, page 2 Beyond AI) and on-brand,
+- `state/run-log.json` picked up a new entry for the run,
+- the final reply reads well as a notification (title, TL;DR, GitHub link).
+
+Then let the schedule run. Trigger it a second time later the same day to confirm dedup works (it should report 0 new items, or only genuinely new stories, not repeats).
 
 ## Troubleshooting
 | Symptom | Fix |
 |---|---|
 | "No new newsletters" every run | Check your forwarding rule (README Step 3) and that mail isn't going to Junk. |
 | Same story shows up twice in one day | Check `state/run-log.json` — the day's `covered` fingerprints should include it after the first run. |
-| PDF didn't render | Confirm Chrome/Edge is installed; set `CHROME_PATH` if it's in a custom location. |
-| Wrong output folder | Set `AI_BRIEF_OUTPUT_DIR` (colon/semicolon-separated list) or edit `DEFAULT_OUTPUT_DIRS` in `build/build_brief.py`. |
+| PDF didn't render | Confirm a Chrome/Chromium binary is available in the run environment; set `CHROME_PATH` if it's in a custom location. |
 | Content spills to a 3rd page on a normal day | Ask Claude to re-check the heavy-day test and trim to the page budget in `INSTRUCTIONS.md`. |
-| Brand colors look wrong / fell back to defaults | Check the run report for a brand-folder fallback note; confirm `build/brand.json` and the brand folder are both readable. |
+| Brand colors look wrong / fell back to defaults | Check the run's final reply for a brand-folder fallback note; confirm `build/brand.json` and the brand folder are both readable. |
+| Notification says it "could not email" the brief | Expected — there's no send-mail tool on the connector. Delivery is git push + the final reply, not an agent-sent email (see the callout at the top of this file). |
+| Only firing once a day, not three times | You're likely only looking at one of the three triggers — confirm all three (7 AM/1 PM/5 PM) exist and are enabled. |

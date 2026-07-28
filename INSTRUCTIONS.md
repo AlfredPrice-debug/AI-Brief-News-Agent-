@@ -1,19 +1,21 @@
 # AI Brief — Daily Routine (Instructions for Claude Code) — v2
 
-This is the step-by-step routine Claude Code follows to produce the **Impact Makers AI Brief**: a curated, brand-styled PDF delivered **three times a day** so nothing that lands mid-day is missed. Follow it top to bottom. Never send an empty or duplicate brief.
+This is the step-by-step routine Claude Code follows to produce the **Impact Makers AI Brief**: a curated, brand-styled PDF built **three times a day** so nothing that lands mid-day is missed. Follow it top to bottom. Never build an empty or duplicate brief.
 
 > **Goal:** Turn the newsletters sitting in one Outlook folder into a 2-page brief — **page 1: AI Tips + AI News**, **page 2: Beyond AI** (general business/world awareness) — for Alfred Price (Product Manager / Consultant at Impact Makers), who reads it on his phone away from his desk.
+
+This runs as a **Claude Code Remote Routine in a cloud environment**, not on Alfred's laptop — there is no local filesystem to save a copy to, and no Outlook "send mail" tool available. Delivery is entirely **git push to this repo** plus **the run's own final chat reply**, which the Routine platform turns into its completion notification (email/push) to Alfred. See **Delivery** below.
 
 ---
 
 ## 0. Prerequisites (one-time)
 
-- **Microsoft 365 / Outlook connector** enabled (read access to mail).
+- **Microsoft 365 / Outlook connector** enabled, with **read** access to mail (`outlook_email_search`). There is currently no send-mail tool — do not attempt to email the brief; see **Delivery**.
 - A dedicated Outlook mail folder named exactly `Claude AI News Recap` that newsletters route into.
-- **Google Chrome** (or Edge) installed — used to render the PDF.
+- A Chromium/Chrome binary available in the run environment — used to render the PDF (auto-detected by `build/build_brief.py`; override with `CHROME_PATH`).
 - **Python 3** with `pypdf` (`pip install pypdf`) — used for the page-count check.
 - Read access to the Impact Makers brand assets folder (colors, typefaces, logo).
-- This repo cloned locally. Fonts are bundled in `fonts/` (Poppins — the !m brand font) as the fallback if the brand folder is unreadable.
+- This repo cloned locally to the run environment. Fonts are bundled in `fonts/` (Poppins — the !m brand font) as the fallback if the brand folder is unreadable.
 
 ## CONFIG
 
@@ -21,7 +23,7 @@ This is the step-by-step routine Claude Code follows to produce the **Impact Mak
 |---|---|
 | Outlook source folder | `Claude AI News Recap` (read-only; query only this folder) |
 | Expected senders | Superhuman AI, The Rundown AI, TLDR, Morning Brew, 1440 — not a fixed list, treat anything in the folder as a candidate |
-| Output folders (write to whichever exists; both if both exist) | `C:\Users\AlfredPrice\OneDrive - IM\Desktop\AI News & Tips` and `C:\Users\alfre\OneDrive\Desktop\Claude Work\AI News Briefs` (override via `AI_BRIEF_OUTPUT_DIR`) |
+| PDF output | This repo's `briefs/` folder only (no local desktop folder — see **Delivery**) |
 | Reader lens | Product Manager / Consultant (Alfred Price, Impact Makers) |
 | Time zone | America/New_York for all schedule references |
 | Runs per weekday | 7:00 AM, 1:00 PM, 5:00 PM Eastern |
@@ -44,7 +46,7 @@ outlook_email_search(folderName="Claude AI News Recap", order="newest", since=<l
 
 Read-only. Never modify, move, flag, or mark-as-read. Never touch Junk or Deleted Items. Never search any other folder.
 
-**If zero new messages:** append a skipped entry to `state/run-log.json` (run number, timestamp, `"status": "skipped_no_mail"`), send nothing, push nothing, and report `"No new newsletters since [last run time]."` Stop here.
+**If zero new messages:** append a skipped entry to `state/run-log.json` (run number, timestamp, `"status": "skipped_no_mail"`), push nothing, and reply `"No new newsletters since [last run time]."` Stop here.
 
 For each message, extract the readable body. If a body is large HTML that would overflow context, save it to a temp file and hand it to a **subagent**: slice the file into roughly 80,000-character spans with Python and summarize headlines, facts, any skill/tip of the day with verbatim prompts, and notable tools. Do not read raw HTML into the main context.
 
@@ -72,7 +74,7 @@ Cut by impact ranking, lowest first, when content exceeds the page budget. Never
 
 ## 6. Write the title and TL;DR
 
-- **Title:** eye-catching, summarizes the day's 2–3 biggest items, no date. This is also the email subject.
+- **Title:** eye-catching, summarizes the day's 2–3 biggest items, no date. This is also the headline of the run's final reply (see **Delivery**).
 - **TL;DR:** three one-line bullets, the three highest-impact items across both pages, readable in ten seconds.
 
 ## 7. Save the content JSON
@@ -85,7 +87,7 @@ Save to `content/YYYY-MM-DD-run<N>.json`, following the schema in `content/2026-
 python build/build_brief.py content/YYYY-MM-DD-run<N>.json
 ```
 
-The script reads brand colors/fonts from `build/brand.json` if present (see **Brand styling** below), falling back to the bundled Poppins/IM palette otherwise.
+By default this writes straight into `briefs/`. The script reads brand colors/fonts from `build/brand.json` if present (see **Brand styling** below), falling back to the bundled Poppins/IM palette otherwise.
 
 ## 9. Verify before delivering
 
@@ -95,37 +97,29 @@ python -c "from pypdf import PdfReader; print(len(PdfReader(r'<path>').pages))"
 
 Confirm the page count matches the rules in step 5 (2 pages, or 3 only on a heavy day). If the build failed or the page count is wrong, fix the content or template and rebuild. **Never deliver an unverified PDF.**
 
-## 10. Copy to the desktop folder(s)
+## 10. Push to GitHub
 
-Write the PDF to whichever of these paths exists on the current machine:
-- `C:\Users\AlfredPrice\OneDrive - IM\Desktop\AI News & Tips`
-- `C:\Users\alfre\OneDrive\Desktop\Claude Work\AI News Briefs`
-
-If both exist, write to both. If neither exists, create the second path and note that in the report. `build/build_brief.py` handles this automatically via `AI_BRIEF_OUTPUT_DIR` (colon-separated list) or its built-in defaults.
-
-## 11. Push to GitHub
-
-Copy the PDF into this repo's `briefs/` folder, then `git add`, `git commit`, `git push`. Commit message format:
+`git add`, `git commit`, `git push` the new PDF (already in `briefs/` from step 8) plus the updated `content/*.json` and `state/run-log.json`. Commit message format:
 
 ```
 brief: YYYY-MM-DD run <N> - <title>
 ```
 
-If the push is rejected, `git pull --rebase` once and retry. If it still fails, still send the email (step 12) and report the git failure clearly.
+If the push is rejected, `git pull --rebase` once and retry. If it still fails, report the git failure clearly in the final reply — the brief still exists locally in this run's workspace, it just isn't pushed yet.
 
-On success, append the run entry and every published fingerprint to `state/run-log.json` and commit it alongside the PDF.
+On success, append the run entry and every published fingerprint to `state/run-log.json` and commit it alongside the PDF (same commit is fine).
 
-## 12. Deliver by email
+## 11. Delivery: the final reply *is* the delivery mechanism
 
-Send **one** email to Alfred's own work address (`get_me` gives the address):
-- **Subject:** the title.
-- **Body:** the full brief as clean, inline-styled HTML — headings, bold labels, lists, monospace prompt blocks only. Email clients strip stylesheets, so style with `style="..."` attributes and keep it fully readable with all styling stripped.
-- **Attachment:** the PDF.
-- A direct GitHub download link to the pushed PDF at the bottom of the body.
+There is no send-mail tool available, so **do not** attempt to email the brief. Instead, the run's final chat reply is what the Claude Code Remote Routine turns into its completion notification (email and/or push) to Alfred — so it needs to stand alone as something worth reading on a phone:
 
-## 13. Report back
+- Lead with the **title**.
+- The three **TL;DR** bullets.
+- A direct GitHub link to the pushed PDF (`https://github.com/<owner>/<repo>/blob/main/briefs/<filename>`).
+- Run number and time, how many newsletters were read, how many items were deduplicated out.
+- Any fallback notes (brand folder unreadable, git push failed, etc).
 
-Reply in chat with: the title, run number and time, number of newsletters read, number of items deduplicated out, the local path(s), and confirmation of the email, the attachment, and the GitHub push.
+Keep it tight — this is read as a notification, not a report.
 
 ---
 
@@ -172,14 +166,13 @@ See `state/README.md`. Summary: one entry per calendar date, containing an array
 ## Brand styling
 
 - Read the Impact Makers brand assets (primary/secondary/accent hex, heading/body typefaces, logo file) from the designated brand folder at run time — never hardcode them.
-- Cache the extracted values to `build/brand.json` (gitignored — machine-local cache; see `build/brand.example.json` for the shape). On each run, re-check the brand folder's modified date and refresh the cache if it changed.
+- Cache the extracted values to `build/brand.json` (gitignored — cache local to the run environment; see `build/brand.example.json` for the shape). On each run, re-check the brand folder's modified date and refresh the cache if it changed.
 - Applied to the PDF: logo in the header, brand primary for section headers/rules, brand accent for the TL;DR block and the "What it means for you" / "PM angle" labels, brand typefaces throughout.
-- Applied to the HTML email: inline styles only, brand colors on headings/labels, web-safe font-stack fallback. The email must stay fully readable with all styling stripped.
-- **If the brand folder is missing or unreadable:** fall back to the bundled template (Poppins; Gold `#D8A928`, Black `#262626`, Dark Blue `#264966`), note the fallback in the run report, and continue. Never guess at brand colors.
+- **If the brand folder is missing or unreadable:** fall back to the bundled template (Poppins; Gold `#D8A928`, Black `#262626`, Dark Blue `#264966`), note the fallback in the final reply, and continue. Never guess at brand colors.
 
 ## Safety notes
 
-- **Read-only on the mailbox.** The routine searches and reads `Claude AI News Recap` only; it never deletes, moves, flags, or marks messages read. The *only* message it ever sends is the single delivery email in step 12.
+- **Read-only on the mailbox.** The routine searches and reads `Claude AI News Recap` only; it never deletes, moves, flags, or marks messages read, and **it never sends any mail** — there is no send-mail tool available, and delivery does not require one (see **Delivery**).
 - **Never read Junk or Deleted Items**, under any circumstance.
 - **Never search the Inbox** or any folder other than `Claude AI News Recap`.
 - **Never supplement thin source material** with model knowledge or web search. If the day is quiet, ship a short brief or skip the run per step 4.

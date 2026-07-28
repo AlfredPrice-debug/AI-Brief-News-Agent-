@@ -1,11 +1,18 @@
 # run-brief.ps1
+# OPTIONAL LOCAL ALTERNATIVE — the live setup runs as a cloud Claude Code Remote
+# Routine (see ROUTINE.md); this script is only for running the brief unattended
+# on your own machine instead. Note that INSTRUCTIONS.md / build_brief.py are
+# currently written for the cloud setup (no local-folder-copy step, no email
+# step) — adapt those first if you want this local path to save a desktop copy
+# or send mail.
+#
 # Runs one AI Brief pass unattended via the Claude Code CLI. Fires 3x/weekday
 # (7 AM / 1 PM / 5 PM) — the prompt itself works out which run this is from
 # state/run-log.json, so this script doesn't need to know or pass a run number.
 # Called by the "AI Brief 3x Daily" scheduled task (see install-task.ps1).
 #
 # PERMISSIONS: an unattended run has no one to approve tool use (reading mail,
-# running Python, git push, sending the self-email). You must pre-authorize those,
+# running Python, git push). You must pre-authorize those,
 # in ONE of two ways — pick what you're comfortable with:
 #   (A) SCOPED ALLOWLIST (safer): keep a .claude/settings.json in this repo that
 #       pre-approves only the specific tools the routine needs. See ROUTINE.md.

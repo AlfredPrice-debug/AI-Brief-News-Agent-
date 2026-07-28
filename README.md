@@ -4,8 +4,10 @@ A routine for **Claude Code** that turns the newsletters in one Outlook folder i
 
 ![Sample brief](docs/sample.png)
 
+This runs as a **cloud Routine** — a scheduled job in a Claude Code Remote environment, not on your laptop. There's no local desktop folder and no send-mail tool involved: every run pushes straight to `briefs/` in this repo, and its own final reply (title, TL;DR, GitHub link) becomes the Routine's completion notification.
+
 ## What you get
-A 2-page, Impact Makers–branded PDF (brand fonts/colors, read live from the brand folder — Poppins/gold-black-blue as the bundled fallback) saved to a folder of your choice, named for the run's content, e.g.
+A 2-page, Impact Makers–branded PDF (brand fonts/colors, read live from the brand folder — Poppins/gold-black-blue as the bundled fallback) pushed to `briefs/` in this repo, named for the run's content, e.g.
 `Picking the Right Gemini Models, Building Design Systems & Auditing Agents_7_24_26_run1.pdf`
 
 Every run also deduplicates against everything already published *that day* — via `state/run-log.json` — so the same story never appears twice across the day's three briefs, and a run with too little new material (or no new mail at all) skips delivery on its own rather than sending something thin or repeated.
@@ -52,26 +54,24 @@ If a newsletter lands in Junk, right-click it → **Junk → Never block sender*
 ---
 
 ## Technical setup (one-time)
-1. **Clone this repo.**
-2. **Enable the Microsoft 365 connector** in Claude (read access to mail).
-3. **Install Google Chrome** (or Edge) — used to render the PDF.
+1. **Clone this repo** into the Claude Code Remote environment the Routine will use.
+2. **Enable the Microsoft 365 connector**, with read access to mail. (There's currently no send-mail capability on this connector — delivery doesn't depend on one; see **Brand & safety** below.)
+3. **A Chrome/Chromium binary needs to be reachable** in that environment to render the PDF — `build/build_brief.py` auto-detects common install paths; set `CHROME_PATH` if it's somewhere unusual.
 4. *(Optional)* `pip install pypdf` for a page-count sanity check.
-5. **Choose the folder(s) on your computer where the PDFs will be saved.** These are local folders on *your* machine — create them wherever you'd like your briefs to collect. The routine writes to whichever of two configured defaults exist (see `DEFAULT_OUTPUT_DIRS` in `build/build_brief.py`), or override with the `AI_BRIEF_OUTPUT_DIR` environment variable (colon/semicolon-separated to target more than one).
-   - *If neither folder exists yet, the build script creates the second default automatically and notes it in the run report.*
-6. *(Optional)* Point the routine at your Impact Makers brand-assets folder so it can read live colors/fonts/logo instead of the bundled defaults — see **Brand & safety** below.
+5. *(Optional)* Point the routine at your Impact Makers brand-assets folder so it can read live colors/fonts/logo instead of the bundled defaults — see **Brand & safety** below.
 
 ## Using it
 Tell Claude Code:
 > "Run the AI Brief for me."
 
-Claude follows [`INSTRUCTIONS.md`](INSTRUCTIONS.md): reads new mail from the folder since the last run, classifies into AI Tips / AI News / Beyond AI, deduplicates against everything already published today, writes `content/<date>-run<N>.json`, and builds the 2-page PDF. To re-render an existing content file yourself:
+Claude follows [`INSTRUCTIONS.md`](INSTRUCTIONS.md): reads new mail from the folder since the last run, classifies into AI Tips / AI News / Beyond AI, deduplicates against everything already published today, writes `content/<date>-run<N>.json`, and builds the 2-page PDF straight into `briefs/`. To re-render an existing content file yourself:
 ```bash
 python build/build_brief.py content/2026-07-24-run1.json
 ```
 
-**Reading it away from your desk.** The routine also **emails you a copy**, **pushes the PDF to `briefs/` on GitHub**, and if the output folder is in OneDrive the PDF **syncs to the cloud** automatically — so you can read the brief on your phone via email, GitHub, or the OneDrive app.
+**Reading it away from your desk.** Every run **pushes the PDF to `briefs/` on GitHub**, so you can open it from your phone at any time — and the run's own final reply (title, TL;DR, GitHub link) becomes the Routine's completion notification, so you'll hear about it without checking in.
 
-**Want it to run automatically, three times a day?** See **[ROUTINE.md](ROUTINE.md)** — it has the copy-paste prompt, scheduling instructions for 7 AM / 1 PM / 5 PM Eastern (including a ready-made `/ai-brief` command), and how to keep it running while you're away (leave the laptop on and locked — don't log out).
+**Want it to run automatically, three times a day?** See **[ROUTINE.md](ROUTINE.md)** — it has the copy-paste prompt and how the cloud Routine is scheduled for 7 AM / 1 PM / 5 PM Eastern (including a ready-made `/ai-brief` command for a manual test run).
 
 ## Repo layout
 | Path | Purpose |
@@ -94,8 +94,9 @@ python build/build_brief.py content/2026-07-24-run1.json
 
 ## Brand & safety
 - **Brand assets are read live**, not hardcoded: colors, typefaces, and the logo are read from the Impact Makers brand folder at run time and cached to `build/brand.json` (see `build/brand.example.json`; refreshed whenever the brand folder's modified date changes).
-- **Fallback:** if the brand folder is missing or unreadable, the bundled defaults apply — Poppins; Gold `#D8A928` · Black `#262626` · Dark Blue `#264966` (+ supporting grays; terracotta accent) — and the run report notes the fallback.
-- **Read-only mail:** the routine searches and reads only the `Claude AI News Recap` folder; it never deletes, moves, flags, or marks messages, and never reads Junk/Deleted Items or any other folder.
+- **Fallback:** if the brand folder is missing or unreadable, the bundled defaults apply — Poppins; Gold `#D8A928` · Black `#262626` · Dark Blue `#264966` (+ supporting grays; terracotta accent) — and the final reply notes the fallback.
+- **Read-only mail:** the routine searches and reads only the `Claude AI News Recap` folder; it never deletes, moves, flags, or marks messages, never sends any mail, and never reads Junk/Deleted Items or any other folder.
+- **No send-mail tool.** The Microsoft 365 connector currently exposes read-only mail tools. Delivery doesn't depend on sending mail — it's git push plus the run's final reply, which the Routine platform turns into its own completion notification.
 
 ## License
 Code and templates: internal Impact Makers use. Poppins font: [SIL Open Font License 1.1](fonts/).

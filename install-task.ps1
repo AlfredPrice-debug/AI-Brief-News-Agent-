@@ -1,4 +1,8 @@
 # install-task.ps1
+# OPTIONAL LOCAL ALTERNATIVE — the live setup runs as a cloud Claude Code Remote
+# Routine (see ROUTINE.md). Use this only if you want to run the brief on your
+# own machine instead (e.g. for a locally-synced copy) rather than the cloud.
+#
 # Registers a Windows Scheduled Task that runs the AI Brief three times each weekday:
 # 7:00 AM, 1:00 PM, and 5:00 PM Eastern, so nothing that lands mid-day is missed.
 #
