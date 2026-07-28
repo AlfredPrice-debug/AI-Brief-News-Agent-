@@ -1,5 +1,24 @@
 {
   "days": {
+    "2026-07-27": {
+      "runs": [
+        {
+          "run": 3,
+          "timestamp": "2026-07-27T17:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "anthropic|releases|opus-5",
+            "industry|opposes|open-weight-model-restrictions",
+            "black-forest-labs|unveils|flux-3-multimodal",
+            "iran-us|pause-strikes|oil-falls",
+            "fda-cuts|linked-to|cyclospora-outbreak",
+            "fed|expected-to-hold|rates-this-week",
+            "imax|draws-crowds|odyssey-70mm",
+            "smith|creates|grady-white-purpose-trust"
+          ]
+        }
+      ]
+    },
     "2026-07-28": {
       "runs": [
         {

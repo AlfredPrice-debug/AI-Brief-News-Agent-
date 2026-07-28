@@ -1,0 +1,93 @@
+{
+  "run": 3,
+  "runTime": "2026-07-27T17:00:00-04:00",
+  "title": "Opus 5 Ships, the Open-Weight Fight Escalates, and Video AI Hits the Factory Floor",
+  "date_display": "Monday, July 27, 2026",
+  "date_slug": "7_27_26",
+  "sources": "<b>The Rundown AI</b>, <b>Morning Brew</b>, <b>The Neuron</b> (Jul 27)",
+  "tldr": [
+    "Anthropic shipped Claude Opus 5 at $5/$25 per million tokens — Fable 5-level intelligence at half the price.",
+    "Nvidia, Microsoft, Meta, OpenAI and 47+ others urged Washington not to restrict open-weight AI models — Anthropic hasn't signed.",
+    "Black Forest Labs' FLUX 3 unifies video, audio, and robot control in one model, already piloting on Audi's line."
+  ],
+  "tips": [
+    {
+      "heading": "Turn a repeated task into a reusable Claude skill",
+      "steps": [
+        "Install Claude in Chrome, open Claude Cowork, click \"+\" and select \"Record a Skill.\"",
+        "Do the task normally while narrating out loud so Claude learns from your actions and words.",
+        "Save the skill, test it on a fresh task, then add it to a recurring task to run automatically."
+      ],
+      "source": "The Rundown AI"
+    },
+    {
+      "heading": "Run a 25-minute check-in loop so agents don't erode your judgment",
+      "steps": [
+        "Give each agent (Claude, ChatGPT, Codex, Devin, etc.) one clearly defined outcome, then let it work uninterrupted.",
+        "Every 25 minutes, ask for the same short update: progress, blocker, evidence, next action.",
+        "Approve, redirect, or stop the task based on that update, then step away again."
+      ],
+      "prompt": "Continue working independently until you either finish or need a decision from me.\n\nWhen I check back, report only:\n1. Current status\n2. What you completed\n3. Evidence that it works\n4. Any blocker or decision you need from me\n5. Your recommended next action\n\nDo not wait for approval unless the next step is destructive, irreversible, security-sensitive, or changes the agreed scope.",
+      "source": "The Neuron"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Anthropic released Claude Opus 5</b> across the Claude apps, Claude Code, and the API at $5/$25 per million tokens — matching Fable 5-level intelligence at half the price, and scoring 42/42 on IMO 2026 problems.",
+      "means": "A meaningfully cheaper top-tier option — worth trialing on your heaviest agentic workflows in place of pricier Fable-tier usage.",
+      "source": "The Rundown AI"
+    },
+    {
+      "body": "<b>Nvidia, Microsoft, Meta, OpenAI and 47+ other companies signed a letter urging Washington not to restrict open-weight AI models</b>, warning restrictions would push innovation overseas. Anthropic, Amazon, and xAI have not signed.",
+      "means": "A live policy fight that could reshape which AI vendors you can recommend to regulated clients — worth tracking before it reaches legislation.",
+      "source": "The Rundown AI, Morning Brew, The Neuron"
+    },
+    {
+      "body": "<b>Black Forest Labs unveiled FLUX 3</b>, a multimodal model generating video with native audio from text or images, sharing its backbone with FLUX-mimic, a robotics system already tested on Audi's line.",
+      "means": "Video, audio, and robot control are converging into one model — worth watching if clients touch manufacturing or content production.",
+      "source": "The Neuron"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Oil prices fell as the US and Iran held off strikes for a second straight day</b>, even as Ukraine claimed strong results hitting Iran-linked cargo ships in the Caspian Sea and threatened to share evidence that Russia is feeding Iran satellite intelligence on US bases.",
+      "angle": "Energy costs and Middle East stability are back in play for any client's cost forecasting or supply-chain risk register this quarter.",
+      "starter": "Are we still assuming oil stays where it's been, given how fluid the Iran situation still is?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>4 in 10 Americans say they're buying less produce</b> after a Cyclospora outbreak tied to iceberg lettuce across nine states, with reporting suggesting FDA staffing cuts may have slowed the response.",
+      "angle": "A live case study in regulatory-capacity risk, useful if you advise clients in food, retail, or any FDA-regulated supply chain.",
+      "starter": "If a regulator is short-staffed, whose job is it to catch this before it reaches shelves?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>The Fed is expected to hold rates steady this week</b> for a fourth straight meeting, the same week Microsoft, Meta, Apple, and Amazon all report earnings.",
+      "angle": "Big Tech's earnings this week will move the AI-spending narrative you use with clients regardless of what the Fed does.",
+      "starter": "Whatever the Fed does Wednesday, the real signal this week is what Microsoft and Meta say about AI capex.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Christopher Nolan's 'The Odyssey,' the first feature shot entirely on Imax 70mm film, is pulling audiences hundreds of miles to one of only 25 true 70mm screens in the US</b>, despite 70mm tickets running 81% more expensive.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Would you drive 300 miles for a movie? Apparently plenty of people would.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Grady-White founder Eddie Smith, 83, turned down a roughly $400 million buyout</b> and instead moved the boat company into a purpose trust plus a new nonprofit, keeping it independent after his son and heir died.",
+      "angle": "A real example to bring up with founder-led clients weighing succession, especially the purpose-trust structure as an alternative to an outright sale.",
+      "starter": "Have you seen founders use purpose trusts instead of selling? Worth a look for succession-planning conversations.",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "anthropic|releases|opus-5",
+    "industry|opposes|open-weight-model-restrictions",
+    "black-forest-labs|unveils|flux-3-multimodal",
+    "iran-us|pause-strikes|oil-falls",
+    "fda-cuts|linked-to|cyclospora-outbreak",
+    "fed|expected-to-hold|rates-this-week",
+    "imax|draws-crowds|odyssey-70mm",
+    "smith|creates|grady-white-purpose-trust"
+  ]
+}
