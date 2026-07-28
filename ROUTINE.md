@@ -4,7 +4,7 @@ This turns the AI Brief into something that runs **three times a day** (7:00 AM,
 
 Each run reads `state/run-log.json` to figure out its own run number and what's already been covered today, so the three runs never duplicate a story — a run with no new mail, or too little material to be worth sending, skips delivery on its own (see `INSTRUCTIONS.md`).
 
-> **This runs in the cloud, not on your laptop.** It's set up as a Claude Code Remote **Routine** — a scheduled job that fires in an Anthropic-hosted cloud environment. That means: no local Chrome, no local desktop folder, and (as of this setup) no send-mail tool available on the Microsoft 365 connector. Delivery is **git push to `briefs/`** in this repo, plus **the run's own final reply**, which the Routine platform turns into its completion notification (email today; you can also turn on push) — see `INSTRUCTIONS.md` > *Delivery*.
+> **This runs in the cloud, not on your laptop.** It's set up as a Claude Code Remote **Routine** — a scheduled job that fires in an Anthropic-hosted cloud environment. That means: no local Chrome, no local desktop folder, and (as of this setup) no send-mail tool available on the Microsoft 365 connector. Delivery is **git push straight onto `main`** (each run's own throwaway session branch is never merged — see `INSTRUCTIONS.md` > *Push to GitHub*) to `briefs/` in this repo, plus **the run's own final reply**, which the Routine platform turns into its completion notification (email today; you can also turn on push) — see `INSTRUCTIONS.md` > *Delivery*.
 
 ## Reading briefs while you're away
 
@@ -61,9 +61,13 @@ its completion notification to me — see the last step.
    content/2026-07-24-run1.json, with run, runTime, and fingerprints filled in.
 10. Build:  python build/build_brief.py content/<file>.json — writes straight into briefs/.
 11. Verify the page count before delivering anything — never ship an unverified PDF.
-12. git add, commit ("brief: YYYY-MM-DD run <N> - <title>"), and push the PDF plus the
-    updated content JSON and state/run-log.json — retry once with pull --rebase if
-    rejected; report the git failure clearly if it still fails.
+12. git add, commit ("brief: YYYY-MM-DD run <N> - <title>") the PDF plus the updated
+    content JSON and state/run-log.json. IMPORTANT: each firing starts on its own
+    throwaway branch off main — push straight onto main with `git push origin HEAD:main`,
+    never a plain `git push` or `git push -u origin <branch>` (that strands the commit on
+    a disposable branch, invisible in briefs/ on main). Retry once with
+    `git fetch origin main && git rebase origin/main` if rejected; report the git failure
+    clearly if it still fails.
 13. Reply with the title, the three TL;DR bullets, a GitHub link to the pushed PDF, run
     number/time, newsletters read, and items deduped out. Keep it tight — this reply
     becomes my notification, not an internal report.
