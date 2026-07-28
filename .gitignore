@@ -1,6 +1,9 @@
 # transient render artifact
 build/_render.html
 
+# machine-local brand cache (read from the brand folder at run time; see build/brand.example.json)
+build/brand.json
+
 # scheduled-run log
 briefs/run-log.txt
 
