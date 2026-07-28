@@ -108,7 +108,7 @@ def main():
     out_pdf = Path(OUTPUT_DIR) / safe_filename(content["title"], content["date_slug"])
     chrome = find_chrome()
     subprocess.run(
-        [chrome, "--headless=new", "--disable-gpu", "--no-pdf-header-footer",
+        [chrome, "--headless=new", "--disable-gpu", "--no-sandbox", "--no-pdf-header-footer",
          f"--print-to-pdf={out_pdf}", tmp_html.as_uri()],
         check=True, capture_output=True,
     )

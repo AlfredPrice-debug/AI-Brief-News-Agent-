@@ -1,0 +1,48 @@
+{
+  "title": "Claude Opus 5's Price Cut, the Open-Weight AI Standoff & FLUX 3's Multimodal Leap",
+  "date_display": "Monday, July 27, 2026",
+  "date_slug": "7_27_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b> (Jul 25–27)",
+  "tips": [
+    {
+      "heading": "Turn a repeated task into a Claude automation with “Record a Skill”",
+      "steps": [
+        "Install <b>Claude in Chrome</b> and pick a task you do often, even a local workflow.",
+        "In <b>Claude Cowork</b>, click the <b>+</b> button, choose <b>“Record a Skill,”</b> then just do the task as you normally would.",
+        "Narrate what you're doing out loud — Claude learns from your actions, your screen, and your narration to suggest the best automation.",
+        "Click <b>“Save the skill,”</b> test it on a fresh task, then add it to a daily/weekly recurring task so it runs itself."
+      ]
+    },
+    {
+      "heading": "Know when to reach for Opus 5 instead of Fable",
+      "steps": [
+        "Save Opus for hard work — agentic coding, computer use, business automation — and use a cheaper model for routine tasks.",
+        "Start at low/medium effort; only escalate to x-high for serious coding/agentic work.",
+        "Keep a human checkpoint — Opus topped the automation benchmark but only passed <b>about 1 in 4</b> tasks end-to-end."
+      ]
+    },
+    {
+      "heading": "Run a 25-minute agent sweep instead of babysitting every task",
+      "steps": [
+        "Give each agent one clearly defined outcome, and pin only the tasks that must move today.",
+        "Let it work without interrupting — check back on a ~25-minute cadence instead of watching constantly.",
+        "On each check-in, ask for the same short update: progress, blocker, evidence, next action."
+      ],
+      "prompt": "Continue working independently until you either finish or need a decision from me.\n\nWhen I check back, report only:\n1. Current status\n2. What you completed\n3. Evidence that it works\n4. Any blocker or decision you need from me\n5. Your recommended next action\n\nDo not wait for approval unless the next step is destructive, irreversible, security-sensitive, or changes the agreed scope."
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Anthropic released Claude Opus 5</b>, claiming near-Fable-5 intelligence at half the price ($5 / $25 per million input/output tokens) — SOTA on agentic coding, computer use, and agentic search, and #1 on Artificial Analysis' Intelligence Index.",
+      "means": "Worth re-running your model-selection math this week — if Opus is genuinely matching Fable-tier output at this price, some workflows you've been reserving for a premium model may now be cheaper to run on Opus instead."
+    },
+    {
+      "body": "<b>50+ companies — including Nvidia, Microsoft, Meta, and Hugging Face — signed an open letter urging Washington not to restrict open-weight AI models</b>, arguing it would push innovation overseas and lock businesses into a handful of controlled providers. Anthropic, Google, Amazon, and xAI didn't sign; OpenAI joined only after the letter gained traction.",
+      "means": "A useful data point for client conversations about model strategy — the signatories split cleanly into “open ecosystem” vendors vs. “closed platform” vendors, signaling where each expects to make its money."
+    },
+    {
+      "body": "<b>Black Forest Labs unveiled FLUX 3</b>, a multimodal model trained on images, video, audio, and robot actions together — the same backbone (FLUX-mimic) already runs on Audi's production line handling parts traditional robots struggle with.",
+      "means": "A bigger jump than another video generator — one model spanning content generation and physical robot control previews where “AI producing deliverables” and “AI doing physical work” start to converge."
+    }
+  ]
+}
