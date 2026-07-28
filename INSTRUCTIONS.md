@@ -22,7 +22,7 @@ This runs as a **Claude Code Remote Routine in a cloud environment**, not on Alf
 | Setting | Value |
 |---|---|
 | Outlook source folder | `Claude AI News Recap` (read-only; query only this folder) |
-| Expected senders | Superhuman AI, The Rundown AI, TLDR, Morning Brew, 1440 — not a fixed list, treat anything in the folder as a candidate |
+| Expected senders | Superhuman AI, The Rundown AI, TLDR, Morning Brew, 1440, The Neuron — not a fixed list, treat anything in the folder as a candidate |
 | PDF output | This repo's `briefs/` folder only (no local desktop folder — see **Delivery**) |
 | Reader lens | Product Manager / Consultant (Alfred Price, Impact Makers) |
 | Time zone | America/New_York for all schedule references |
