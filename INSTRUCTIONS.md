@@ -22,7 +22,7 @@ This runs as a **Claude Code Remote Routine in a cloud environment**, not on Alf
 | Setting | Value |
 |---|---|
 | Outlook source folder | `Claude AI News Recap` (read-only; query only this folder) |
-| Expected senders | Superhuman AI, The Rundown AI, TLDR, Morning Brew, 1440 — not a fixed list, treat anything in the folder as a candidate |
+| Expected senders | Superhuman AI, The Rundown AI, TLDR, Morning Brew, 1440, The Neuron — not a fixed list, treat anything in the folder as a candidate |
 | PDF output | This repo's `briefs/` folder only (no local desktop folder — see **Delivery**) |
 | Reader lens | Product Manager / Consultant (Alfred Price, Impact Makers) |
 | Time zone | America/New_York for all schedule references |
@@ -97,15 +97,21 @@ python -c "from pypdf import PdfReader; print(len(PdfReader(r'<path>').pages))"
 
 Confirm the page count matches the rules in step 5 (2 pages, or 3 only on a heavy day). If the build failed or the page count is wrong, fix the content or template and rebuild. **Never deliver an unverified PDF.**
 
-## 10. Push to GitHub
+## 10. Push to GitHub — directly onto `main`
 
-`git add`, `git commit`, `git push` the new PDF (already in `briefs/` from step 8) plus the updated `content/*.json` and `state/run-log.json`. Commit message format:
+`git add`, `git commit` the new PDF (already in `briefs/` from step 8) plus the updated `content/*.json` and `state/run-log.json`. Commit message format:
 
 ```
 brief: YYYY-MM-DD run <N> - <title>
 ```
 
-If the push is rejected, `git pull --rebase` once and retry. If it still fails, report the git failure clearly in the final reply — the brief still exists locally in this run's workspace, it just isn't pushed yet.
+**Each Routine firing starts on its own throwaway branch checked out from `main`.** If you `git push -u origin <that-branch-name>` (or just `git push`), the commit lands on that disposable branch and is never seen again once the session ends — it will NOT show up in `briefs/` on `main`, and the GitHub link in your reply (step 11) would be dead or point nowhere useful. You must push straight onto `main`:
+
+```
+git push origin HEAD:main
+```
+
+If that's rejected (a concurrent run landed first), `git fetch origin main && git rebase origin/main` once and retry. If it still fails, report the git failure clearly in the final reply — the brief still exists in this run's workspace, it just isn't on `main` yet.
 
 On success, append the run entry and every published fingerprint to `state/run-log.json` and commit it alongside the PDF (same commit is fine).
 

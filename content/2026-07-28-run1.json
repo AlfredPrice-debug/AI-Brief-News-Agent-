@@ -1,0 +1,106 @@
+{
+  "run": 1,
+  "runTime": "2026-07-28T07:00:00-04:00",
+  "title": "AI Security Splits in Two as the Largest Open Model Yet Drops",
+  "date_display": "Tuesday, July 28, 2026",
+  "date_slug": "7_28_26",
+  "sources": "<b>The Rundown AI</b>, <b>The Neuron</b>, <b>Morning Brew</b> (Jul 28)",
+  "tldr": [
+    "Nvidia leads 37 companies (Microsoft, IBM, Cisco, Hugging Face, Palantir) in a new open AI security alliance — OpenAI, Google, Anthropic, Amazon and Meta are notably absent.",
+    "Moonshot released Kimi K3, a 2.8 trillion-parameter model — the largest open-weight release ever, and a match for Claude Fable 5 and GPT-5.6-Sol on benchmarks.",
+    "Cracker Barrel's CEO is stepping down a year after a rebrand backlash, a vivid change-management case study."
+  ],
+  "tips": [
+    {
+      "heading": "Split big AI projects into planner and worker agents",
+      "steps": [
+        "Use your strongest model to write the plan and define task boundaries.",
+        "Send each subtask to a cheaper model or a separate thread as a worker, sharing one decisions doc between them.",
+        "Review each worker's output from two angles: the finished result and its reasoning trail."
+      ],
+      "prompt": "You are the planner. Break this project into worker-ready tasks.\n\nGoal: [what we are building]\nConstraints: [budget, tools, deadline, must-not-break rules]\n\nReturn:\n1. The task tree\n2. Which tasks need the strongest model and which can use a cheaper model\n3. A shared decisions doc template\n4. Review checks for each worker output\n5. The first three worker prompts I should run",
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Edit one color on a product photo without regenerating the image",
+      "steps": [
+        "In Reve, upload the product photo, then open the auto-detected part's color tool and paste in the new hex code.",
+        "Click Apply — Reve creates a new version with just that edit."
+      ],
+      "source": "The Rundown AI"
+    },
+    {
+      "heading": "Turn ChatGPT into a personal shopping stylist",
+      "steps": [
+        "Snap photos of outfits or items while shopping and upload them to ChatGPT.",
+        "Ask it to assess color, sizing, and fit against your existing wardrobe."
+      ],
+      "source": "The Rundown AI (reader tip)"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Nvidia leads 37 companies in a new Open Secure AI Alliance.</b> Nvidia, Microsoft, IBM, Cisco, Hugging Face and Palantir are building shared open security tools for AI agents, formed after Hugging Face used the open-weight model GLM 5.2 to contain a breach. OpenAI, Google, Anthropic, Amazon and Meta are notably not members.",
+      "means": "If a client's security stack can't handle an AI incident, ask whether their vendor was part of this alliance.",
+      "source": "The Neuron",
+      "low": false
+    },
+    {
+      "body": "<b>Moonshot releases Kimi K3, the largest open-weight model yet.</b> The 2.8 trillion-parameter model reportedly competes with Claude Fable 5 and GPT-5.6-Sol on benchmarks. U.S. officials accused Moonshot of distilling U.S. models to build it; Beijing called the accusation \"AI hegemony.\"",
+      "means": "Open-weight Chinese models are now credibly frontier-competitive, raising the stakes on any client conversation about model sourcing or vendor lock-in.",
+      "source": "The Rundown AI",
+      "low": false
+    },
+    {
+      "body": "<b>Shared Claude chats and Artifacts turned up in Google search results.</b> A Reddit user found shared Claude chats indexed in Google, exposing legal questions, personal data and apparent API keys. Anthropic traced it to users sharing links set to public.",
+      "means": "Double-check any Claude chat link you share isn't set to public — assume public shares get indexed.",
+      "source": "The Neuron / The Rundown AI",
+      "low": false
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Nvidia dips as Apple reclaims the world's most valuable company.</b> Nvidia stock fell 4.99% on investor concern about its circular financing deals, letting Apple retake the title. The S&P and Dow still rose on lower oil prices even as chipmakers dragged the Nasdaq down.",
+      "angle": "AI infrastructure financing structures (vendors financing their own buyers) are starting to worry the market — worth flagging if a client's AI roadmap or budget leans on similar deals.",
+      "starter": "Have you noticed the market's getting nervous about how some of these AI infrastructure deals are actually financed?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Cracker Barrel's CEO steps down a year after a failed rebrand.</b> Julie Masino is leaving Cracker Barrel a year after a logo and decor rebrand set off a backlash. She'll be replaced August 10 by David Deno, former head of Bloomin' Brands. She rolled back the rebrand within days, but sales and the stock never fully recovered.",
+      "angle": "A textbook change-management case study: a well-intentioned brand refresh, reversed too late, cost the CEO her job even after signs of recovery.",
+      "starter": "Cracker Barrel's CEO just lost her job a year after that rebrand backlash — reversing a decision fast doesn't undo the trust hit.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Microinfluencers are pulling in real marketing budget.</b> Emarketer forecasts US influencer earnings will hit $21 billion this year. About 45% of brand influencer spend now goes to creators with under 20,000 followers, up from 19.5% in 2021, and microinfluencers average 3.2% engagement versus 1.1% for accounts over 1 million followers.",
+      "angle": "If a client runs influencer or brand-awareness spend, this is a concrete data point for shifting budget toward smaller, higher-engagement creators.",
+      "starter": "Have we actually tested a microinfluencer split against our usual big-name partnerships? The engagement numbers are starting to make a real case for it.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Quiet, uninterrupted work time may matter more than office perks.</b> A Superteams Inc. survey of 6,000 workers found members of the highest-performing teams were 52% more likely than average teams to have access to quiet, focused-work spaces, more so than perks like coffee, gyms, or collaboration spaces.",
+      "angle": "Useful ammunition for the return-to-office debate: the real lever may be quiet-space access, not where people sit.",
+      "starter": "What if the RTO debate is really a proxy for a simpler problem: do people have anywhere quiet to actually focus?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Ford is chasing sneaker-drop hype for cars.</b> Ford unveiled a pink, Salt Lake City-inspired special-edition Bronco for an extra $13,695, the first of several planned limited-edition drops as it expands a customization menu of performance parts and accessories. Ford says half its customers already request some customization.",
+      "angle": "A concrete example of a legacy product company borrowing a scarcity-and-hype playbook from consumer brands, worth citing in a product differentiation or pricing strategy conversation.",
+      "starter": "Ford's basically doing sneaker drops for trucks now — is there a version of that scarcity play that would work for our product line?",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "moonshot|releases|kimi-k3-2.8t-weights",
+    "nvidia|launches|open-secure-ai-alliance",
+    "anthropic|exposes|shared-claude-chats-in-search",
+    "neuron|tip|planner-worker-agents",
+    "rundown|tip|reve-color-edit-product-photos",
+    "rundown|tip|chatgpt-personal-stylist",
+    "nvidia|stock-dips|apple-reclaims-top-value",
+    "cracker-barrel|ceo-exits|rebrand-backlash",
+    "morning-brew|reports|microinfluencer-ad-spend",
+    "superteams|surveys|quiet-work-space-performance",
+    "ford|launches|limited-edition-bronco-drops"
+  ]
+}

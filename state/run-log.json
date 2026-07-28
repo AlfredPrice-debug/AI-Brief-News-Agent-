@@ -18,6 +18,28 @@
           ]
         }
       ]
+    },
+    "2026-07-28": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-07-28T07:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "moonshot|releases|kimi-k3-2.8t-weights",
+            "nvidia|launches|open-secure-ai-alliance",
+            "anthropic|exposes|shared-claude-chats-in-search",
+            "neuron|tip|planner-worker-agents",
+            "rundown|tip|reve-color-edit-product-photos",
+            "rundown|tip|chatgpt-personal-stylist",
+            "nvidia|stock-dips|apple-reclaims-top-value",
+            "cracker-barrel|ceo-exits|rebrand-backlash",
+            "morning-brew|reports|microinfluencer-ad-spend",
+            "superteams|surveys|quiet-work-space-performance",
+            "ford|launches|limited-edition-bronco-drops"
+          ]
+        }
+      ]
     }
   }
 }
