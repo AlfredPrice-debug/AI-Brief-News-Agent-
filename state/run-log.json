@@ -38,6 +38,12 @@
             "superteams|surveys|quiet-work-space-performance",
             "ford|launches|limited-edition-bronco-drops"
           ]
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-07-28T13:07:00-04:00",
+          "status": "skipped_no_mail",
+          "covered": []
         }
       ]
     }
