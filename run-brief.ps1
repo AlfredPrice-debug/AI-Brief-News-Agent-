@@ -1,6 +1,8 @@
 # run-brief.ps1
-# Runs the daily AI Brief unattended via the Claude Code CLI.
-# Called by the "AI Brief Daily" scheduled task (see install-task.ps1).
+# Runs one AI Brief pass unattended via the Claude Code CLI. Fires 3x/weekday
+# (7 AM / 1 PM / 5 PM) — the prompt itself works out which run this is from
+# state/run-log.json, so this script doesn't need to know or pass a run number.
+# Called by the "AI Brief 3x Daily" scheduled task (see install-task.ps1).
 #
 # PERMISSIONS: an unattended run has no one to approve tool use (reading mail,
 # running Python, git push, sending the self-email). You must pre-authorize those,
