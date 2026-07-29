@@ -213,6 +213,12 @@ def main():
             .replace("{{HEADING_FONT}}", brand["heading_font"])
             .replace("{{BODY_FONT}}", brand["body_font"]))
 
+    # Beyond AI is sourced only from non-AI newsletters (Morning Brew, 1440, etc).
+    # On a run where none arrived, there's genuinely nothing to put on page 2 —
+    # drop it rather than ship a blank page or fabricate filler content.
+    if not content.get("beyond_ai"):
+        html = re.sub(r"\s*<!--PAGE2_START-->.*?<!--PAGE2_END-->\s*", "\n", html, flags=re.DOTALL)
+
     tmp_html = REPO / "build" / "_render.html"
     tmp_html.write_text(html, encoding="utf-8")
 

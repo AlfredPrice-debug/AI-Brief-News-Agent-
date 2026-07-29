@@ -1,0 +1,60 @@
+{
+  "run": 2,
+  "runTime": "2026-07-29T13:02:00-04:00",
+  "title": "Real-Time Voice Cloning Ships, Perplexity Goes Agentic on Windows, and AI Labs Go Book Shopping",
+  "date_display": "Wednesday, July 29, 2026",
+  "date_slug": "7_29_26",
+  "sources": "<b>Superhuman AI</b> (Jul 29)",
+  "tldr": [
+    "Fish Audio's new S2.1 Pro clones any voice live in conversation, backed by $52M in fresh seed funding.",
+    "Perplexity's agentic Computer tool now runs on Windows across Word, Excel, and PowerPoint, with a multi-model Model Council including Kimi K3.",
+    "A judge ruled Anthropic's book-buy-then-scan training approach is fair use, and bulk buyers are now cleaning out used bookstores of pre-2022 titles."
+  ],
+  "tips": [
+    {
+      "heading": "Record a reusable Claude skill from any repeat task",
+      "steps": [
+        "Open the Claude desktop app → Cowork, click + → Record a skill, grant screen recording permissions, and click Start Recording.",
+        "Perform the task once, start to finish, narrating it out loud using the template below.",
+        "Claude packages the narration into a saved skill you can run later with /your-skill-name, or ask it to schedule the skill to run automatically."
+      ],
+      "prompt": "I'm doing [TASK] to achieve [GOAL].\nFirst, I [ACTION] because [REASON].\nNext, I [ACTION] so that [OUTCOME].\nIf [CONDITION] happens, I [ALTERNATIVE ACTION].\nThis is the most important rule: [RULE OR DECISION].\nIgnore any clicks or tabs that aren't part of this workflow.\nWhen the task is complete, verify that [SUCCESS CRITERIA].",
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Use Claude to dispute an inflated medical bill",
+      "steps": [
+        "Upload a photo or PDF of the itemized bill to Claude.",
+        "Ask it to flag duplicated, miscoded, or inconsistent line items.",
+        "Have it draft a dispute letter citing the discrepancies.",
+        "Send it to the provider or insurer and follow up."
+      ],
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Fish Audio launched S2.1 Pro, a voice model that clones any voice and speaks in it live during a conversation.</b> The one-year-old startup has built a 2M+ voice community library, hit $21M in annual recurring revenue, and just raised $52M in seed funding.",
+      "means": "Real-time voice cloning is now demo-ready, not a lab curiosity. Add voice-verification steps to any process that still authorizes by phone, and flag the fraud risk to clients running call centers.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Perplexity's agentic \"Computer\" tool now works with local files on Windows,</b> including Word, Excel, and PowerPoint, and gained a \"Model Council\" feature that cross-checks answers across multiple LLMs, including the newly released Kimi K3.",
+      "means": "Another agentic desktop tool is moving into everyday Office work, worth a bake-off before recommending a single-vendor agent stack.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Used bookstores report bulk buyers snapping up pre-2022, low-circulation books,</b> widely believed to be AI labs sourcing clean, non-AI-generated training data. A US judge recently ruled that Anthropic's practice of buying and scanning books for training under its Project Panama program is fair use, as long as the books were legally acquired.",
+      "means": "Legally-sourced training data now has real court backing, worth raising when a client asks due-diligence questions about where a vendor's model was trained.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "fish-audio|launches|s2.1-pro-voice-clone",
+    "perplexity|expands-computer-to|windows-model-council",
+    "ai-labs|buy|pre-2022-books-training-data",
+    "superhuman|tip|record-reuse-claude-skill",
+    "superhuman|tip|dispute-medical-bill-with-claude"
+  ]
+}

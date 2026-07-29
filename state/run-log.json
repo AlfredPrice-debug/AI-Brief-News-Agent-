@@ -71,6 +71,18 @@
             "boeing|charges|air-force-one-overrun",
             "fifa|proposes|private-stakes-world-cup"
           ]
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-07-29T13:02:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "fish-audio|launches|s2.1-pro-voice-clone",
+            "perplexity|expands-computer-to|windows-model-council",
+            "ai-labs|buy|pre-2022-books-training-data",
+            "superhuman|tip|record-reuse-claude-skill",
+            "superhuman|tip|dispute-medical-bill-with-claude"
+          ]
         }
       ]
     }
