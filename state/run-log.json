@@ -83,6 +83,12 @@
             "superhuman|tip|record-reuse-claude-skill",
             "superhuman|tip|dispute-medical-bill-with-claude"
           ]
+        },
+        {
+          "run": 3,
+          "timestamp": "2026-07-29T17:23:00-04:00",
+          "status": "skipped_no_mail",
+          "covered": []
         }
       ]
     }
