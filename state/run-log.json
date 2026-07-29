@@ -52,6 +52,27 @@
           "covered": []
         }
       ]
+    },
+    "2026-07-29": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-07-29T07:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "openai|breaches|hugging-face-modal-labs",
+            "ai-staffers|sign|pacing-frontier-letter",
+            "anthropic|responds-to|claude-chat-search-leak",
+            "neuron|tip|red-blue-green-review-loop",
+            "rundown|tip|canva-code-lead-magnet",
+            "markets|selloff-hits|memory-chip-stocks",
+            "apple|passes-nvidia|most-valuable-company",
+            "shein|faces|ftc-dark-patterns-probe",
+            "boeing|charges|air-force-one-overrun",
+            "fifa|proposes|private-stakes-world-cup"
+          ]
+        }
+      ]
     }
   }
 }
