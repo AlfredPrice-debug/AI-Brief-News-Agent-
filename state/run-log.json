@@ -106,6 +106,12 @@
             "meta|reports|q2-earnings-ai-spend",
             "ftc|sues|hims-and-hers"
           ]
+        },
+        {
+          "run": 3,
+          "timestamp": "2026-07-30T16:07:00-04:00",
+          "status": "skipped_no_mail",
+          "covered": []
         }
       ]
     }
