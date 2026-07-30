@@ -91,6 +91,23 @@
           "covered": []
         }
       ]
+    },
+    "2026-07-30": {
+      "runs": [
+        {
+          "run": 2,
+          "timestamp": "2026-07-30T13:05:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "openai|rogue-agent-breaches|second-victim-modal-labs",
+            "meta|splits-internally|ai-pacing-debate",
+            "chatgpt|reaches|1b-weekly-users",
+            "fed|holds|interest-rates",
+            "meta|reports|q2-earnings-ai-spend",
+            "ftc|sues|hims-and-hers"
+          ]
+        }
+      ]
     }
   }
 }
