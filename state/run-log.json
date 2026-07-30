@@ -91,6 +91,26 @@
           "covered": []
         }
       ]
+    },
+    "2026-07-30": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-07-30T07:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "neuron|tip|supervise-browser-agent",
+            "rundown|tip|track-ai-costs-nates-notebook",
+            "openai|breach-escalates|second-victim-modal-labs",
+            "zuckerberg|opposes|ai-pacing-petition",
+            "fed|holds|rates-steady-3.5-3.75",
+            "meta|reports|q2-capex-surge-fcf-drop",
+            "microsoft|reports|azure-100b-revenue-milestone",
+            "ftc|sues|hims-hers-data-sharing",
+            "new-bedford-whaling-museum|profits-from|viral-negative-review-shirts"
+          ]
+        }
+      ]
     }
   }
 }
