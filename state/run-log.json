@@ -114,6 +114,24 @@
           "covered": []
         }
       ]
+    },
+    "2026-07-31": {
+      "runs": [
+        {
+          "run": 3,
+          "timestamp": "2026-07-31T16:13:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "situational-awareness-fund|sells-portfolio-to|citadel",
+            "openai|cuts-pricing|gpt-5.6-family",
+            "anthropic|discloses|claude-used-to-hack-orgs",
+            "gdp|slows-in|q2-2026-ai-capex",
+            "amazon|reports|q2-earnings-aws-capex-raise",
+            "apple|transitions-ceo|cook-to-ternus",
+            "jersey-mikes|ipo-debuts|nyse"
+          ]
+        }
+      ]
     }
   }
 }
