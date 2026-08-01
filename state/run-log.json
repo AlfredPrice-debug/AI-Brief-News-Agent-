@@ -132,6 +132,25 @@
           ]
         }
       ]
+    },
+    "2026-08-01": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-01T07:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "fcc|bans|foreign-made-robots-roombas",
+            "anthropic|discloses|ai-models-hack-three-orgs",
+            "ai-startup|apologizes-for|tattoo-for-interview-stunt",
+            "fifa|reverses|world-cup-stake-sale",
+            "new-york|sues|kalshi-gambling",
+            "fed-dissenters|explain|rate-hike-votes",
+            "hyperscalers|gain-1.5t|cloud-growth-apple-slides",
+            "hamas|disputes-sequencing|gaza-disarmament"
+          ]
+        }
+      ]
     }
   }
 }
