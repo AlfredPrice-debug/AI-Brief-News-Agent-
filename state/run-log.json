@@ -163,6 +163,12 @@
             "san-francisco-mayor|backs|federal-robotaxi-rules",
             "china|demonstrates|robot-troops-military-drills"
           ]
+        },
+        {
+          "run": 3,
+          "timestamp": "2026-08-01T16:05:00-04:00",
+          "status": "skipped_no_mail",
+          "covered": []
         }
       ]
     }
