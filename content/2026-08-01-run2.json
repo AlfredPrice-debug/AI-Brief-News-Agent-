@@ -1,0 +1,68 @@
+{
+  "run": 2,
+  "runTime": "2026-08-01T13:02:00-04:00",
+  "title": "Google Gives Robots a Reasoning Brain, Waymo Eyes an Uber Breakup, and Autonomous Freight Scales Up",
+  "date_display": "Saturday, August 1, 2026",
+  "date_slug": "8_1_26",
+  "sources": "<b>Superhuman AI</b> (Aug 1)",
+  "tldr": [
+    "Google DeepMind launched Gemini Robotics ER 2, a model that lets robots reason and act simultaneously, available now via the Gemini API.",
+    "Waymo is reportedly exploring a split from Uber, threatening the robotaxi partnership in Austin and Atlanta.",
+    "Aurora launched second-gen driverless trucks rated for up to 1M miles as it scales autonomous freight across the Sun Belt."
+  ],
+  "tips": [],
+  "news": [
+    {
+      "body": "<b>Google DeepMind launched Gemini Robotics ER 2, a new flagship model for humanoid and robot control.</b> Unlike earlier versions that paused to think between actions, ER 2 reasons and acts simultaneously, tracks task progress through continuous video feeds, and supports multi-robot collaboration; it's available to developers now via the Gemini API.",
+      "means": "Google is packaging embodied-AI reasoning as an API product, not just a research demo. Worth watching if any client is evaluating robotics or automation vendors, since the underlying model layer may soon be commoditized the way LLMs already are.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Veterans First for America unveiled \"Digital DNA,\" a concept using a 40-sensor haptic suit to capture a person's movements, vital signs, and skills for transfer into a humanoid robot or hologram after death.</b> Licensing plans reportedly range from $300,000 for 100 years to $1M for 500 years; the claims are speculative and have not been independently verified.",
+      "means": "Treat this as a hype-cycle marker, not a technology to plan around. But the underlying idea, capturing an expert's know-how before they leave, is a real, near-term application worth raising with clients facing retirement waves or key-person risk.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Waymo is reportedly exploring a split from Uber,</b> threatening the partnership that currently puts its robotaxis on Uber's network in Austin and Atlanta.",
+      "angle": "A live example of platform dependency risk. If a client relies on a single distribution partner for a new product line, this is a concrete case to point to.",
+      "starter": "If Waymo can walk away from Uber's platform, how exposed are we if our biggest channel partner decided to do the same?",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Aurora launched its second-generation driverless trucks,</b> built for up to 1 million miles, as part of a plan to scale autonomous freight across 10 US Sun Belt routes.",
+      "angle": "Autonomous freight is moving from pilot to fleet scale. Relevant context for any client in logistics, trucking, or supply chain benchmarking automation timelines.",
+      "starter": "Aurora's trucks are now rated for a million miles. At what mileage does the ROI case for autonomous freight flip from 'someday' to 'now' for us?",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Robotics research lab Enigma raised $71M to build more intuitive robot controls,</b> betting that studying human-robot interaction can make operating robots easier.",
+      "angle": "A reminder that the UX layer, not just the model, is where robotics investment is flowing. A useful comparison point when clients frame AI projects as pure model or technology bets.",
+      "starter": "Enigma just raised $71M on the bet that robot UX is the bottleneck, not the AI itself. Are we underinvesting in the interface layer on our own AI projects?",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>San Francisco Mayor Daniel Lurie is backing federal robotaxi regulation</b> after recent Waymo and Zoox breakdowns exposed gaps in emergency-response oversight.",
+      "angle": "Regulatory scrutiny of autonomous systems is increasing at the local level first. Relevant if a client operates AI-driven physical products or services that could face similar oversight gaps.",
+      "starter": "Local emergency-response gaps are what's driving robotaxi regulation, not the AI itself. Where are the analogous gaps in how we've deployed AI for our own clients?",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Viral footage shows Chinese troops running an urban breach exercise in which quadruped robots enter smoke-filled rooms ahead of soldiers,</b> part of China's growing \"robot wolf\" military robotics program.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Did you see the footage of China's robot dogs leading troops into buildings? Wild how fast military robotics is moving.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "fingerprints": [
+    "google-deepmind|launches|gemini-robotics-er-2",
+    "veterans-first-for-america|unveils|digital-dna-robot-afterlife",
+    "waymo|explores|uber-split",
+    "aurora|launches|second-gen-driverless-trucks",
+    "enigma|raises|71m-robot-controls",
+    "san-francisco-mayor|backs|federal-robotaxi-rules",
+    "china|demonstrates|robot-troops-military-drills"
+  ]
+}

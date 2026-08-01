@@ -149,6 +149,20 @@
             "hyperscalers|gain-1.5t|cloud-growth-apple-slides",
             "hamas|disputes-sequencing|gaza-disarmament"
           ]
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-08-01T13:02:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "google-deepmind|launches|gemini-robotics-er-2",
+            "veterans-first-for-america|unveils|digital-dna-robot-afterlife",
+            "waymo|explores|uber-split",
+            "aurora|launches|second-gen-driverless-trucks",
+            "enigma|raises|71m-robot-controls",
+            "san-francisco-mayor|backs|federal-robotaxi-rules",
+            "china|demonstrates|robot-troops-military-drills"
+          ]
         }
       ]
     }
