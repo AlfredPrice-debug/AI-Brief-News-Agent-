@@ -171,6 +171,24 @@
           "covered": []
         }
       ]
+    },
+    "2026-08-02": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-02T07:13:24-04:00",
+          "status": "skipped_thin",
+          "covered": [],
+          "rollover": [
+            "airlines|expand|wifi-loyalty-perks-cuts",
+            "waymo|remote-monitoring-leads-to|police-stop-teens",
+            "evtols|position-as|airport-transport-alternative",
+            "mackinac-island|remains|car-free-since-1898",
+            "japan|operates|worlds-best-shinkansen-rail"
+          ],
+          "note": "1 new message since last run (forwarded 'Transportation Brew', a Morning Brew special edition) with 5 Beyond AI-worthy items but zero AI Tips/AI News content. Held rather than shipping an AI Brief with an empty page 1; items will resurface for the next run to combine with whatever AI newsletters arrive."
+        }
+      ]
     }
   }
 }
