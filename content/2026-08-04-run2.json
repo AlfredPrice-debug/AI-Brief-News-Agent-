@@ -1,0 +1,68 @@
+{
+  "run": 2,
+  "runTime": "2026-08-04T13:03:45-04:00",
+  "title": "DeepSeek Undercuts Opus on Price, Alibaba Ships a Frontier Rival, and ChatGPT Wins Capitol Hill",
+  "date_display": "Tuesday, August 4, 2026",
+  "date_slug": "8_4_26",
+  "sources": "<b>Superhuman AI</b> (Aug 4)",
+  "tldr": [
+    "DeepSeek-V4-Flash reportedly rivals Claude Opus 4.8 at $0.28 per million output tokens versus Opus's $25, accelerating the AI pricing 'race to zero.'",
+    "Alibaba released Qwen-3.8Max, an open-weight model it's positioning as a US-frontier rival, with a published prompt-design guide.",
+    "ChatGPT made up nearly 90% of AI spending by US House members per a new disclosure, with Claude a distant second."
+  ],
+  "tips": [
+    {
+      "heading": "Build a working automation with Claude Code and Zapier",
+      "steps": [
+        "Open the Zapier SDK page, copy its setup prompt, and paste it into Claude Code (first prompt below).",
+        "Sign in to Zapier and connect your work apps (Gmail, Slack, Notion, Google Calendar, etc.).",
+        "Describe the automation you want in plain English (second prompt below), then ask Claude to test it once and confirm it works.",
+        "Once you're happy with the result, ask Claude to deploy it and schedule it to run automatically (e.g. every morning)."
+      ],
+      "prompt": "Set up the Zapier SDK for me [paste Zapier SDK prompt]\n\nBuild an automation that [describe your workflow]. Use my connected apps through Zapier.",
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Generate a bold surreal editorial portrait with ChatGPT Image 2.0",
+      "steps": [
+        "Copy the prompt template below and swap in your own [CHARACTER], [CLOTHING], [ELEMENT], [BACKGROUND], [SCENERY], and [COLORS].",
+        "Generate it in ChatGPT Image 2.0 (or a comparable image model) at a vertical 4:5 aspect ratio."
+      ],
+      "prompt": "ChatGPT Image 2.0: Bold surreal editorial portrait of [CHARACTER], shown in a centered frontal chest-up composition, wearing [CLOTHING]. Keep the portrait highly realistic and symmetrical, but interrupt one full vertical section of the subject with translucent overlay [ELEMENT], treated as a dominant surreal replacement strip that occupies roughly one-third to nearly one-half of the face, cutting from the top of head through the eye, cheek, mouth, neck, and into the clothing. The replacement strip must feel structural and graphic, not subtle or decorative, with crisp hard edges and strong visual contrast. Build background as a flat graphic poster field using [BACKGROUND], composed of large pastel rectangles, photo of a [SCENERY] circles, line clusters, cropped panels, and abstract inserts, with a few retro-print accents integrated across the composition. Use a [COLORS] palette, soft paper grain, slight print texture, clean edges, strong geometric balance, and a polished art-poster finish. Make the surreal intervention large, unmistakable, and visually commanding. Vertical 4:5.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>AI pricing is racing toward zero, but only while cheap models keep pace.</b> DeepSeek-V4-Flash reportedly rivals Anthropic's Opus 4.8 at $0.28 per million output tokens versus Opus's $25 (OpenAI cut GPT-5.6 pricing last week too). Former OpenAI GTM lead Zack Kass calls it \"diminishing model returns\"; Coinbase's CEO says the company held AI spend flat this quarter by routing to cheaper models like GLM 5.2 and Kimi 2.7, and Microsoft is reportedly weighing adding DeepSeek V4 to Copilot.",
+      "means": "Model routing (cheap model for routine work, frontier model for hard problems) is now a legitimate cost lever for client conversations, but flag the caveat: a real frontier leap could reset pricing power at any time.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Alibaba released Qwen-3.8Max</b>, an open-weight model it's positioning as a US-frontier rival, claiming it improved on a research benchmark in 125 hours and coded autonomously for over 10 days straight, beating hundreds of human teams in an online competition. Available via QwenCloud, with a published prompt-design guide.",
+      "means": "An open-weight frontier-rival cuts licensing cost and vendor lock-in for internal agentic coding and planning tools, worth a look for build-vs-buy decisions.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>ChatGPT made up nearly 90% of all AI spending by US House members</b>, per a new disclosure, with Claude a distant second. It landed the same day OpenAI, Anthropic, Meta, and Google met the White House to review a framework for testing and launching new models.",
+      "means": "A read on which vendor is winning institutional and government trust, useful context if you're advising on public-sector AI vendor selection or timing around the emerging safety framework.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>AI video tool Flux 3 is generating historical footage realistic enough to raise \"rewriting history\" concerns</b>, with one viral clip racking up 3.5M views.",
+      "means": "A vivid, client-facing example of synthetic-media risk worth referencing in conversations about content authenticity and brand-trust safeguards.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "superhuman|tip|zapier-claude-code-automation",
+    "superhuman|tip|editorial-portrait-image-prompt",
+    "ai-models|commoditize|race-to-zero-pricing",
+    "deepseek|undercuts|opus-pricing",
+    "alibaba|launches|qwen-3.8max",
+    "chatgpt|dominates|congress-ai-spending",
+    "flux-3|generates|fake-historical-footage"
+  ]
+}
