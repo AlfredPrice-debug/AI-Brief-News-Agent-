@@ -1,0 +1,91 @@
+{
+  "run": 1,
+  "runTime": "2026-07-31T07:00:00-04:00",
+  "title": "Leopold's AI Fund Implodes, OpenAI Slashes Prices, and AI Now Drives Half of GDP Growth",
+  "date_display": "Friday, July 31, 2026",
+  "date_slug": "7_31_26",
+  "sources": "<b>The Rundown AI</b>, <b>The Neuron</b>, <b>Morning Brew</b> (Jul 31)",
+  "tldr": [
+    "Leopold Aschenbrenner's AI hedge fund fire-sold $10B+ in stock to Citadel after leveraged bets cratered.",
+    "OpenAI cut GPT-5.6 prices up to 80% after cutting its own GPU serving costs.",
+    "AI infrastructure spend drove over half of Q2 GDP growth, even as headline growth slowed to 1.5%."
+  ],
+  "tips": [
+    {
+      "heading": "Delete stale AI instructions, rebuild from evidence",
+      "steps": [
+        "Turn off your system prompt, skills, hooks, and custom instructions for a real task.",
+        "Add an instruction only when the same mistake repeats, then retest before keeping it."
+      ],
+      "prompt": "Help me run an ablation test on my AI setup.\n\nTASK:\n[Describe a real task.]\n\nGUARDRAILS:\n[List the rules that cannot be violated.]\n\nEXIT CRITERIA:\n[Define exactly what “done” means.]\n\nVERIFICATION:\n[Explain how the result can be tested or inspected.]\n\nStart without relying on my existing skills, hooks, memories, or detailed workflow instructions.\n\nComplete the task, record where you struggle, and distinguish one-time mistakes from repeated failure patterns. Recommend a new instruction only when the same failure occurs repeatedly.\n\nFor every proposed instruction:\n1. Explain the observed failure it fixes.\n2. Write the smallest instruction that could fix it.\n3. Retest the task with that instruction added.\n4. Keep it only if the result measurably improves.",
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Turn an idea into a working site with Lovable",
+      "steps": [
+        "In ChatGPT, attach a reference screenshot and describe the app idea, scoped to one user journey.",
+        "Ask ChatGPT to convert the conversation into requirements and a brand brief (prompt below).",
+        "Create a Lovable project with the screenshot and the requirements, then test and refine."
+      ],
+      "prompt": "Turn our conversation into concise feature requirements and a brand brief for Lovable, including colors, feel, and typography.",
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Leopold Aschenbrenner's AI hedge fund fire-sells $10B+ to Citadel.</b> Situational Awareness, built on leveraged AI-stock bets, unloaded holdings (SK Hynix, Nebius, Micron, CoreWeave) after margin calls. Peak size is disputed: $20B+ (Neuron/FT) vs. $45B (Morning Brew).",
+      "means": "A cautionary tale on leverage — a correct thesis can still get wiped out by financing timing.",
+      "source": "The Neuron, Morning Brew, The Rundown AI",
+      "low": false
+    },
+    {
+      "body": "<b>OpenAI cuts GPT-5.6 prices up to 80%.</b> Luna input pricing fell 80% to $0.20/million tokens and Terra fell 20%, after OpenAI's own model rewrote its GPU serving code for a 20% cost cut.",
+      "means": "Costs may drop again soon — recheck client proposals against the new pricing.",
+      "source": "The Rundown AI",
+      "low": false
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>US GDP growth slows to 1.5% in Q2, but AI infrastructure spending props up the number.</b> Growth missed the 1.8% forecast and fell from 2.1% the prior quarter; more than half of Q2 growth came from AI-related data-center investment, per Stripe's chief economist, even as consumer spending accelerated to 3.2% on tax refunds and a brief dip in gas prices.",
+      "angle": "A live data point for any client budgeting conversation about how much of the current economy is genuinely new demand versus AI infrastructure spend, and the Fed is now weighing a possible September rate move.",
+      "starter": "How much of our own growth story this year is real new demand versus AI infrastructure spend propping up the topline?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Tim Cook closes out his final earnings call as Apple CEO.</b> Apple beat on iPhone and Mac revenue, but softness in China and services, plus perceptions that Apple is spending less on AI than rivals, sent the stock lower in after-hours trading; John Ternus takes over as CEO on September 1.",
+      "angle": "A textbook case of a leadership transition landing at the same moment as market doubts about AI strategy, useful if you're advising a client through a CEO succession of their own.",
+      "starter": "If you were advising Apple's board, would you be worried the market is judging Ternus on an AI story he didn't write?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Amazon's cloud unit beats, and Amazon raises its AI capex guidance to $220 billion.</b> AWS reported its fastest sales growth since Q4 2021, sending the stock up 9% after hours; investors shrugged off the higher 2026 AI spending target, up from $200 billion, given the strong cloud results.",
+      "angle": "Cloud and AI infrastructure budgets keep climbing at the biggest players, a useful benchmark when a client pushes back on their own rising AI infra line item.",
+      "starter": "If Amazon just raised its AI capex guidance again, are we still comfortable with the budget assumptions in our own AI roadmap?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Jersey Mike's goes public, raising about $1 billion in the largest restaurant IPO since 2021.</b> The sandwich chain priced at $23/share on the NYSE under ticker JMKE, just 18 months after Blackstone bought it, though shares closed down about 6% from the IPO price on debut.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Did you see Jersey Mike's average location does nearly triple Subway's revenue with a fraction of the locations? Says a lot about franchise economics.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>UEFA's 55 member nations threaten to boycott FIFA competitions over a private-equity plan.</b> The dispute centers on a proposal, reportedly involving Josh Kushner, to sell equity stakes in FIFA tournaments including the 2030 World Cup to private investors.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Interesting test case for how much pushback outside capital gets when it touches something as symbolic as the World Cup.",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "situational-awareness|sells|portfolio-to-citadel",
+    "openai|cuts|gpt-5.6-prices-80pct",
+    "neuron|teaches|ablation-test-ai-instructions",
+    "rundown|teaches|lovable-app-workflow",
+    "us-gdp|slows-to|1.5pct-ai-capex-driven",
+    "apple|closes|cook-final-earnings-call",
+    "amazon|raises|ai-capex-to-220b",
+    "jersey-mikes|ipo|raises-1b",
+    "uefa|threatens-boycott|fifa-private-equity-plan"
+  ]
+}
