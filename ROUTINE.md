@@ -65,9 +65,10 @@ its completion notification to me — see the last step.
     content JSON and state/run-log.json. IMPORTANT: each firing starts on its own
     throwaway branch off main — push straight onto main with `git push origin HEAD:main`,
     never a plain `git push` or `git push -u origin <branch>` (that strands the commit on
-    a disposable branch, invisible in briefs/ on main). Retry once with
-    `git fetch origin main && git rebase origin/main` if rejected; report the git failure
-    clearly if it still fails.
+    a disposable branch, invisible in briefs/ on main). Retry with
+    `git fetch origin main && git rebase origin/main` up to 5 times if rejected (concurrent
+    firings racing to push is expected, not exceptional); report the git failure clearly
+    only after 5 failed attempts.
 13. Reply with the title, the three TL;DR bullets, a GitHub link to the pushed PDF, run
     number/time, newsletters read, and items deduped out. Keep it tight — this reply
     becomes my notification, not an internal report.
