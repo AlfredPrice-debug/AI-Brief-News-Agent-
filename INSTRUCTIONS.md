@@ -111,7 +111,7 @@ brief: YYYY-MM-DD run <N> - <title>
 git push origin HEAD:main
 ```
 
-If that's rejected (a concurrent run landed first), `git fetch origin main && git rebase origin/main` once and retry. If it still fails, report the git failure clearly in the final reply — the brief still exists in this run's workspace, it just isn't on `main` yet.
+If that's rejected (a concurrent run landed first), `git fetch origin main && git rebase origin/main` and retry — **up to 5 times**, not just once. Concurrent firings racing to push are expected, not exceptional; giving up after a single retry has repeatedly stranded real briefs on disposable branches (recovered after the fact in PRs #6-#9). Only after 5 failed attempts should you report the git failure clearly in the final reply — the brief still exists in this run's workspace, it just isn't on `main` yet, and whoever reads the reply needs to know to go recover it.
 
 On success, append the run entry and every published fingerprint to `state/run-log.json` and commit it alongside the PDF (same commit is fine).
 
