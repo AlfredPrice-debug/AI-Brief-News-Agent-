@@ -95,6 +95,22 @@
     "2026-07-30": {
       "runs": [
         {
+          "run": 1,
+          "timestamp": "2026-07-30T07:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "neuron|tip|supervise-browser-agent",
+            "rundown|tip|track-ai-costs-nates-notebook",
+            "openai|breach-escalates|second-victim-modal-labs",
+            "zuckerberg|opposes|ai-pacing-petition",
+            "fed|holds|rates-steady-3.5-3.75",
+            "meta|reports|q2-capex-surge-fcf-drop",
+            "microsoft|reports|azure-100b-revenue-milestone",
+            "ftc|sues|hims-hers-data-sharing",
+            "new-bedford-whaling-museum|profits-from|viral-negative-review-shirts"
+          ]
+        },
+        {
           "run": 2,
           "timestamp": "2026-07-30T13:05:00-04:00",
           "status": "delivered",
@@ -132,6 +148,130 @@
             "jersey-mikes|ipo|raises-1b",
             "uefa|threatens-boycott|fifa-private-equity-plan"
           ]
+        },
+        {
+          "run": 3,
+          "timestamp": "2026-07-31T16:13:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "situational-awareness-fund|sells-portfolio-to|citadel",
+            "openai|cuts-pricing|gpt-5.6-family",
+            "anthropic|discloses|claude-used-to-hack-orgs",
+            "gdp|slows-in|q2-2026-ai-capex",
+            "amazon|reports|q2-earnings-aws-capex-raise",
+            "apple|transitions-ceo|cook-to-ternus",
+            "jersey-mikes|ipo-debuts|nyse"
+          ]
+        }
+      ]
+    },
+    "2026-08-01": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-01T07:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "fcc|bans|foreign-made-robots-roombas",
+            "anthropic|discloses|ai-models-hack-three-orgs",
+            "ai-startup|apologizes-for|tattoo-for-interview-stunt",
+            "fifa|reverses|world-cup-stake-sale",
+            "new-york|sues|kalshi-gambling",
+            "fed-dissenters|explain|rate-hike-votes",
+            "hyperscalers|gain-1.5t|cloud-growth-apple-slides",
+            "hamas|disputes-sequencing|gaza-disarmament"
+          ]
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-08-01T13:02:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "google-deepmind|launches|gemini-robotics-er-2",
+            "veterans-first-for-america|unveils|digital-dna-robot-afterlife",
+            "waymo|explores|uber-split",
+            "aurora|launches|second-gen-driverless-trucks",
+            "enigma|raises|71m-robot-controls",
+            "san-francisco-mayor|backs|federal-robotaxi-rules",
+            "china|demonstrates|robot-troops-military-drills"
+          ]
+        },
+        {
+          "run": 3,
+          "timestamp": "2026-08-01T16:05:00-04:00",
+          "status": "skipped_no_mail",
+          "covered": []
+        }
+      ]
+    },
+    "2026-08-02": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-02T07:13:24-04:00",
+          "status": "skipped_thin",
+          "covered": [],
+          "rollover": [
+            "airlines|expand|wifi-loyalty-perks-cuts",
+            "waymo|remote-monitoring-leads-to|police-stop-teens",
+            "evtols|position-as|airport-transport-alternative",
+            "mackinac-island|remains|car-free-since-1898",
+            "japan|operates|worlds-best-shinkansen-rail"
+          ],
+          "note": "1 new message since last run (forwarded 'Transportation Brew', a Morning Brew special edition) with 5 Beyond AI-worthy items but zero AI Tips/AI News content. Held rather than shipping an AI Brief with an empty page 1; items will resurface for the next run to combine with whatever AI newsletters arrive."
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-08-02T13:02:00-04:00",
+          "status": "skipped_thin",
+          "covered": [],
+          "rollover": [
+            "airlines|expand|wifi-loyalty-perks-cuts",
+            "waymo|remote-monitoring-leads-to|police-stop-teens",
+            "evtols|position-as|airport-transport-alternative",
+            "mackinac-island|remains|car-free-since-1898",
+            "japan|operates|worlds-best-shinkansen-rail"
+          ],
+          "note": "1 new message since last run (Alfred forwarded a Rundown AI email, 'A new home for real AI workflows') and it was pure newsletter self-promotion (a community feature launch announcement) with no AI Tips, AI News, or Beyond AI content -- discarded per the no-self-promotion rule. Still zero AI Tips/News items overall, so the same 5 Beyond AI items from run 1 roll forward again rather than shipping an empty page 1."
+        },
+        {
+          "run": 3,
+          "timestamp": "2026-08-02T16:06:33-04:00",
+          "status": "skipped_no_mail",
+          "covered": [],
+          "rollover": [
+            "airlines|expand|wifi-loyalty-perks-cuts",
+            "waymo|remote-monitoring-leads-to|police-stop-teens",
+            "evtols|position-as|airport-transport-alternative",
+            "mackinac-island|remains|car-free-since-1898",
+            "japan|operates|worlds-best-shinkansen-rail"
+          ],
+          "note": "Zero new messages since run 2 (13:02). No AI Tips/News content has arrived all day; the 5 Beyond AI items from run 1 remain the only surviving pool and roll forward again to the next scheduled run."
+        }
+      ]
+    },
+    "2026-08-03": {
+      "runs": [
+        {
+          "run": 2,
+          "timestamp": "2026-08-03T13:11:09-04:00",
+          "status": "delivered",
+          "covered": [
+            "openai|solves|10-math-problems-astra",
+            "anthropic|passes-openai|revenue-growth",
+            "alibaba|releases|qwen3.8-max-agent",
+            "airlines|expand|wifi-loyalty-perks-cuts",
+            "waymo|remote-monitoring-leads-to|police-stop-teens",
+            "evtols|position-as|airport-transport-alternative",
+            "japan|operates|worlds-best-shinkansen-rail"
+          ],
+          "note": "No run-log entry existed for a 7:00 AM run today, so treated this 1:11 PM firing as run 2 based on the scheduled slot rather than assuming run 1. Searched mail since the last delivered run (2026-08-01 run2, 13:02:00-04:00) since 2026-08-02 had no delivered runs. Read 7 newsletters (TLDR Hardware, The Rundown AI, Superhuman AI, The Neuron x2, Morning Brew, and the rolled-forward Transportation Brew). Cut the Mackinac Island beyond_ai item and 2 of 3 drafted AI Tips (a Google Earth AI-image news item and an 'Agent Brief' / feedback-conversation tip) to fit the 2-page budget -- today's source newsletters carried unusually long verbatim prompts that each ran 3-4in tall once rendered, so only one full tip (Gauntlet Loop) fit alongside 3 news items and 4 Beyond AI items on 2 pages."
+        },
+        {
+          "run": 3,
+          "timestamp": "2026-08-03T16:08:05-04:00",
+          "status": "skipped_no_mail",
+          "covered": []
         }
       ]
     }

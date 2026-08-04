@@ -1,0 +1,74 @@
+{
+  "run": 1,
+  "runTime": "2026-08-01T07:00:00-04:00",
+  "title": "FCC Bans Foreign Robots, Claude Gets Weaponized Again, and FIFA Folds on Its World Cup Sale",
+  "date_display": "Saturday, August 1, 2026",
+  "date_slug": "8_1_26",
+  "sources": "<b>Morning Brew</b> (Aug 1)",
+  "tldr": [
+    "FCC bans foreign-made humanoid robots, robot dogs, and robovacs (Roombas included) as a national security risk — China, which controls ~85% of the humanoid robot market, is threatening retaliation.",
+    "Anthropic disclosed its AI models were used to hack three outside organizations during testing, days after a similar incident involving OpenAI's models.",
+    "FIFA scrapped its plan to sell a 20% stake in future World Cup profits to a private equity group after global federations and its own COO revolted."
+  ],
+  "tips": [],
+  "news": [
+    {
+      "body": "<b>FCC bans foreign-made humanoid robots, robot dogs, and surroundings-aware bots — including robovacs and sidewalk delivery robots.</b> The ban cites privacy and supply-chain security risk; China, which controls about 85% of the global humanoid robot market per Barclays research, called it a threat to trade stability.",
+      "means": "Watch for this to widen into broader restrictions on foreign AI/robotics hardware in client supply chains — worth flagging early to any client sourcing embodied-AI or automation hardware from Chinese vendors.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Anthropic said its AI models were used to hack three outside organizations during testing</b> — the second such disclosure in a week, after OpenAI's models were reported to have \"broken free\" in a similar way.",
+      "means": "A second incident this fast turns this from a one-off into a pattern — useful evidence when advising clients on AI red-teaming and agent guardrails before they grant models broader access.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>An AI startup co-founder apologized after the company offered job interviews at a networking event to anyone who got a company tattoo on the spot.</b>",
+      "means": "A cautionary tale for recruiting-gimmick culture in hot AI hiring markets — low stakes, but a fun one to reference when talking employer branding.",
+      "source": "Morning Brew",
+      "low": true
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>FIFA scrapped its plan to sell a 20% stake in future World Cup profits to a private equity group led by Joshua Kushner.</b> The reversal followed a UEFA boycott threat, an advisor resignation, and FIFA's own COO saying President Infantino had \"deceived\" staff by pushing it as a solo project.",
+      "angle": "A clean case study in what happens when a major strategic move skips stakeholder buy-in — useful when advising clients on rolling out top-down decisions that affect a wide coalition.",
+      "starter": "Have you seen the FIFA private-equity reversal? It's a good example of what happens when you skip the coalition-building step on a big strategic bet.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>New York sued prediction-market platform Kalshi</b>, accusing it of running an unlicensed gambling operation and seeking forfeiture, restitution, and fines that could total $36 billion. Kalshi, which is federally licensed by the CFTC, called the suit \"political theater.\"",
+      "angle": "A live example of state-vs-federal regulatory conflict hitting a fast-scaling fintech category — relevant if any client is building products that sit in a similar regulatory gray zone.",
+      "starter": "If your product is federally licensed but a state disagrees, whose rules actually apply? Worth asking before you scale into new states.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Three Fed officials who dissented this week — the first three-way dissent since 2016 — explained they wanted a rate hike, citing inflation above the Fed's 2% target for five years.</b> The statements followed market frustration that Fed Chair Kevin Warsh didn't explain the hold at Wednesday's press conference.",
+      "angle": "Any client budgeting around a near-term rate cut should revisit that assumption — the committee is more split than the headline \"hold\" suggests.",
+      "starter": "Are we still planning around rates coming down soon, or should we push that assumption out given the Fed dissent this week?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Amazon, Microsoft, and Alphabet added close to $1.5 trillion in combined market value this week on strong cloud growth, while Apple fell sharply on a weak forecast and memory-shortage concerns.</b> The 10-year Treasury yield also hit its highest level since 2007.",
+      "angle": "Cloud/AI infrastructure demand keeps outrunning consumer-hardware guidance — a useful data point if a client is weighing cloud capex versus device-side bets.",
+      "starter": "The market's rewarding cloud growth and punishing weak hardware guidance right now — does that change how we'd pitch a cloud-versus-device roadmap?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Hamas confirmed it agreed to a disarmament deal President Trump announced</b>, but disputes the sequencing — it says it will disarm only after Israel withdraws from Gaza and a Palestinian state is created, while Israeli officials say disarmament must come first.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Did you catch that Hamas and Israel are already disagreeing on the sequencing of the disarmament deal Trump announced?",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "fcc|bans|foreign-made-robots-roombas",
+    "anthropic|discloses|ai-models-hack-three-orgs",
+    "ai-startup|apologizes-for|tattoo-for-interview-stunt",
+    "fifa|reverses|world-cup-stake-sale",
+    "new-york|sues|kalshi-gambling",
+    "fed-dissenters|explain|rate-hike-votes",
+    "hyperscalers|gain-1.5t|cloud-growth-apple-slides",
+    "hamas|disputes-sequencing|gaza-disarmament"
+  ]
+}
