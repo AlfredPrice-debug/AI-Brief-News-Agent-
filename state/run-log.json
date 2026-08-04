@@ -150,6 +150,20 @@
           ]
         },
         {
+          "run": 2,
+          "timestamp": "2026-07-31T13:05:42-04:00",
+          "status": "delivered",
+          "covered": [
+            "leopold-aschenbrenner|sells|situational-awareness-fund-to-citadel",
+            "ai-agents|breach|sandbox-security-incidents",
+            "openai|cuts|gpt-5.6-pricing",
+            "us-gdp|slows-to|1.5pct-q2-ai-driven",
+            "amazon|raises|aws-ai-capex-220b",
+            "jersey-mikes|debuts|nyse-ipo",
+            "apple|holds|tim-cook-final-earnings-call"
+          ]
+        },
+        {
           "run": 3,
           "timestamp": "2026-07-31T16:13:00-04:00",
           "status": "delivered",
