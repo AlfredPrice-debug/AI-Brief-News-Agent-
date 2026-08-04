@@ -193,6 +193,11 @@ def main():
 
     font_url = FONT_DIR.as_uri()  # file:///C:/.../fonts
     html = TEMPLATE.read_text(encoding="utf-8")
+    if not content.get("tips"):
+        html = re.sub(
+            r'\s*<div class="sec tips">.*?<div class="tips-grid">\n\{\{TIPS_HTML\}\}\n\s*</div>\n',
+            "\n", html, flags=re.DOTALL,
+        )
     html = (html
             .replace("{{FONT_DIR}}", font_url)
             .replace("{{DATE}}", content["date_display"])

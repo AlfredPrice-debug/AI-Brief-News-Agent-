@@ -1,0 +1,78 @@
+{
+  "run": 2,
+  "runTime": "2026-08-03T13:11:09-04:00",
+  "title": "Astra Cracks Decade-Old Math Problems, Anthropic Passes OpenAI, and Marathon Coding Agents Arrive",
+  "date_display": "Monday, August 3, 2026",
+  "date_slug": "8_3_26",
+  "sources": "<b>The Rundown AI</b>, <b>Superhuman AI</b>, <b>The Neuron</b>, <b>Morning Brew</b> (Aug 2–3)",
+  "tldr": [
+    "OpenAI's unreleased \"Astra\" model solved 10 decades-old math and computer science problems for about $2K in compute.",
+    "Anthropic reportedly passed OpenAI in revenue growth and valuation as Claude Code gains enterprise traction.",
+    "Alibaba's Qwen3.8-Max ships a coding agent that works unsupervised for 10+ days, priced at a fifth of Fable 5."
+  ],
+  "tips": [
+    {
+      "heading": "Use a \"Gauntlet Loop\" to force AI builds past a real quality bar",
+      "steps": [
+        "Define the goal and name a real-world example that sets the quality bar.",
+        "Break the goal into independent parts and assign each to a specialist builder agent.",
+        "Assign a separate critic with fresh context to compare each part against the benchmark, blind if possible.",
+        "Loop each part until its critic confirms it beats the benchmark — never let a builder grade its own work."
+      ],
+      "prompt": "Use a Gauntlet Loop to complete this project.\n\nGOAL:\n[Describe the finished result.]\n\nREAL-WORLD EQUIVALENT:\n[Name or attach an excellent existing example that establishes the quality bar.]\n\nBreak the goal into independent parts. Assign each part to a specialist builder.\n\nFor every part, assign a separate critic with fresh context. The critic must inspect the generated artifact itself and compare it directly against the real-world equivalent.\n\nWhere possible, compare them side by side without telling the critic which one is the reference.\n\nThe critic may pass the work only if the generated artifact is better than the real-world equivalent. Otherwise, it must identify the largest specific gap and return the work for another iteration.\n\nContinue looping on every part until all critics pass it. Do not let builders evaluate their own work.",
+      "source": "The Neuron"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>An unreleased OpenAI model, \"Astra,\" solved 10 long-standing open problems</b> in mathematics, quantum complexity, and theoretical computer science (documented in a 249-page paper), including a group-theory conjecture unresolved since 1999 and three Erdős problems untouched for a decade — for roughly $2,000 in compute. Anthropic researcher Levent Alpoge said he reproduced 5 of the 10 proofs within 24 hours using Fable on a generic prompt.",
+      "means": "A concrete jump in what these models can independently prove, not just summarize — useful ammunition next time a client asks whether AI can do genuinely novel work.",
+      "source": "The Rundown AI, Superhuman AI"
+    },
+    {
+      "body": "<b>Anthropic reportedly passed OpenAI in revenue growth and valuation</b> as Claude Code gains enterprise traction, while investors scrutinize OpenAI's cash burn.",
+      "means": "Worth tracking given how much of our own delivery runs on Claude — this is a signal the tooling bet is paying off, not just a horse-race headline.",
+      "source": "The Neuron"
+    },
+    {
+      "body": "<b>Alibaba released Qwen3.8-Max</b>, a 2.4-trillion-parameter model whose coding agent reportedly works unsupervised for 10+ days on a single project. It goes open-source next week, priced at roughly a fifth of Fable 5's API rate.",
+      "means": "Another credible, cheaper option to weigh when scoping AI-dev tooling for cost-sensitive clients — worth a bench test once the weights drop.",
+      "source": "The Rundown AI, The Neuron"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Japan's Shinkansen remains the world's benchmark for rail service</b>, turning a six-hour drive into two hours at up to 200 mph with an average delay of just 1.6 minutes. The 1980s split of the national railroad into six competing companies let them cut unprofitable routes and reinvest non-rail revenue (hotels, retail near stations) into service and staff training.",
+      "angle": "A clean case study on how breaking up a monopoly and diversifying revenue can fund the operational excellence a single centralized org never got around to.",
+      "starter": "Our client's ops org is basically the pre-1980s Japanese railroad — what would splitting it into accountable units actually free up?",
+      "source": "Morning Brew (Transportation Brew)"
+    },
+    {
+      "body": "<b>A Waymo employee called the police on two teen riders</b> after mistaking Orbeez gel-pellet toy guns for real firearms during live camera monitoring. Waymo remotely disabled the car and told the passengers it was a mechanical issue to keep them seated until officers arrived; the teens were released to their parents without arrest.",
+      "angle": "No direct relevance to your work, general awareness only — but a vivid illustration of always-on remote monitoring going wrong in a customer-facing product.",
+      "starter": "Did you see the Waymo story where a monitoring employee mistook a toy gun for real and called the cops? Wild case study in remote-monitoring false positives.",
+      "source": "Morning Brew (Transportation Brew)"
+    },
+    {
+      "body": "<b>Air taxis are being positioned as the fastest way to the airport.</b> The US approved eight eVTOL pilot programs across 26 states in March, and Joby Aviation has already flown demo flights between Manhattan and JFK targeting 10-minute trips versus an hour-plus by car; fares could start near $150 before dropping toward $25 by 2030 if the business scales.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Would you actually pay $150 to skip airport traffic in a drone taxi, or does that only make sense once it's $25?",
+      "source": "Morning Brew (Transportation Brew)"
+    },
+    {
+      "body": "<b>Free airline wifi is becoming a loyalty-program funnel, not a perk.</b> Airlines increasingly gate onboard wifi behind loyalty sign-ups, and loyalty programs are now major revenue lines — topping $6B each in 2024 for American and Delta. Meanwhile Delta and United are testing stripped-down perks on cheaper fares to push flyers toward premium tiers.",
+      "angle": "A clean parallel for any client debating whether to bundle a free feature to drive account creation versus protecting it as a paid tier.",
+      "starter": "Airlines are using free wifi purely to get you into their loyalty database — are we doing the equivalent with any of our own \"free\" features?",
+      "source": "Morning Brew (Transportation Brew)"
+    }
+  ],
+  "fingerprints": [
+    "openai|solves|10-math-problems-astra",
+    "anthropic|passes-openai|revenue-growth",
+    "alibaba|releases|qwen3.8-max-agent",
+    "airlines|expand|wifi-loyalty-perks-cuts",
+    "waymo|remote-monitoring-leads-to|police-stop-teens",
+    "evtols|position-as|airport-transport-alternative",
+    "japan|operates|worlds-best-shinkansen-rail"
+  ]
+}
