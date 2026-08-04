@@ -1,6 +1,6 @@
 # Make the AI Brief a Daily Routine
 
-This turns the AI Brief into something that runs **three times a day** (7:00 AM, 1:00 PM, 5:00 PM Eastern, weekdays) instead of you asking each time — so nothing that lands mid-day is missed. Below are: **(1) the prompt**, **(2) a ready-made `/ai-brief` command**, and **(3) how it's scheduled**.
+This turns the AI Brief into something that runs **three times a day** (7:00 AM, 1:00 PM, 4:00 PM Eastern, every day) instead of you asking each time — so nothing that lands mid-day is missed. Below are: **(1) the prompt**, **(2) a ready-made `/ai-brief` command**, and **(3) how it's scheduled**.
 
 Each run reads `state/run-log.json` to figure out its own run number and what's already been covered today, so the three runs never duplicate a story — a run with no new mail, or too little material to be worth sending, skips delivery on its own (see `INSTRUCTIONS.md`).
 
@@ -19,15 +19,15 @@ This is also `prompt.txt` in this repo (the exact text the Routine sends on each
 ```
 Run the AI Brief routine for me, following INSTRUCTIONS.md in this repo (v2).
 
-This runs as a cloud Routine three times on weekdays: 7:00 AM, 1:00 PM, and 5:00 PM
-Eastern (America/New_York). Figure out which run this is and act accordingly — do not
-assume it's the first run of the day. There is no local desktop and no send-mail tool
-available: delivery is git push plus your own final reply, which the Routine turns into
-its completion notification to me — see the last step.
+This runs as a cloud Routine three times a day: 7:00 AM, 1:00 PM, and 4:00 PM Eastern
+(America/New_York). Figure out which run this is and act accordingly — do not assume
+it's the first run of the day. There is no local desktop and no send-mail tool available:
+delivery is git push plus your own final reply, which the Routine turns into its
+completion notification to me — see the last step.
 
 1. Read state/run-log.json (create it as {"days": {}} if absent). Work out today's run
    number and the timestamp of the last successful run — on the very first run of the
-   day, use yesterday's 5:00 PM run instead, so overnight sends are caught.
+   day, use yesterday's 4:00 PM run instead, so overnight sends are caught.
 2. Search ONLY my Outlook folder "Claude AI News Recap" for messages received since that
    timestamp, newest first. NEVER read Junk or Deleted Items. NEVER search the Inbox or
    any other folder. Stay read-only on existing mail — do not delete, move, flag, or mark
@@ -45,10 +45,10 @@ its completion notification to me — see the last step.
      Capture any copy-paste prompt verbatim in a monospace block — never paraphrase it.
    - AI NEWS — headline + 1-2 sentences of fact, then a "What it means for you" line
      through my lens as a [Product Manager / Consultant]. Mark low-impact items "low": true.
-   - BEYOND AI (Morning Brew, 1440, or any other non-AI newsletter) — headline + facts, a
-     "PM angle" line (a concrete tie to my work, OR plainly "No direct relevance to your
-     work, general awareness only" — don't force a stretch), and a "Conversation starter"
-     line I could actually say out loud to a client, colleague, or in standup.
+   - BEYOND AI (Morning Brew or any other non-AI newsletter that shows up) — headline +
+     facts, a "PM angle" line (a concrete tie to my work, OR plainly "No direct relevance
+     to your work, general awareness only" — don't force a stretch), and a "Conversation
+     starter" line I could actually say out loud to a client, colleague, or in standup.
 6. Deduplicate by STORY, not by newsletter: fingerprint each story (entity|action|object)
    and drop anything already covered today, even from a different newsletter. If fewer
    than 2 items survive across all sections, skip delivery, roll items forward, and report
@@ -93,17 +93,17 @@ This repo ships a slash command at `.claude/commands/ai-brief.md`. Because it li
 
 ## 3. How it's scheduled
 
-This repo's Routine is a **Claude Code Remote Routine** (not a local Task Scheduler job) — three separate triggers, one per firing time, all pointed at the same cloud environment and running the same prompt above:
+This repo's Routine is a single **Claude Code Remote Routine** (not a local Task Scheduler job) — one trigger whose cron expression lists all three firing times, pointed at the same cloud environment and running the prompt above:
 
-| Trigger | Cron (UTC) | Eastern time |
+| Trigger | Cron (UTC) | Eastern times |
 |---|---|---|
-| Run 1 | `0 11 * * 1-5` | 7:00 AM, weekdays |
-| Run 2 | `0 17 * * 1-5` | 1:00 PM, weekdays |
-| Run 3 | `0 21 * * 1-5` | 5:00 PM, weekdays |
+| AI Daily News Brief (3x/day) | `0 11,17,20 * * *` | 7:00 AM, 1:00 PM, 4:00 PM, every day |
 
-The UTC hours above assume Eastern Daylight Time (UTC-4). Eastern switches to Standard Time (UTC-5) in the fall — the cron expressions need to shift by one hour then (e.g. run 1 becomes `0 12 * * 1-5`). There's no automatic DST adjustment on cron triggers, so this needs a manual nudge twice a year.
+A cron field can list multiple values comma-separated, so one trigger covers all three firings instead of three separate ones — simpler to manage, and there's no coordination needed between triggers since they're the same trigger.
 
-Manage the triggers with `/schedule` in Claude Code, or ask Claude to list/update/delete them directly (they're named `Ai Daily News Brief Agent`, runs 1-3). Each run reads `state/run-log.json` to know its own run number, so it doesn't matter which trigger fires — the prompt figures out run 1/2/3 for itself.
+The UTC hours above assume Eastern Daylight Time (UTC-4). Eastern switches to Standard Time (UTC-5) in the fall — the cron expression needs to shift by one hour then (`0 12,18,21 * * *`). There's no automatic DST adjustment on cron triggers, so this needs a manual nudge twice a year.
+
+Manage the trigger with `/schedule` in Claude Code, or ask Claude to list/update/delete it directly. Each run reads `state/run-log.json` to know its own run number, so it doesn't matter which of the day's three firings this is — the prompt figures out run 1/2/3 for itself.
 
 ### Alternative: running it locally instead
 
@@ -131,4 +131,4 @@ Then let the schedule run. Trigger it a second time later the same day to confir
 | Content spills to a 3rd page on a normal day | Ask Claude to re-check the heavy-day test and trim to the page budget in `INSTRUCTIONS.md`. |
 | Brand colors look wrong / fell back to defaults | Check the run's final reply for a brand-folder fallback note; confirm `build/brand.json` and the brand folder are both readable. |
 | Notification says it "could not email" the brief | Expected — there's no send-mail tool on the connector. Delivery is git push + the final reply, not an agent-sent email (see the callout at the top of this file). |
-| Only firing once a day, not three times | You're likely only looking at one of the three triggers — confirm all three (7 AM/1 PM/5 PM) exist and are enabled. |
+| Only firing once a day, not three times | Check the trigger's cron expression has all three hours comma-separated (`0 11,17,20 * * *`), and that it's enabled. |
