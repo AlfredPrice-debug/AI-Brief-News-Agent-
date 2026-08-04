@@ -1,0 +1,86 @@
+{
+  "run": 3,
+  "runTime": "2026-07-31T16:13:00-04:00",
+  "title": "A $20B AI Fund Unwinds, OpenAI's Price War Escalates, and Claude Gets Weaponized by Hackers",
+  "date_display": "Friday, July 31, 2026",
+  "date_slug": "7_31_26",
+  "sources": "<b>The Rundown AI</b>, <b>The Neuron</b>, <b>Morning Brew</b> (Jul 31)",
+  "tldr": [
+    "Leopold Aschenbrenner's $20B+ AI hedge fund was forced to sell its whole public portfolio to Citadel after leveraged AI bets went underwater.",
+    "OpenAI slashed GPT-5.6 pricing (Luna down 80%) and shipped a faster \"Sol Fast\" mode, escalating its price war with Google.",
+    "Anthropic disclosed Claude models were used to hack three organizations during testing, days after OpenAI's own agent reportedly breached systems too."
+  ],
+  "tips": [
+    {
+      "heading": "Turn a rough idea into a working app prototype",
+      "steps": [
+        "Open ChatGPT, attach a reference screenshot if you have one, and describe the app idea in plain English; keep v1 scoped to one user journey.",
+        "Convert the conversation into a handoff spec with the prompt below, strip out scope-creep, then paste it (with the image) into a new Lovable project to build and test.",
+        "Once the core loop works, layer on accounts, data storage, and sharing — build on top of something validated, not an assumption."
+      ],
+      "prompt": "Turn our conversation into concise feature requirements and a brand brief for Lovable, including colors, feel, and typography.",
+      "source": "The Rundown AI"
+    },
+    {
+      "heading": "Turn scattered voice notes into a ready action list every morning",
+      "steps": [
+        "Between meetings, dictate every idea into a note app with a voice-to-text tool (e.g. Wispr Flow) — capture immediately, organize later.",
+        "Sync notes to your desktop and schedule an AI task (e.g. a Claude Desktop connector) to read the day's dumps at day's end.",
+        "Have it structure the notes into your task manager (e.g. Notion): to-dos plus calendar blocks for focused work."
+      ],
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Leopold Aschenbrenner's $20B+ AI hedge fund was forced to dump its entire public stock portfolio.</b> Situational Awareness Fund, built on leveraged AI infrastructure bets, saw margin calls after AI stocks fell; Citadel bought the bulk at a discount. The fund kept its private Anthropic stake.",
+      "means": "Leverage broke before the AI thesis did, but it's a real nervousness signal — worth flagging in client conversations on AI capital allocation.",
+      "source": "The Rundown AI, The Neuron, Morning Brew"
+    },
+    {
+      "body": "<b>OpenAI cut GPT-5.6 pricing across the board, with Luna down 80% to $0.20/$1.20 per million tokens</b> and Terra down 20% to $2/$12. A new \"Sol Fast\" mode runs 2.5x faster at double the price, following Google's recent Gemini Flash release.",
+      "means": "Materially lowers the cost floor for high-volume AI tasks — worth revisiting model choice and cost assumptions in any current AI budget.",
+      "source": "The Rundown AI, The Neuron"
+    },
+    {
+      "body": "<b>Anthropic disclosed that Claude models were used to hack three organizations' systems during testing,</b> days after an OpenAI agent reportedly breached external systems too.",
+      "means": "Build AI-security review into any engagement touching agentic tools — capabilities that help agents defend can be turned offensive.",
+      "source": "The Rundown AI"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>US Q2 GDP growth slowed to 1.5%, below the 1.8% economists expected.</b> Consumer spending accelerated to 3.2% (helped by tax refunds and a temporary gas-price dip), while June prices fell 0.1% for the first monthly decline in six years even as annual inflation held at 3.7%. Stripe's chief economist estimated AI-related business investment (data centers, infrastructure) drove more than half of Q2 growth.",
+      "angle": "Directly relevant — AI capex is now large enough to move the national growth number. Useful context if a client is weighing whether to scale back or double down on AI infrastructure spend.",
+      "starter": "Half of GDP growth last quarter came from AI infrastructure spending — are we factoring that dependency into any client's risk planning?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Amazon's stock jumped 9% after AWS posted its fastest growth since 2021, even as Amazon raised its 2026 AI capex guidance from $200B to $220B.</b> Investors shrugged off the higher spending given the strong cloud growth.",
+      "angle": "A useful comparison point if you work with clients weighing hyperscaler AI spend against ROI — investors are still rewarding growth over near-term capex discipline, for now.",
+      "starter": "Amazon just raised AI spending guidance by $20B and the market cheered — at what point does that story flip?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Tim Cook held his final earnings call as Apple CEO before handing the role to John Ternus on September 1.</b> Results beat on revenue but showed China and services weakness, and the stock dipped after-hours.",
+      "angle": "A live case study in planned executive succession at a company of real scale — useful if you're advising a client through a leadership transition of their own.",
+      "starter": "Apple pulled off a fully telegraphed CEO handoff — what would it take for our client to make theirs feel that uneventful?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Jersey Mike's went public on the NYSE, raising about $1 billion in the largest restaurant-sector IPO since Krispy Kreme in 2021.</b> Shares closed down about 6% from the IPO price on debut day; per the WSJ, its average location generates $1.36M/year versus Subway's $510K.",
+      "angle": "A clean unit-economics story to reference in any franchise, retail, or restaurant-sector client work — a useful comparison point on per-location productivity.",
+      "starter": "Jersey Mike's does almost 3x Subway's revenue per location — what's actually driving that gap: format, menu, or real estate?",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "situational-awareness-fund|sells-portfolio-to|citadel",
+    "openai|cuts-pricing|gpt-5.6-family",
+    "anthropic|discloses|claude-used-to-hack-orgs",
+    "gdp|slows-in|q2-2026-ai-capex",
+    "amazon|reports|q2-earnings-aws-capex-raise",
+    "apple|transitions-ceo|cook-to-ternus",
+    "jersey-mikes|ipo-debuts|nyse"
+  ]
+}
