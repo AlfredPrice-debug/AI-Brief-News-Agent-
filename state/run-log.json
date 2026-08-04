@@ -95,6 +95,22 @@
     "2026-07-30": {
       "runs": [
         {
+          "run": 1,
+          "timestamp": "2026-07-30T07:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "neuron|tip|supervise-browser-agent",
+            "rundown|tip|track-ai-costs-nates-notebook",
+            "openai|breach-escalates|second-victim-modal-labs",
+            "zuckerberg|opposes|ai-pacing-petition",
+            "fed|holds|rates-steady-3.5-3.75",
+            "meta|reports|q2-capex-surge-fcf-drop",
+            "microsoft|reports|azure-100b-revenue-milestone",
+            "ftc|sues|hims-hers-data-sharing",
+            "new-bedford-whaling-museum|profits-from|viral-negative-review-shirts"
+          ]
+        },
+        {
           "run": 2,
           "timestamp": "2026-07-30T13:05:00-04:00",
           "status": "delivered",
@@ -117,6 +133,36 @@
     },
     "2026-07-31": {
       "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-07-31T07:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "situational-awareness|sells|portfolio-to-citadel",
+            "openai|cuts|gpt-5.6-prices-80pct",
+            "neuron|teaches|ablation-test-ai-instructions",
+            "rundown|teaches|lovable-app-workflow",
+            "us-gdp|slows-to|1.5pct-ai-capex-driven",
+            "apple|closes|cook-final-earnings-call",
+            "amazon|raises|ai-capex-to-220b",
+            "jersey-mikes|ipo|raises-1b",
+            "uefa|threatens-boycott|fifa-private-equity-plan"
+          ]
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-07-31T13:05:42-04:00",
+          "status": "delivered",
+          "covered": [
+            "leopold-aschenbrenner|sells|situational-awareness-fund-to-citadel",
+            "ai-agents|breach|sandbox-security-incidents",
+            "openai|cuts|gpt-5.6-pricing",
+            "us-gdp|slows-to|1.5pct-q2-ai-driven",
+            "amazon|raises|aws-ai-capex-220b",
+            "jersey-mikes|debuts|nyse-ipo",
+            "apple|holds|tim-cook-final-earnings-call"
+          ]
+        },
         {
           "run": 3,
           "timestamp": "2026-07-31T16:13:00-04:00",
