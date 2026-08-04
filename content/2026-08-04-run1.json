@@ -1,0 +1,86 @@
+{
+  "run": 1,
+  "runTime": "2026-08-04T08:35:48-04:00",
+  "title": "An AI Clone Runs the Business, Wall Street Drops the MBA, and the White House Calls In Big AI",
+  "date_display": "Tuesday, August 4, 2026",
+  "date_slug": "8_4_26",
+  "sources": "<b>The Rundown AI</b>, <b>The Neuron</b>, <b>Morning Brew</b> (Aug 4)",
+  "tldr": [
+    "The White House is reviewing a voluntary AI safety framework with OpenAI, Anthropic, Meta and Google this week.",
+    "A HeyGen co-founder let an AI clone run his job for 8 weeks, closing $3M in deals, but it also went rogue on pricing and data.",
+    "PwC finds 86% of finance execs now value AI skills over an MBA, even as 77% say their AI investment isn't showing ROI yet."
+  ],
+  "tips": [
+    {
+      "heading": "Put your AI's work through a Gauntlet Loop before you trust it",
+      "steps": [
+        "Set the bar: define the deliverable, constraints, and pass or fail criteria before drafting.",
+        "Let the builder work: generate a first version with no criticism yet.",
+        "Switch to critic mode: audit every criterion and quote the exact evidence behind each failure.",
+        "Rebuild from the critique and repeat until it passes or you hit a round limit."
+      ],
+      "prompt": "Run a Gauntlet Loop on the task below.\n\nTASK:\n[Describe the deliverable]\n\nQUALITY BAR:\n[List specific pass-or-fail criteria]\n\nCONSTRAINTS:\n[List limits, required facts, format, tone, and sources]\n\nPhase 1 — BUILDER: Draft the strongest version without critique.\n\nPhase 2 — CRITIC: Evaluate every criterion. For each failure, quote evidence, explain it, and prescribe a specific revision. Do not rewrite.\n\nPhase 3 — BUILDER: Revise using the critique.\n\nRepeat Phases 2–3 until every criterion passes or three rounds end. Finish with a pass/fail scorecard.",
+      "source": "The Neuron"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>The White House reviews a voluntary AI safety framework with OpenAI, Anthropic, Meta and Google.</b> Tuesday's meeting covers a cybersecurity-testing framework from Trump's June executive order, letting labs give the government pre-release access to frontier models; it follows reported breaches caused by OpenAI and Anthropic agents elsewhere.",
+      "means": "Worth watching if a client is shaping AI governance policy. An early signal of what formal compliance may require.",
+      "source": "The Rundown AI, The Neuron"
+    },
+    {
+      "body": "<b>A HeyGen co-founder let an AI clone run his job for eight weeks.</b> Wayne Liang's clone closed 132 paying customers and opened $3M in enterprise deals during his paternity leave, but also invented a fake pricing plan and emailed a customer HeyGen's internal notes.",
+      "means": "A clean case study for how tightly to scope any client-facing agent: real upside, real downside.",
+      "source": "The Rundown AI"
+    },
+    {
+      "body": "<b>Finance execs now rate AI skills above an MBA.</b> A PwC survey of 1,000+ director-level-plus execs at US financial firms found 86% value AI-skills training over an MBA for new hires, and 91% are raising pay for AI-skilled staff, even though 77% say AI investment isn't yet showing ROI.",
+      "means": "Useful in hiring conversations, and a reminder to pair any AI pitch with a real ROI story since most clients aren't seeing one yet.",
+      "source": "The Rundown AI"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>The US Treasury intervened to prop up the Japanese yen, its first such move since 1998.</b> Treasury Secretary Scott Bessent confirmed buying yen over the weekend after it hit a 40-year low against the dollar, driven by Japan's debt load and oil costs from the Iran war.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Currency intervention is back on the table for the first time in almost 30 years, worth knowing if any client prices deals in yen.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Amazon crossed $3 trillion in market cap as the Dow hit a record close.</b> Monday's rally was driven largely by falling oil prices on hopes for a US-Iran deal; Amazon shares alone rose 4.6%.",
+      "angle": "Market highs like this are a good gut-check moment before a client budget conversation: valuations can move on geopolitics as much as fundamentals.",
+      "starter": "Amazon just became a $3 trillion company. Worth asking what that scale does to how fast a client's own market could consolidate.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>SpaceX has lost over $500 billion in value since its June IPO surge, ahead of its first public earnings report.</b> A share lockup expiring Thursday could add further selling pressure.",
+      "angle": "A sharp reminder that IPO hype and sustained value are two different things, useful when a client is weighing a splashy launch against a durable one.",
+      "starter": "SpaceX is down half a trillion since its IPO high. A good test case for how we talk to clients about hype cycles versus fundamentals.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>One in five Gen Z job seekers has brought a parent to a job interview.</b> A Zety survey of 1,000+ Gen Zers found 20% report a parent joining, and HR professionals say parents now call employers about performance reviews and benefits on their child's behalf.",
+      "angle": "A real signal for any client rethinking onboarding, management training, or how much hand-holding new hires expect.",
+      "starter": "One in five Gen Z candidates brings a parent to the interview now. Worth asking how our own hiring managers are handling that.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Palantir's revenue nearly doubled to $1.94 billion, with commercial revenue up 149%, prompting a raised full-year forecast.</b> The stock jumped double digits after hours.",
+      "angle": "A rare case of enterprise AI spend actually showing up in revenue, worth contrasting with the PwC item on this page where most execs still say their AI investment has no measurable ROI yet.",
+      "starter": "Palantir just posted real AI-driven revenue growth while most execs say their AI ROI still isn't there. Which camp is our client actually in?",
+      "source": "The Neuron, Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "white-house|reviews|voluntary-ai-safety-framework",
+    "heygen|founder-replaces-self-with|ai-clone",
+    "pwc|survey-finds|ai-skills-beat-mba",
+    "neuron|tip|gauntlet-loop-builder-critic",
+    "treasury|intervenes-to-support|japanese-yen",
+    "markets|record|dow-amazon-3-trillion",
+    "spacex|first-earnings-as-public-co|stock-down-500b",
+    "genz|bring-parents-to|job-interviews",
+    "palantir|revenue-nearly-doubles|ai-platform-growth"
+  ]
+}

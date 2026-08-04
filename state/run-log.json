@@ -218,6 +218,27 @@
         }
       ]
     },
+    "2026-08-04": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-04T08:35:48-04:00",
+          "status": "delivered",
+          "covered": [
+            "white-house|reviews|voluntary-ai-safety-framework",
+            "heygen|founder-replaces-self-with|ai-clone",
+            "pwc|survey-finds|ai-skills-beat-mba",
+            "neuron|tip|gauntlet-loop-builder-critic",
+            "treasury|intervenes-to-support|japanese-yen",
+            "markets|record|dow-amazon-3-trillion",
+            "spacex|first-earnings-as-public-co|stock-down-500b",
+            "genz|bring-parents-to|job-interviews",
+            "palantir|revenue-nearly-doubles|ai-platform-growth"
+          ],
+          "note": "First run of the day (fired ~90 min after the 7:00 AM slot); searched mail since yesterday's run 3 (2026-08-03T16:08:05-04:00) per the overnight-catch rule. Read 3 newsletters (The Rundown AI, The Neuron, Morning Brew, all sent 5:19-6:07 AM). An initial draft (2 tips + 4 news + 5 beyond_ai) rendered 3 pages; cut the Buzz project-room tip and a low-impact 'Claude reproduces half of OpenAI's Astra math results' news item, then trimmed several item bodies, to fit the 2-page budget. The Astra/Claude item was written as a distinct fingerprint from yesterday's 'openai|solves|10-math-problems-astra' (new angle: Claude reproducing the results), but was ultimately cut for space and never published, so no fingerprint for it is in covered. Palantir earnings appeared in both The Neuron and Morning Brew and was merged into one beyond_ai item."
+        }
+      ]
+    },
     "2026-08-03": {
       "runs": [
         {
