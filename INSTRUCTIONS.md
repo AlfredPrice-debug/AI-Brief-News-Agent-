@@ -1,6 +1,6 @@
 # AI Brief — Daily Routine (Instructions for Claude Code) — v2
 
-This is the step-by-step routine Claude Code follows to produce the **Impact Makers AI Brief**: a curated, brand-styled PDF built **three times a day** so nothing that lands mid-day is missed. Follow it top to bottom. Never build an empty or duplicate brief.
+This is the step-by-step routine Claude Code follows to produce the **Impact Makers AI Brief**: a curated, brand-styled PDF built **twice a day** so nothing that lands mid-day is missed. Follow it top to bottom. Never build an empty or duplicate brief.
 
 > **Goal:** Turn the newsletters sitting in one Outlook folder into a 2-page brief — **page 1: AI Tips + AI News**, **page 2: Beyond AI** (general business/world awareness) — for Alfred Price (Product Manager / Consultant at Impact Makers), who reads it on his phone away from his desk.
 
@@ -26,14 +26,14 @@ This runs as a **Claude Code Remote Routine in a cloud environment**, not on Alf
 | PDF output | This repo's `briefs/` folder only (no local desktop folder — see **Delivery**) |
 | Reader lens | Product Manager / Consultant (Alfred Price, Impact Makers) |
 | Time zone | America/New_York for all schedule references |
-| Runs per day | 7:00 AM, 1:00 PM, 4:00 PM Eastern |
+| Runs per day | 8:00 AM, 4:00 PM Eastern |
 
 ---
 
 ## 1. Load run state
 
 Read `state/run-log.json` (create it with `{"days": {}}` if absent — see `state/README.md` for the schema). Determine:
-- **Run number** for today (1, 2, or 3) and the **timestamp of the last successful run** to search mail "since." On the very first run of the day, use the previous calendar day's run-3 (4:00 PM) timestamp so overnight sends are caught.
+- **Run number** for today (1 or 2) and the **timestamp of the last successful run** to search mail "since." On the very first run of the day, use the previous calendar day's run-2 (4:00 PM) timestamp so overnight sends are caught.
 - Today's `covered` array of story fingerprints already published so far today (empty if this is run 1).
 
 ## 2. Pull newsletters since the last run

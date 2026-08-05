@@ -1,8 +1,8 @@
 # Make the AI Brief a Daily Routine
 
-This turns the AI Brief into something that runs **three times a day** (7:00 AM, 1:00 PM, 4:00 PM Eastern, every day) instead of you asking each time — so nothing that lands mid-day is missed. Below are: **(1) the prompt**, **(2) a ready-made `/ai-brief` command**, and **(3) how it's scheduled**.
+This turns the AI Brief into something that runs **twice a day** (8:00 AM, 4:00 PM Eastern, every day) instead of you asking each time — so nothing that lands mid-day is missed. Below are: **(1) the prompt**, **(2) a ready-made `/ai-brief` command**, and **(3) how it's scheduled**.
 
-Each run reads `state/run-log.json` to figure out its own run number and what's already been covered today, so the three runs never duplicate a story — a run with no new mail, or too little material to be worth sending, skips delivery on its own (see `INSTRUCTIONS.md`).
+Each run reads `state/run-log.json` to figure out its own run number and what's already been covered today, so the two runs never duplicate a story — a run with no new mail, or too little material to be worth sending, skips delivery on its own (see `INSTRUCTIONS.md`).
 
 > **This runs in the cloud, not on your laptop.** It's set up as a Claude Code Remote **Routine** — a scheduled job that fires in an Anthropic-hosted cloud environment. That means: no local Chrome, no local desktop folder, and (as of this setup) no send-mail tool available on the Microsoft 365 connector. Delivery is **git push straight onto `main`** (each run's own throwaway session branch is never merged — see `INSTRUCTIONS.md` > *Push to GitHub*) to `briefs/` in this repo, plus **the run's own final reply**, which the Routine platform turns into its completion notification (email today; you can also turn on push) — see `INSTRUCTIONS.md` > *Delivery*.
 
@@ -19,11 +19,11 @@ This is also `prompt.txt` in this repo (the exact text the Routine sends on each
 ```
 Run the AI Brief routine for me, following INSTRUCTIONS.md in this repo (v2).
 
-This runs as a cloud Routine three times a day: 7:00 AM, 1:00 PM, and 4:00 PM Eastern
-(America/New_York). Figure out which run this is and act accordingly — do not assume
-it's the first run of the day. There is no local desktop and no send-mail tool available:
-delivery is git push plus your own final reply, which the Routine turns into its
-completion notification to me — see the last step.
+This runs as a cloud Routine twice a day: 8:00 AM and 4:00 PM Eastern (America/New_York).
+Figure out which run this is and act accordingly — do not assume it's the first run of
+the day. There is no local desktop and no send-mail tool available: delivery is git push
+plus your own final reply, which the Routine turns into its completion notification to
+me — see the last step.
 
 1. Read state/run-log.json (create it as {"days": {}} if absent). Work out today's run
    number and the timestamp of the last successful run — on the very first run of the
@@ -93,17 +93,17 @@ This repo ships a slash command at `.claude/commands/ai-brief.md`. Because it li
 
 ## 3. How it's scheduled
 
-This repo's Routine is a single **Claude Code Remote Routine** (not a local Task Scheduler job) — one trigger whose cron expression lists all three firing times, pointed at the same cloud environment and running the prompt above:
+This repo's Routine is a single **Claude Code Remote Routine** (not a local Task Scheduler job) — one trigger whose cron expression lists both firing times, pointed at the same cloud environment and running the prompt above:
 
 | Trigger | Cron (UTC) | Eastern times |
 |---|---|---|
-| AI Daily News Brief (3x/day) | `0 11,17,20 * * *` | 7:00 AM, 1:00 PM, 4:00 PM, every day |
+| AI Daily News Brief (2x/day) | `0 12,20 * * *` | 8:00 AM, 4:00 PM, every day |
 
-A cron field can list multiple values comma-separated, so one trigger covers all three firings instead of three separate ones — simpler to manage, and there's no coordination needed between triggers since they're the same trigger.
+A cron field can list multiple values comma-separated, so one trigger covers both firings instead of two separate ones — simpler to manage, and there's no coordination needed between triggers since they're the same trigger.
 
-The UTC hours above assume Eastern Daylight Time (UTC-4). Eastern switches to Standard Time (UTC-5) in the fall — the cron expression needs to shift by one hour then (`0 12,18,21 * * *`). There's no automatic DST adjustment on cron triggers, so this needs a manual nudge twice a year.
+The UTC hours above assume Eastern Daylight Time (UTC-4). Eastern switches to Standard Time (UTC-5) in the fall — the cron expression needs to shift by one hour then (`0 13,21 * * *`). There's no automatic DST adjustment on cron triggers, so this needs a manual nudge twice a year.
 
-Manage the trigger with `/schedule` in Claude Code, or ask Claude to list/update/delete it directly. Each run reads `state/run-log.json` to know its own run number, so it doesn't matter which of the day's three firings this is — the prompt figures out run 1/2/3 for itself.
+Manage the trigger with `/schedule` in Claude Code, or ask Claude to list/update/delete it directly. Each run reads `state/run-log.json` to know its own run number, so it doesn't matter which of the day's two firings this is — the prompt figures out run 1/2 for itself.
 
 ### Alternative: running it locally instead
 
@@ -131,4 +131,4 @@ Then let the schedule run. Trigger it a second time later the same day to confir
 | Content spills to a 3rd page on a normal day | Ask Claude to re-check the heavy-day test and trim to the page budget in `INSTRUCTIONS.md`. |
 | Brand colors look wrong / fell back to defaults | Check the run's final reply for a brand-folder fallback note; confirm `build/brand.json` and the brand folder are both readable. |
 | Notification says it "could not email" the brief | Expected — there's no send-mail tool on the connector. Delivery is git push + the final reply, not an agent-sent email (see the callout at the top of this file). |
-| Only firing once a day, not three times | Check the trigger's cron expression has all three hours comma-separated (`0 11,17,20 * * *`), and that it's enabled. |
+| Only firing once a day, not twice | Check the trigger's cron expression has both hours comma-separated (`0 12,20 * * *`), and that it's enabled. |

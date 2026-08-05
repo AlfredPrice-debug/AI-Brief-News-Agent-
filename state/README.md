@@ -1,6 +1,6 @@
 # state/run-log.json
 
-Tracks what's already been published today so the 7 AM / 1 PM / 5 PM runs never duplicate a story or re-query mail they've already seen. Read and updated by Claude Code directly as part of `INSTRUCTIONS.md` steps 1 and 11 — there is no separate build step for it.
+Tracks what's already been published today so the 8 AM / 4 PM runs never duplicate a story or re-query mail they've already seen. Read and updated by Claude Code directly as part of `INSTRUCTIONS.md` steps 1 and 11 — there is no separate build step for it.
 
 ## Schema
 

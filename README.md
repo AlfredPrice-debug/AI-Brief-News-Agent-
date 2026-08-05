@@ -1,6 +1,6 @@
 # AI Brief News Agent
 
-A routine for **Claude Code** that turns the newsletters in one Outlook folder into a **2-page, brand-styled PDF**, delivered **three times a day** (7 AM / 1 PM / 5 PM Eastern, weekdays) so nothing that lands mid-day is missed. Page 1 is **AI** — **AI Tips** (step-by-step how-to) and **AI News** (the news + *what it means for you* as a Product Manager / Consultant); page 2 is **Beyond AI** — general business/world awareness, each item paired with a **PM angle** and a **conversation starter**. Built for Alfred Price at Impact Makers as a personal-development habit.
+A routine for **Claude Code** that turns the newsletters in one Outlook folder into a **2-page, brand-styled PDF**, delivered **twice a day** (8 AM / 4 PM Eastern) so nothing that lands mid-day is missed. Page 1 is **AI** — **AI Tips** (step-by-step how-to) and **AI News** (the news + *what it means for you* as a Product Manager / Consultant); page 2 is **Beyond AI** — general business/world awareness, each item paired with a **PM angle** and a **conversation starter**. Built for Alfred Price at Impact Makers as a personal-development habit.
 
 ![Sample brief](docs/sample.png)
 
@@ -71,7 +71,7 @@ python build/build_brief.py content/2026-07-24-run1.json
 
 **Reading it away from your desk.** Every run **pushes the PDF to `briefs/` on GitHub**, so you can open it from your phone at any time — and the run's own final reply (title, TL;DR, GitHub link) becomes the Routine's completion notification, so you'll hear about it without checking in.
 
-**Want it to run automatically, three times a day?** See **[ROUTINE.md](ROUTINE.md)** — it has the copy-paste prompt and how the cloud Routine is scheduled for 7 AM / 1 PM / 5 PM Eastern (including a ready-made `/ai-brief` command for a manual test run).
+**Want it to run automatically, twice a day?** See **[ROUTINE.md](ROUTINE.md)** — it has the copy-paste prompt and how the cloud Routine is scheduled for 8 AM / 4 PM Eastern (including a ready-made `/ai-brief` command for a manual test run).
 
 ## Repo layout
 | Path | Purpose |
