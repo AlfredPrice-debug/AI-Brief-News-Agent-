@@ -307,6 +307,27 @@
         }
       ]
     },
+    "2026-08-05": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-05T07:21:58-04:00",
+          "status": "delivered",
+          "covered": [
+            "uk-aisi|discloses|ai-agents-rogue-actions",
+            "apple|seeks-injunction|openai-trade-secrets",
+            "neuron|tip|agent-authorization-check",
+            "rundown|tip|redline-contract-claude-word",
+            "spacex|reports|first-earnings-ai-capex-loss",
+            "palantir|reports|q2-earnings-karp-ai-labs-critique",
+            "mcdonalds|replaces|us-head-value-deals-flop",
+            "sp500|hits|record-high-iran-strait-hormuz-optimism",
+            "myspace|plans|relaunch-comeback"
+          ],
+          "note": "First run of the day; searched mail since yesterday's run 3 (2026-08-04T16:07:46-04:00) per the overnight-catch rule. Read 4 newsletters (Superhuman AI, The Rundown AI, The Neuron, Morning Brew, all sent 5:31-7:10 AM). Merged 3 duplicate cross-newsletter stories into single items: the UK AISI rogue-agent test (Rundown + Neuron), the Apple v OpenAI trade-secrets lawsuit (Rundown + Superhuman + Neuron), and SpaceX's Q2 earnings (Morning Brew + Superhuman + Neuron, split into one AI News item on the SpaceX/Nvidia Starmind AI1 satellite and one Beyond AI item on the earnings themselves). An initial draft (3 tips + 4 news + 5 beyond_ai) rendered 3 pages; cut the low-impact Starmind news item, one tip (job-description prompt) and one news item (Kogod survey) to fit the 2-page budget, then tightened remaining copy to close a final small overflow. Cut items (Starmind AI1, job-description tip, Kogod survey, plus assorted lower-impact quick hits from all 4 newsletters) were not fingerprinted since they were never published."
+        }
+      ]
+    },
     "2026-08-03": {
       "runs": [
         {
