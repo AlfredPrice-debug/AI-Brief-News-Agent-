@@ -1,6 +1,6 @@
 Run the AI Brief routine for me, following INSTRUCTIONS.md in this repo (v2).
 
-This runs as a cloud Routine three times a day: 7:00 AM, 1:00 PM, and 4:00 PM Eastern (America/New_York). Figure out which run this is and act accordingly — do not assume it's the first run of the day. There is no local desktop and no send-mail tool available: delivery is git push plus your own final reply, which the Routine turns into its completion notification to me — see the last step.
+This runs as a cloud Routine twice a day: 8:00 AM and 4:00 PM Eastern (America/New_York). Figure out which run this is and act accordingly — do not assume it's the first run of the day. There is no local desktop and no send-mail tool available: delivery is git push plus your own final reply, which the Routine turns into its completion notification to me — see the last step.
 
 1. Read state/run-log.json (create it as {"days": {}} if absent). Work out today's run number and the timestamp of the last successful run — on the very first run of the day, use yesterday's 4:00 PM run instead, so overnight sends are caught.
 2. Search ONLY my Outlook folder "Claude AI News Recap" for messages received since that timestamp, newest first. NEVER read Junk or Deleted Items. NEVER search the Inbox or any other folder. Stay read-only on existing mail — do not delete, move, flag, or mark anything read, and do not send any mail (there's no send-mail tool available, and none is needed).
