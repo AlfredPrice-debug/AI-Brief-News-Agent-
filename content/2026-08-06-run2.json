@@ -1,0 +1,83 @@
+{
+  "run": 2,
+  "runTime": "2026-08-06T16:00:00-04:00",
+  "title": "Google's AI Brain Drain, Meta Joins the Coding Agent Race, and Disney Bets on TikTok",
+  "date_display": "Thursday, August 6, 2026",
+  "date_slug": "8_6_26",
+  "sources": "<b>Superhuman AI</b>, <b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b>, <b>IT Brew</b> (Aug 6)",
+  "tldr": [
+    "Google's chief scientist Jeff Dean and three veteran researchers left this week to found their own AI startup; Demis Hassabis stepped back to chairman.",
+    "Meta launched Muse Code, a terminal coding agent, joining OpenAI Codex and Claude Code in the agentic-coding race.",
+    "Disney struck a deal letting TikTok creators use its IP, and will run curated user-generated content on its own new short-form feed, Verts."
+  ],
+  "tips": [
+    {
+      "heading": "Turn an AI-generated image into an editable Canva design",
+      "steps": [
+        "Open Gemini and generate an image from a text prompt.",
+        "Once it's generated, link your Canva account in Gemini and send the image over using the trigger phrase below.",
+        "Open the design in Canva and customize text, colors, layout, and other elements as needed."
+      ],
+      "prompt": "@Canva make it editable",
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Turn a good AI result into a reusable skill",
+      "steps": [
+        "As soon as an AI task comes out right, ask it to document the goal, exact steps, tools, and checks it used.",
+        "Have it separate the reusable process from one-off details like names, dates, files, and destinations.",
+        "Only save verified successes — a flawed workflow preserved perfectly is still a flawed workflow."
+      ],
+      "prompt": "Turn the task we just completed into a reusable skill.\n\nInclude:\n1. The goal and required inputs.\n2. The exact steps and tools used.\n3. A verification checklist with pass/fail criteria.\n4. Common failure modes and recovery steps.\n5. Actions that require human approval.\n6. A short template I can reuse next time.\n\nOnly include steps supported by the work we actually completed. Do not invent missing details.",
+      "source": "The Neuron"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Google restructures AI leadership as chief scientist Jeff Dean and three veteran researchers depart.</b> DeepMind CEO Demis Hassabis is stepping back to chairman of DeepMind and Alphabet chief scientist, handing daily control of Gemini and frontier research to CTO Koray Kavukcuoglu. 27-year veteran Jeff Dean is leaving with fellow long-timers Sanjay Ghemawat, Oriol Vinyals, and Quoc Le to found Discovery Loop, a startup automating scientific research. The moves follow Gemini 3.5 Pro delays and a roughly 4% Alphabet stock slide.",
+      "means": "Worth flagging to clients evaluating Google Cloud or Gemini as a long-term AI vendor — watch for slowed roadmap execution over the next few quarters.",
+      "source": "Superhuman AI, The Neuron, The Rundown AI, Morning Brew",
+      "low": false
+    },
+    {
+      "body": "<b>Meta enters the coding-agent race with Muse Code.</b> The beta terminal coding agent runs parallel background sub-agents (Meta says it built six game features simultaneously without collisions) and is built on the new Muse Spark 1.2 model, which ranked third among U.S. labs on Artificial Analysis's Intelligence Index. API pricing holds at $1.25/$4.25 per million tokens, with a steep discount for users who let Meta train on their prompts.",
+      "means": "Another agentic-coding option to track alongside Claude Code and Codex — the training-data discount tier is worth flagging for privacy-sensitive clients.",
+      "source": "The Rundown AI, The Neuron",
+      "low": false
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Disney and TikTok struck a deal letting select creators use Disney, Marvel, Pixar, and Lucasfilm IP in their videos,</b> and Disney will feature curated user-generated content on its own new short-form feed, Verts, the first time TikToks have appeared off-platform. On the same earnings call, Disney's experiences segment (parks and cruises) hit $10 billion in revenue, up 10% year over year.",
+      "angle": "A concrete case study in licensing your IP into a platform you don't own rather than trying to out-build it. Useful if a client is weighing a similar build-vs-partner call for their content or brand assets.",
+      "starter": "Disney just let TikTok creators use its IP instead of trying to out-build TikTok on its own turf. Is there a version of that trade we should be considering?",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Amazon's Zoox will start charging fares for its fully driverless robotaxis in Las Vegas starting August 10,</b> the first steering-wheel-free robotaxi service to charge riders, competing directly with Alphabet's Waymo. The service required a federal exemption, and fares are shown upfront based on distance and time.",
+      "angle": "Worth watching the Vegas rollout as an early read on driverless-service unit economics and the regulatory pathway, relevant if a client is in mobility, insurance, or urban logistics.",
+      "starter": "Zoox just started actually charging money for driverless rides in Vegas. Curious how long before that pricing model shows up somewhere closer to home.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>A $55 billion take-private buyout of Electronic Arts closed,</b> led by Saudi Arabia's sovereign wealth fund, Jared Kushner's Affinity Partners, and Silver Lake.",
+      "angle": "A current, concrete example of PE-backed take-privates in a maturing tech sector, a useful reference point when clients ask how sponsors are underwriting growth-slowed tech or media assets right now.",
+      "starter": "EA just went private in a $55B deal backed by a sovereign wealth fund and a PE shop. Think we'll see more of that in gaming and media this year?",
+      "source": "1440 Daily Digest"
+    },
+    {
+      "body": "<b>Markets sent mixed signals: the Dow closed at a record high for a second straight day, while the S&P 500 and Nasdaq slipped on tech weakness,</b> and SpaceX shares fell over 13% after its first earnings report as a public company disclosed heavy AI-related capital spending.",
+      "angle": "The SpaceX reaction is a live data point for the \"markets are getting less patient with AI capex\" narrative, worth having a point of view ready if a client's board reacts similarly to a spend disclosure.",
+      "starter": "SpaceX stock dropped 13% on its AI spending disclosure. Are we starting to see investors actually punish AI capex instead of rewarding it?",
+      "source": "Morning Brew, 1440 Daily Digest"
+    }
+  ],
+  "fingerprints": [
+    "google|reorganizes|ai-leadership-jeff-dean-departs",
+    "meta|launches|muse-code-coding-agent",
+    "disney|partners-with|tiktok-ip-content-deal",
+    "zoox|charges-fares|las-vegas-robotaxi",
+    "ea|closes|55b-take-private-buyout",
+    "markets|hit|dow-record-spacex-stock-drop"
+  ]
+}

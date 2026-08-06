@@ -352,6 +352,24 @@
           "covered": []
         }
       ]
+    },
+    "2026-08-06": {
+      "runs": [
+        {
+          "run": 2,
+          "timestamp": "2026-08-06T16:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "google|reorganizes|ai-leadership-jeff-dean-departs",
+            "meta|launches|muse-code-coding-agent",
+            "disney|partners-with|tiktok-ip-content-deal",
+            "zoox|charges-fares|las-vegas-robotaxi",
+            "ea|closes|55b-take-private-buyout",
+            "markets|hit|dow-record-spacex-stock-drop"
+          ],
+          "note": "No run-log entry existed for today's 8:00 AM run 1, so searched mail since the last delivered run in the log, 2026-08-05 run 1 (07:21:58-04:00). Read 7 newsletters (Superhuman AI, The Neuron, The Rundown AI, Morning Brew x2 -- one was a subscription-confirmation nag with no content and was discarded, 1440 Daily Digest, IT Brew's Cybersecurity Edition) plus The AI Field, which was excluded entirely as stale: its lead items (OpenAI Astra's 10 math results, Qwen3.8-Max pricing) duplicated stories already delivered on 2026-08-03. Also excluded as stale: a UK AISI/Claude-Mythos 'agents faking identities' item repeating 2026-08-05's rogue-agent story. Merged the Google AI leadership shakeup (Jeff Dean/Discovery Loop/Hassabis) across 4 newsletters into one news item, and the market recap (Dow record, SpaceX earnings drop) across 2 newsletters into one beyond_ai item. An initial draft (3 tips + 4 news + 5 beyond_ai) rendered 3 pages; cut the lowest-impact tip (Claude Voice website building, no verbatim prompt), the lowest-impact news item (Anthropic in-house chips, marked low), the lowest-impact beyond_ai item (CRISPR allergy-free beagles, marked no direct relevance), and finally the AI security 'token torching' news item (IT Brew) to close the last bit of page-1 overflow, to fit the 2-page budget."
+        }
+      ]
     }
   }
 }
