@@ -85,7 +85,8 @@ python build/build_brief.py content/2026-07-24-run1.json
 | `build/brand.example.json` | Shape of the brand-folder cache (`build/brand.json`, gitignored). |
 | `content/2026-07-24-run1.json` | Example of a run's content (v2 schema). |
 | `state/run-log.json` | Per-day run/dedup state; read and updated on every run. |
-| `.claude/commands/ai-brief.md` | Bundled `/ai-brief` slash command. |
+| `.claude/commands/ai-brief.md` | Bundled `/ai-brief` slash command — builds a new brief. |
+| `.claude/commands/brief-me.md` | Bundled `/brief-me` slash command — opens the latest published brief. |
 | `briefs/` | Generated PDFs pushed here for remote access. |
 | `fonts/` | Poppins (SIL Open Font License) — the !m brand font, used as the fallback. |
 
