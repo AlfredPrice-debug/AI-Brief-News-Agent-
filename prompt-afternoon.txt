@@ -1,0 +1,65 @@
+Run the AI Brief routine for me, following INSTRUCTIONS.md in this repo (v2).
+
+This is the AFTERNOON firing — 4:00 PM Eastern (America/New_York) — and it is today's
+run 2. A separate morning Routine already fired at 8:00 AM as run 1, so treat
+everything it published today as already covered and deduplicate against it. There is
+no local desktop and no send-mail tool available: delivery is git push plus your own
+final reply, which the Routine turns into its completion notification to me — see the
+last step.
+
+1. Read state/run-log.json (create it as {"days": {}} if absent). You are today's
+   run 2 — but cross-check the log first: if an entry for today's run 2 already
+   exists, this is a re-run, so take the next unused run number. Search mail since
+   the timestamp of today's run 1; if run 1 never happened or was skipped, fall back
+   to the last successful run before it (yesterday's 4:00 PM), so nothing is missed.
+2. Search ONLY my Outlook folder "Claude AI News Recap" for messages received since
+   that timestamp, newest first. NEVER read Junk or Deleted Items. NEVER search the
+   Inbox or any other folder. Stay read-only on existing mail — do not delete, move,
+   flag, or mark anything read, and do not send any mail (there's no send-mail tool
+   available, and none is needed).
+3. If there are zero new messages: log a skipped run to state/run-log.json, push
+   nothing, and reply "No new newsletters since [last run time]." Stop.
+4. Read each newsletter. If a body is large HTML that would overflow context, hand the
+   saved file to a subagent to slice it in ~80,000-char spans and summarize it
+   (headlines, facts, any skill/tip of the day with verbatim prompts, notable tools).
+   Discard ads, sponsor blocks, and newsletter housekeeping.
+5. Classify into three buckets:
+   - AI TIPS — things that help me use AI better or signal a change to act on. Write
+     each as a short imperative title + 2-4 numbered steps that stand alone without
+     the source. Capture any copy-paste prompt verbatim in a monospace block — never
+     paraphrase it.
+   - AI NEWS — headline + 1-2 sentences of fact, then a "What it means for you" line
+     through my lens as a Product Manager / Consultant. Mark low-impact items
+     "low": true.
+   - BEYOND AI (Morning Brew or any other non-AI newsletter that shows up) — headline
+     + facts, a "PM angle" line (a concrete tie to my work, OR plainly "No direct
+     relevance to your work, general awareness only" — don't force a stretch), and a
+     "Conversation starter" line I could actually say out loud to a client, colleague,
+     or in standup.
+6. Deduplicate by STORY, not by newsletter: fingerprint each story
+   (entity|action|object) and drop anything already covered today by run 1, even from
+   a different newsletter. If fewer than 2 items survive across all sections, skip
+   delivery, roll items forward, and report the skip.
+7. Curate to the page budget: page 1 = AI Tips (target 3, min 2) + AI News
+   (target 3-4); page 2 = Beyond AI (target 4-5). A third page only on a genuinely
+   heavy news day. Cut lowest-impact items first; never shrink type to force a fit.
+8. Write a title (no date) and three TL;DR bullets.
+9. Save to content/<today YYYY-MM-DD>-run<N>.json using the schema in
+   content/2026-07-24-run1.json, with run, runTime, and fingerprints filled in.
+10. Build:  python build/build_brief.py content/<file>.json — writes straight into
+    briefs/.
+11. Verify the page count before delivering anything — never ship an unverified PDF.
+12. git add, commit ("brief: YYYY-MM-DD run <N> - <title>") the PDF plus the updated
+    content JSON and state/run-log.json. IMPORTANT: each firing starts on its own
+    throwaway branch off main — push straight onto main with
+    `git push origin HEAD:main`, never a plain `git push` or
+    `git push -u origin <branch>` (that strands the commit on a disposable branch,
+    invisible in briefs/ on main). Retry with
+    `git fetch origin main && git rebase origin/main` up to 5 times if rejected;
+    report the git failure clearly only after 5 failed attempts.
+13. Reply with the title, the three TL;DR bullets, a GitHub link to the pushed PDF,
+    run number/time, newsletters read, and items deduped out. Keep it tight — this
+    reply becomes my notification, not an internal report.
+
+Never supplement thin source material with model knowledge or web search — if the day
+is quiet, ship a short brief or skip the run per step 6.

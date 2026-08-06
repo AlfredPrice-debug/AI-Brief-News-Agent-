@@ -33,7 +33,7 @@ This runs as a **Claude Code Remote Routine in a cloud environment**, not on Alf
 ## 1. Load run state
 
 Read `state/run-log.json` (create it with `{"days": {}}` if absent — see `state/README.md` for the schema). Determine:
-- **Run number** for today (1 or 2) and the **timestamp of the last successful run** to search mail "since." On the very first run of the day, use the previous calendar day's run-2 (4:00 PM) timestamp so overnight sends are caught.
+- **Run number** for today (1 or 2) and the **timestamp of the last successful run** to search mail "since." On the very first run of the day, use the previous calendar day's run-2 (4:00 PM) timestamp so overnight sends are caught. The two scheduled Routines each state their own run number up front (morning = 1, afternoon = 2) — take it from the prompt when it's given, and derive it from the log only when it isn't (e.g. a manual `/ai-brief`). Either way, cross-check the log so a re-run doesn't reuse a number.
 - Today's `covered` array of story fingerprints already published so far today (empty if this is run 1).
 
 ## 2. Pull newsletters since the last run

@@ -6,10 +6,10 @@
 # step) — adapt those first if you want this local path to save a desktop copy
 # or send mail.
 #
-# Runs one AI Brief pass unattended via the Claude Code CLI. Fires 3x/weekday
-# (7 AM / 1 PM / 5 PM) — the prompt itself works out which run this is from
-# state/run-log.json, so this script doesn't need to know or pass a run number.
-# Called by the "AI Brief 3x Daily" scheduled task (see install-task.ps1).
+# Runs one AI Brief pass unattended via the Claude Code CLI. Fires twice a day
+# (8 AM / 4 PM) — this script picks the matching prompt file by time of day, the
+# same way the two cloud Routines each carry their own prompt.
+# Called by the "AI Brief 2x Daily" scheduled task (see install-task.ps1).
 #
 # PERMISSIONS: an unattended run has no one to approve tool use (reading mail,
 # running Python, git push). You must pre-authorize those,
@@ -34,9 +34,11 @@ if (-not $claude) {
   exit 1
 }
 
-$prompt = Get-Content (Join-Path $repo "prompt.txt") -Raw
+# Before noon is the morning firing (run 1); anything later is the afternoon (run 2).
+$promptFile = if ((Get-Date).Hour -lt 12) { "prompt-morning.txt" } else { "prompt-afternoon.txt" }
+$prompt = Get-Content (Join-Path $repo $promptFile) -Raw
 
-Log "Starting AI Brief run using $claude"
+Log "Starting AI Brief run using $claude ($promptFile)"
 & $claude -p $prompt *>> $log     # <-- add your chosen permission flag here (see header)
 Log "Finished (exit code $LASTEXITCODE)"
 exit $LASTEXITCODE

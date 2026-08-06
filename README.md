@@ -4,13 +4,13 @@ A routine for **Claude Code** that turns the newsletters in one Outlook folder i
 
 ![Sample brief](docs/sample.png)
 
-This runs as a **cloud Routine** — a scheduled job in a Claude Code Remote environment, not on your laptop. There's no local desktop folder and no send-mail tool involved: every run pushes straight to `briefs/` in this repo, and its own final reply (title, TL;DR, GitHub link) becomes the Routine's completion notification.
+This runs as **two cloud Routines** — one scheduled for 8 AM, one for 4 PM, both in a Claude Code Remote environment rather than on your laptop. There's no local desktop folder and no send-mail tool involved: every run pushes straight to `briefs/` in this repo, and its own final reply (title, TL;DR, GitHub link) becomes the Routine's completion notification.
 
 ## What you get
 A 2-page, Impact Makers–branded PDF (brand fonts/colors, read live from the brand folder — Poppins/gold-black-blue as the bundled fallback) pushed to `briefs/` in this repo, named for the run's content, e.g.
 `Picking the Right Gemini Models, Building Design Systems & Auditing Agents_7_24_26_run1.pdf`
 
-Every run also deduplicates against everything already published *that day* — via `state/run-log.json` — so the same story never appears twice across the day's three briefs, and a run with too little new material (or no new mail at all) skips delivery on its own rather than sending something thin or repeated.
+Every run also deduplicates against everything already published *that day* — via `state/run-log.json` — so the same story never appears twice across the day's two briefs, and a run with too little new material (or no new mail at all) skips delivery on its own rather than sending something thin or repeated.
 
 ---
 
@@ -19,7 +19,7 @@ Every run also deduplicates against everything already published *that day* — 
 **The agent does not browse the web.** It only reads AI newsletters that land in one dedicated Outlook folder. So the quality of your brief depends entirely on this setup. Do these one-time steps first.
 
 ### Step 1 — Subscribe to a few newsletters
-Pick a handful so there's material for all three runs. Recommended (all free) — this list isn't fixed, the routine treats anything that lands in the folder as a candidate source:
+Pick a handful so there's material for both runs. Recommended (all free) — this list isn't fixed, the routine treats anything that lands in the folder as a candidate source:
 | Newsletter | Focus | Sign up |
 |---|---|---|
 | **Superhuman AI** | Daily AI news + practical tips (lands mid-morning) | superhuman.ai |
@@ -71,13 +71,15 @@ python build/build_brief.py content/2026-07-24-run1.json
 
 **Reading it away from your desk.** Every run **pushes the PDF to `briefs/` on GitHub**, so you can open it from your phone at any time — and the run's own final reply (title, TL;DR, GitHub link) becomes the Routine's completion notification, so you'll hear about it without checking in.
 
-**Want it to run automatically, twice a day?** See **[ROUTINE.md](ROUTINE.md)** — it has the copy-paste prompt and how the cloud Routine is scheduled for 8 AM / 4 PM Eastern (including a ready-made `/ai-brief` command for a manual test run).
+**Want it to run automatically, twice a day?** See **[ROUTINE.md](ROUTINE.md)** — it has the two copy-paste prompts and how the pair of cloud Routines is scheduled for 8 AM / 4 PM Eastern (including a ready-made `/ai-brief` command for a manual test run).
 
 ## Repo layout
 | Path | Purpose |
 |---|---|
-| `INSTRUCTIONS.md` | The routine Claude Code follows on every run (v2: 3x/day, 2-page, dedup). |
-| `ROUTINE.md` | How to run it as a scheduled routine + the prompt. |
+| `INSTRUCTIONS.md` | The routine Claude Code follows on every run (v2: 2x/day, 2-page, dedup). |
+| `ROUTINE.md` | How to run it as two scheduled routines + both prompts. |
+| `prompt-morning.txt` | Prompt for the 8 AM Routine (run 1). |
+| `prompt-afternoon.txt` | Prompt for the 4 PM Routine (run 2). |
 | `template/brief_template.html` | 2-page layout (AI page + Beyond AI page) + brand CSS. |
 | `build/build_brief.py` | Renders a content JSON → branded PDF via headless Chrome. |
 | `build/brand.example.json` | Shape of the brand-folder cache (`build/brand.json`, gitignored). |
