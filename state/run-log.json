@@ -370,6 +370,27 @@
           "note": "No run-log entry existed for today's 8:00 AM run 1, so searched mail since the last delivered run in the log, 2026-08-05 run 1 (07:21:58-04:00). Read 7 newsletters (Superhuman AI, The Neuron, The Rundown AI, Morning Brew x2 -- one was a subscription-confirmation nag with no content and was discarded, 1440 Daily Digest, IT Brew's Cybersecurity Edition) plus The AI Field, which was excluded entirely as stale: its lead items (OpenAI Astra's 10 math results, Qwen3.8-Max pricing) duplicated stories already delivered on 2026-08-03. Also excluded as stale: a UK AISI/Claude-Mythos 'agents faking identities' item repeating 2026-08-05's rogue-agent story. Merged the Google AI leadership shakeup (Jeff Dean/Discovery Loop/Hassabis) across 4 newsletters into one news item, and the market recap (Dow record, SpaceX earnings drop) across 2 newsletters into one beyond_ai item. An initial draft (3 tips + 4 news + 5 beyond_ai) rendered 3 pages; cut the lowest-impact tip (Claude Voice website building, no verbatim prompt), the lowest-impact news item (Anthropic in-house chips, marked low), the lowest-impact beyond_ai item (CRISPR allergy-free beagles, marked no direct relevance), and finally the AI security 'token torching' news item (IT Brew) to close the last bit of page-1 overflow, to fit the 2-page budget."
         }
       ]
+    },
+    "2026-08-07": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-07T09:20:53-04:00",
+          "status": "delivered",
+          "covered": [
+            "openai-meta-anthropic|agents-breach|systems-during-safety-tests",
+            "arc-institute|designs|ai-bacteriophage-viruses",
+            "google-maps|adds|agentic-multi-step-features",
+            "superhuman|tip|replit-ai-invoice-generator",
+            "rundown|tip|lovable-chatgpt-app-handoff",
+            "trump|signs|birthright-citizenship-eos-round-2",
+            "fda|approves|first-mrna-flu-vaccine",
+            "meta|ordered-to-pay|942m-child-safety-verdict",
+            "bofa|spends|250m-annual-glp1-coverage"
+          ],
+          "note": "Morning firing landed ~80 min late (9:20 AM ET, not 8:00 AM). No run-log entry existed for today, so searched mail since yesterday's last successful run, 2026-08-06 run 2 (16:00:00-04:00), per the overnight-catch rule. Read 5 newsletters (Superhuman AI, The Neuron, The Rundown AI, Morning Brew, 1440 Daily Digest, all sent 4:26-9:11 AM). Excluded as stale: OpenAI Astra's 10-problems story (Superhuman) repeating 2026-08-03's item, and the UK AISI fake-GitHub-identity detail (already covered 2026-08-05) inside this run's broader agents-going-rogue story -- wrote that story instead around its genuinely new specifics (OpenAI/Hugging Face backchannel breach, Meta's Muse Spark test-misconfiguration hack, JPMorgan's Dimon warning 40 companies). Merged the AI-designed-viruses story across 3 newsletters (Rundown, Neuron, 1440) plus a Morning Brew aside into one news item. An initial draft (3 tips incl. The Neuron's Loop Engineering tip with its full verbatim prompt + 4 news + 5 beyond_ai) rendered 3 pages; isolating page 1 showed the Loop Engineering tip's 12-line prompt block alone was too tall to pair with more than 1 news item. Swapped it out for two shorter tips (Superhuman invoice generator with its short verbatim prompt, Rundown's Lovable app-building steps) and cut the lowest-impact/most-stale news item (OpenAI's motion to dismiss Apple's trade-secret suit, marked low) and one beyond_ai item (the markets recap, most generic 'no relevance' item) to fit the 2-page budget, landing at 2 tips + 3 news + 4 beyond_ai (Google Maps' agentic upgrade kept as the third news item)."
+        }
+      ]
     }
   }
 }
