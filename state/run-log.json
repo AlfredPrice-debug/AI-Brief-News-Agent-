@@ -419,6 +419,23 @@
             "markets|rally-on|cooling-jobs-report-airbnb-earnings"
           ],
           "note": "First run of the day; searched mail since yesterday's run 2 (2026-08-07T16:06:54-04:00) per the overnight-catch rule. Found exactly 2 new messages, both Alfred-forwarded non-AI newsletters (Morning Brew 'Not so hot hiring' and 1440 Daily Digest 'Stress Scars...', both sent 4:26-5:21 AM). Handed both HTML bodies to subagents to extract. Zero AI Tips content in either. The only AI-adjacent mentions were both too thin/stale to use: an 'AI made 16 brand-new viruses' item (Evo/Stanford/Arc Institute) that duplicates 2026-08-07's 'arc-institute|designs|ai-bacteriophage-viruses' fingerprint exactly, and a one-sentence 'OpenAI slows Astra release for cybersecurity safeguards' quick-hit with no real detail beyond the single line. With 0 tips and effectively 0 usable news, page 1 would be empty -- held rather than ship an AI Brief without AI content, per the 2026-08-02 precedent. The ~10 solid Beyond AI items (jobs report, Fed vs. Cook, Blanche confirmation, Burger King/Wendy's, Puerto Rico water rationing, Saudi-Turkey-Pakistan defense pact, peanut-allergy gut-bacteria trial, Pentagon UFO files, childhood-stress study, markets/Airbnb rally) roll forward for the next run to pair with whatever AI newsletters arrive; excluded a Thai school-shooting story from rollover as it carries no PM angle or brief-appropriate tone."
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-08-08T16:09:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "qualcomm|robot-falls|live-computex-keynote",
+            "unitree|prices-ipo-at|9b-valuation",
+            "mitsubishi-byd|scale-up|humanoid-robot-production",
+            "doordash|pays-gig-workers-to-bridge|robot-pickup-gap",
+            "us-jobs-report|shows|23000-jobs-lost-july",
+            "trump|revives-effort-to-fire|fed-governor-cook",
+            "burger-king|reclaims|no2-burger-chain-spot-from-wendys",
+            "puerto-rico|begins-rationing|water-amid-drought",
+            "markets|rally-on|cooling-jobs-report-airbnb-earnings"
+          ],
+          "note": "Afternoon firing at scheduled time (4:00 PM ET). Searched mail since run 1 (08:11:41). Found exactly 1 new message: a forwarded Superhuman AI 'Robotics Special' edition (explicitly a one-off -- 'Regular AI updates resume on Monday'), 100% robotics/AI-hardware content with no tip-of-the-day and no verbatim prompt, so tips is empty this run. Classified its robotics stories as AI News (Qualcomm's live on-stage fall at Computex 2026, Unitree's $9B Shanghai IPO, Mitsubishi/BYD humanoid mass-production plans, DoorDash's gig-worker robot handoff workaround); cut lower-priority items from the same newsletter (China drone-export countermeasures, Wayve/Uber TfL robotaxi licenses, the Autonomy NX1 AI butler, Foundation's baseball-catching robotic hand, Musk's SpaceX-moon-factories comment) for space/impact. No new Beyond AI newsletter arrived this run, so paired the AI News with 5 of run 1's 10 rolled-forward Beyond AI candidates (jobs report, Fed vs. Cook, Burger King/Wendy's, Puerto Rico water rationing, markets/Airbnb rally) -- re-read the two source emails in full via subagents to get exact figures rather than relying on the terse rollover labels. Left Blanche AG confirmation, the Saudi-Turkey-Pakistan defense pact, the peanut-allergy gut-bacteria trial, the Pentagon UFO files, and the childhood-stress/SETD7 study unused for space; the Thai school-shooting item stays excluded as not brief-appropriate. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
         }
       ]
     }

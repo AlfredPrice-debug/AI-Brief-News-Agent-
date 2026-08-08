@@ -1,0 +1,83 @@
+{
+  "run": 2,
+  "runTime": "2026-08-08T16:09:00-04:00",
+  "title": "A $9 Billion Robot IPO, a Live Stage Fall, and a Surprise Jobs Miss",
+  "date_display": "Saturday, August 8, 2026",
+  "date_slug": "8_8_26",
+  "sources": "<b>Superhuman AI</b> (Robotics Special), <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Aug 8)",
+  "tldr": [
+    "A Qualcomm humanoid robot face-planted live at Computex 2026 — a blunt reminder that reliability, not capability, is the real blocker for client-facing robot demos.",
+    "Unitree priced its Shanghai IPO at a $9 billion valuation as humanoid robot production scales toward assembly-line volume (Mitsubishi eyeing 1,000/month).",
+    "The US unexpectedly lost 23,000 jobs in July, sending markets into a relief rally and reviving the fight over Fed Governor Lisa Cook."
+  ],
+  "tips": [],
+  "news": [
+    {
+      "body": "<b>A Qualcomm-powered humanoid robot face-planted live during a Computex 2026 keynote in Taiwan.</b> The robot fell forward while walking out to co-present; Qualcomm blamed a communication glitch and said its safe-collapse sequence worked as designed.",
+      "means": "Reliability, not capability, remains the biggest blocker to real-world robot deployment — verify failure-mode handling before greenlighting any client-facing AI or robotics demo.",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>Unitree priced its Shanghai IPO at a $9 billion valuation</b>, well above its earlier $7 billion target, after revenue more than quadrupled to $238 million in 2025. The Chinese humanoid robot maker flagged US trade restrictions as a risk, with American sales making up 13.3% of last year's revenue.",
+      "means": "A useful data point when assessing vendor exposure to China-based robotics and AI hardware supply chains — geopolitics is now a line item in the robotics business case.",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>Humanoid robots are moving from demo to assembly line.</b> Mitsubishi plans to mass-produce up to 1,000 humanoid robots a month on an unused Kyoto engine line, and BYD is entering the humanoid robot race with an August debut aimed at rivaling Tesla's Optimus.",
+      "means": "Physical AI is scaling faster than most roadmaps assume — worth flagging to clients weighing multi-year automation timelines.",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>DoorDash is paying gig workers to bridge a robot gap.</b> Its autonomous Dot delivery robots can navigate roads and sidewalks but can't pick up orders from a restaurant counter, so DoorDash now pays workers through its app to load robots for the final handoff.",
+      "means": "A concrete illustration of automation's 'last-mile problem' — useful when clients ask where full autonomy realistically ends and human-in-the-loop begins.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>The US unexpectedly lost 23,000 jobs in July</b>, against forecasts for a gain of roughly 83,000-100,000. Unemployment ticked down to 4.1%, but only because labor-force participation fell to its lowest level since February 2021; wage growth slowed to a five-year low of 3.2%.",
+      "angle": "A slowing labor market and falling participation are exactly the kind of signals that should feed into client staffing and budget-planning conversations right now.",
+      "starter": "Did you see July's jobs report? Losing 23,000 jobs against a forecast gain of roughly 100,000 is a sharp miss — is anyone rethinking Q4 hiring plans because of it?",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>The White House revived its effort to fire Fed Governor Lisa Cook</b>, after the Supreme Court ended an earlier attempt. A letter from a top Trump aide cited the same mortgage-related allegations Cook has previously denied; her lawyer called it \"as baseless now as they were a year ago.\"",
+      "angle": "Renewed political pressure on the Fed's independence adds uncertainty to rate assumptions — worth flagging before clients lock in financing plans that depend on a stable rate path.",
+      "starter": "With the fight over Fed Governor Cook flaring back up, are we still comfortable assuming rate stability into next year?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Burger King reclaimed the No. 2 US burger chain spot from Wendy's</b>, six years after losing it, on an 8.5% jump in same-store sales fueled by a Whopper revamp — its fifth straight quarter of growth. Wendy's sales have shrunk for six consecutive quarters.",
+      "angle": "A clean real-world case study on how a single flagship product refresh can shift market share — good ammunition next time a client debates a product relaunch.",
+      "starter": "Burger King just leapfrogged Wendy's off the back of a Whopper revamp alone — a nice reminder that sometimes the fix really is 'just make the core product better.'",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Puerto Rico began rationing water</b> amid a severe drought, cutting service to more than 180,000 customer accounts around San Juan for 48-hour stretches at a time. July was San Juan's driest month on record since 1899, and officials warn rationing could extend to 72 hours.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Puerto Rico is now rationing water for 180,000+ households — a stark reminder of how fast climate volatility can strain basic infrastructure.",
+      "source": "1440 Daily Digest"
+    },
+    {
+      "body": "<b>Airbnb had its best trading day in four years</b>, up 17.43%, after a strong earnings report and raised full-year forecast — helping push the Nasdaq, S&P, and Dow higher alongside relief over the cooling jobs report.",
+      "angle": "A useful read on travel and marketplace demand resilience if any client work touches hospitality, travel, or platform business models.",
+      "starter": "Airbnb's best day in four years came right off strong earnings — anyone tracking how travel demand is holding up for our hospitality-adjacent clients?",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "qualcomm|robot-falls|live-computex-keynote",
+    "unitree|prices-ipo-at|9b-valuation",
+    "mitsubishi-byd|scale-up|humanoid-robot-production",
+    "doordash|pays-gig-workers-to-bridge|robot-pickup-gap",
+    "us-jobs-report|shows|23000-jobs-lost-july",
+    "trump|revives-effort-to-fire|fed-governor-cook",
+    "burger-king|reclaims|no2-burger-chain-spot-from-wendys",
+    "puerto-rico|begins-rationing|water-amid-drought",
+    "markets|rally-on|cooling-jobs-report-airbnb-earnings"
+  ]
+}
