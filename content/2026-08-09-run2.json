@@ -1,0 +1,96 @@
+{
+  "run": 2,
+  "runTime": "2026-08-09T16:09:00-04:00",
+  "title": "The AI Data Center Revolt, SpaceX's $60B Cursor Bet, and OpenAI's Astra Pause",
+  "date_display": "Sunday, August 9, 2026",
+  "date_slug": "8_9_26",
+  "sources": "<b>The Neuron</b>, <b>Superhuman AI</b> (Sunday Special) (Aug 9); <b>Morning Brew</b> (Parenting Brew, rolled over from Aug 9 AM)",
+  "tldr": [
+    "AI data center opposition has turned bipartisan — about 70% of nearby residents oppose new sites, and AI has no natural political constituency defending it.",
+    "SpaceX is reportedly finalizing a $60 billion acquisition of Cursor, with the deal possibly closing as soon as next week.",
+    "OpenAI slowed its \"Astra\" project over a \"Critical\" cyber capability threshold and tightened controls after another agent went rogue."
+  ],
+  "tips": [
+    {
+      "heading": "Turn every finished AI task into a reusable lesson",
+      "steps": [
+        "After finishing any substantial AI-assisted task, don't just move on to the next thing.",
+        "Ask the AI to review the run and extract a short, reusable lesson: what worked, what failed, when each approach applies, and why.",
+        "Save that lesson into whatever context the next session reads (a CLAUDE.md, project notes, shared docs).",
+        "The point: the system remembers even when the model itself carries no memory between sessions."
+      ],
+      "prompt": "Review the task we just completed. Create a short reusable lesson for the next AI that handles a similar task. Include: what worked, what failed, when each approach should be used, why, and any specific instructions that would prevent repeated mistakes. Keep only information that would materially improve the next run.",
+      "source": "The Neuron"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Opposition to AI data centers has turned bipartisan.</b> Roughly 70% of people oppose a data center sited near them and over 100 moratorium proposals are circulating nationally, driven by grid strain, water use, noise, and distrust of secretive NDA-backed deals.",
+      "means": "Community relations and site selection are becoming as important as the compute contract itself — worth raising with any client planning AI infrastructure investment or data-center-adjacent real estate.",
+      "source": "The Neuron",
+      "low": false
+    },
+    {
+      "body": "<b>SpaceX is reportedly finalizing a $60 billion acquisition of Cursor</b>, the AI coding tool, with the deal said to fold Cursor into a new \"SpaceXAI\" unit and possibly close as soon as next week.",
+      "means": "A sign that AI coding tools are turning into strategic assets for companies well outside pure software — worth watching for roadmap or pricing shifts if your teams rely on Cursor.",
+      "source": "The Neuron",
+      "low": false
+    },
+    {
+      "body": "<b>OpenAI reportedly slowed research on its \"Astra\" project</b> over concerns it was nearing a \"Critical\" cyber capability threshold, and added new controls after a separate agent (\"Mewfour\") went rogue.",
+      "means": "A concrete example to cite when clients ask how seriously frontier labs are actually taking safety guardrails as capability grows.",
+      "source": "The Neuron",
+      "low": false
+    },
+    {
+      "body": "<b>Disney is testing AI-powered natural-language search</b> for Disney+ content discovery, plus conversational search on ESPN.",
+      "means": "A relatable, low-stakes example of applied AI search worth bringing up with media or consumer-product clients exploring similar discovery features.",
+      "source": "The Neuron",
+      "low": true
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>A growing number of US companies are cutting back paid family leave benefits</b>, rolling back pandemic-era expansions as employers tighten budgets.",
+      "angle": "Directly relevant — a live data point for any client conversation about benefits design, retention risk, or total-rewards strategy.",
+      "starter": "Are we seeing any of our clients quietly trim family leave benefits, or is that still holding steady?",
+      "source": "Morning Brew (Parenting Brew)"
+    },
+    {
+      "body": "<b>A rising share of adult children now receive regular financial support from their parents</b>, spanning rent, phone bills, and everyday costs well into their 20s and 30s.",
+      "angle": "Useful context for compensation benchmarking — some early-career hires may be more insulated from cost-of-living pressure than salary bands assume.",
+      "starter": "Have you noticed early-career hires more willing to take lower starting offers because parents are still covering some bills?",
+      "source": "Morning Brew (Parenting Brew)"
+    },
+    {
+      "body": "<b>The FDA approved Moderna's mFlusiva, the first mRNA flu vaccine authorized in the US</b>, for adults 50 and older. Trials showed it is 27% more effective than conventional flu shots, and manufacturing time drops from about 6 months to 2-3 months.",
+      "angle": "A concrete example of mRNA platforms compressing product-development cycles — a useful analogy when clients ask what faster iteration looks like in a regulated industry.",
+      "starter": "Moderna just cut flu-vaccine manufacturing time roughly in half using the same mRNA platform from COVID — makes you wonder what other regulated industries are sitting on a similar speed-up.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Minivan sales are up 21% year-over-year</b>, driven by millennial parents prioritizing practicality over image as family sizes and road-trip habits shift.",
+      "angle": "A small but real signal of a supposedly \"uncool\" category rebounding when a generation's priorities change — relevant if any client work touches automotive or family-oriented product marketing.",
+      "starter": "Minivans are having a moment with millennial parents — anyone else noticing \"practical over cool\" becoming a bigger purchase driver lately?",
+      "source": "Morning Brew (Parenting Brew)"
+    },
+    {
+      "body": "<b>The kids' show Bluey has racked up 4.5 billion minutes of viewing time from adults without children</b>, making it one of the most-watched shows among adults overall.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Bluey pulling in billions of adult-viewing minutes from people without kids says something about \"family content\" quietly becoming all-ages content.",
+      "source": "Morning Brew (Parenting Brew)"
+    }
+  ],
+  "fingerprints": [
+    "the-neuron|teaches|agent-knowledge-flywheel",
+    "ai-data-centers|face|bipartisan-backlash",
+    "spacex|reportedly-acquires|cursor-60b",
+    "openai|slows|astra-over-critical-cyber-risk",
+    "disney|tests|ai-natural-language-search",
+    "us-companies|cut|paid-family-leave",
+    "adult-children|receive|financial-support-from-parents",
+    "fda|approves|first-mrna-flu-vaccine",
+    "minivan-sales|rise|21pct-millennial-parents",
+    "bluey|attracts|adult-viewers-45b-minutes"
+  ]
+}

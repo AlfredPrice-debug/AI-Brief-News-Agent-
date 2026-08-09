@@ -455,6 +455,24 @@
             "bluey|attracts|adult-viewers-45b-minutes"
           ],
           "note": "First run of the day; searched mail since yesterday's run 2 (2026-08-08T16:09:00-04:00) per the overnight-catch rule. Found exactly 1 new message: a forwarded Morning Brew special edition, 'Parenting Brew' (sent 2026-08-09 6:03 AM ET). Zero AI Tips/AI News content -- the only AI mention anywhere in the issue was a throwaway disclaimer inside a Verily Me sponsor ad ('Violet uses generative AI...'), discarded as ad content per the no-ads rule. With page 1 empty, held rather than ship an AI Brief without AI content, per the 2026-08-02/2026-08-08 precedent. The newsletter's 6 non-AI stories (adult-children financial dependence, declining corporate paid family leave, rising minivan sales, platonic co-parenting/mommunes, an elite nanny college, Bluey's adult audience) all clear the brief-appropriate bar and roll forward as Beyond AI candidates for the next run to pair with whatever AI newsletters arrive."
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-08-09T16:09:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "the-neuron|teaches|agent-knowledge-flywheel",
+            "ai-data-centers|face|bipartisan-backlash",
+            "spacex|reportedly-acquires|cursor-60b",
+            "openai|slows|astra-over-critical-cyber-risk",
+            "disney|tests|ai-natural-language-search",
+            "us-companies|cut|paid-family-leave",
+            "adult-children|receive|financial-support-from-parents",
+            "fda|approves|first-mrna-flu-vaccine",
+            "minivan-sales|rise|21pct-millennial-parents",
+            "bluey|attracts|adult-viewers-45b-minutes"
+          ],
+          "note": "Afternoon firing at scheduled time (4:09 PM ET). Searched mail since run 1 (08:11:07). Found exactly 2 new messages, both Sunday-special one-off editions: Superhuman AI's science roundup ('AI just created viruses...') and The Neuron's Sunday recap ('The AI Data Center Backlash Is Going Bipartisan'). Excluded as stale: Superhuman's Stanford/Evo AI-designed-virus story, an exact duplicate of the arc-institute|designs|ai-bacteriophage-viruses fingerprint already published 2026-08-07 and already discarded as stale on 2026-08-08. Also excluded for repetition: The Neuron's Kimi K3 sandbox-escape aside, the fourth in a string of agent-goes-rogue stories already covered 2026-07-31/08-01/08-05/08-07, plus lower-priority quick hits (ByteDance's 10T-parameter model, DeepSeek V4 Flash's ARC-AGI-2 score, OpenAI's 'doughnut' hardware device) cut for page-budget space rather than staleness. Used The Neuron's one tip-of-the-day (Agent Knowledge Flywheel, with its verbatim prompt) and 4 news items (AI data center bipartisan backlash as the lead, SpaceX's reported $60B Cursor acquisition, OpenAI's Astra slowdown over a 'Critical' cyber threshold, Disney's AI search test marked low). Paired with 5 Beyond AI items: 4 of today's 6 rolled-forward Parenting Brew items (paid family leave cuts, adult-children financial dependence, minivan sales, Bluey's adult viewership) plus one fresh Superhuman item (FDA's first mRNA flu vaccine approval). Left platonic co-parenting and the elite nanny college (Parenting Brew) plus the Amazon lost-civilization discovery, solar telescope images, CRISPR allergy-free beagles, and the UPenn anti-cancer gum story (Superhuman) unused for space; these roll forward to tomorrow's run. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
         }
       ]
     }
