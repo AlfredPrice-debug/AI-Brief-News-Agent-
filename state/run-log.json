@@ -438,6 +438,25 @@
           "note": "Afternoon firing at scheduled time (4:00 PM ET). Searched mail since run 1 (08:11:41). Found exactly 1 new message: a forwarded Superhuman AI 'Robotics Special' edition (explicitly a one-off -- 'Regular AI updates resume on Monday'), 100% robotics/AI-hardware content with no tip-of-the-day and no verbatim prompt, so tips is empty this run. Classified its robotics stories as AI News (Qualcomm's live on-stage fall at Computex 2026, Unitree's $9B Shanghai IPO, Mitsubishi/BYD humanoid mass-production plans, DoorDash's gig-worker robot handoff workaround); cut lower-priority items from the same newsletter (China drone-export countermeasures, Wayve/Uber TfL robotaxi licenses, the Autonomy NX1 AI butler, Foundation's baseball-catching robotic hand, Musk's SpaceX-moon-factories comment) for space/impact. No new Beyond AI newsletter arrived this run, so paired the AI News with 5 of run 1's 10 rolled-forward Beyond AI candidates (jobs report, Fed vs. Cook, Burger King/Wendy's, Puerto Rico water rationing, markets/Airbnb rally) -- re-read the two source emails in full via subagents to get exact figures rather than relying on the terse rollover labels. Left Blanche AG confirmation, the Saudi-Turkey-Pakistan defense pact, the peanut-allergy gut-bacteria trial, the Pentagon UFO files, and the childhood-stress/SETD7 study unused for space; the Thai school-shooting item stays excluded as not brief-appropriate. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
         }
       ]
+    },
+    "2026-08-09": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-09T08:11:07-04:00",
+          "status": "skipped_thin",
+          "covered": [],
+          "rollover": [
+            "adult-children|receive|financial-support-from-parents",
+            "us-companies|cut|paid-family-leave",
+            "minivan-sales|rise|21pct-millennial-parents",
+            "millennials|embrace|platonic-co-parenting",
+            "norland-college|trains|elite-nannies-ultrawealthy",
+            "bluey|attracts|adult-viewers-45b-minutes"
+          ],
+          "note": "First run of the day; searched mail since yesterday's run 2 (2026-08-08T16:09:00-04:00) per the overnight-catch rule. Found exactly 1 new message: a forwarded Morning Brew special edition, 'Parenting Brew' (sent 2026-08-09 6:03 AM ET). Zero AI Tips/AI News content -- the only AI mention anywhere in the issue was a throwaway disclaimer inside a Verily Me sponsor ad ('Violet uses generative AI...'), discarded as ad content per the no-ads rule. With page 1 empty, held rather than ship an AI Brief without AI content, per the 2026-08-02/2026-08-08 precedent. The newsletter's 6 non-AI stories (adult-children financial dependence, declining corporate paid family leave, rising minivan sales, platonic co-parenting/mommunes, an elite nanny college, Bluey's adult audience) all clear the brief-appropriate bar and roll forward as Beyond AI candidates for the next run to pair with whatever AI newsletters arrive."
+        }
+      ]
     }
   }
 }
