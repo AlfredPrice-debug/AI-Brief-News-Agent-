@@ -1,0 +1,63 @@
+{
+  "run": 2,
+  "runTime": "2026-08-10T16:11:00-04:00",
+  "title": "Samsung's AI Support Backlash, Free ChatGPT Goes Unlimited, and North Korea's DIY AI Attack Kit",
+  "date_display": "Monday, August 10, 2026",
+  "date_slug": "8_10_26",
+  "sources": "<b>The AI Field</b>, <b>Superhuman AI</b> (Aug 10)",
+  "tldr": [
+    "Samsung customers are pushing back hard on AI-generated support replies — a live cautionary tale before any client ships a chatbot.",
+    "OpenAI lifted the message cap on ChatGPT Free's ordinary text chats, making basic AI chat a free commodity.",
+    "North Korea's Kimsuky hacking group built a local AI toolkit (Ollama, GPT4All, Cursor) to run attacks without touching outside AI services."
+  ],
+  "tips": [
+    {
+      "heading": "Run a 10-minute pre-mortem before you commit to a plan",
+      "steps": [
+        "Pick one real plan you're about to start — a launch, project, trip, or big purchase.",
+        "Paste the prompt below into your AI assistant.",
+        "Choose one preventive action from its five most likely failure points and add it to your plan before you begin."
+      ],
+      "prompt": "I am planning [PLAN]. My goal is [GOAL]. My constraints are [TIME, BUDGET, PEOPLE, OR RULES]. Ask up to three short questions first. Then assume the plan failed and list the five most likely reasons. For each one, give me an early warning sign and one preventive action. Separate facts from assumptions. End with the single change I should make today. Treat this as a draft for me to review, not a final decision.",
+      "source": "The AI Field"
+    },
+    {
+      "heading": "Let Claude search and apply to jobs for you",
+      "steps": [
+        "Install the Claude Chrome extension.",
+        "Upload your resume as a PDF.",
+        "Ask the extension to find jobs you qualify for — it searches, matches your profile, and can apply on autopilot."
+      ],
+      "prompt": "[PDF Resume] based on my attached resume, find the best jobs for me in [place]",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Samsung customers push back on AI-generated support replies.</b> A viral post (1.5M views) reported that Samsung customers are unhappy being served LLM-generated responses in support interactions, becoming a cautionary talking point about deploying ChatGPT-style tools directly in customer service.",
+      "means": "A live case study for any client debating AI in their support queue — the backlash is about tone and trust, not capability. Worth raising before a client ships a chatbot without a clear human-escalation path.",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>ChatGPT removes the text-chat limit for free users.</b> OpenAI is lifting the rate limit on ordinary text chats for Free and Go users starting the week of August 10, making GPT-5.6 Luna the default model with a new Think button for harder questions. Files, images, voice, deep research, memory, and Codex keep separate limits.",
+      "means": "Basic AI chat is becoming a free commodity. If you're evaluating tools or pricing tiers for a client, the value case now has to rest on reasoning depth, context, and task completion, not raw message volume.",
+      "source": "The AI Field",
+      "low": false
+    },
+    {
+      "body": "<b>North Korean hackers assembled a local AI toolkit for attacks.</b> A report from South Korean security firm Genians says the Kimsuky group built a setup around Ollama, GPT4All, Msty, RAG search, and Cursor to analyze stolen documents locally and generate convincing financial/crypto decoy files, avoiding sending sensitive material to outside AI services. Reuters notes the findings weren't independently verified.",
+      "means": "The threat here isn't a secret model, it's everyday AI tools stitched into a private workflow. Worth flagging in any client security-awareness conversation: their own tool stack is the attacker's tool stack too.",
+      "source": "The AI Field",
+      "low": false
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "samsung|faces-backlash|llm-customer-service",
+    "openai|removes-limit|chatgpt-free-text-chats",
+    "kimsuky|assembles|local-ai-attack-stack",
+    "ai-field|tip|premortem-plan-prompt",
+    "superhuman|tip|claude-job-search-autopilot"
+  ]
+}
