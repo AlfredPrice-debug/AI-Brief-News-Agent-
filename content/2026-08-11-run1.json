@@ -1,0 +1,96 @@
+{
+  "run": 1,
+  "runTime": "2026-08-11T08:21:07-04:00",
+  "title": "Meta Goes Open, OpenAI Arms Cyber Researchers, and Anthropic Holds the Line on Price",
+  "date_display": "Tuesday, August 11, 2026",
+  "date_slug": "8_11_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>1440</b> (Aug 11)",
+  "tldr": [
+    "Meta released a free, open-weight model (Muse Glimmer) alongside a Zuckerberg manifesto arguing against AI power concentration — a real build-vs-buy signal.",
+    "OpenAI expanded its Daybreak cyber program with GPT-5.6-Cyber; starting September 1, users need physical security keys plus vetting.",
+    "Anthropic made Claude Sonnet 5's introductory pricing permanent rather than raising it as planned this month."
+  ],
+  "tips": [
+    {
+      "heading": "Set up a scheduled AI briefing that only flags real changes",
+      "steps": [
+        "Pick a topic to monitor and the sources it should check.",
+        "Give ChatGPT's Scheduled Tasks the prompt below, filling in your topic, sources, and what counts as a meaningful change.",
+        "It stays quiet unless something meaningfully shifted — set an end condition so it doesn't run forever."
+      ],
+      "prompt": "Every weekday at 8:00 AM, check [TOPIC] using [SOURCE LIST]. Compare the findings with previous runs. Notify me only if [DEFINITION OF MEANINGFUL CHANGE]. Include the source link, publication time, what changed, and the action I should consider. If nothing qualifies, reply: \"No meaningful change.\" Stop this task after [END CONDITION].",
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Turn a one-line idea into a live website with ChatGPT and Codex",
+      "steps": [
+        "Plan the build in Astro.js, then have ChatGPT draft a one-page PRD from your idea.",
+        "Hand the PRD to Codex (built on GPT-5.6) with sub-agents to build the site.",
+        "Iterate on the live preview, then publish through OpenAI's \"Sites\" skill if you want it hosted for you."
+      ],
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Meta released Muse Glimmer, a free, open-weight model built for on-device coding and agent workflows</b> — a quantized version reportedly runs on one consumer GPU with ~18GB of memory. Zuckerberg paired it with a 6,500-word manifesto against AI power concentration, proposing broad free access and a $1B fund for communities hosting Meta data centers.",
+      "means": "A real signal in the build-vs-buy debate — an open-weight model good enough for local coding/agent workloads changes the calculus against API-based vendors.",
+      "source": "The Neuron / The Rundown AI / 1440"
+    },
+    {
+      "body": "<b>OpenAI expanded its Daybreak program with GPT-5.6-Cyber</b>, a hacking-tuned model that answers 95% of advanced cyberattack requests the standard GPT-5.6 Sol refuses (vs. 1.5%). Starting September 1, individual users need physical security keys plus vetting and signed authorization.",
+      "means": "A preview of how AI vendors will gate high-risk capabilities — useful if a client's security team asks how vendors manage dual-use risk.",
+      "source": "The Rundown AI / The Neuron"
+    },
+    {
+      "body": "<b>Anthropic made Claude Sonnet 5's introductory pricing permanent</b> — $2 per million input tokens, $10 per million output tokens — rather than raising it as planned this month.",
+      "means": "Directly useful for cost planning on any Claude-based product or client engagement — a price increase you may have been budgeting for isn't coming.",
+      "source": "The Neuron"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>A 7.4-magnitude earthquake struck western Colombia</b>, killing at least 111 people and damaging more than 1,500 homes, 50 schools, and 18 health centers near San José del Palmar, Chocó — the country's strongest quake this century, felt as far as Ecuador and Panama.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Did you see the scale of the Colombia earthquake — 111 dead and over 1,500 homes damaged? Puts a lot of our \"urgent\" client fires in perspective.",
+      "source": "1440"
+    },
+    {
+      "body": "<b>US markets dipped Monday (S&P -0.1%, Dow -0.1%, Nasdaq -0.3%) as Intel moved to raise $15B in common stock</b> and the US emergency oil reserve fell below 300 million barrels — its lowest level since 1983 — amid supply pressure from the Iran conflict.",
+      "angle": "Intel's capital raise is a useful data point on how tech companies are financing their next moves right now — worth flagging if a client's roadmap depends on chip supply or capex timing.",
+      "starter": "Intel's raising $15B in stock right now — anyone else reading that as a sign of how tight capital is getting across the chip industry?",
+      "source": "1440"
+    },
+    {
+      "body": "<b>Bristol Myers Squibb will build a $2.3B drug manufacturing campus in Houston</b>, creating roughly 500 permanent jobs.",
+      "angle": "A concrete example of pharma reshoring manufacturing capacity to the US — relevant if you're advising clients in life sciences or industrial site selection.",
+      "starter": "BMS just committed $2.3B to a new Houston plant — are we seeing more clients bring manufacturing back onshore, or is this still the exception?",
+      "source": "1440"
+    },
+    {
+      "body": "<b>Taylor Farms recalled prepared foods containing jalapeños over a salmonella outbreak</b> that has sickened more than 345 people across 27 states, hospitalizing 36.",
+      "angle": "A live case study in supply chain and food-safety risk — useful if you're working with clients in retail, food service, or CPG on traceability and recall response.",
+      "starter": "345 people sick across 27 states from one jalapeño recall — how confident are our retail or food clients in their own traceability if something like this hit them?",
+      "source": "1440"
+    },
+    {
+      "body": "<b>Jury selection began in the murder trial of Duane \"Keefe D\" Davis</b>, charged in Tupac Shakur's 1996 killing — nearly three decades after the shooting, and after Davis previously accused Sean \"Diddy\" Combs of commissioning it (Combs denies).",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "The Tupac murder trial is finally starting almost 30 years later — anyone else surprised it took this long to get to court?",
+      "source": "1440"
+    }
+  ],
+  "fingerprints": [
+    "meta|releases|muse-glimmer-open-weight-model",
+    "zuckerberg|publishes|ai-concentration-manifesto",
+    "openai|expands|daybreak-cyber-gpt5.6",
+    "anthropic|locks-in|sonnet-5-permanent-pricing",
+    "colombia|earthquake-kills|111-people",
+    "markets|dip-as|intel-raises-15b-oil-reserve-falls",
+    "bristol-myers-squibb|builds|2.3b-houston-campus",
+    "taylor-farms|recalls|jalapeno-salmonella-outbreak",
+    "tupac-trial|begins-jury-selection|keefe-d-davis",
+    "the-neuron|tip|scheduled-change-only-briefing",
+    "rundown|tip|idea-to-website-chatgpt-codex"
+  ]
+}

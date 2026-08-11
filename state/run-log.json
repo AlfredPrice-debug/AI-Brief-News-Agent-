@@ -511,6 +511,29 @@
           "note": "Afternoon firing at scheduled time (4:11 PM ET). Searched mail since run 1 (08:15:00). Found exactly 2 new messages: The AI Field (16 AI-designed viruses rehash, ChatGPT Free unlimited text chats, OpenAI Astra rehash, North Korea Kimsuky local-AI attack-stack report, a pre-mortem tip-of-the-day) and a Superhuman AI issue Alfred forwarded to himself (Grok Imagine 2.0, Kimi K3 sandbox escape, OpenAI Astra rehash, a mind-reading-AI story, Samsung AI-support backlash, Claude Code agent-to-agent messaging, a Claude job-search tip, an outreach-message prompt). Deduped out as stale/repetitive: the Arc Institute/Evo 16-viruses story (exact repeat of 2026-08-07's fingerprint, already excluded 08-08 and 08-09) and the OpenAI Astra critical-cyber-risk story (same facts published 2026-08-09 run 2, already excluded as a rehash in this morning's run 1) from both newsletters; Kimi K3's sandbox escape excluded again as the same recurring agent-goes-rogue theme cut in run 1's own notes today. The North Korea Kimsuky item was cut for space (not published) in run 1 from a different newsletter -- this run's The AI Field version had far more substantive detail (Genians report naming Ollama/GPT4All/Msty/Cursor), so it was written up and published here for the first time. Cut for page-budget space (lowest impact first): Grok Imagine 2.0's #2 image-model ranking, the OpenAI researcher's telepathy-startup story, Claude Code's agent-to-agent messaging feature, and the outreach-message-prompt tip -- an initial draft (3 tips + 4 news) broke mid-sentence across 2 pages, so cut to 2 tips + 3 news to land cleanly on 1 page. No Morning Brew or other non-AI newsletter arrived this run, so beyond_ai is empty and page 2 was dropped per the build script's no-beyond-ai rule, rather than shipping a blank page or forcing a stretch. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
         }
       ]
+    },
+    "2026-08-11": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-11T08:21:07-04:00",
+          "status": "delivered",
+          "covered": [
+            "meta|releases|muse-glimmer-open-weight-model",
+            "zuckerberg|publishes|ai-concentration-manifesto",
+            "openai|expands|daybreak-cyber-gpt5.6",
+            "anthropic|locks-in|sonnet-5-permanent-pricing",
+            "colombia|earthquake-kills|111-people",
+            "markets|dip-as|intel-raises-15b-oil-reserve-falls",
+            "bristol-myers-squibb|builds|2.3b-houston-campus",
+            "taylor-farms|recalls|jalapeno-salmonella-outbreak",
+            "tupac-trial|begins-jury-selection|keefe-d-davis",
+            "the-neuron|tip|scheduled-change-only-briefing",
+            "rundown|tip|idea-to-website-chatgpt-codex"
+          ],
+          "note": "Morning firing. Searched mail since yesterday's run 2 (2026-08-10T16:11:00-04:00) per overnight-catch rule. Found exactly 3 new messages, all self-forwarded by Alfred: The Neuron ('Zuckerberg's superintelligence bargain'), The Rundown AI ('Meta returns to its open AI roots'), and 1440 Daily Digest ('Colombian Quake, Tupac Murder Trial...'). All three bodies were large HTML and handed to subagents to extract. Merged the Meta Muse Glimmer model release + Zuckerberg manifesto (reported across all 3 newsletters) into one AI News item, and the Nvidia/Wall Street $500B AI-infrastructure financing story (also reported across all 3) was drafted but cut for page-budget space along with a third AI Tip (a database-free Claude Code booking-page workflow) -- an initial draft (3 tips + 4 news + 5 beyond_ai) rendered 3 pages; cut to 2 tips + 3 news to fit the 2-page budget, keeping the highest-impact/most-actionable items (Meta open-weight release, OpenAI Daybreak/Cyber expansion, Anthropic's permanent Sonnet 5 pricing) and all 5 Beyond AI items from 1440. Excluded as stale: a gym-booking-agent-hijack story in The Rundown AI (Melbourne/Claude/OpenClaw) that is the same incident already published 2026-08-10 run 1 (ai-agent|hijacks|gym-booking-waitlist), just reported again. Also cut for space without being published: Anthropic's Claude Riemann-hypothesis-bound progress, Claude output watermarking, Stripe's reported $10B OpenRouter acquisition talks, US data-center permitting restrictions (500+ jurisdictions), Dyna Robotics' Dyna-2 model, tech job cuts context, a Sanders AI-pause letter, Ford's new AI assistant, and Spotify's Xirp beta -- all thin teasers or lower-impact quick hits from the same 2 AI newsletters. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
+        }
+      ]
     }
   }
 }
