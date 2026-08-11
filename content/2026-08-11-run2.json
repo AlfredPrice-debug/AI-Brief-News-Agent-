@@ -1,0 +1,64 @@
+{
+  "run": 2,
+  "runTime": "2026-08-11T16:00:00-04:00",
+  "title": "An 8-Billion-Agent Earth Simulation, and Google's AI Brain Drain Meets Cloud's Best Quarter",
+  "date_display": "Tuesday, August 11, 2026",
+  "date_slug": "8_11_26",
+  "sources": "<b>Superhuman AI</b> (Aug 11)",
+  "tldr": [
+    "Harvard and MIT researchers built MatrAIx, an 8.3-billion-agent LLM simulation of Earth's population — worth watching for large-scale behavior/market simulation.",
+    "SemiAnalysis called Gemini 'cooked' after six senior AI leaders left Google (including self-described 'LLM inventor' Noam Shazeer) — yet Google Cloud still grew 82% YoY to $24B.",
+    "Claude Tag now lets you delegate real work to @Claude inside Slack — steps and a ready-to-use prompt included."
+  ],
+  "tips": [
+    {
+      "heading": "Delegate real work to Claude directly in Slack",
+      "steps": [
+        "Open Claude Tag, click \"Add to Slack,\" and complete setup.",
+        "Grant it access to the channels where you want help, then type <b>@Claude</b> plus your task with enough context — treat it like a coworker, not a chatbot.",
+        "Keep working while Claude researches, drafts, summarizes, or completes the task.",
+        "Review the response, edit as needed, and use the output."
+      ],
+      "prompt": "@Claude Review the last week's product discussion in this channel. Summarize the key decisions, list any open action items, identify blockers, and draft a Slack update I can share with leadership.",
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Make AI writing clearer by naming the rules you want",
+      "steps": [
+        "When output reads stiff or bloated, tell your AI to write in Simplified Technical English, or to follow Zinsser's four principles of quality writing (clarity, simplicity, brevity, humanity).",
+        "Ask it to revise the same passage against those rules rather than starting over from scratch.",
+        "Save the instruction as a standing rule for reports, proposals, or client emails."
+      ],
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Break out of generic AI output with an anti-pattern step",
+      "steps": [
+        "First ask your LLM to generate \"the most stereotypical\" version of what you want — a design, an email, a plan.",
+        "Use that output as a list of clichés to avoid.",
+        "Ask for a new version that deliberately departs from those patterns."
+      ],
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Harvard and MIT researchers built MatrAIx, an AI simulation of Earth's population</b> using 8.3 billion LLM agents modeled on real human profiles pulled from public records and supplemented with synthetic personas, built by a 200-plus-scientist team.",
+      "means": "A preview of large-scale agent simulation as a research and market-testing tool — worth watching if a client ever asks about simulating customer or population behavior at scale instead of running real panels.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>SemiAnalysis declared Gemini \"cooked\" after a wave of senior departures</b> — Jeff Dean, Sanjay Ghemawat, Quoc Le, Oriol Vinyals, Noam Shazeer, and John Jumper have all left Google, reportedly slowed by internal bureaucracy that has Gemini 3.5 Pro running months behind schedule. Despite the exodus, Google Cloud revenue hit $24B last quarter, up 82% year-over-year — roughly double AWS's and Azure's growth rates.",
+      "means": "A vendor-stability data point worth flagging before recommending Gemini for a client build — the infrastructure business is thriving even as the model team churns.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "harvard-mit|builds|matraix-earth-population-simulation",
+    "google|loses-ai-leaders|cloud-revenue-grows-82pct",
+    "superhuman|tip|claude-tag-slack-delegation",
+    "superhuman|tip|simplified-writing-rules",
+    "superhuman|tip|anti-pattern-design-workflow"
+  ]
+}
