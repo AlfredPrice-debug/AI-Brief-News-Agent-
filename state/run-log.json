@@ -547,6 +547,27 @@
           "note": "Afternoon firing at scheduled time (4:00 PM ET). Searched mail since run 1 (08:21:07). Found exactly 1 new message: a Superhuman AI newsletter Alfred forwarded to himself ('Researchers simulate Earth's population'), handed to a subagent to extract since the body was large HTML. Excluded as same-day duplicates: its Zuckerberg AI-manifesto/Meta Muse Glimmer recap and its OpenAI Daybreak Blue/Red-tier expansion recap, both already published this morning (meta|releases|muse-glimmer-open-weight-model, zuckerberg|publishes|ai-concentration-manifesto, openai|expands|daybreak-cyber-gpt5.6). Also excluded again as a stale repeat: the Melbourne gym-booking-agent-hijack meme item (ai-agent|hijacks|gym-booking-waitlist), already published 2026-08-10 and re-excluded 2026-08-11 run 1. Wrote up two genuinely new AI News items: Harvard/MIT's MatrAIx 8.3-billion-agent Earth-population simulation, and Google's Gemini talent exodus (SemiAnalysis's 'cooked' call, six named departures including Noam Shazeer, Gemini 3.5 Pro delays) paired with the counterpoint that Google Cloud still grew 82% YoY to $24B -- a richer, distinct angle from 2026-08-10's brief DeepMind-departure mention, so treated as new rather than deduped. Used the newsletter's own Claude Tag/Slack delegation tutorial (with its two verbatim prompts) as the lead AI Tip, plus two shorter trending tips (Simplified Writing/Zinsser rules, and an anti-pattern-first design workflow) to reach 3 tips; cut the Vinyl Sticker image-generation prompt and passing tool mentions (FlowSavvy, Odella, app0) as lower-impact/less PM-relevant. No non-AI newsletter arrived this run, so beyond_ai is empty and page 2 was dropped per the build script's no-beyond-ai rule; page 1 alone (3 tips + 2 news) verified at 1 page via raw PDF object inspection (pypdf unavailable in this environment due to a broken cryptography/cffi binding -- confirmed page count by counting /Type/Page objects directly instead). brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
         }
       ]
+    },
+    "2026-08-12": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-12T08:17:35-04:00",
+          "status": "delivered",
+          "covered": [
+            "rundown|tip|chatgpt-mac-shortcuts",
+            "neuron|tip|claudish-to-english-plugin",
+            "anthropic|adds|watermarks-to-claude-content",
+            "researchers|crack|hidden-reasoning-encryption",
+            "colombia|earthquake-kills|200-people-3000-missing",
+            "paramount|threatens-to-leave|california-antitrust-fight",
+            "nyc|mandates|amazon-delivery-worker-employment",
+            "europe|eclipse-boosts|iceland-spain-tourism",
+            "trump|swapped-planes|turkey-security-scare"
+          ],
+          "note": "Morning firing. Searched mail since yesterday's run 2 (2026-08-11T16:00:00-04:00) per overnight-catch rule. Found exactly 4 new messages, all self-forwarded by Alfred: The Neuron ('Claude can apparently snitch on ...Claude'), The Rundown AI ('Anthropic slips an invisible signature into Claude'), Morning Brew ('Solar windfall'), and 1440 Daily Digest ('Presidential Ruse, Celestial Show, and WWII Military Meals'). All four bodies were large HTML and handed to subagents to extract. Merged the Anthropic/Claude watermarking story (reported across all 4 newsletters, driven by the EU AI Act's Transparency Code) into one lead AI News item, and merged the solar eclipse/Perseid meteor shower story and the Trump plane-swap story (each reported by both Morning Brew and 1440) into single Beyond AI items. An initial draft (2 tips + 3 news + 5 beyond_ai) rendered 3 pages; cut the lowest-impact news item (Nvidia/Wall Street's $500B AI infrastructure financing, itself cross-sourced from The Neuron and Morning Brew) and tightened wording on both AI Tips to land at 2 tips + 2 news + 5 beyond_ai on 2 pages. Also cut for space without being published: xAI's Grok Bot agent-teammate app launch (Rundown), Igor Babuschkin's River AI $1.1B raise (Rundown), Anthropic's $9.1B Riot Platforms compute deal (Neuron), OpenAI COO Brad Lightcap's departure (Rundown), and Manus AI's split from Meta (1440) -- all thinner or lower-impact items than what was kept. Also left unused for space: Afghan girls' education ban (1440) and the DRC Ebola outbreak (1440), both serious world-awareness items that didn't beat the 5 Beyond AI items chosen on impact/mix grounds. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette. pypdf unavailable in this environment due to a broken cryptography/cffi binding; confirmed the final page count by counting /Type/Page objects directly in the raw PDF bytes, then cross-checked with PyMuPDF (freshly installed) reading page text per page."
+        }
+      ]
     }
   }
 }

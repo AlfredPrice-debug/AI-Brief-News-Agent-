@@ -1,0 +1,91 @@
+{
+  "run": 1,
+  "runTime": "2026-08-12T08:17:35-04:00",
+  "title": "Claude Gets a Watermark, Its Hidden Reasoning Gets Cracked Open",
+  "date_display": "Wednesday, August 12, 2026",
+  "date_slug": "8_12_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Aug 12)",
+  "tldr": [
+    "Anthropic will invisibly watermark everything Claude generates worldwide, starting now, to comply with EU rules.",
+    "Researchers cracked open encrypted \"hidden reasoning\" in OpenAI, Anthropic, and Google models, recovering hundreds of leaked credentials before the labs patched it.",
+    "A 7.4 magnitude earthquake in Colombia has killed 200+ people and halted coffee exports, with 3,000 still missing."
+  ],
+  "tips": [
+    {
+      "heading": "Build custom Mac shortcuts with ChatGPT",
+      "steps": [
+        "Open ChatGPT Work and ask it to suggest 10 time-saving hotkeys based on your workflow.",
+        "Narrow the list to the highest-frequency shortcuts that will not conflict with macOS or your other apps.",
+        "Turn on Computer Use, paste the list, and have it build each shortcut without touching anything else.",
+        "Test every shortcut yourself, then ask for a one-page cheat sheet of what is done and what is left."
+      ],
+      "prompt": "\"Based on what you know about me and my workflow, suggest 10 time-saving hotkeys we can set up in Apple Shortcuts\"\n\n\"Keep the highest-frequency shortcuts and avoid macOS or app conflicts\"\n\n\"Set these up in Apple Shortcuts. Do not change anything outside this list. Test each shortcut\"",
+      "source": "The Rundown AI"
+    },
+    {
+      "heading": "Get a plain-English translator for Claude Code's jargon",
+      "steps": [
+        "Install the open source \"Claudish to English\" plugin.",
+        "It rewrites Claude Code's terminal output through a local Ollama model.",
+        "Claude itself still sees the original text, only what you read changes.",
+        "Point it at specific Markdown files too, and run it locally to keep everything private."
+      ],
+      "source": "The Neuron"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Anthropic will invisibly watermark everything Claude generates, worldwide.</b> The move complies with the EU AI Act's Transparency Code, effective Aug 2, 2026: new Claude models get watermarking built in immediately, while older models get a grace period to comply. Files also get the industry-standard C2PA provenance label. Anthropic says a mark shows content was processed by Claude, not necessarily fully authored, and plans to release its own detection tools.",
+      "means": "If you ship Claude-drafted work to clients, expect an invisible tag to travel with it unless you heavily edit the text or convert the file format. Google, Meta, Microsoft, and OpenAI are under the same EU rules, so this becomes an industry norm rather than a Claude-specific quirk, worth knowing before you present AI-assisted work as entirely your own.",
+      "source": "The Neuron, The Rundown AI, Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Researchers extracted personal data and credentials from encrypted \"hidden reasoning\" in OpenAI, Anthropic, and Google models.</b> By replaying encrypted reasoning blocks into a weaker sibling model and then jailbreaking it, they recovered 367 pieces of personal information and 182 credentials, including API keys and passwords, across 315,320 public reasoning blocks, without ever stealing the encryption key. All three labs were notified before publication and have since changed their systems.",
+      "means": "A reminder that anything a model reasons through, even when it looks hidden from you, can become a new attack surface as it moves between apps and sessions. Worth flagging to any client who assumes \"hidden\" AI reasoning is inherently private.",
+      "source": "The Neuron"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>A 7.4 magnitude earthquake in western Colombia has killed at least 200 people, with more than 3,000 still missing.</b> New President Abelardo de la Espriella, sworn in Friday, declared an economic emergency to expand disaster response powers. Coffee exports have largely halted, raising broader economic concerns.",
+      "angle": "If any client work touches commodity-dependent supply chains, coffee sourcing and Latin American logistics disruption from this event are worth flagging now, not after prices move.",
+      "starter": "Have you seen the Colombia earthquake numbers? Coffee exports are already halted, that's going to ripple through pricing.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Paramount Skydance's CEO reportedly threatened to move the company out of California by October</b> unless the state's attorney general agrees to settlement talks over the suit blocking Paramount's $110 billion purchase of Warner Bros. Discovery. Federal regulators approved the deal, but California and 11 other states are suing to block it, with trial set for March.",
+      "angle": "A live case study for any client watching state-level antitrust risk on a pending M&A deal, worth having in your back pocket for board-level regulatory risk conversations.",
+      "starter": "If a state AG can hold up a federally approved merger this long, how much weight are we giving state-level antitrust risk in our own deal timelines?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>NYC Mayor Mamdani backed a City Council bill forcing large delivery companies like Amazon and FedEx to directly employ delivery workers</b> instead of using subcontractors. Unions support the pay protections; Amazon and critics warn it will raise consumer prices and slow deliveries.",
+      "angle": "Directly relevant if you're advising on gig economy workforce models or last-mile logistics cost structures, this is the kind of local regulation that can force a rework of a delivery cost model overnight.",
+      "starter": "If NYC forces direct employment for delivery workers, what does that do to the unit economics of last-mile logistics clients are counting on?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Mainland Europe's first total solar eclipse since 1999 swept across the Arctic, Iceland, and Spain</b>, with the Perseid meteor shower peaking the same night. Spain expects 460,000 overseas visitors and an extra $395 million in spending; Reykjavik hotel prices are up 140% year over year, and one Spanish village of 93 people expects up to 2,000 visitors.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Wild how a two and a half minute eclipse can move $395 million into a regional economy overnight.",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>President Trump secretly switched planes while leaving Turkey last month</b>, exiting via a catering truck to a military jet over a potential Iran missile threat, despite publicly saying he would fly home on the older Air Force One. Staff and journalists were not told; the last known use of a presidential plane decoy was Bill Clinton's in 2000.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Apparently presidential plane swaps are still a thing in 2026, first one since Clinton in 2000.",
+      "source": "Morning Brew, 1440 Daily Digest"
+    }
+  ],
+  "fingerprints": [
+    "rundown|tip|chatgpt-mac-shortcuts",
+    "neuron|tip|claudish-to-english-plugin",
+    "anthropic|adds|watermarks-to-claude-content",
+    "researchers|crack|hidden-reasoning-encryption",
+    "colombia|earthquake-kills|200-people-3000-missing",
+    "paramount|threatens-to-leave|california-antitrust-fight",
+    "nyc|mandates|amazon-delivery-worker-employment",
+    "europe|eclipse-boosts|iceland-spain-tourism",
+    "trump|swapped-planes|turkey-security-scare"
+  ]
+}
