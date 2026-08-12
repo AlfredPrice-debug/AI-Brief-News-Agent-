@@ -1,0 +1,61 @@
+{
+  "run": 2,
+  "runTime": "2026-08-12T16:00:00-04:00",
+  "title": "OpenAI's Safety Exodus, Nvidia's $500B Wall Street Play & Grok Bot Launches",
+  "date_display": "Wednesday, August 12, 2026",
+  "date_slug": "8_12_26",
+  "sources": "<b>Superhuman AI</b> (Aug 12)",
+  "tldr": [
+    "OpenAI's head of ethics is out, joining a string of safety-leadership exits and COO Brad Lightcap's departure.",
+    "Nvidia is recruiting Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to bankroll $500B in AI infrastructure.",
+    "SpaceXAI launched Grok Bot, an always-on AI teammate that works 24/7 across your apps."
+  ],
+  "tips": [
+    {
+      "heading": "Test if your writing sounds natural read aloud",
+      "steps": [
+        "Paste your draft into ChatGPT or Claude along with the prompt below.",
+        "Let it flag sentences you'd stumble over, run out of breath on, or reword mid-speech.",
+        "Use its rewrite to fix pacing and rhythm while keeping your meaning and tone intact."
+      ],
+      "prompt": "Read the text below as if you were saying it out loud to another person.\n\nIdentify any sentence where you would naturally stumble, pause in an awkward place, run out of breath, or change the wording while speaking. Pay attention to sentences that feel too long, overly formal, repetitive, or written for the page rather than for conversation.\n\nRewrite those sections so the rhythm feels natural and effortless when spoken aloud. Vary sentence length, simplify awkward phrasing, and add natural transitions where needed.\n\nKeep the original meaning, message, and tone intact. The goal is not to make the writing more casual, it's to make it sound like something a real person would naturally say.\n\nText: [paste here]",
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Draft a full email sequence in one prompt",
+      "steps": [
+        "Open ChatGPT and start a new chat.",
+        "Paste the prompt below, swapping in your brand or website name.",
+        "Use the generated welcome, nurture, and conversion emails as a first draft to edit and send."
+      ],
+      "prompt": "Create a polished, high-converting email sequence for [brand name or website]. Include welcome email, nurture emails, and a conversion-focused final email. Keep it concise and ready to send.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>OpenAI's safety and ethics leadership keeps emptying out.</b> Head of ethics Chloe Bakalar has departed, following July exits by head of safety Johannes Heidecke and chief futurist Joshua Achiam, plus COO Brad Lightcap's announced departure.",
+      "means": "Vendor-risk lens: watch for policy shifts before deepening a client's dependence on this stack.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Nvidia is recruiting Wall Street to bankroll the AI buildout.</b> It partnered with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR to \"mobilize\" $500B for data centers, as AI stocks hit a record 45% of the S&P 500 and 300+ communities have banned or paused data center projects.",
+      "means": "Expect easier capital for AI infrastructure, but louder local pushback on new sites.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>SpaceXAI launched Grok Bot, an \"always-on\" AI teammate.</b> It works 24/7, completes tasks end-to-end, and can be taught new skills via on-screen recordings; beta is live for SuperGrok Heavy and Cursor Ultra/Premium subscribers.",
+      "means": "Another entrant in the agentic-teammate race alongside Claude and ChatGPT agents.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "openai|loses|safety-ethics-leadership-exodus",
+    "nvidia|partners-with|wallstreet-500b-ai-financing",
+    "xai|launches|grok-bot-ai-teammate",
+    "superhuman|tip|natural-speech-test-prompt",
+    "superhuman|tip|email-sequence-prompt"
+  ]
+}
