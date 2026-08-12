@@ -9,12 +9,17 @@ What it does:
   1. Loads the run's content (title, TL;DR, AI Tips, AI News, Beyond AI, sources).
   2. Loads brand colors/fonts from build/brand.json if present, else the bundled
      Impact Makers defaults (Poppins; gold/black/dark-blue).
-  3. Renders template/brief_template.html (page 1: AI Tips + AI News;
-     page 2: Beyond AI) and prints it to PDF via headless Chrome/Chromium.
+  3. Renders template/brief_template.html and prints it to PDF via headless Chrome.
+     Sheet 1: dark cover band (logo, title, TL;DR hook) + AI News.
+     Sheet 2: AI Tips.  Sheet 3: Beyond AI.  Empty sheets are dropped and the
+     remaining ones are renumbered, so a light run is 2 pages and a full run is 3.
   4. Saves it into this repo's briefs/ folder (or every folder configured via
      AI_BRIEF_OUTPUT_DIR, colon/semicolon-separated, if you want extra copies),
-     using an eye-catching, content-based filename:
-        "<Title>_<M_D_YY>_run<N>.pdf"
+     using an eye-catching, content-based filename: "<Title>_<M_D_YY>_run<N>.pdf"
+
+Content schema is unchanged from v2 — news/beyond items still carry a single
+`body` string whose leading <b>…</b> is the headline; the builder splits on that
+closing tag to typeset the headline as the card's lead line.
 
 This runs as a cloud Routine — there's no local desktop to save a copy to, so
 briefs/ (committed and pushed to GitHub) is the only delivery surface. Chrome:
@@ -44,7 +49,8 @@ BRAND_DEFAULTS = {
     "dark_gray": "#BFBFBF",
     "heading_font": "Poppins",
     "body_font": "Poppins",
-    "logo_path": "",
+    "logo_path": "",        # full-colour lockup (kept for backwards compatibility)
+    "logo_white_path": "",  # white-knockout lockup — used on the dark cover band
 }
 
 CHROME_CANDIDATES = [
@@ -96,62 +102,123 @@ def load_brand() -> dict:
 
 
 def logo_html(brand: dict) -> str:
-    logo_path = brand.get("logo_path") or ""
-    if logo_path and Path(logo_path).is_file():
-        return f'<img class="logo" src="{Path(logo_path).as_uri()}" alt="Impact Makers">'
-    # Fallback: text wordmark
-    return ('<div class="wordmark"><span class="bang">!</span><span class="m">m</span>'
-            '&nbsp;<span class="i">impact</span><span class="m">makers</span></div>')
+    """The masthead now sits on the black band, so prefer the white-knockout
+    lockup; fall back to the full-colour file, then to a white text wordmark."""
+    for key in ("logo_white_path", "logo_path"):
+        p = brand.get(key) or ""
+        if p and Path(p).is_file():
+            return f'<img class="logo" src="{Path(p).as_uri()}" alt="Impact Makers">'
+    return ('<div class="wordmark"><span>!</span><span class="g">m</span>'
+            '&nbsp;<span>impact</span><span class="g">makers</span></div>')
+
+
+def img_src(path_or_url: str) -> str:
+    """Content JSON may point at a local file (relative to the repo root) or an
+    http(s) URL. Local files become file:// URIs so headless Chrome can read them."""
+    if not path_or_url:
+        return ""
+    if re.match(r"^(https?:|data:|file:)", path_or_url):
+        return path_or_url
+    p = Path(path_or_url)
+    if not p.is_absolute():
+        p = REPO / p
+    return p.as_uri() if p.is_file() else ""
+
+
+def card_art(item: dict) -> str:
+    """Optional per-item lead art. Absent `image` -> nothing renders and the card
+    keeps its current layout, so old content files are unaffected."""
+    src = img_src(item.get("image", ""))
+    if not src:
+        return ""
+    alt = esc(item.get("image_alt", ""))
+    return f'\n            <div class="cardart"><img src="{src}" alt="{alt}"></div>'
+
+
+def split_lead(body: str) -> tuple:
+    """'<b>Headline.</b> Rest of it.' -> ('Headline.', 'Rest of it.')"""
+    m = re.match(r"\s*<b>(.*?)</b>\s*(.*)$", body, flags=re.DOTALL)
+    if m:
+        return m.group(1).strip(), m.group(2).strip()
+    return body.strip(), ""
 
 
 def render_tldr(items: list) -> str:
-    return "\n".join(f"        <li>{esc(i) if isinstance(i, str) else i}</li>" for i in items)
+    rows = []
+    for i, item in enumerate(items, 1):
+        txt = esc(item) if isinstance(item, str) else item
+        rows.append(f'        <div class="row"><div class="num">{i}</div>'
+                    f'<div class="txt">{txt}</div></div>')
+    return "\n".join(rows)
 
 
 def render_tips(tips: list) -> str:
     blocks = []
-    for t in tips:
-        full = " full" if t.get("prompt") or t.get("full") else ""
-        steps = "\n".join(f'        <li>{s}</li>' for s in t.get("steps", []))
+    for i, t in enumerate(tips, 1):
+        steps = "\n".join(
+            f'            <div class="row"><div class="num">{j}.</div>'
+            f'<div class="txt">{s}</div></div>'
+            for j, s in enumerate(t.get("steps", []), 1)
+        )
         prompt = ""
         if t.get("prompt"):
-            prompt = f'\n      <div class="prompt"><b>Paste-ready:</b> {esc(t["prompt"])}</div>'
-        src = f'\n      <div class="src">Source: {t["source"]}</div>' if t.get("source") else ""
+            prompt = ('\n          <div class="prompt"><div class="lbl">Paste-ready prompt</div>'
+                      f'<div class="txt">{esc(t["prompt"])}</div></div>')
+        src = f'\n          <div class="src">{t["source"]}</div>' if t.get("source") else ""
         blocks.append(
-            f'    <div class="tip{full}">\n'
-            f'      <h3>{t["heading"]}</h3>\n'
-            f'      <ul class="steps">\n{steps}\n      </ul>{prompt}{src}\n'
-            f'    </div>'
+            f'        <div class="card tip">\n'
+            f'          <div class="disc">{i}</div>\n'
+            f'          <div>{card_art(t)}\n'
+            f'            <div class="lead">{t["heading"]}</div>\n'
+            f'            <div class="steps">\n{steps}\n            </div>{prompt}{src}\n'
+            f'          </div>\n'
+            f'        </div>'
         )
     return "\n".join(blocks)
 
 
 def render_news(news: list) -> str:
     blocks = []
-    for n in news:
-        low = " low" if n.get("low") else ""
-        src = f'\n    <div class="src">Source: {n["source"]}</div>' if n.get("source") else ""
+    for i, n in enumerate(news, 1):
+        lead, rest = split_lead(n["body"])
+        rest_html = f'\n            <div class="rest">{rest}</div>' if rest else ""
+        src = f'\n            <div class="src">{n["source"]}</div>' if n.get("source") else ""
         blocks.append(
-            f'  <div class="news-item{low}">\n'
-            f'    <div class="n">{n["body"]}</div>\n'
-            f'    <div class="mean"><span class="lbl">What it means for you:</span> {n["means"]}</div>{src}\n'
-            f'  </div>'
+            f'        <div class="card news">\n'
+            f'          <div class="disc">{i}</div>\n'
+            f'          <div>\n'
+            f'            <div class="lead">{lead}</div>{rest_html}\n'
+            f'            <div class="inset means"><div class="lbl">What it means for you</div>'
+            f'<div class="txt">{n["means"]}</div></div>{src}\n'
+            f'          </div>\n'
+            f'        </div>'
         )
     return "\n".join(blocks)
 
 
 def render_beyond(items: list) -> str:
     blocks = []
-    for b in items:
-        src = f'\n    <div class="src">Source: {b["source"]}</div>' if b.get("source") else ""
+    for i, b in enumerate(items, 1):
+        lead, rest = split_lead(b["body"])
+        rest_html = f'\n            <div class="rest">{rest}</div>' if rest else ""
+        src = f'\n            <div class="src">{b["source"]}</div>' if b.get("source") else ""
         blocks.append(
-            f'  <div class="beyond-item">\n'
-            f'    <div class="n">{b["body"]}</div>\n'
-            f'    <div class="angle"><span class="lbl">PM angle:</span> {b["angle"]}</div>\n'
-            f'    <div class="starter"><span class="lbl">Conversation starter:</span> {b["starter"]}</div>{src}\n'
-            f'  </div>'
+            f'        <div class="card beyond">\n'
+            f'          <div class="disc">{i}</div>\n'
+            f'          <div>{card_art(b)}\n'
+            f'            <div class="lead">{lead}</div>{rest_html}\n'
+            f'            <div class="inset angle"><div class="lbl">PM angle</div>'
+            f'<div class="txt">{b["angle"]}</div></div>\n'
+            f'            <div class="starter"><div class="q">&ldquo;</div>'
+            f'<div class="txt">{b["starter"]}</div></div>{src}\n'
+            f'          </div>\n'
+            f'        </div>'
         )
     return "\n".join(blocks)
+
+
+def drop_sheet(html: str, n: int) -> str:
+    return re.sub(rf"\s*<!--SHEET{n}_START-->.*?<!--SHEET{n}_END-->\s*", "\n", html, flags=re.DOTALL)
 
 
 def run_label(content: dict) -> str:
@@ -191,13 +258,33 @@ def main():
     content = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
     brand = load_brand()
 
-    font_url = FONT_DIR.as_uri()  # file:///C:/.../fonts
+    font_url = FONT_DIR.as_uri()
     html = TEMPLATE.read_text(encoding="utf-8")
-    if not content.get("tips"):
-        html = re.sub(
-            r'\s*<div class="sec tips">.*?<div class="tips-grid">\n\{\{TIPS_HTML\}\}\n\s*</div>\n',
-            "\n", html, flags=re.DOTALL,
-        )
+
+    # Sheet 1 always exists (cover + news). Sheets 2 and 3 are dropped when the
+    # run has no tips / no Beyond AI, and the survivors are renumbered so the
+    # footer reads "1 / 2" instead of "1 / 3".
+    has_tips = bool(content.get("tips"))
+    has_beyond = bool(content.get("beyond_ai"))
+    if not has_tips:
+        html = drop_sheet(html, 2)
+    if not has_beyond:
+        html = drop_sheet(html, 3)
+    total = 1 + int(has_tips) + int(has_beyond)
+    page_no = 1
+    for key, present in (("PN1", True), ("PN2", has_tips), ("PN3", has_beyond)):
+        html = html.replace("{{" + key + "}}", str(page_no) if present else "")
+        if present:
+            page_no += 1
+
+    # Optional lead-story art on the cover band. No hero_image -> the band
+    # collapses to a single full-width headline column, exactly as before.
+    hero = img_src(content.get("hero_image", ""))
+    hero_alt = esc(content.get("hero_image_alt", ""))
+    html = (html
+            .replace("{{ART_CLASS}}", "" if hero else " noart")
+            .replace("{{HERO_HTML}}", f'<img src="{hero}" alt="{hero_alt}">' if hero else ""))
+
     html = (html
             .replace("{{FONT_DIR}}", font_url)
             .replace("{{DATE}}", content["date_display"])
@@ -209,6 +296,7 @@ def main():
             .replace("{{BEYOND_HTML}}", render_beyond(content.get("beyond_ai", [])))
             .replace("{{SOURCES}}", content.get("sources", ""))
             .replace("{{LOGO_HTML}}", logo_html(brand))
+            .replace("{{PTOTAL}}", str(total))
             .replace("{{BRAND_PRIMARY}}", brand["primary"])
             .replace("{{BRAND_SECONDARY}}", brand["secondary"])
             .replace("{{BRAND_ACCENT}}", brand["accent"])
@@ -217,12 +305,6 @@ def main():
             .replace("{{BRAND_DGRAY}}", brand["dark_gray"])
             .replace("{{HEADING_FONT}}", brand["heading_font"])
             .replace("{{BODY_FONT}}", brand["body_font"]))
-
-    # Beyond AI is sourced only from non-AI newsletters (Morning Brew, 1440, etc).
-    # On a run where none arrived, there's genuinely nothing to put on page 2 —
-    # drop it rather than ship a blank page or fabricate filler content.
-    if not content.get("beyond_ai"):
-        html = re.sub(r"\s*<!--PAGE2_START-->.*?<!--PAGE2_END-->\s*", "\n", html, flags=re.DOTALL)
 
     tmp_html = REPO / "build" / "_render.html"
     tmp_html.write_text(html, encoding="utf-8")
