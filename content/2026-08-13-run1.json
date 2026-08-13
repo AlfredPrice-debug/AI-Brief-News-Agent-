@@ -1,0 +1,114 @@
+{
+  "run": 1,
+  "runTime": "2026-08-13T08:22:52-04:00",
+  "title": "Grok 4.6 Levels Up, Lovable's Valuation Doubles, and the Lakers Sell for a Record $12.5B",
+  "date_display": "Thursday, August 13, 2026",
+  "date_slug": "8_13_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Aug 13)",
+  "tldr": [
+    "Grok 4.6 launched at near-frontier intelligence scores while undercutting rivals on price by about 60%.",
+    "Bob Iger and Josh Kushner are buying the LA Lakers for a record $12.5B, topping last year's record by 25%.",
+    "Lovable raised $400M at a $13.3B valuation, more than doubling in eight months."
+  ],
+  "tips": [
+    {
+      "heading": "Turn Claude Voice into a hands-free morning brief",
+      "steps": [
+        "Connect the tools you trust to Claude Voice — Gmail, Google Calendar, Google Docs, Slack.",
+        "Ask for your calendar first, then have it summarize email/Slack items tied to those meetings — split it into steps rather than asking for everything at once.",
+        "Have it close with priorities and a flag for anything that needs your approval before it acts."
+      ],
+      "prompt": "Check today's calendar first. Then summarize urgent email and Slack items tied to those meetings. Finish with three priorities and flag anything that needs my approval before action.",
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Give AI the messy first draft, not just the final polish",
+      "steps": [
+        "Identify where a task actually starts — research, testing, cutting, rearranging — not the finished output.",
+        "Hand AI the earlier, messier stages where it's most useful and most steerable, instead of only the last-mile polish.",
+        "Tell it upfront what format you work in (Word doc, spreadsheet, deck) so the output lands in a usable shape.",
+        "If you can't judge the result at a glance, don't ship it without review."
+      ],
+      "source": "The Rundown AI"
+    },
+    {
+      "heading": "Turn a PRD into a working app without an engineer",
+      "steps": [
+        "Write a product requirements document for what you want built, using Claude.",
+        "Hand the PRD to Lovable to generate a first working version.",
+        "Have it integrate your real data sources (calendar, tasks, files) so the tool reflects actual use, not a demo.",
+        "Ship it as a simple password-protected site instead of paying for an off-the-shelf tool."
+      ],
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>SpaceXAI released Grok 4.6</b>, scoring 61 on Artificial Analysis' Intelligence Index — just behind Opus 5 (63) and Fable 5 (62), and ahead of GPT-5.6 Sol — while pricing at $2/$6 per million tokens, roughly 60% below rival frontier models. Musk says Grok 4.7 is \"3 to 4 weeks\" out and will \"exceed all current models.\"",
+      "means": "Frontier pricing keeps compressing. Worth re-checking any client cost models built around Opus/GPT pricing now that a credible near-frontier option undercuts them by more than half.",
+      "source": "The Neuron, The Rundown AI"
+    },
+    {
+      "body": "<b>AI app-builder Lovable raised $400M at a $13.3B valuation</b>, more than doubling its valuation since a December raise.",
+      "means": "A signal of how fast the \"AI builds your app\" category is scaling — worth tracking as a build-vs-buy option for smaller client tools.",
+      "source": "The Neuron, The Rundown AI"
+    },
+    {
+      "body": "<b>Anthropic turned Claude's Chrome side panel into a full \"Cowork\" session</b>, syncing history, Skills, connectors, and multi-step tasks across Chrome and Claude's apps.",
+      "means": "Directly usable in your own workflow — worth trialing if you're already running Claude across browser and desktop.",
+      "source": "The Neuron",
+      "low": true
+    },
+    {
+      "body": "<b>Google's Gemini app passed 1 billion users</b>, its fastest-growing product ever, the same week it launched the Pixel 11 with deeper Gemini voice and task features at $100 more than the prior generation.",
+      "means": "Google is bundling AI distribution with hardware pricing power — a template worth watching if you're advising clients on AI-as-upsell strategy.",
+      "source": "The Rundown AI, 1440 Daily Digest, Morning Brew"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Bob Iger and Josh Kushner are buying a controlling stake in the LA Lakers for a record $12.5B</b>, topping the $10B record set just a year ago when Mark Walter bought the team from the Buss family. Walter — under federal investigation over alleged loan-related tax fraud — is reportedly selling in part to raise cash.",
+      "angle": "Sports franchise valuations are a live case study in how fast asset prices are inflating on media-rights growth — a useful reference point in any client conversation about valuation multiples running ahead of fundamentals.",
+      "starter": "Sports team valuations jumped 25% in about a year — makes you wonder how much of that is media rights and how much is just momentum.",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>July inflation data came in tame</b>: the annual rate cooled to 3.4% from 3.5% in June, with core inflation at its lowest since 2021. (1440 and Morning Brew disagree on the month-over-month move — 1440 reports CPI <i>fell</i> 0.1% in July, Morning Brew reports it <i>rose</i> 0.1% — but both agree on the 3.4% annual figure.)",
+      "angle": "A second straight tame inflation reading gives more room to hold pricing and budget assumptions steady into Q4 planning conversations.",
+      "starter": "Two straight months of cool inflation data — are we still bracing for a Fed hike, or is that off the table for now?",
+      "source": "1440 Daily Digest, Morning Brew"
+    },
+    {
+      "body": "<b>The US budget deficit hit $432B in July</b>, the highest monthly level since March 2021, driven largely by rising Medicare costs; the 2026 deficit total stands at $1.8T so far.",
+      "angle": "Worth flagging for any public-sector or healthcare-adjacent client work — federal spending pressure like this tends to surface eventually as budget scrutiny on contracts and grants.",
+      "starter": "With the deficit at a five-year high, are we expecting any tightening on the government-facing side of the business?",
+      "source": "1440 Daily Digest, Morning Brew"
+    },
+    {
+      "body": "<b>Wendy's stock jumped nearly 15%</b> on reports that activist investor Nelson Peltz is lining up investors to take the chain private, after six straight quarters of declining same-store sales.",
+      "angle": "A live example of the activist-investor playbook — relevant if you're advising retail or restaurant clients navigating shareholder pressure to restructure.",
+      "starter": "Wendy's stock popped 15% just on take-private rumors — good reminder how much activist chatter alone can move a stock.",
+      "source": "1440 Daily Digest, Morning Brew"
+    },
+    {
+      "body": "<b>A sponsored Tate McRae skincare ad for Neutrogena drew backlash</b> after viewers noticed she barely touched product to her face — the clip has racked up roughly 19 million views on TikTok, with top comments calling out the staged routine.",
+      "angle": "A sharp reminder that audiences now scrutinize sponsored content for authenticity — worth keeping in mind for any client work involving influencer or testimonial-driven marketing.",
+      "starter": "That Neutrogena ad backlash is a good case study — staged testimonials get called out fast now, even from top creators.",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "neuron|tip|claude-voice-hands-free-morning-brief",
+    "rundown|tip|reframe-ai-tasks-as-prep-not-finish",
+    "rundown|tip|prd-to-app-with-claude-lovable",
+    "spacexai|releases|grok-4.6",
+    "lovable|raises|400m-at-13.3b-valuation",
+    "anthropic|brings-claude-into|chrome-cowork",
+    "google|grows|gemini-1b-users-pixel-11-launch",
+    "iger-kushner|buy|lakers-12.5b",
+    "cpi|shows|inflation-cools-to-3.4pct",
+    "us-budget-deficit|hits|432b-july",
+    "peltz|moves-to-take-private|wendys",
+    "tate-mcrae|faces-backlash|neutrogena-ghost-ad"
+  ]
+}

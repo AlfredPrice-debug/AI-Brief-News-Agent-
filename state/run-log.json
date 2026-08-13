@@ -581,6 +581,30 @@
           "note": "Afternoon firing at scheduled time (4:07 PM ET, confirmed via wall clock -- the fired routine prompt's own framing text was inconsistent/mislabeled as a morning run, so time-of-day was verified directly rather than trusted). Searched mail since run 1 (08:17:35). Found exactly 1 new message: a Superhuman AI newsletter Alfred forwarded to himself ('OpenAI's exodus continues'), handed to a subagent to extract since the body was 63K chars of HTML. Wrote up the OpenAI safety/ethics leadership exodus (head of ethics Chloe Bakalar, safety lead Johannes Heidecke, chief futurist Joshua Achiam, COO Brad Lightcap) as the lead news item -- this subsumes and finally publishes the Brad Lightcap departure that was cut for space this morning, now folded into the larger exodus story rather than run standalone. Also published Nvidia's $500B Wall Street AI-infrastructure financing deal (Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, KKR) and xAI/SpaceXAI's Grok Bot always-on-teammate launch, both of which were cut for space this morning and are being published here for the first time since neither carries a fingerprint in run 1's covered list. Used the newsletter's two tip-of-the-day prompts verbatim (Natural Speech Test rewrite prompt, email-sequence generator prompt), writing standalone numbered steps around each since the source's own steps for the email tip were mismatched (referenced 'Create Image', clearly copy-paste boilerplate from an unrelated tip). Cut Unsloth's desktop app for local open-weight models (lowest-impact item, marked low) and trimmed remaining body/means copy twice to close a one-line page-2 overflow (a stray Source/footer line spilling past a single physical page) -- landed at 2 tips + 3 news, 1 page total; beyond_ai is empty since no non-AI newsletter arrived this run, so no page 2 was needed. Discarded as ads/self-promotion/housekeeping: Guru and You.com sponsor blocks, the EXTRAS tools/prompts-library self-promo section, unsubscribe/feedback footer. Discarded as lower-priority trending quick-hits: MatrAIx Earth-simulation recap (already published 2026-08-11), Unsloth Desktop app, and the 'In the Know' social roundup items (Opus 5 verbal-abuse anecdote, YC go-to-market post, Paul Graham AGI take, AI-relationship story, ChatGPT/Codex context-sync update). brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette. pypdf and PyMuPDF's fitz import both failed on first attempt in this fresh session (missing modules / broken cryptography-cffi binding); installed pymupdf standalone via pip and confirmed final page count (1) plus full page-text readback that way."
         }
       ]
+    },
+    "2026-08-13": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-13T08:22:52-04:00",
+          "status": "delivered",
+          "covered": [
+            "neuron|tip|claude-voice-hands-free-morning-brief",
+            "rundown|tip|reframe-ai-tasks-as-prep-not-finish",
+            "rundown|tip|prd-to-app-with-claude-lovable",
+            "spacexai|releases|grok-4.6",
+            "lovable|raises|400m-at-13.3b-valuation",
+            "anthropic|brings-claude-into|chrome-cowork",
+            "google|grows|gemini-1b-users-pixel-11-launch",
+            "iger-kushner|buy|lakers-12.5b",
+            "cpi|shows|inflation-cools-to-3.4pct",
+            "us-budget-deficit|hits|432b-july",
+            "peltz|moves-to-take-private|wendys",
+            "tate-mcrae|faces-backlash|neutrogena-ghost-ad"
+          ],
+          "note": "Morning firing. First run of the day; searched mail since yesterday run 2 (2026-08-12T16:00:00-04:00) per overnight-catch rule. Found exactly 4 new messages, all self-forwarded by Alfred: The Neuron, The Rundown AI, Morning Brew, and 1440 Daily Digest. All four bodies were large HTML and handed to subagents to extract. Merged the Grok 4.6 launch (Neuron + Rundown), the Lovable $400M raise (Neuron + Rundown), the Lakers $12.5B sale (Morning Brew + 1440), the CPI/inflation read (1440 + Morning Brew, noting a rose-vs-fell 0.1% discrepancy between the two on the July MoM move), the US budget deficit (1440 + Morning Brew), and the Wendy's take-private story (1440 + Morning Brew) into single cross-sourced items each. Also merged Google's Gemini-1B-users milestone (Rundown) with the Pixel 11 launch (Rundown + 1440 + Morning Brew) into one Beyond-AI-adjacent AI News item since both are the same Google AI-distribution story. Landed at 3 tips + 4 news + 5 beyond_ai on 2 pages. Cut for space/lower impact: Karoline Leavitt WH press secretary resignation, the UK Count Binface/Farage election story, Demis Hassabis AI-oversight-body pitch, Apple/Siri publisher news deals, Cognition's $40B fundraising talks, the Gamgee AI-designed dog cancer vaccine startup story, DeepSeek V4 Pro release, Twitch's AI-training opt-out-by-default policy, Mistral's European compute coalition, the Dream Security multi-agent compromise research, OpenAI's enterprise token-usage stat, the Opus-5-builds-GTA6-in-Unreal-Engine stunt, the ChatGPT-for-Linux signup page, Google DeepMind's ASL sign-language input tool, and the Rundown's \"100 ad hooks from customer feedback\" tutorial (folded into a similar PRD-to-app tip instead, to avoid redundancy). pypdf failed in this environment again (broken cryptography/cffi binding, consistent with 2026-08-12); confirmed the 2-page count by counting raw /Type/Page objects in the PDF bytes and cross-checked with a freshly installed PyMuPDF reading page text per page. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
+        }
+      ]
     }
   }
 }
