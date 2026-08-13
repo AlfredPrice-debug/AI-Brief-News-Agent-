@@ -1,0 +1,51 @@
+{
+  "run": 2,
+  "runTime": "2026-08-13T16:11:05-04:00",
+  "title": "One Agent Inbox Per Workflow, and DeepMind Gives Sign Language a Voice",
+  "date_display": "Thursday, August 13, 2026",
+  "date_slug": "8_13_26",
+  "sources": "<b>Superhuman AI</b> (Aug 13)",
+  "tldr": [
+    "A solo operator replaced 20+ SaaS subscriptions with one dedicated AI agent inbox per business workflow.",
+    "Google DeepMind unveiled a model that translates American Sign Language into written text in real time.",
+    "A fully-specified prompt template is the key to getting consistent, reusable results from AI image generators."
+  ],
+  "tips": [
+    {
+      "heading": "Replace one SaaS subscription per workflow with one agent inbox per workflow",
+      "steps": [
+        "Install a workflow-automation CLI (e.g. Nylas) and authenticate with your API key.",
+        "Give each recurring workflow its own dedicated inbox — renewals@, invoices@, offboarding@, support@ — instead of routing everything through one shared inbox or tool.",
+        "Restrict what each inbox agent can act on with sender/domain rules before connecting it to real data.",
+        "Hand the finished setup to your coding agent to wire up and manage end-to-end."
+      ],
+      "prompt": "Create Nylas agent accounts for renewals@ and invoices@, block senders outside our carrier domains, then list the roster.",
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Use a fully-specified prompt template for consistent AI image generation",
+      "steps": [
+        "Name the exact medium and style upfront (e.g. \"miniature 3D paper-craft diorama\") instead of a vague description.",
+        "Spell out composition and framing precisely — subject placement, negative space, aspect ratio.",
+        "Lock down lighting, palette, and texture details so repeated runs stay visually consistent.",
+        "Swap only the bracketed variable to reuse the same prompt across a whole series."
+      ],
+      "prompt": "Create a charming miniature 3D paper-craft travel illustration of [DESTINATION], designed like a delicate handmade travel postcard. Feature recognizable local landmarks and cultural elements as tiny handcrafted models, arranged on a narrow floating landscape strip. Include small details such as local transportation, trees, street lamps, water, birds, clouds, and subtle travel elements like an airplane with a dotted flight path. Use a soft white textured paper background, gentle natural lighting, pastel colors, subtle shadows, and a whimsical handcrafted aesthetic. The landmarks should look like they are made from paper, clay, wood, and miniature craft materials, with realistic tiny textures and charming imperfections. Keep the composition minimal, clean, airy, and centered, with plenty of negative space around the miniature scene. Add a small elegant handwritten-style title at the bottom reading “[DESTINATION]”. Style: miniature diorama, handcrafted paper art, travel postcard, whimsical 3D illustration, soft pastel palette, tactile textures, macro photography feel, delicate details, cozy artistic aesthetic, high resolution, vertical 9:16 composition.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Google DeepMind unveiled a model that translates American Sign Language into written text</b>, watching and interpreting visual hand signals in real time.",
+      "means": "Low-impact for day-to-day consulting work, but a useful accessibility data point if a client conversation touches accessibility or compliance.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "superhuman|tip|nylas-agent-inbox-per-workflow",
+    "superhuman|tip|paper-craft-image-prompt-template",
+    "deepmind|translates|asl-to-text"
+  ]
+}
