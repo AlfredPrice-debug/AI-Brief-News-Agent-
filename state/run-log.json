@@ -616,6 +616,28 @@
           "note": "Afternoon firing at scheduled time (4:11 PM ET). Searched mail since run 1 (08:22:52). Found exactly 1 new message: a Superhuman AI newsletter Alfred forwarded to himself ('Grok gets frontier intelligence'), handed to a subagent to extract since the body was ~67K chars of HTML. Deduped out as same-day repeats of run 1: the Grok 4.6 launch (spacexai|releases|grok-4.6), Claude's Chrome side-panel/Cowork integration (anthropic|brings-claude-into|chrome-cowork), and the Google Pixel 11/Gemini launch (google|grows|gemini-1b-users-pixel-11-launch) -- all three retold the same facts already published this morning. Also excluded the newsletter's Claude/Anthropic EU-watermarking-backlash story as a stale rehash: it's the identical fact pattern (EU AI Act Transparency Code, invisible watermark on all Claude output) already published as the lead item on 2026-08-12, with no new facts added today, so it did not clear the bar as new content despite falling outside today's own covered list. Wrote up two genuinely new AI Tips: a Nylas-based 'one agent inbox per workflow' automation tutorial (with its verbatim roster-building prompt) and a fully-specified prompt-template pattern for consistent AI image generation (verbatim ChatGPT Image 2.0 paper-craft-postcard prompt, pulled from the newsletter's daily image-prompt feature). Also published Google DeepMind's ASL-to-text translation model as a low-impact AI News item -- this was cut for space in this morning's run 1 (explicitly noted there) and carries no fingerprint in run 1's covered list, so it's new here. Discarded as sponsor/self-promo: DeskFerry and Boson ad blocks, the EXTRAS tools/prompts-library self-promotion section. Discarded as too thin/trend-only: an 'AI mascots getting cuter' meme-of-the-day blurb (two sentences, no actionable or factual substance). No non-AI newsletter arrived this run, so beyond_ai is empty and page 2 was dropped per the build script's no-beyond-ai rule; page 1 alone (2 tips + 1 news) verified at 1 page via PyMuPDF page-text readback, cross-checked by counting raw /Type/Page objects in the PDF bytes. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
         }
       ]
+    },
+    "2026-08-14": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-14T08:20:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "rundown|tip|ai-conversation-audit",
+            "rundown|tip|town-second-brain-slack",
+            "rundown|tip|multimodal-ai-visual-content",
+            "anthropic|reports|2t-ipo-valuation",
+            "openai|previews|ultrafast-cerebras-speed",
+            "anthropic|studies|multi-agent-turf-war",
+            "mcdonalds|tracks|loyalty-program-data-515-pages",
+            "flock-safety|restricts|data-retention-privacy",
+            "instagram|redesigns|wordmark-logo",
+            "markets|close-record|workday-buyout-talk",
+            "tariffs|refunded|166b-supreme-court-strike-down"
+          ]
+        }
+      ]
     }
   }
 }
