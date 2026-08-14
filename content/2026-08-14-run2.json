@@ -1,0 +1,59 @@
+{
+  "run": 2,
+  "runTime": "2026-08-14T16:09:55-04:00",
+  "title": "ChatGPT Learns to Remember Your Screen, and Microsoft Guts Copilot for a Super App",
+  "date_display": "Friday, August 14, 2026",
+  "date_slug": "8_14_26",
+  "sources": "<b>Superhuman AI</b> (Aug 14)",
+  "tldr": [
+    "ChatGPT's new \"Computer History\" feature turns your on-screen activity into context and reusable skills.",
+    "Microsoft is merging Copilot into one \"super app,\" cutting Group Chats, Podcasts, Deep Research, Labs, and Mico ahead of a late-September relaunch.",
+    "AI infrastructure stocks erased June's losses this week, with Nebius up roughly 40% after posting 450% year-over-year revenue growth."
+  ],
+  "tips": [
+    {
+      "heading": "Edit documents faster inside Word with Claude",
+      "steps": [
+        "Install the Claude for Word add-in and sign in with a Team or Enterprise account that has Claude enabled.",
+        "Open the document you want to work on and launch Claude from the sidebar.",
+        "Highlight text for a targeted edit, or leave nothing selected to edit the full document, then type a prompt like \"rewrite this professionally\" or \"summarize this section.\"",
+        "Review Claude's suggestions in the document and ask follow-ups in the sidebar to refine tone, length, or clarity."
+      ],
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>ChatGPT can now remember what's on your screen.</b> OpenAI's new \"Computer History\" feature turns your on-screen computer activity into context ChatGPT can draw on for more relevant answers, and lets you turn completed tasks into repeatable skills.",
+      "means": "Worth testing on your own repetitive workflows before recommending it to clients: a feature that converts your actual work history into reusable automations changes what's worth automating.",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>Microsoft is stripping features out of Copilot ahead of a \"super app\" relaunch.</b> It's merging its consumer and business Copilot apps into one tool, cutting Group Chats, Podcasts, Deep Research, Copilot Labs, and the Mico mascot, with the redesign expected by the end of September.",
+      "means": "If any clients are mid-rollout on Copilot features being cut, flag it now: a consolidation like this usually means a rocky few weeks of shifting UI and lost functionality before the new app stabilizes.",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>AI infrastructure stocks erased June's losses after a strong earnings week.</b> CoreWeave, SMCI, and Nebius all beat expectations; Nebius rose roughly 40% on the week after posting $582 million in Q2 revenue, a 450% year-over-year jump.",
+      "means": "A useful data point if a client is weighing build versus buy on AI infrastructure: capacity demand and pricing power both look like they're still climbing.",
+      "source": "Superhuman AI",
+      "low": true
+    },
+    {
+      "body": "<b>A self-represented litigant tried to prompt-inject a court's AI system into ruling in his favor.</b> He later called it a joke; the court did not treat it as one.",
+      "means": "A concrete, tell-it-at-a-dinner-party example of prompt injection risk if a client asks what that term actually means in practice.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "superhuman|tip|claude-word-doc-editing",
+    "openai|launches|computer-history-feature",
+    "microsoft|strips-features-from|copilot-superapp",
+    "ai-infra-stocks|rally-on|earnings-week",
+    "court|faces|prompt-injection-attempt"
+  ]
+}

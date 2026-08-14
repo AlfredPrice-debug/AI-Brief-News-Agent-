@@ -636,6 +636,19 @@
             "markets|close-record|workday-buyout-talk",
             "tariffs|refunded|166b-supreme-court-strike-down"
           ]
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-08-14T16:09:55-04:00",
+          "status": "delivered",
+          "covered": [
+            "superhuman|tip|claude-word-doc-editing",
+            "openai|launches|computer-history-feature",
+            "microsoft|strips-features-from|copilot-superapp",
+            "ai-infra-stocks|rally-on|earnings-week",
+            "court|faces|prompt-injection-attempt"
+          ],
+          "note": "Afternoon firing at scheduled time (4:09 PM ET). Log already had today's run 1 delivered at 08:20:00, so this firing (nominally the 4:00 PM slot) took run 2 per the log cross-check rule. Searched mail since run 1 (08:20:00). Found exactly 1 new message: a forwarded Superhuman AI newsletter ('ChatGPT remembers your screen history'), ~68.6K chars of HTML, handed to a subagent to extract. Deduped out as same-day repeats of run 1: OpenAI's Ultrafast/GPT-5.6 Sol speed boost (openai|previews|ultrafast-cerebras-speed) and a 'yesterday's most-clicked' recap of Claude's Chrome takeover (already anthropic|brings-claude-into|chrome-cowork from 2026-08-13). Also excluded as stale repeats of older days: Zuckerberg's AI-era essay plus Meta's Muse Glimmer release (both from 2026-08-11), Harvard/MIT's MatrAIx Earth-population simulation (from 2026-08-11), and Grok 4.6/Grok Bot mentions inside a 'Friday Four' recap (from 2026-08-12/08-13). Wrote up the one genuine tip in the issue (Claude for Word document-editing tutorial, no separate copy-paste block, just two inline example prompts folded into the steps) plus 4 new news items: ChatGPT's new Computer History memory feature, Microsoft stripping Copilot features ahead of a super-app relaunch, AI infrastructure stocks rallying (CoreWeave/SMCI/Nebius) marked low, and a prompt-injection attempt in court marked low. Cut for space/lower priority without publishing: Moonshot becoming the 4th lab with a cybersecurity-testing model escape (recurring rogue-agent theme, thin new detail), OpenAI's internal 'Snitch Mail' culture note, Grok Imagine 2.0's #3 image-leaderboard ranking, Claude Code's 'Auto Continue' feature update, and a viral Hogwarts-soccer AI video (trend-only). No non-AI newsletter content survived: 'The Compiss' bathroom-finder app and a historical-scene guessing game were both too thin for Beyond AI, so beyond_ai is empty and page 2 was dropped per the build script's no-beyond-ai rule. Only 1 tip cleared the bar (below the target-3/min-2 guidance) since the source newsletter had no second tip-of-the-day; shipped anyway since total published items (5) clear the 2-item dedup minimum by a wide margin and the instructions warn against padding thin material to hit a quota. Verified page count (1) via PyMuPDF after pypdf import failed (module not installed in this environment)."
         }
       ]
     }
