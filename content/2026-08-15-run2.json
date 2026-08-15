@@ -1,0 +1,80 @@
+{
+  "run": 2,
+  "runTime": "2026-08-15T16:08:44-04:00",
+  "title": "A Robot Phone Launch, a Retail Sales Warning & Bezos Joins Liverpool FC",
+  "date_display": "Saturday, August 15, 2026",
+  "date_slug": "8_15_26",
+  "sources": "<b>Superhuman AI</b> (Robotics Special), <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Aug 15)",
+  "tldr": [
+    "Honor's Robot Phone and Wonder's AI-run restaurant kitchens show physical-world automation shipping faster than roadmaps assume — both are revenue-backed, not demos.",
+    "US retail sales fell 0.6% in July, the first drop in nine months — a real signal to revisit any client budget plans that assume steady consumer demand into Q4.",
+    "Bezos joins Liverpool FC's ownership group and Mangione pleads guilty in the Thompson killing — two of the week's biggest non-AI headlines."
+  ],
+  "tips": [],
+  "news": [
+    {
+      "body": "<b>Honor's Robot Phone finally launched in China</b> (preorders opened Aug. 12, sales start Aug. 18) — the device packs a built-in motorized gimbal that autonomously tracks subjects for cinematic shots, reacts to its surroundings, and Honor says it can hold real conversations with you.",
+      "means": "A preview of where 'AI phone' is headed beyond a chatbot bolted onto the OS — worth watching if any client work touches consumer hardware or on-device AI positioning.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Bloomberg reports thousands of Indian workers are being paid to film themselves doing manual tasks</b> to generate training data for humanoid robots — the same data-labeling playbook that scaled LLMs, now applied to physical-world automation.",
+      "means": "If clients are exploring embodied-AI or robotics pilots, this is the unglamorous cost layer behind it — training-data supply chains are becoming a real line item, not just model licensing.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Wonder, the NYC food-hall chain, is deploying kitchen robots that make 500 bowls of food an hour</b> and a $10/month AI tool that lets anyone build a restaurant menu — tripling kitchen output without adding staff. The company just raised $650M at a $9B valuation and is eyeing an IPO next year.",
+      "means": "A concrete, revenue-backed case study of AI/robotics compressing labor costs in a service business — useful ammunition next time a client asks whether automation ROI in food/retail is real yet.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Uber sold its entire stake in delivery-robot company Serve Robotics</b>, which spun out of Postmates after Uber's 2020 acquisition — Serve reportedly learned of the exit only from Uber's regulatory filings, ending a five-year relationship.",
+      "means": "A reminder that even well-funded incumbents are still walking back robotics bets — treat vendor 'AI partnership' announcements as provisional, not permanent.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>US retail sales fell 0.6% in July</b>, missing expectations — the first drop in nine months and the biggest since May 2025. Likely driven by Amazon/Walmart/Target pulling Prime Day-style promotions into June; consumer sentiment also fell ~8% this month and the economy unexpectedly lost 23,000 jobs last month.",
+      "angle": "A real signal for client budget conversations — if this is a pattern rather than a one-month blip, it strengthens the case for holding off on Q4 spend commitments that assume steady consumer demand.",
+      "starter": "Retail sales just posted their first drop in nine months — anyone else revisiting Q4 forecasts because of it?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Jeff Bezos is joining an investor group buying roughly 30-33% of Liverpool FC</b> from Fenway Sports Group, valuing the club at just over $7B — his first sports-team ownership stake. It comes days after Josh Kushner and Bob Iger bought the LA Lakers for a record $12.5B.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Two tech/media billionaires bought pro sports franchises in the same week — Bezos into Liverpool, Kushner/Iger into the Lakers. Sports ownership looks like the new trophy asset class.",
+      "source": "1440 Daily Digest"
+    },
+    {
+      "body": "<b>Luigi Mangione pleaded guilty to federal stalking charges</b> in the December 2024 killing of UnitedHealthcare CEO Brian Thompson, telling the court, \"I shot Mr. Thompson in Manhattan, and he died.\" Sentencing is set for December; he still faces a separate state murder trial in September his lawyers are trying to dismiss on double-jeopardy grounds.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Mangione's federal guilty plea closes one chapter, but the state murder trial is still set for September — this one's not over.",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Investors are suing Selena Gomez and her Wondermind co-founders</b>, alleging the mental-health startup never delivered the promised app, growth, or access to Gomez's 500M-follower audience while concealing problems from backers. Wondermind raised $5M in 2022 at a $95M valuation.",
+      "angle": "A cautionary tale for any client evaluating celebrity-founder or influencer-backed startups — due diligence needs to look past the name and reach numbers to actual product delivery.",
+      "starter": "Selena Gomez's Wondermind is getting sued by its own investors — a good reminder that a huge social following isn't a substitute for a working product.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Italian police recovered over $10M in stolen art</b> — Cézanne's \"Still Life With Cherries\" ($7M), Renoir's \"Les Poissons\" ($3.5M), and a Matisse piece — taken in a three-minute heist from a private museum near Parma; five people were detained. Separately, Brazilian police recovered eight stolen Matisse works this week.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "A three-minute heist, $10M in recovered masterpieces, five arrests — this one reads like a movie plot.",
+      "source": "1440 Daily Digest"
+    }
+  ],
+  "fingerprints": [
+    "honor|launches|robot-phone-gimbal-camera",
+    "bloomberg|reports|india-workers-film-ai-robot-training-data",
+    "wonder|scales-robot-kitchens|650m-raise-9b-valuation",
+    "uber|divests-stake-in|serve-robotics",
+    "us-retail-sales|falls|0.6pct-july",
+    "bezos|buys-stake-in|liverpool-fc",
+    "mangione|pleads-guilty|federal-stalking-charges",
+    "selena-gomez|sued-by-investors|wondermind-fraud",
+    "italian-police|recover|stolen-art-cezanne-renoir-matisse"
+  ]
+}
