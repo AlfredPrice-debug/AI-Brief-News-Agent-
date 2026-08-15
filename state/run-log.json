@@ -617,6 +617,29 @@
         }
       ]
     },
+    "2026-08-15": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-15T08:10:21-04:00",
+          "status": "skipped_thin",
+          "covered": [],
+          "rollover": [
+            "mangione|pleads-guilty|federal-stalking-charges",
+            "bezos|buys-stake-in|liverpool-fc",
+            "italian-police|recover|stolen-art-cezanne-renoir-matisse",
+            "us-retail-sales|falls|0.6pct-july",
+            "trump|petitions-scotus|white-house-ballroom-construction",
+            "selena-gomez|sued-by-investors|wondermind-fraud",
+            "missionary|freed-after|niger-captivity",
+            "spain|relocates-royal-remains|wildfires",
+            "woman|arrested-for|wwii-memorial-vandalism",
+            "cosmocube|satellite-to-detect|early-universe-signals"
+          ],
+          "note": "Morning firing (8:10 AM ET). First run of the day; searched mail since yesterday's run 2 (2026-08-14T16:09:55-04:00) per the overnight-catch rule. Found exactly 2 new messages, both Alfred-forwarded non-AI newsletters: Morning Brew ('Retail details') and 1440 Daily Digest ('Mangione's Plea, Bezos' Soccer Team, and Mystery Vacations'), both sent 8:24-9:24 AM. Both bodies were large HTML and handed to subagents to extract. Merged 3 duplicate cross-newsletter stories: Mangione's federal guilty plea, Bezos's ~30-33% stake in Liverpool FC ($7B+ valuation), and the $10M+ recovered stolen art (Cezanne/Renoir/Matisse). Zero legitimate AI Tips or AI News content in either newsletter -- the only AI mentions were a paid BluSky AI data-center investment ad (discarded as sponsor content) and a Hisense TV ad's 'AI picture optimization' tagline (discarded as sponsor content), plus a one-line NPR AI-vs-human-writing-quiz link in 1440's Etcetera roundup (too thin to write up). With page 1 (AI Tips + AI News) entirely empty, held rather than ship an AI Brief without AI content, per the 2026-08-02/08-08/08-09 precedent. All ~10 solid Beyond AI candidates (Mangione plea, Bezos/Liverpool FC, stolen art recovery, US retail sales drop, White House ballroom SCOTUS petition, Selena Gomez/Wondermind fraud suit, Niger missionary release, Spain royal-remains relocation amid wildfires, WWII Memorial vandalism arrest, CosmoCube early-universe satellite) roll forward for the next run to pair with whatever AI newsletters arrive."
+        }
+      ]
+    },
     "2026-08-14": {
       "runs": [
         {
