@@ -663,6 +663,25 @@
         }
       ]
     },
+    "2026-08-16": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-16T08:11:25-04:00",
+          "status": "skipped_thin",
+          "covered": [],
+          "rollover": [
+            "raw-milk|gains-popularity-despite|health-risks",
+            "dairy-industry|disputes|plant-milk-labeling",
+            "milk|trends-as|beauty-ingredient",
+            "consumers|pay-premium-for|luxury-dairy-products",
+            "got-milk|campaign|advertising-history",
+            "pop-culture|features|memorable-milk-moments"
+          ],
+          "note": "Morning firing. First run of the day; searched mail since yesterday's run 2 (2026-08-15T16:08:44-04:00) per the overnight-catch rule. Found exactly 1 new message: a forwarded Morning Brew special edition, 'Dairy Brew' (sent Sunday 2026-08-16, ~59.3K chars of HTML), handed to a subagent to extract in full. Zero AI Tips/AI News content anywhere in the issue -- the only occurrence of 'AI' in the entire body was a one-line cross-promotion for Morning Brew's separate 'Tech Brew' newsletter in the footer, discarded as housekeeping. With page 1 (AI Tips + AI News) entirely empty, held rather than ship an AI Brief without AI content, per the 2026-08-02/08-08/08-09/08-15 precedent. The newsletter's 6 non-AI stories (raw milk's health-risk-despite-popularity trend and MAHA/RFK Jr. tie-in, the dairy industry vs. plant-milk labeling fight across UK/Swiss courts, milk as a beauty/skincare ingredient, luxury dairy and butter demand despite inflation, the history of the 'Got Milk?' ad campaign, and pop culture's memorable milk moments) all clear the brief-appropriate bar and roll forward as Beyond AI candidates. Allowed the 4 items still unused from 2026-08-15's rollover (freed Niger missionary, Spain's wildfire-driven royal-remains relocation, the WWII Memorial vandalism arrest, the CosmoCube satellite) to lapse rather than carrying them forward a second cycle, per the 2026-08-10 precedent (2+ day stale with abundant fresher content now available)."
+        }
+      ]
+    },
     "2026-08-14": {
       "runs": [
         {
