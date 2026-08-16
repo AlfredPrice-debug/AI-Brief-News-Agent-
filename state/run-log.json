@@ -679,6 +679,23 @@
             "pop-culture|features|memorable-milk-moments"
           ],
           "note": "Morning firing. First run of the day; searched mail since yesterday's run 2 (2026-08-15T16:08:44-04:00) per the overnight-catch rule. Found exactly 1 new message: a forwarded Morning Brew special edition, 'Dairy Brew' (sent Sunday 2026-08-16, ~59.3K chars of HTML), handed to a subagent to extract in full. Zero AI Tips/AI News content anywhere in the issue -- the only occurrence of 'AI' in the entire body was a one-line cross-promotion for Morning Brew's separate 'Tech Brew' newsletter in the footer, discarded as housekeeping. With page 1 (AI Tips + AI News) entirely empty, held rather than ship an AI Brief without AI content, per the 2026-08-02/08-08/08-09/08-15 precedent. The newsletter's 6 non-AI stories (raw milk's health-risk-despite-popularity trend and MAHA/RFK Jr. tie-in, the dairy industry vs. plant-milk labeling fight across UK/Swiss courts, milk as a beauty/skincare ingredient, luxury dairy and butter demand despite inflation, the history of the 'Got Milk?' ad campaign, and pop culture's memorable milk moments) all clear the brief-appropriate bar and roll forward as Beyond AI candidates. Allowed the 4 items still unused from 2026-08-15's rollover (freed Niger missionary, Spain's wildfire-driven royal-remains relocation, the WWII Memorial vandalism arrest, the CosmoCube satellite) to lapse rather than carrying them forward a second cycle, per the 2026-08-10 precedent (2+ day stale with abundant fresher content now available)."
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-08-16T16:09:48-04:00",
+          "status": "delivered",
+          "covered": [
+            "spacex|acquires|cursor",
+            "anthropic|tests|multi-agent-sabotage",
+            "google|lets-users-hide|visible-ai-watermark",
+            "researchers|crack|hidden-reasoning-traces",
+            "ohsu|clears-hiv-in|baby-primates-triple-therapy",
+            "china|sets-record|rail-acceleration-800kmh",
+            "optimal-transit|unveils|kraaken-disaster-power-vessel",
+            "eth-zurich|finds|cement-carbon-capture-cuts-emissions-78pct",
+            "jwst|discovers|black-hole-star"
+          ],
+          "note": "Afternoon firing (run 2). Searched Claude AI News Recap since run 1 (2026-08-16T08:11:25-04:00). Found 2 new messages: The Neuron Daily (Aug 16 Sunday edition, all-AI content, ~78K chars HTML sliced via subagent) and Superhuman AI (Aug 16 Science Sunday special, explicitly non-AI content per the newsletter itself, ~55K chars HTML sliced via subagent). No overlap with run 1s milk-themed rollover items (different newsletter, different day scope) -- those 6 dairy/milk fingerprints remain unused and are left to lapse per the routines existing lapse precedent rather than carried a second cycle, since this run had ample fresh Beyond AI material from Superhuman AI. AI Tips section shipped with only 1 item (below the target-3/min-2 guidance) because the sole tip-shaped content in either newsletter was The Neuron Dailys Qwen3.8-27B local-install how-to; no other item in either issue included actionable step-by-step instructions, and per the routines anti-padding rule thin tip material was not stretched to reach quota."
         }
       ]
     },
