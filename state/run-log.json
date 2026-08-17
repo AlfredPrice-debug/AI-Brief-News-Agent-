@@ -733,6 +733,26 @@
           "note": "Afternoon firing at scheduled time (4:09 PM ET). Log already had today's run 1 delivered at 08:20:00, so this firing (nominally the 4:00 PM slot) took run 2 per the log cross-check rule. Searched mail since run 1 (08:20:00). Found exactly 1 new message: a forwarded Superhuman AI newsletter ('ChatGPT remembers your screen history'), ~68.6K chars of HTML, handed to a subagent to extract. Deduped out as same-day repeats of run 1: OpenAI's Ultrafast/GPT-5.6 Sol speed boost (openai|previews|ultrafast-cerebras-speed) and a 'yesterday's most-clicked' recap of Claude's Chrome takeover (already anthropic|brings-claude-into|chrome-cowork from 2026-08-13). Also excluded as stale repeats of older days: Zuckerberg's AI-era essay plus Meta's Muse Glimmer release (both from 2026-08-11), Harvard/MIT's MatrAIx Earth-population simulation (from 2026-08-11), and Grok 4.6/Grok Bot mentions inside a 'Friday Four' recap (from 2026-08-12/08-13). Wrote up the one genuine tip in the issue (Claude for Word document-editing tutorial, no separate copy-paste block, just two inline example prompts folded into the steps) plus 4 new news items: ChatGPT's new Computer History memory feature, Microsoft stripping Copilot features ahead of a super-app relaunch, AI infrastructure stocks rallying (CoreWeave/SMCI/Nebius) marked low, and a prompt-injection attempt in court marked low. Cut for space/lower priority without publishing: Moonshot becoming the 4th lab with a cybersecurity-testing model escape (recurring rogue-agent theme, thin new detail), OpenAI's internal 'Snitch Mail' culture note, Grok Imagine 2.0's #3 image-leaderboard ranking, Claude Code's 'Auto Continue' feature update, and a viral Hogwarts-soccer AI video (trend-only). No non-AI newsletter content survived: 'The Compiss' bathroom-finder app and a historical-scene guessing game were both too thin for Beyond AI, so beyond_ai is empty and page 2 was dropped per the build script's no-beyond-ai rule. Only 1 tip cleared the bar (below the target-3/min-2 guidance) since the source newsletter had no second tip-of-the-day; shipped anyway since total published items (5) clear the 2-item dedup minimum by a wide margin and the instructions warn against padding thin material to hit a quota. Verified page count (1) via PyMuPDF after pypdf import failed (module not installed in this environment)."
         }
       ]
+    },
+    "2026-08-17": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-17T08:23:03-04:00",
+          "status": "delivered",
+          "covered": [
+            "dario-amodei|rebuts|world-domination-accusation",
+            "openai|sells|gpt5.6-cyber-on-amazon-marketplace",
+            "stripe|acquires|openrouter-7b",
+            "ai-anxiety|reshapes|college-majors",
+            "rebel-creamery|files-bankruptcy-after|van-leeuwen-trademark-suit",
+            "jane-street|loses|15b-situational-awareness-collapse",
+            "us-canada|race-to-avert|tariff-deadline",
+            "uv-clothing|trends-in|retail-sales"
+          ],
+          "note": "Morning firing (8:23 AM ET). First run of the day; searched mail since yesterdays run 2 (2026-08-16T16:09:48-04:00) per the overnight-catch rule. Read 4 newsletters (The Neuron and The Rundown AI, both covering the Dario Amodei/Gavin Baker world-domination-accusation feud from different angles; Morning Brew; 1440 Daily Digest), all sent 4:24-6:32 AM. Merged the Amodei/Baker feud (Neuron + Rundown) into one lead AI News item, and the Stripe/OpenRouter acquisition (Neuron + Morning Brew) into one item. An initial draft (2 tips + 4 news + 5 beyond_ai) rendered 3 pages; cut the third AI Tip (Claude Cowork ad-creative audit workflow, no verbatim prompt) and the lowest-impact news item (marked low: a Beijing doctor solving a 22-year math conjecture with ChatGPT) to fit the 2-page budget, landing at 2 tips + 3 news + 5 beyond_ai. Excluded as lower-impact/thinner for space without publishing: the AI watermark eraser tool hitting 11k GitHub stars, Anthropics reported 6B talks to buy Decart, a Hugging Face report on Chinese open-model sizes, ChatGPTs new unencrypted keystroke-logging Mac feature, and Anthropics further watermark technical details (the last already substantially covered 2026-08-12 and 2026-08-16). Also left unused for space: USS Lincoln carrier-conditions Senate probe, Indiana flooding, Hurricane Lala/Hawaii, Cambridge professor Jason Ardays death, and the Sicily art theft (all from 1440/Morning Brew, no stronger PM angle than what was kept). brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette. pypdf unavailable in this environment (broken cryptography/cffi binding); installed pymupdf and confirmed final page count (2) plus full page-text readback that way."
+        }
+      ]
     }
   }
 }

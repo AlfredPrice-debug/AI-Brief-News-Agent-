@@ -1,0 +1,95 @@
+{
+  "run": 1,
+  "runTime": "2026-08-17T08:23:03-04:00",
+  "title": "Amodei Answers His Critics, a Hacking AI Lands on Amazon, and Stripe's $7B AI Bet",
+  "date_display": "Monday, August 17, 2026",
+  "date_slug": "8_17_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Aug 17)",
+  "tldr": [
+    "Dario Amodei publicly rebutted a \"world domination\" accusation, reframing AI's PR problem as a trust crisis only real breakthroughs can fix.",
+    "OpenAI's uncensored hacking model, GPT-5.6-Cyber, is now self-serve on Amazon's marketplace with 400+ known exploits already found.",
+    "Stripe is buying AI marketplace OpenRouter for $7B+, over 5x its valuation from three months ago."
+  ],
+  "tips": [
+    {
+      "heading": "Fine-tune a specialist model instead of prompting a generalist",
+      "steps": [
+        "Install Unsloth Studio and pick an open-source model your hardware can run.",
+        "Build training examples (instruction + input + ideal output) — generate them with AI or convert a PDF into a dataset.",
+        "Train with QLoRA, which teaches a lightweight adapter instead of retraining the whole model.",
+        "Compare the fine-tuned model against the original to confirm your data actually improved it."
+      ],
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Turn a chatbot into a cross-app Chief of Staff",
+      "steps": [
+        "Download an AI \"Chief of Staff\" agent, sign in, and start a focused workspace for one project.",
+        "Connect the apps it should touch — Gmail, Drive, Calendar, Notion, etc.",
+        "Ask it to map your workstreams and recommend automations to add, using the prompt below.",
+        "Have it produce a first real deliverable, then set up a daily debrief so you can see what it did each day."
+      ],
+      "prompt": "Review my connections, build a profile of my workstreams/projects, and suggest the three most useful agents, automations, and plugins I should add",
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Dario Amodei breaks his near-silence to rebut a \"world domination\" accusation.</b> After investor Gavin Baker claimed Amodei privately believes Anthropic could become the only surviving private AI company, Amodei posted a two-part rebuttal that hit 10 million views in a day, calling public AI distrust \"a crisis of trust\" built on the industry's history of overpromising, not his own safety warnings.",
+      "means": "A ready-made script for the trust conversation your clients are already having about AI vendors — Amodei's argument (real breakthroughs beat marketing) is one you can borrow when a client asks why they should believe any AI company's claims.",
+      "source": "The Neuron, The Rundown AI"
+    },
+    {
+      "body": "<b>OpenAI's uncensored hacking model is now on Amazon's cloud marketplace.</b> GPT-5.6-Cyber, trained with fewer safety limits to write working exploit code, has already found over 400 privilege-escalation flaws in a single operating system — and no longer requires OpenAI's personal vetting to access.",
+      "means": "If any client provisions AI tools through AWS, flag this now — self-serve exploit-writing AI shifts your threat model faster than most security reviews cycle.",
+      "source": "The Neuron"
+    },
+    {
+      "body": "<b>Stripe is buying AI model marketplace OpenRouter for over $7 billion</b> — more than 5x the $1.3 billion valuation OpenRouter had just three months ago.",
+      "means": "A signal that AI infrastructure is consolidating fast; if you're advising on vendor strategy, don't assume today's neutral marketplace stays neutral, or independent, for long.",
+      "source": "The Neuron, Morning Brew"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>AI anxiety is reshaping college majors.</b> A Lumina Foundation/Gallup survey found 13-19% of degree students already changed their major over AI job fears, and computer science enrollment fell 8.1% last year after 15 years of growth, even as AI-specific majors jumped from 4 schools in 2020 to 79 today.",
+      "angle": "Directly relevant — this is the incoming talent pipeline for every client hiring new grads; expect candidates to arrive with less CS depth and more AI-literacy framing on their resumes.",
+      "starter": "Are we seeing that shift yet in who's applying for entry-level roles, or is it still working its way through the pipeline?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>A Utah ice cream maker filed for bankruptcy after losing a $23.8 million trademark lawsuit.</b> A judge ruled Rebel Creamery intentionally copied rival Van Leeuwen's packaging; Rebel's bankruptcy filing lists $13.8 million in assets against $23.9 million in liabilities.",
+      "angle": "Directly relevant — a clean, current example for any client conversation about brand or packaging IP risk, and how fast a copied look becomes an existential liability.",
+      "starter": "Worth a gut-check: how confident are we that our newest packaging or branding work wouldn't draw the same claim?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Quant firm Jane Street lost $15 billion in July</b> in the fallout from the collapse of Situational Awareness, a $45 billion AI-focused hedge fund run by 24-year-old Leopold Aschenbrenner.",
+      "angle": "Directly relevant — a cautionary data point for clients treating an \"AI\" label as a proxy for \"de-risked\" when evaluating funds, vendors, or investments.",
+      "starter": "Has anyone actually asked what's inside the \"AI\" label before we treat it as a selling point?",
+      "source": "1440 Daily Digest"
+    },
+    {
+      "body": "<b>The US and Canada are racing to strike a trade deal before Wednesday's deadline.</b> Without one, 50% tariffs hit $20 billion of Canadian goods, from wine to cement, an outcome that could reshape the broader USMCA renegotiation.",
+      "angle": "Directly relevant if any client sources from or sells into Canada — worth a proactive check on exposure before Wednesday.",
+      "starter": "Do we know which of our clients' supply chains actually touch Canadian imports right now?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Sun-protective clothing is having a retail moment.</b> UV-blocking apparel sales are up 12% year over year at US activewear brands, with searches for \"UV shirt\" up 26%, as celebrities like Anne Hathaway and Kendall Jenner popularize the look.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Anyone else noticing UV clothing everywhere this summer, or is that just my feed?",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "dario-amodei|rebuts|world-domination-accusation",
+    "openai|sells|gpt5.6-cyber-on-amazon-marketplace",
+    "stripe|acquires|openrouter-7b",
+    "ai-anxiety|reshapes|college-majors",
+    "rebel-creamery|files-bankruptcy-after|van-leeuwen-trademark-suit",
+    "jane-street|loses|15b-situational-awareness-collapse",
+    "us-canada|race-to-avert|tariff-deadline",
+    "uv-clothing|trends-in|retail-sales"
+  ]
+}
