@@ -753,6 +753,24 @@
           "note": "Morning firing (8:23 AM ET). First run of the day; searched mail since yesterdays run 2 (2026-08-16T16:09:48-04:00) per the overnight-catch rule. Read 4 newsletters (The Neuron and The Rundown AI, both covering the Dario Amodei/Gavin Baker world-domination-accusation feud from different angles; Morning Brew; 1440 Daily Digest), all sent 4:24-6:32 AM. Merged the Amodei/Baker feud (Neuron + Rundown) into one lead AI News item, and the Stripe/OpenRouter acquisition (Neuron + Morning Brew) into one item. An initial draft (2 tips + 4 news + 5 beyond_ai) rendered 3 pages; cut the third AI Tip (Claude Cowork ad-creative audit workflow, no verbatim prompt) and the lowest-impact news item (marked low: a Beijing doctor solving a 22-year math conjecture with ChatGPT) to fit the 2-page budget, landing at 2 tips + 3 news + 5 beyond_ai. Excluded as lower-impact/thinner for space without publishing: the AI watermark eraser tool hitting 11k GitHub stars, Anthropics reported 6B talks to buy Decart, a Hugging Face report on Chinese open-model sizes, ChatGPTs new unencrypted keystroke-logging Mac feature, and Anthropics further watermark technical details (the last already substantially covered 2026-08-12 and 2026-08-16). Also left unused for space: USS Lincoln carrier-conditions Senate probe, Indiana flooding, Hurricane Lala/Hawaii, Cambridge professor Jason Ardays death, and the Sicily art theft (all from 1440/Morning Brew, no stronger PM angle than what was kept). brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette. pypdf unavailable in this environment (broken cryptography/cffi binding); installed pymupdf and confirmed final page count (2) plus full page-text readback that way."
         }
       ]
+    },
+    "2026-08-18": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-18T08:20:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "nvidia|backs-financing-for|openai-ohio-datacenter",
+            "stripe|acquires|openrouter",
+            "ai-voice-phishing|targets|hedge-funds-zoom-flaw",
+            "meta|faces-trial|addictive-design-1.4t",
+            "iran-ceasefire|expires|us-oman-tension",
+            "academy-of-management|studies|job-hopper-performance",
+            "ferrari|sells-at-auction|luce-ev-40m"
+          ]
+        }
+      ]
     }
   }
 }

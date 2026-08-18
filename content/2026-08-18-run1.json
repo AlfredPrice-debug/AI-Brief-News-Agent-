@@ -1,0 +1,90 @@
+{
+  "run": 1,
+  "runTime": "2026-08-18T08:20:00-04:00",
+  "title": "Nvidia Bankrolls OpenAI's Ohio Megacampus, Meta Faces a $1.4 Trillion Trial, and Stripe Buys OpenRouter",
+  "date_display": "Tuesday, August 18, 2026",
+  "date_slug": "8_18_26",
+  "sources": "<b>Superhuman AI</b> (Aug 17), <b>1440</b>, <b>The Neuron</b>, <b>Morning Brew</b>, <b>The Rundown AI</b> (Aug 18)",
+  "tldr": [
+    "Nvidia is backing up to $105B in financing for OpenAI's new Ohio data-center campus, one of the largest ever announced.",
+    "Meta's $1.4 trillion addictive-design trial began today; a judge already called Meta's own $4 million damages estimate \"unreasonable.\"",
+    "Stripe is buying AI marketplace OpenRouter for $7-8B, and AI-powered voice phishing just hit Citadel, Two Sigma, and Point72."
+  ],
+  "tips": [
+    {
+      "heading": "Give your AI a design system, not vibes",
+      "steps": [
+        "Before asking for a page or build, hand over brand tokens (colors, type, spacing) and reference assets (screenshots, a page that feels right).",
+        "Specify which components to reuse (buttons, cards, nav) rather than invent.",
+        "Ask it to summarize the visual system and flag missing decisions before it starts coding."
+      ],
+      "prompt": "Build this page using these brand rules: [tokens]. Match these references: [assets]. Reuse these components: [list]. Before coding, summarize the visual system and flag any missing decisions.",
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Build a sales ICP and buyer persona in one prompt",
+      "steps": [
+        "Fill in your business type, product/service, price range, target market, and existing customers.",
+        "Ask for demographics, psychographics, pain points, goals, objections, and buying triggers.",
+        "Have it close with a sales-summary table and positioning against competitors."
+      ],
+      "prompt": "Act as an expert B2B and B2C sales strategist. Help me build a complete Ideal Customer Profile (ICP) and buyer persona for my business. Business type: [INSERT BUSINESS]. Product/service: [INSERT OFFER]. Price range: [INSERT PRICE]. Target market: [INSERT MARKET]. Existing customers: [INSERT DETAILS]. Generate: demographics, psychographics, pain points, goals, buying triggers, objections, decision criteria, preferred channels, awareness stage, purchase journey, budget range, urgency level, competitor alternatives, emotional motivations, common phrases they use, industries, job titles, company sizes, and red flags. Then create a final sales summary table and explain how to position my offer against competitors.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Nvidia is backing up to $105 billion in financing for OpenAI's new 20-year lease on an Ohio AI data-center campus</b>, built on a decommissioned uranium-enrichment site. The Neuron and 1440 put the campus at 10 gigawatts; The Rundown AI cites nearly 8 GW for the initial build.",
+      "means": "The clearest sign yet that AI infrastructure spend is being financed by the chip vendor itself — worth flagging to clients weighing vendor lock-in or circular-financing risk.",
+      "source": "The Neuron, 1440, The Rundown AI",
+      "low": false
+    },
+    {
+      "body": "<b>Stripe is acquiring AI model marketplace OpenRouter</b>, which lets developers access many AI models through one interface. 1440 puts the price at over $8 billion; The Rundown AI reports over $7 billion — both call it a steep jump from OpenRouter's funding round just months earlier.",
+      "means": "OpenRouter is a common way teams avoid single-vendor model lock-in — worth watching how Stripe integrates it, especially if any client tooling routes through it.",
+      "source": "1440, The Rundown AI",
+      "low": false
+    },
+    {
+      "body": "<b>AI-generated voice phishing is now convincing enough to fool humans</b> — recent targets include Citadel, Two Sigma, and Point72. Separately, a Zoom flaw ('Zoomsday') let anyone in a meeting silently take over another attendee's device, exploited in under 24 hours and fewer than 20 AI prompts.",
+      "means": "A concrete example for client security-awareness talks — the bar for convincing AI social-engineering attacks is now hours, not weeks.",
+      "source": "Superhuman AI",
+      "low": false
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Meta is in federal court today facing up to $1.4 trillion in penalties</b>, in a suit brought by California, Colorado, Kentucky, and New Jersey alleging Facebook and Instagram were deliberately designed to be addictive to kids, with children's data collected without parental consent. Plaintiffs want infinite scroll, autoplay, and disappearing Stories eliminated; a judge already called Meta's own $4 million damages estimate \"unreasonable\" too. Meta lost two similar suits this year, including a $942 million New Mexico judgment.",
+      "angle": "Directly relevant — this is the live case study for any client conversation about addictive product design, dark patterns, or compliance risk around children's data in consumer products.",
+      "starter": "If Meta gets forced to kill infinite scroll and autoplay, what happens to the engagement metrics teams have been optimizing toward for a decade?",
+      "source": "1440, Morning Brew"
+    },
+    {
+      "body": "<b>The 60-day US-Iran ceasefire deadline passed with no deal</b>, with both sides disputing control of the Strait of Hormuz. President Trump said the US isn't rushing a deal and threatened forceful action against Oman if it interferes with the US blockade of Iranian shipping.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Anyone watching the Strait of Hormuz situation — curious if it's already showing up in shipping or fuel-cost conversations with clients.",
+      "source": "1440, Morning Brew"
+    },
+    {
+      "body": "<b>New research in the Academy of Management Journal</b> found 72% of hedge fund managers saw a performance dip when starting a new job, and most new hires took five months to get up to speed — but managers with a job-hopping history needed only about two months.",
+      "angle": "Useful data point for hiring conversations — a job-hopping history may signal faster ramp-up, not a red flag, worth raising with clients rethinking hiring criteria.",
+      "starter": "Are we still treating job-hopping as a red flag in hiring, or does the ramp-up data argue the opposite?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>A custom Ferrari Luce EV sold for $40 million at auction</b> — 36 times its $1.1 million estimate, and the most expensive new car ever bought at auction — just three months after debuting to widespread mockery, including comparisons to a Nissan Leaf.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Remember everyone dunking on the Ferrari EV back in May? It just sold for $40 million at auction.",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "nvidia|backs-financing-for|openai-ohio-datacenter",
+    "stripe|acquires|openrouter",
+    "ai-voice-phishing|targets|hedge-funds-zoom-flaw",
+    "meta|faces-trial|addictive-design-1.4t",
+    "iran-ceasefire|expires|us-oman-tension",
+    "academy-of-management|studies|job-hopper-performance",
+    "ferrari|sells-at-auction|luce-ev-40m"
+  ]
+}
