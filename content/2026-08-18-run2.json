@@ -1,0 +1,62 @@
+{
+  "run": 2,
+  "runTime": "2026-08-18T16:10:00-04:00",
+  "title": "Big Tech's $3 Trillion Hidden AI Bill and Anthropic's 14x Revenue Jump",
+  "date_display": "Tuesday, August 18, 2026",
+  "date_slug": "8_18_26",
+  "sources": "<b>Superhuman AI</b> (Aug 18)",
+  "tldr": [
+    "Nine top tech firms carry $3T in off-balance-sheet AI commitments, per the WSJ.",
+    "Anthropic's revenue hit $11.5B last quarter, up 14x, as it eyes a $2T October IPO.",
+    "A new paper warns automating entry-level roles leaves too few experts to verify AI."
+  ],
+  "tips": [
+    {
+      "heading": "Turn a YouTube method into a reusable Claude Skill",
+      "steps": [
+        "Pick a video with a clear, repeatable method and copy its transcript.",
+        "Ask Claude's skill-creator to convert it into a Skill, supplying the title, creator, link, and transcript.",
+        "Test it with relevant and unrelated prompts, then upload the SKILL.md under Settings, Capabilities, Skills."
+      ],
+      "prompt": "Use the skill-creator to turn this YouTube video into a Claude Skill. Video: [title], Creator: [name], Link: [YouTube URL] Extract the video's core problem, step-by-step method, repeated rules, mistakes to avoid, and expected output format. The Skill should activate only when my request matches this method, not for general advice or summaries. Transcript: [paste transcript] Ask me about anything important that's missing, then generate the SKILL.md and run an evaluation.",
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Split your desktop agents by skillset, model, and memory",
+      "steps": [
+        "Install the Nous Research Hermes Desktop app (macOS, Windows, Linux) and turn on Bot Mode.",
+        "Give each agent its own skillset, model, and memory instead of one general-purpose agent.",
+        "Let agents pass context to each other across threads, e.g. research handing off to drafting."
+      ],
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Big Tech's AI spending is $3 trillion higher than it looks.</b> Nine top tech firms carry $3T in off-balance-sheet AI commitments, $1.2T in data center leases plus $1.9T in hardware obligations, per a Wall Street Journal report. That spending has pushed Alphabet, Amazon, and Meta into negative free cash flow.",
+      "means": "The real cost of the AI platforms your clients build on is not on the balance sheets they read. Worth raising in any roadmap or vendor conversation that assumes today's AI pricing holds for three years.",
+      "source": "Superhuman AI (WSJ)",
+      "low": false
+    },
+    {
+      "body": "<b>Anthropic's revenue jumped 14x year over year as it eyes a reported $2 trillion IPO.</b> Preliminary revenue hit $11.5B last quarter, up from $787M a year earlier, and the company reportedly projects $190B to $200B in annual revenue by 2028 while seeking a $2T valuation for an October IPO, per the Financial Times.",
+      "means": "A listing at that scale brings new pressure on pricing and margins, so factor a possible cost change into any client build that leans on one provider's API.",
+      "source": "Superhuman AI (Financial Times)",
+      "low": false
+    },
+    {
+      "body": "<b>A new paper warns AI adoption could deplete the pool of people qualified to check its work.</b> Framed as a tragedy of the commons for expertise, it notes that today's senior reviewers exist only because firms hired and trained entry-level workers 5 to 30 years ago, the cohort now most at risk of automation. The shortage shows up in a decade, not tomorrow.",
+      "means": "A useful counterweight when a client wants to cut the analyst tier because AI can do the first draft.",
+      "source": "Superhuman AI",
+      "low": false
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "superhuman|tip|youtube-video-to-claude-skill",
+    "nous-research|ships|hermes-bot-mode",
+    "wsj|reports|big-tech-3t-off-balance-sheet-ai-commitments",
+    "anthropic|reports|11.5b-quarterly-revenue-2t-ipo",
+    "new-paper|warns|ai-erodes-expert-verification-pipeline"
+  ]
+}

@@ -769,6 +769,18 @@
             "academy-of-management|studies|job-hopper-performance",
             "ferrari|sells-at-auction|luce-ev-40m"
           ]
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-08-18T16:10:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "superhuman|tip|youtube-video-to-claude-skill",
+            "nous-research|ships|hermes-bot-mode",
+            "wsj|reports|big-tech-3t-off-balance-sheet-ai-commitments",
+            "anthropic|reports|11.5b-quarterly-revenue-2t-ipo",
+            "new-paper|warns|ai-erodes-expert-verification-pipeline"
+          ]
         }
       ]
     }
