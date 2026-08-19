@@ -783,6 +783,28 @@
           ]
         }
       ]
+    },
+    "2026-08-19": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-19T08:16:23-04:00",
+          "status": "delivered",
+          "covered": [
+            "neuron|tip|codex-1m-token-context",
+            "rundown|tip|codex-app-store-publish",
+            "openai|pauses|frontier-training-misalignment",
+            "openai|launches|chatgpt-for-teens",
+            "google|pays-10m-for|spirit-airlines-training-data",
+            "disney-abc|sues|fcc-first-amendment",
+            "bond-market|selloff-hits|19-year-high-yield",
+            "trump|pauses|canada-tariffs-3-days",
+            "american-airlines|reinstalls|seatback-screens",
+            "ukraine|launches|record-drone-strike-russia"
+          ],
+          "note": "Morning firing. First run of the day; no run-log entry existed for today, so searched mail since yesterday's run 2 (2026-08-18T16:10:00-04:00) per the overnight-catch rule. Found exactly 4 new messages, all self-forwarded by Alfred: The Neuron ('When your startup dies...'), The Rundown AI ('Pacing comes to the AI frontier'), Morning Brew ('How Far I'll Go' -- subject emoji suggested Morning Brew but note below), and 1440 Daily Digest ('Ukraine, Penn State Drug Ring...'). All four bodies were large HTML and handed to 4 parallel subagents to extract. Caught a race condition: 2 of the 4 subagents wrote to the same scratchpad filename (clean.txt) concurrently, so the Morning Brew agent's report came back describing 1440's content instead of its own message. Verified this directly against the raw saved HTML (grepped/parsed in Bash) and re-extracted the real Morning Brew content myself rather than trusting the subagent output -- worth flagging for future runs to use unique per-agent scratch filenames. Merged the Disney/ABC v. FCC lawsuit (detailed in Morning Brew, briefer in 1440) and the OpenAI frontier-training pause (Rundown's detailed version + Neuron's Astra mention) into single items each. An initial draft (2 tips + 4 news + 5 beyond_ai) rendered 3 pages; cut the lowest-impact news item (the AI-generated 'Janie' Bama Rush persona story, marked low) and trimmed one tip's dual verbatim prompts down to the single essential one, plus tightened the lead news item's body/means copy, to close the remaining one-line overflow and land at 2 tips + 3 news + 5 beyond_ai on 2 pages. Cut for space without publishing: Etched's $700M funding round, Anthropic's $65B annualized revenue pace, Axiom's prime-gap theorem proof, Groq's $350M raise, DOJ's a16z board-seats probe, Google DeepMind/Sutton's 'synthetic data is a trap' feature, Penn State's fraternity drug-ring story, Costco's Medicare plan launch, South Korea's military-independence call, and the VMA nominations/ESPN founder death brief items -- all thinner or lower-impact than what was kept, plus Penn State/Costco/South Korea specifically to keep Beyond AI's mix from skewing entirely toward crime/politics over business/PM-relevant items. pypdf unavailable in this environment (broken cryptography/cffi binding, consistent with prior runs); installed pymupdf and confirmed final page count (2) plus full page-text readback that way. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
+        }
+      ]
     }
   }
 }
