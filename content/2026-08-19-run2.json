@@ -1,0 +1,68 @@
+{
+  "run": 2,
+  "runTime": "2026-08-19T16:00:00-04:00",
+  "title": "Firefox Joins the AI Browser Race, and Claude Plugs Into Gmail and Drive",
+  "date_display": "Wednesday, August 19, 2026",
+  "date_slug": "8_19_26",
+  "sources": "<b>Superhuman AI</b> (Aug 19)",
+  "tldr": [
+    "Firefox is adding an optional AI chatbot (\"Smart Window\") powered by Exa, a week after OpenAI killed its own ChatGPT Atlas browser.",
+    "Claude now connects directly to Gmail and Google Drive, letting you edit emails or files from inside a chat thread.",
+    "Two ready-to-use prompts today: reverse-engineering viral video scripts, and auditing your team's workflow inefficiencies."
+  ],
+  "tips": [
+    {
+      "heading": "Reverse-engineer a viral video's script with Gemini",
+      "steps": [
+        "Find a viral video on Instagram, TikTok, or YouTube (high views, saves, shares).",
+        "Download it and upload it to Gemini.",
+        "Ask Gemini to break down the hook, pacing, and structure, then generate a new script in the same format for your topic."
+      ],
+      "prompt": "Analyze this video and break down the hook (first 3 seconds), the structure and pacing, and explain why it works psychologically. Then create a new 30-second script using the same format for this topic: [insert topic]. Make it fast-paced, punchy, and optimized for Instagram/TikTok.",
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Audit your team's workflow with a productivity-consultant prompt",
+      "steps": [
+        "Paste the prompt below into ChatGPT with your team's tools, workflows, meetings, and pain points.",
+        "Review the impact-vs-effort recommendations; action the \"quick wins\" list this week."
+      ],
+      "prompt": "Act as a productivity consultant. Audit my team's current workflows and identify the biggest inefficiencies across meetings, communication, task management, reporting, accountability, collaboration, and decision-making.\n\nHighlight bottlenecks, duplicated work, unnecessary meetings, unclear ownership, context switching, and tasks that could be automated or eliminated.\n\nRecommend practical improvements, including better workflows, tools, automations, and productivity frameworks.\n\nPrioritize recommendations by impact vs. effort and finish with:\n* Top 5 productivity issues\n* Top 5 recommended changes\n* Quick wins to implement now\n\nTeam Details: [PASTE TEAM INFO, CURRENT TOOLS, WORKFLOWS, MEETINGS, AND CHALLENGES]",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Firefox is adding an optional AI chatbot called \"Smart Window,\"</b> built on Exa's AI-first web search, that pulls live information and groups open tabs into categories. Users pick the model and what data it can access, with everything stored locally and deletable anytime. It lands a week after OpenAI shut down its own ChatGPT Atlas browser.",
+      "means": "A mainstream, privacy-forward browser shipping AI search signals the category consolidating around user control rather than a single vendor's assistant — a reference point if a client asks how to evaluate AI browser add-ons.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Claude now connects directly to Gmail and Google Drive,</b> letting you edit emails or files from inside a chat thread instead of switching apps.",
+      "means": "Worth trying this week if you're already in Claude for drafting — cuts a context switch out of your own daily workflow.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>A leaked demo shows upcoming Apple AirPods with a feature to \"save anything you see,\"</b> capturing and recalling visual moments; the clip has drawn 4 million views.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Did you see the leaked AirPods demo that can save whatever you're looking at? Feels like the next wearable-AI arms race.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Liquid Death and Garage Beer released a viral ad built around mailing your urine to an AI data center,</b> complete with an original custom song, pulling 3 million views.",
+      "angle": "A sharp example of brands using AI-datacenter fatigue as comedy — worth noting if a client's marketing team is looking for a tone that pokes fun at AI hype rather than chasing it.",
+      "starter": "Have you seen brands starting to make fun of the AI data-center boom instead of riding it? Might be a tone worth testing.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "fingerprints": [
+    "superhuman|tip|reverse-engineer-viral-videos-gemini",
+    "superhuman|tip|team-productivity-analysis-prompt",
+    "firefox|partners-with-exa|ai-web-search",
+    "claude|adds|gmail-drive-integration",
+    "apple-airpods|leaked|save-anything-you-see",
+    "liquid-death|releases|ai-data-center-ad"
+  ]
+}
