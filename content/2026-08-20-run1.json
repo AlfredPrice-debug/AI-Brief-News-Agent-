@@ -1,0 +1,96 @@
+{
+  "run": 1,
+  "runTime": "2026-08-20T08:00:00-04:00",
+  "title": "Claude Designs Proteins, an AI Cancer Vaccine Clears Phase 3, and Robots Learn in One Demo",
+  "date_display": "Thursday, August 20, 2026",
+  "date_slug": "8_20_26",
+  "sources": "<b>The Rundown AI</b>, <b>The Neuron</b>, <b>Superhuman AI</b>, <b>Morning Brew</b>, <b>1440</b> (Aug 20)",
+  "tldr": [
+    "Anthropic's Claude ran protein-design campaigns largely on its own, producing working molecules on 14 of 15 targets — AI is reaching into real drug discovery.",
+    "Moderna and Merck's AI-designed personalized cancer vaccine cleared a Phase 3 melanoma trial; Moderna stock jumped 177%.",
+    "New tip: have ChatGPT Work assemble a daily brief from your calendar, email, and Slack every weekday morning."
+  ],
+  "tips": [
+    {
+      "heading": "Build a daily work brief that assembles itself",
+      "steps": [
+        "In ChatGPT's <b>Work</b> tab, go to Plugins &gt; Connect Plugins and install Google Calendar, Gmail, Slack, and Google Drive.",
+        "Run the prompt below to pull meetings, messages, and notes into one brief, then tell ChatGPT what was useful or missing.",
+        "Once it works well, schedule it to run every weekday morning and pin the task for quick access."
+      ],
+      "prompt": "Build my daily work brief using [@Google Calendar], [@Gmail], [@Slack], and [@Google Drive]. Review today's meetings, unread messages, follow-ups, and project notes. Summarize my top priorities, meeting prep, replies needed, decisions, important FYIs, and missing context. Do not send messages, edit files, or create tasks.",
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Fix an inconsistent AI workflow with the Loop Method",
+      "steps": [
+        "Pick a workflow that works unreliably — a skill, project folder, or repeated process.",
+        "Run the prompt below (fill in your definition of done), use <b>/goal</b> to assign it a real deliverable, and let it run three review loops.",
+        "Test the result; if it still needs work, save the whole thing as a reusable skill you can rerun anytime."
+      ],
+      "prompt": "Improve this workflow in 3 loops. Have a panel of sub-agents adversarially review each loop. Done when [definition of done]",
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Anthropic's Claude ran protein-design campaigns largely on its own, a core step in drug discovery.</b> Given one expert prompt plus internet and tools, models Mythos Preview and Opus 4.8 produced working molecules on 14 of 15 targets, hitting 22-35% binding success versus the usual 10-15%. A separate Opus 5 run read raw instrument files with no lab software, measuring a sample at 96.4% pure in 19 minutes, a report the lab took four days to produce. Twist Bioscience and Adaptyv Bio did the lab work.",
+      "means": "Concrete proof autonomous agents are crossing into specialized scientific work — worth citing when advising pharma or R&D clients on where AI can compress timelines.",
+      "source": "The Rundown AI"
+    },
+    {
+      "body": "<b>Moderna and Merck's AI-designed personalized cancer vaccine cleared a Phase 3 melanoma trial, the first positive late-stage result for an mRNA cancer therapy.</b> Moderna's algorithms sequence a patient's tumor, predict up to 34 mutation targets, and encode a bespoke mRNA vaccine paired with Merck's Keytruda, improving recurrence-free survival. Moderna stock rose 177% and Merck 13%; it could be available by 2027.",
+      "means": "The flagship real-world case of AI in drug discovery — a credible reference point for client talks about AI's value beyond chatbots.",
+      "source": "The Neuron, Morning Brew, 1440"
+    },
+    {
+      "body": "<b>Generalist's new GEN-1.5 robot model can learn a task from a single 3-to-12-second demonstration</b> held in its context window with zero retraining (\"physical prompting\"). Across 10 tasks, one demo produced 59% average success, rising to 83% after 10 quick weight updates on five minutes of data.",
+      "means": "The cost and time to teach a robot a task is dropping fast — revisit automation timelines in ops or logistics client work.",
+      "source": "The Neuron"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>US government debt topped $40 trillion this week, up from $19.4 trillion a decade ago, as the Treasury moved to at least double its buybacks of long-term debt.</b> The step pulled 30-year yields back after they hit a 19-year high, easing a bond-market selloff driven by inflation worries.",
+      "angle": "Rising long-term yields raise borrowing costs for governments and clients alike — relevant to any budgeting or capital-timing conversation this quarter.",
+      "starter": "With 30-year yields near 19-year highs, are any of our clients rethinking the timing of big capital investments?",
+      "source": "Morning Brew, 1440"
+    },
+    {
+      "body": "<b>Amazon plans to expand Prime Air drone delivery to 500 US cities and towns by year's end.</b> Drones carry one package under five pounds within 30 minutes of order, launching first in the Chicago, Cleveland, Atlanta, Boise, and Syracuse areas.",
+      "angle": "A concrete last-mile automation milestone to cite with retail or supply-chain clients weighing delivery-speed expectations.",
+      "starter": "If 30-minute drone delivery reaches 500 cities, how does that reset customer expectations for the clients we advise?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>President Trump paused a threatened 50% tariff on Canadian imports for three days.</b> Goods that would be hit include wine, honey, hockey sticks, and dairy products.",
+      "angle": "The on-again-off-again tariff cycle keeps sourcing and pricing assumptions unstable for any client with cross-border supply chains.",
+      "starter": "Do any of our clients have exposure to the Canada tariffs, and is there a contingency if the pause lapses in three days?",
+      "source": "1440"
+    },
+    {
+      "body": "<b>Astronomers found the Milky Way's fastest known star, S301, clocking up to roughly 56 million mph near the black hole Sagittarius A*.</b> Its tight orbit could let scientists measure the black hole's spin for the first time and test Einstein's theory of relativity.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "They found a star doing 56 million miles an hour — about 100,000 times faster than a passenger jet.",
+      "source": "1440"
+    },
+    {
+      "body": "<b>The UAE suspended all trade with Iran after accusing it of firing two ballistic missiles at its territory Tuesday</b>, as Iran's ceasefire with the US frays. The UAE supplied about 30% of Iran's imports, or $22 billion in goods, in 2024.",
+      "angle": "Renewed Gulf tension is an oil-price and supply-chain risk worth watching for clients with energy-sensitive costs.",
+      "starter": "Gulf tensions are flaring again with the UAE cutting off Iran — worth checking any client exposure to oil-price swings.",
+      "source": "Morning Brew, 1440"
+    }
+  ],
+  "fingerprints": [
+    "anthropic|runs|autonomous-protein-design",
+    "moderna-merck|clear|ai-cancer-vaccine-phase3",
+    "generalist|releases|gen-1.5-one-demo-robot",
+    "superhuman|tip|chatgpt-work-daily-brief",
+    "rundown|tip|loop-method-workflow-improvement",
+    "us-debt|tops|40-trillion-treasury-buybacks",
+    "amazon|expands|prime-air-drone-500-cities",
+    "trump|pauses|canada-50pct-tariffs-3-days",
+    "astronomers|discover|fastest-star-s301",
+    "uae|suspends|trade-with-iran"
+  ]
+}

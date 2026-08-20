@@ -784,6 +784,28 @@
         }
       ]
     },
+    "2026-08-20": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-20T08:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "anthropic|runs|autonomous-protein-design",
+            "moderna-merck|clear|ai-cancer-vaccine-phase3",
+            "generalist|releases|gen-1.5-one-demo-robot",
+            "superhuman|tip|chatgpt-work-daily-brief",
+            "rundown|tip|loop-method-workflow-improvement",
+            "us-debt|tops|40-trillion-treasury-buybacks",
+            "amazon|expands|prime-air-drone-500-cities",
+            "trump|pauses|canada-50pct-tariffs-3-days",
+            "astronomers|discover|fastest-star-s301",
+            "uae|suspends|trade-with-iran"
+          ],
+          "note": "Morning firing (run 1). No run-log entry existed for today, so searched Claude AI News Recap since yesterday's run 2 (2026-08-19T16:00:00-04:00) per the overnight-catch rule. Found 6 new messages; one ('News for the insatiably curious') was a 1440 re-engagement/reactivation nag with no news content and was discarded as housekeeping. Read the other 5 (The Rundown AI, The Neuron, Superhuman AI, Morning Brew, 1440 Daily Digest, all Aug 20), each handed to a subagent to slice the large HTML and extract. Deduped out as already-published cross-day repeats: Stripe's OpenRouter acquisition (covered 2026-08-18, though Stripe's new 'we've entered the singularity' investor-letter framing was fresh, it was cut for space), Anthropic passing OpenAI on quarterly revenue / $11.6B / $2T IPO (covered 2026-08-18 and 08-14), OpenAI slowing/pausing model training (covered 2026-08-19 run 1), the Liquid Death 'We Want Your Pee' data-center ad (covered 2026-08-19 run 2, appeared again in Morning Brew + Superhuman), and Unitree's Shanghai IPO debut (the IPO was covered 2026-08-08; the actual trading debut was cut as the same underlying story). The Moderna/Merck AI cancer vaccine appeared across The Neuron, Morning Brew, and 1440 and was merged into one AI News item; the US-debt-tops-$40T and Treasury-buybacks stories (Morning Brew + 1440) were merged into one Beyond AI item; UAE-Iran trade halt was cross-sourced (Morning Brew + 1440). An initial draft (3 tips + 4 news + 5 beyond_ai) rendered 3 pages; the build always starts Beyond AI on a fresh page, so the AI Tips+News section overflowing by even one line forces a third page. Cut the Cursor auto-fix-PR tip (most niche for a PM) and the Replit Free Mode news item (marked low), then tightened several bodies/means and trimmed two tips' step counts to land the Tips+News section on exactly one physical page: 2 tips + 3 news + 5 beyond_ai on 2 pages. pypdf unavailable in this environment (broken cryptography/cffi binding, consistent with prior runs); installed pymupdf and confirmed the 2-page count plus per-page text readback. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
+        }
+      ]
+    },
     "2026-08-19": {
       "runs": [
         {
