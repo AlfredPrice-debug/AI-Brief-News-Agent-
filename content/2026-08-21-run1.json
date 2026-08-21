@@ -1,0 +1,99 @@
+{
+  "run": 1,
+  "runTime": "2026-08-21T08:00:00-04:00",
+  "title": "Claude's $31K Trading Loss, Slack Turns Coding Into a Team Sport, and the AI Router Gold Rush",
+  "date_display": "Friday, August 21, 2026",
+  "date_slug": "8_21_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440</b> (Aug 21)",
+  "tldr": [
+    "A Reddit user says an unsupervised Claude trading agent lost him $31,000 in a month — a live warning shot for anyone piloting agentic finance.",
+    "Slack launched \"Slack Code,\" letting AI agents and human teammates build software together inside shared channels.",
+    "AT&T cut AI costs up to 90% by routing routine work to cheaper open models, fueling a router acquisition wave (Stripe's $7B OpenRouter buy, Ramp's new Router tool)."
+  ],
+  "tips": [
+    {
+      "heading": "Turn a chat into a live website with ChatGPT Sites",
+      "steps": [
+        "In ChatGPT, mention <b>@Sites</b> or include the word \"website\" in your request.",
+        "Describe the audience, the job the site should do, and its features — ask it to save a reviewable version first, since deploy URLs go live instantly.",
+        "Once it looks right, ask Sites to deploy it and hand you the production URL."
+      ],
+      "prompt": "Build a website for [audience] that helps them [job]. Include [sections/features]. Save a reviewable version before deploying. Once I approve it, publish it with Sites and give me the live URL.",
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Package your AI know-how into a paid workflow audit",
+      "steps": [
+        "Have Claude interview you on your strongest industries and tools, then suggest three consulting angles.",
+        "Build a short AI assessment for a prospect that scores where AI could help their business, published as a live Artifact.",
+        "Feed Claude their answers plus their website and ask it to find the highest-return bottleneck to fix with AI.",
+        "Have it turn the findings into a client-ready slide deck: the result, the bottleneck, a solution, and a next step."
+      ],
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>AT&T cut AI costs up to 90% by routing routine work to cheaper open models.</b> It now sends 40% of employee AI use to open models; a router acquisition wave followed, including Stripe's $7B buy of OpenRouter.",
+      "means": "Model routing is a real budget lever, not a novelty — worth raising with clients overpaying for work a cheaper model could handle.",
+      "source": "The Neuron",
+      "low": false
+    },
+    {
+      "body": "<b>Slack launched \"Slack Code,\" letting AI agents and teammates build software together inside shared channels.</b> Agents like ChatGPT, Claude, and Devin can join, write code with live previews, and hand off changes for human approval.",
+      "means": "A preview of where team tools are heading — worth watching if clients live in Slack, since it lets non-engineers direct agentic coding work.",
+      "source": "The Rundown AI",
+      "low": false
+    },
+    {
+      "body": "<b>A Reddit user says an unsupervised Claude trading agent lost him $31,000 in a month.</b> He's warning agents shouldn't control real money unsupervised — though others question if the screenshot is genuine.",
+      "means": "Authenticity aside: any client piloting agentic finance should paper-trade first, cap position sizes, and set a hard stop.",
+      "source": "The Neuron",
+      "low": false
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>North Korea fired about 10 short-range ballistic missiles into its eastern waters, hours after dismissing President Trump's latest push to ease tensions.</b> The test came during US-South Korea military drills that Trump shortened from 11 to 5 days; Kim Jong Un's sister called the reduction meaningless, and Trump says he hopes to meet Kim again this year.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Trump wants another Kim summit right after North Korea test-fired missiles during the drills he just shortened — anyone else find that timing wild?",
+      "source": "1440"
+    },
+    {
+      "body": "<b>Walmart posted its slowest US sales growth in almost six years (2.6%), and shares dropped over 9%.</b> The CFO cited a softening consumer and $4-plus gas prices; Walmart is plowing a record $2.9B tariff refund into cutting prices on 11,000 items.",
+      "angle": "A live signal that consumer spending is cooling — useful context if you're advising retail or CPG clients on Q4 pricing and promotion plans.",
+      "starter": "Walmart just posted its slowest sales growth in six years — are we seeing that same softening with any of our retail clients?",
+      "source": "Morning Brew, 1440"
+    },
+    {
+      "body": "<b>A Chinese court sentenced Evergrande founder Hui Ka Yan to life in prison for fraud tied to the company's 2021 collapse.</b> The developer defaulted on more than $300B in debt after overstating revenue by roughly $80B; China's housing crisis has since erased about $18T in household wealth.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Evergrande's founder just got a life sentence — wild that a $300B default is still working its way through China's economy five years later.",
+      "source": "Morning Brew, 1440"
+    },
+    {
+      "body": "<b>Treasury Secretary Scott Bessent doubled the bond buyback program to at least $4B per operation after 30-year yields hit 5.32%, their highest since 2007.</b> Yields dipped briefly on the news before rebounding; analysts say buybacks don't fix the underlying reasons investors are demanding higher premiums on US debt.",
+      "angle": "Borrowing costs are the through-line in every client budgeting conversation right now — this is the same story as this week's $40T debt milestone, just getting sharper.",
+      "starter": "30-year yields just hit their highest since 2007 — is anyone still planning around cheap long-term financing?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Charter Communications completed its $34.5B acquisition of Cox Communications, creating a combined cable operator serving about 37 million subscribers across 45 states.</b>",
+      "angle": "A useful consolidation data point if any clients operate in telecom, media, or adjacent markets watching for pricing and bundling shifts.",
+      "starter": "Charter just closed a $34.5B deal for Cox — curious whether that changes any of our clients' negotiating leverage with cable/internet providers.",
+      "source": "1440"
+    }
+  ],
+  "fingerprints": [
+    "neuron|tip|chatgpt-sites-website-from-chat",
+    "rundown|tip|sell-ai-workflow-audit-consulting",
+    "att|routes-ai-work-to|cheaper-open-models",
+    "slack|launches|slack-code-collaborative-ai-channels",
+    "claude|allegedly-loses|31k-agentic-trading",
+    "north-korea|fires|missiles-amid-us-skorea-drills",
+    "walmart|reports|slowest-sales-growth-6-years",
+    "evergrande-founder|sentenced-to|life-in-prison",
+    "treasury|expands-bond-buybacks|amid-30yr-yield-2007-high",
+    "charter|completes|34.5b-cox-acquisition"
+  ]
+}

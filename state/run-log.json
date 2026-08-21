@@ -841,6 +841,28 @@
           "note": "Afternoon firing (run 2). Searched mail since run 1 (2026-08-19T08:16:23-04:00). Found exactly 1 new message in Claude AI News Recap: a self-forwarded Superhuman AI newsletter (FW: Firefox joins the AI browser race, received 2026-08-19T13:09:48Z). Handed the raw email body to a subagent to extract; it returned 12 distinct items. Dropped the ChatGPT-for-Teens item as a same-story duplicate of run 1 fingerprint openai|launches|chatgpt-for-teens. Also cut for space/thinness without publishing: a Grok Bot tutorial mention (no captured steps/prompt, too thin to stand as a tip), an AI cuneiform-translation story (TabletCraft) and an HP-printer-on-Mac anecdote (both lower-impact than what was kept). Initial draft (2 tips + 4 news incl. 2 low-impact) rendered 3 pages; cut the two low-impact AI News items (Etched valuation, Herculaneum scrolls) per the cut-lowest-impact-first rule, then tightened one tip step and the lead news item/means copy to close a remaining one-line overflow onto page 2, landing at 2 tips + 2 news + 2 beyond_ai on 2 pages. pypdf unavailable in this environment (ModuleNotFoundError); installed pymupdf via pip and used it to verify final page count (2) plus full page-text readback."
         }
       ]
+    },
+    "2026-08-21": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-21T08:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "neuron|tip|chatgpt-sites-website-from-chat",
+            "rundown|tip|sell-ai-workflow-audit-consulting",
+            "att|routes-ai-work-to|cheaper-open-models",
+            "slack|launches|slack-code-collaborative-ai-channels",
+            "claude|allegedly-loses|31k-agentic-trading",
+            "north-korea|fires|missiles-amid-us-skorea-drills",
+            "walmart|reports|slowest-sales-growth-6-years",
+            "evergrande-founder|sentenced-to|life-in-prison",
+            "treasury|expands-bond-buybacks|amid-30yr-yield-2007-high",
+            "charter|completes|34.5b-cox-acquisition"
+          ],
+          "note": "Morning firing. No entry existed yet for today; last successful run in the log was 2026-08-20 run 1 (08:00:00-04:00, no run 2/3 that day), so searched mail since that timestamp per the overnight-catch rule. Found 6 new messages: The Neuron, The Rundown AI, Superhuman AI (dated Aug 20, arrived late), Morning Brew, and 1440 Daily Digest -- all handed to subagents to extract given large HTML bodies -- plus a 1440 re-engagement/reactivation nag email (\"News for the insatiably curious\", no editorial content) which was discarded entirely. Deduped across newsletters: the ChatGPT Apple Messages plugin (Rundown + Neuron) and Apple Music AI-song-labeling (Rundown + 1440) mentions were not written up as standalone items since fresher/higher-impact stories filled the budget; merged the Walmart earnings and Evergrande-founder-sentencing stories (Morning Brew + 1440) into single beyond_ai items. Excluded as an exact repeat of yesterday morning's published tip: Superhuman AI's \"daily work brief\" ChatGPT-Work tip (same heading, steps, and verbatim prompt as superhuman|tip|chatgpt-work-daily-brief, already delivered 2026-08-20 run 1) -- no fingerprint logged since not republished. An initial draft (3 tips + 4 news + 5 beyond_ai) rendered 3 pages; cut the lowest-impact tip (Superhuman personal-tutor prompt) and lowest-impact news item (Goldman Sachs AI-jobs-impact study), then tightened remaining tip/news copy, to land at 2 tips + 3 news + 5 beyond_ai on 2 pages. Also cut for space without being published: Nvidia/Poolside $6B deal, Meta AI Mac app, Stripe singularity claim, OpenAI RL-training pause, Pakistani-judges AI-training study, and several 1440/Morning Brew quick hits (GTA VI hacker leaks, TikTok senator letter, Pat McAfee ESPN deal, FDA blueberry recall) -- all thinner or lower-impact than what was kept. Superhuman AI was read but ended up contributing no published content, so dropped from the sources line. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
+        }
+      ]
     }
   }
 }
