@@ -1,0 +1,75 @@
+{
+  "run": 2,
+  "runTime": "2026-08-21T16:00:00-04:00",
+  "title": "Claude Gets a Learning Hub, ChatGPT Moves Into iMessage, and Reddit Vanishes From AI Answers",
+  "date_display": "Friday, August 21, 2026",
+  "date_slug": "8_21_26",
+  "sources": "<b>Superhuman AI</b> (Aug 21)",
+  "tldr": [
+    "Anthropic launched The Claude Academy: 355 free tutorials across Claude, Cowork, Code, Tag and the API, plus a new Concise Mode in Claude Code.",
+    "ChatGPT Work and Codex now plug into Apple Messages, so enterprise users can search, follow and reply to iMessage threads from the desktop app.",
+    "Reddit's share of ChatGPT citations fell from about 4% to 0.5% since mid-July per Promptwatch, a warning sign for anyone tracking AI visibility."
+  ],
+  "tips": [
+    {
+      "heading": "Use the new Claude Academy to close your own skill gaps",
+      "steps": [
+        "Anthropic just published <b>The Claude Academy</b>, a free hub of 355 tutorials, prompting tips and use-case examples.",
+        "It covers Claude, Cowork, Claude Code, Claude Tag and the API, from beginner to expert.",
+        "Pick the track for the tool you use daily, work one use-case end to end, then point clients and teammates here instead of writing enablement material from scratch."
+      ],
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Build a Grok bot to audit your digital clutter",
+      "steps": [
+        "Go to Grok Bot, download the desktop app and sign in.",
+        "Open <b>Plugin</b> and connect Gmail and Google Drive.",
+        "Click <b>+</b> in the top left, choose <b>Create new Bot</b>, and describe the behavior you want in plain language.",
+        "Name the bot so it stays reachable in the sidebar for repeat runs."
+      ],
+      "prompt": "You are Marie Kondo for cleaning up digital clutter. Audit my email, Google Drive, and paid subscriptions, then create a cleanup plan with no more than 10 items per category. Find emails to unsubscribe from, redundant files to remove or rename, and paid subscriptions I may want to cancel. Do not move, delete, unsubscribe, or cancel anything without my approval.",
+      "source": "Superhuman AI (via petergyang)"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>OpenAI puts iMessage inside ChatGPT Work and Codex.</b> A new Apple Messages plugin syncs threads into OpenAI's enterprise tools so users can search messages, get updates and send replies without leaving the ChatGPT desktop app.",
+      "means": "Assistants are moving into the channels where client decisions actually happen. Raise messaging-app data in your governance and records conversations before a client's legal team does.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Reddit citations in ChatGPT answers dropped 86%.</b> Data firm Promptwatch found Reddit's share of ChatGPT citations fell from about 4% to about 0.5% between mid-July and August 14. OpenAI has not explained the shift.",
+      "means": "AI visibility is not a channel you can plan around yet. If a client's content strategy assumes chatbot citations, treat that traffic as volatile.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Alibaba's Qwen is now the most-downloaded open-weight model family.</b> Qwen passed 3 billion downloads in six months, ahead of Alphabet and Meta.",
+      "means": "Expect Qwen in vendor proposals and internal prototypes. Settle whether a China-origin open-weight model clears procurement and data-residency rules before someone builds on it.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>A domain speculator bought grok.bot a month before Grok Bot launched</b> and is now trying to flip it.",
+      "angle": "A cheap reminder to lock domains, handles and app-store names during naming, not after the launch date is set.",
+      "starter": "Have we actually secured the name for this before we put it in a deck? That is a five minute check that gets expensive later.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>A leaked photo reportedly shows the interior of xAI's Colossus II data center in Memphis</b>, the site used to train Grok 5.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Everyone talks about model releases, but the interesting story right now might be who can actually get the power and the buildings.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "fingerprints": [
+    "anthropic|launches|claude-academy-355-tutorials",
+    "superhuman|tip|grok-bot-digital-declutter",
+    "openai|adds|imessage-plugin-chatgpt-work",
+    "promptwatch|reports|reddit-chatgpt-citations-down-86pct",
+    "alibaba-qwen|becomes|most-downloaded-open-weight-family",
+    "speculator|flips|grok-bot-domain",
+    "xai|leaked-photo|colossus-ii-memphis"
+  ]
+}
