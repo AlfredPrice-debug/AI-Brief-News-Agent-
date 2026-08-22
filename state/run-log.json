@@ -878,6 +878,29 @@
           "note": "Afternoon firing. Searched Claude AI News Recap since today's run 1 (08:00:00-04:00). One new message: a forwarded Superhuman AI issue (Aug 21, 'Claude gets its own learning hub'), large HTML body handed to a subagent to slice and extract. Discarded sponsor blocks (Viktor, Attio, Nylas/Ctruh/AdAnt/Wikis blurbs), the Friday Fun game, the feedback survey, the Top-125-tools cross-promo, and forwarding/unsubscribe boilerplate. Deduped out two Friday Four recap items already published earlier this week: the WSJ $3T off-balance-sheet AI spending story (wsj|reports|big-tech-3t-off-balance-sheet-ai-commitments, 2026-08-18 run 2) and Firefox's Exa partnership (firefox|partners-with-exa|ai-web-search, 2026-08-19 run 2); also dropped Anthropic's IPO-paperwork line as overlapping anthropic|reports|11.5b-quarterly-revenue-2t-ipo from 08-18 run 2. Note the ChatGPT Apple Messages plugin was seen but not published by run 1, so it ran as new here. First draft (3 tips + 4 news + 2 beyond_ai) rendered 3 pages; cut the thin Claude Code Concise Mode tip and the low-impact Etched $21B valuation item, then tightened tip steps and 'what it means' lines to land at 2 tips + 3 news + 2 beyond_ai on 2 pages. Beyond AI ran short at 2 items because no non-AI newsletter (Morning Brew, 1440) arrived this window; the two items used are the lighter awareness stories from Superhuman AI's In the Know section, and nothing was padded from model knowledge. Also cut without publishing: the OpenAI-CFO no-IPO-until-2027 line, the 'luck surface area' networking tool, and the 14-ways-to-use-Grok-Bot roundup. build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
         }
       ]
+    },
+    "2026-08-22": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-22T08:10:30-04:00",
+          "status": "skipped_thin",
+          "covered": [],
+          "rollover": [
+            "lawmakers|target|ghost-job-listings",
+            "us-canada|impose-50pct-tariff-on|20b-canadian-goods",
+            "scotus|allows-continued|white-house-ballroom-construction",
+            "seoul-incheon|surpasses-dubai-as|busiest-international-airport",
+            "tesla|recalls|3m-vehicles-china-door-safety",
+            "tiktok|settles-with-doj-for|400m-child-privacy",
+            "citadel|unwinds-80pct-of|situational-awareness-portfolio",
+            "trump|allows-tariff-free|300k-tons-beef-imports",
+            "fifa|suspends|paredes-after-world-cup-brawl",
+            "supercentenarians|show-elevated|cd4-ctl-immune-cells"
+          ],
+          "note": "Morning firing (8:10 AM ET), Saturday. First run of the day; no run-log entry existed yet for today, so searched Claude AI News Recap since yesterday's run 2 (2026-08-21T16:00:00-04:00) per the overnight-catch rule. Found exactly 2 new messages, both Alfred-forwarded non-AI newsletters: Morning Brew ('Going after ghosts') and 1440 Daily Digest ('Longevity Cells, World Cup Fallout, and a Squidpocalypse'), both sent 4:20-5:25 AM. Both bodies were large HTML and handed to subagents to extract in full. Zero legitimate AI Tips or AI News content in either -- the only AI-adjacent mention anywhere was a bare link headline in 1440's Etcetera section ('How much of the internet is written with AI? (w/visualization)') pointing to a Pew Research piece, with no figures or facts given in the newsletter body itself, too thin to write up without supplementing from model knowledge. With page 1 (AI Tips + AI News) entirely empty, held rather than ship an AI Brief without AI content, per the 2026-08-02/08-08/08-09/08-15/08-16 precedent (all confirmed weekend mornings with only Morning Brew/1440 in the folder and zero AI newsletters). Merged the White House ballroom SCOTUS stay and the FIFA World-Cup-brawl suspensions, each covered by both newsletters, into single rollover fingerprints. The two newsletters' remaining stories (ghost-job-listing crackdown legislation, the US-Canada 50pct tariff escalation, tariff-free beef import allowance, Seoul Incheon overtaking Dubai as busiest international airport, Tesla's 3M-vehicle China recall, TikTok's $400M DOJ child-privacy settlement, Citadel unwinding 80pct of the Situational Awareness hedge fund position, the FIFA suspensions, and the supercentenarian CD4 CTL immune-cell study) all clear the brief-appropriate bar and roll forward as Beyond AI candidates for the next run to pair with whatever AI newsletters arrive. Also read but left off the rollover list as lower-durability/thinner: the Hong Kong Tiananmen-vigil convictions, the Abercrombie ex-CEO fit-for-trial ruling, the Alex Jones judgment reduction, the NYC-area tornadoes, the depression/neurogenesis study, and the IndyCar DC race."
+        }
+      ]
     }
   }
 }
