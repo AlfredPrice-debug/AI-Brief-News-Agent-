@@ -1,0 +1,74 @@
+{
+  "run": 2,
+  "runTime": "2026-08-22T16:00:00-04:00",
+  "title": "Unitree's $50B Humanoid IPO, US-Canada Tariffs Collapse, and the Ghost Job Crackdown",
+  "date_display": "Saturday, August 22, 2026",
+  "date_slug": "8_22_26",
+  "sources": "<b>Superhuman AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Aug 22)",
+  "tldr": [
+    "Unitree's humanoid robot claims to have beaten Usain Bolt's speed record days before a $50B Shanghai IPO where shares jumped over 460%.",
+    "US-Canada trade talks collapsed, triggering 50% tariffs on $20 billion of Canadian goods.",
+    "New state legislation is targeting \"ghost job\" listings — roughly 1 in 5 online postings have no real hiring intent."
+  ],
+  "tips": [],
+  "news": [
+    {
+      "body": "<b>Unitree's humanoid robot claims to beat Usain Bolt's speed record days before its $50 billion Shanghai IPO.</b> The company's 'Superman' robot reportedly hit 12.7 m/s versus Bolt's 12.4 m/s and cleared a 2-meter vertical jump; shares then soared over 460% on debut, valuing Unitree near $50 billion. The speed claims have not been independently verified.",
+      "means": "A vivid data point for AI-adoption conversations: physical AI (robotics) is now drawing IPO-scale capital, not just LLM hype. Useful context if clients ask where AI investment is actually flowing.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Generalist AI's new model lets a robot learn a physical skill from a single demo.</b> GEN-1.5 succeeds on its first try 59% of the time after watching one 3-12 second demonstration, rising to 83% after a few minutes of practice, prompting some to call it an early sign of \"physical general intelligence,\" though Generalist says the skills are still developmental.",
+      "means": "One-shot skill transfer from minimal data is the same capability jump that made LLMs useful for knowledge work. Worth watching for the same pattern showing up in agentic software tools.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Robotics investment kept accelerating this week.</b> SoftBank put $200M into Gravis Robotics to automate construction machinery, Waymo won approval to expand robotaxis across the Bay Area, LA, Sacramento and San Diego, and China is staging a World Humanoid Robot Games with over 2,000 robots.",
+      "means": "Background context only — robotics funding and deployment are both accelerating in parallel, but none of this changes near-term software-AI client work.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Lawmakers are cracking down on \"ghost job\" listings.</b> Roughly 1 in 5 online job postings each quarter have no real hiring intent, per Greenhouse data, and 81% of recruiters admit their employers have posted them. New York passed a bill awaiting signature requiring hiring-timeline disclosure; New Jersey, Pennsylvania, Kentucky and California are weighing similar bills, and Texas's AG opened an investigation into LinkedIn.",
+      "angle": "Directly relevant if you advise clients on hiring or employer brand trust — a live compliance and reputational issue worth flagging before disclosure rules land in more states.",
+      "starter": "Have we checked whether any of our open reqs would fail a \"ghost job\" disclosure law if one landed in our state?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>US-Canada trade talks collapsed, triggering 50% tariffs on $20 billion of Canadian goods.</b> A draft deal would have lowered US tariffs on Canadian steel, aluminum and autos in exchange for Canada dropping retaliation, but talks fell apart before the deadline; Canada's PM says it will retaliate \"dollar for dollar.\"",
+      "angle": "Directly relevant for clients with cross-border supply chains or Canadian vendors — budget and sourcing assumptions made even a month ago may already be stale.",
+      "starter": "Are any of our clients sourcing from Canada exposed to this new 50% tariff, and have we flagged it to them yet?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>TikTok agreed to pay $400 million to settle DOJ child-privacy claims.</b> The settlement resolves federal allegations tied to how the platform handled children's data.",
+      "angle": "A useful data point when advising clients on data-privacy exposure — regulators are still actively pursuing large platform settlements over children's data specifically.",
+      "starter": "With TikTok's $400M child-privacy settlement, is it worth revisiting how our own products handle minors' data?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Seoul's Incheon Airport overtook Dubai as the world's busiest international hub in H1 2026,</b> handling 38.4 million international travelers and ending Dubai's 12-year reign. The shift follows a steep drop in Middle East transit traffic tied to the Iran war, with much of it rerouting through Asia.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Anyone else notice more layovers routing through Seoul instead of Dubai lately?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>People over 100 show elevated levels of a rare cancer-fighting immune cell,</b> per a new Japanese study comparing blood from adults aged 70-99, 100-109, and 110+. The oldest group had the highest ratio of these CD4 CTL cells despite showing no signs of cancer, hinting at a late-life immune adaptation tied to longevity.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Did you see the study on why some people's immune systems stay sharp past 100? Kind of wild.",
+      "source": "1440 Daily Digest"
+    }
+  ],
+  "fingerprints": [
+    "unitree|claims-speed-record-and-lists|50b-shanghai-ipo",
+    "generalist-ai|unveils|gen-1.5-one-shot-robot-learning",
+    "robotics-industry|reports|investment-and-expansion-roundup",
+    "lawmakers|target|ghost-job-listings",
+    "us-canada|impose-50pct-tariff-on|20b-canadian-goods",
+    "tiktok|settles-with-doj-for|400m-child-privacy",
+    "seoul-incheon|surpasses-dubai-as|busiest-international-airport",
+    "supercentenarians|show-elevated|cd4-ctl-immune-cells"
+  ]
+}
