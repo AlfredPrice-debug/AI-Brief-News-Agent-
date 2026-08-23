@@ -1,0 +1,96 @@
+{
+  "run": 2,
+  "runTime": "2026-08-23T16:11:00-04:00",
+  "title": "Altman's Messaging Problem, a Personal AI Agent That Wouldn't Delete Your Data, and Nvidia's $105B Bet on OpenAI",
+  "date_display": "Sunday, August 23, 2026",
+  "date_slug": "8_23_26",
+  "sources": "<b>The Neuron</b>, <b>Superhuman AI</b>, <b>Morning Brew</b> (Aug 23)",
+  "tldr": [
+    "Sam Altman admits the AI industry's \"extinction risk\" pitch has failed and floats a friendlier one built on personal freedom and small-business creation.",
+    "Buzzy personal AI agent Instinct kept full copies of your synced email even after you disconnected it — a data-control lesson for any AI tool you connect to your accounts.",
+    "Nvidia is reportedly putting a $105B financial backstop under OpenAI, the clearest sign yet of how tightly AI capex and lab survival are now intertwined."
+  ],
+  "tips": [
+    {
+      "heading": "Turn your own judgment into a reusable AI skill",
+      "steps": [
+        "Give the agent a real task, then review the difficult output yourself.",
+        "Explain exactly why you accepted or rejected it — focus on the decision rule, not just this one example.",
+        "Save that rule as a checklist or verifier skill and reuse it on the next run."
+      ],
+      "prompt": "After I review this output, turn my corrections into a reusable checklist or verifier skill for future runs. Preserve the decision criteria, not merely this example.",
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Audit which apps still have access to your accounts",
+      "steps": [
+        "Open your Google account settings in Chrome.",
+        "Give Codex or Claude Code the open tab.",
+        "Ask it to list every third-party app with access to your account.",
+        "Choose which connections to revoke."
+      ],
+      "source": "The Neuron"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Sam Altman says the AI industry's own pitch is the problem.</b> On David Senra's podcast, Altman said AI builders have spent years talking up extinction risk and job losses but \"have not as a field done a very good job\" explaining the benefits — he wants the pitch reframed around personal freedom and \"the greatest boom in people starting smaller businesses that we have ever seen.\"",
+      "means": "This is the same framing gap you navigate with clients: lead with fear (compliance, job loss) and you lose the room; lead with capability and control, and the AI conversation gets easier.",
+      "source": "The Neuron"
+    },
+    {
+      "body": "<b>A buzzy personal AI agent kept your data even after you disconnected it.</b> Instinct, an invite-only assistant that syncs email, messages, screen and location, let users \"disconnect\" Google access without actually deleting the email copies it had already synced — the team pushed an emergency deletion tool overnight after a tester flagged it publicly.",
+      "means": "Before connecting any client or personal data source to an AI agent, check whether \"disconnect\" actually means delete — those are two different controls, and vendors don't always make that clear upfront.",
+      "source": "The Neuron"
+    },
+    {
+      "body": "<b>Nvidia is reportedly backstopping OpenAI with $105B.</b> The chipmaker is putting a financial safety net under OpenAI, the latest and largest sign of how deeply Nvidia's revenue and OpenAI's survival now depend on each other.",
+      "means": "Worth flagging in any client conversation about AI vendor risk — the concentration between a handful of chipmakers and labs is now a balance-sheet-level dependency, not just a supply story.",
+      "source": "The Neuron"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>\"Boring\" local businesses are quietly building real wealth.</b> The share of US income earned by the top 1% ($550k+) from midsize regional businesses like flooring and plumbing grew to 34.9% in 2022, up from 30.3% in 2014, per University of Chicago economists — and Gen Z business applications are up 66% year-over-year, more than any other age group.",
+      "angle": "A live example for any conversation about where new SMB clients are coming from — the pipeline increasingly runs through unglamorous local services, not tech startups.",
+      "starter": "Have you noticed more of our SMB pipeline coming from 'boring' local service businesses instead of tech startups?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Car detailing is the new blue-collar side hustle.</b> A former Amazon warehouse worker who started a car-washing business in 2022 now makes about $18,500 a month from the venture plus $50,000 from coaching, and one detailing trainer says course inquiries are up more than 50% in four years.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Ever think a $100 bucket-and-hose startup could out-earn a lot of six-figure corporate jobs?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Private equity is circling the car wash industry.</b> There are already more car washes in the US than Subway, Starbucks and McDonald's locations combined, and Bloomberg reports rising revenue is drawing PE firms looking to consolidate and scale the category further.",
+      "angle": "A clean roll-up case study — worth keeping in your back pocket if any PE clients are scouting fragmented, cash-generative local-service categories.",
+      "starter": "Curious whether any of our PE clients are eyeing car washes as the next roll-up play.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Indie bookstores are booming, and Barnes & Noble is copying their playbook.</b> More than 600 independent bookstores opened in the US last year, and the American Booksellers Association's membership has tripled to 3,417 stores in a decade — Barnes & Noble now plans 60 new locations built around the same curated, small-store feel.",
+      "angle": "A tidy example of an incumbent adopting a challenger's playbook once the niche proves durable — useful shorthand in strategy conversations about competitive response.",
+      "starter": "Barnes & Noble copying the indie bookstore playbook is a neat case study in how incumbents respond to niche competitors.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Moderna and Merck's personalized cancer vaccine hit its Phase 3 goals.</b> The experimental mRNA vaccine, targeted to each patient's specific tumor markers, helped high-risk melanoma patients stay cancer-free longer when paired with the immunotherapy drug Keytruda — described as a milestone for a field less than a decade old.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Moderna's personalized cancer vaccine hitting Phase 3 goals is a good sign the mRNA platform is finally paying off beyond COVID.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "fingerprints": [
+    "sam-altman|criticizes|ai-industry-messaging",
+    "instinct-ai-agent|fails-to-delete|synced-user-data",
+    "nvidia|backs|openai-105b-safety-net",
+    "neuron|tip|judgment-to-reusable-skill",
+    "neuron|tip|audit-third-party-app-access",
+    "university-of-chicago|finds|midsize-business-income-share-grows-35pct",
+    "car-detailing|boom-drives|18500-monthly-earner",
+    "car-wash-industry|attracts-pe-investment|consolidation-play",
+    "indie-bookstores|triple-to|3417-stores-barnes-noble-responds",
+    "moderna-merck|reports-phase3-success|personalized-cancer-vaccine"
+  ]
+}
