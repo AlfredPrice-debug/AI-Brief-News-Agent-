@@ -1,0 +1,61 @@
+{
+  "run": 3,
+  "runTime": "2026-08-24T16:09:00-04:00",
+  "title": "Anthropic's Mythos 5 Guards Your Codebase, Harvey Goes Open-Weight for Law, and Google Wins the Spirit Airlines Data Trove",
+  "date_display": "Monday, August 24, 2026",
+  "date_slug": "8_24_26",
+  "sources": "<b>Superhuman AI</b> (Aug 24)",
+  "tldr": [
+    "Anthropic rolled out its most capable model, Claude Mythos 5, to power Claude Security for Enterprise vulnerability scanning — previously locked to a partner-only program.",
+    "Legal AI startup Harvey released Tenet, its first in-house legal model, built on Moonshot AI's open-weight Kimi K3 rather than a proprietary base.",
+    "Google won the bidding war for Spirit Airlines' corporate data archive to train AI models on real workplace communications, though a late higher bid could still unwind the win."
+  ],
+  "tips": [
+    {
+      "heading": "Search and act on your iMessages from inside ChatGPT",
+      "steps": [
+        "Open ChatGPT (Work or Codex) on your Mac and go to Plugins → Public.",
+        "Find and install the Messages plugin.",
+        "Reference @Messages in any prompt to pull in your conversations, then ask it to catch you up, draft replies, or flag things needing action."
+      ],
+      "prompt": "Suggest follow ups from yesterday in messages",
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Use AI to surface your own leadership blind spots",
+      "steps": [
+        "Gather quick inputs: your weekly behavior patterns/habits, calendar or task distribution, recurring friction points, any feedback snippets, and team/role context.",
+        "Paste them into the prompt below.",
+        "Use the \"how to test\" suggestions it returns to validate the diagnosis before acting on it — don't take the first answer at face value."
+      ],
+      "prompt": "You are identifying likely leadership blind spots from weekly behavior patterns. Use the context below.\n\nContext:\n- Weekly behavior patterns or habits: [patterns]\n- Calendar, task summary, or work distribution: [work]\n- Recurring frictions or tensions: [frictions]\n- Feedback snippets if any: [feedback]\n- Team context: [team]\n- Leadership role: [role]\n\nInstructions:\n1. Identify likely blind spots that emerge from the pattern of behavior, not isolated mistakes.\n2. Distinguish between temporary overload and deeper leadership tendencies.\n3. Explain how these blind spots could affect the team or organization.\n4. Offer a few direct ways to test whether the diagnosis is true.\n5. Keep the feedback candid but grounded.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Anthropic rolled out its most capable model, Claude Mythos 5, to power Claude Security.</b> Enterprise customers can now point the model at their codebases to scan for vulnerabilities and get suggested fixes; the model had previously only been available through Anthropic's Project Glasswing partner program, with the wider rollout deliberately slowed for safety reasons.",
+      "means": "If Impact Makers or a client is running Claude Security or evaluating AI-assisted vulnerability scanning, this is the model upgrade to test — worth flagging to any client considering AI in their security or DevSecOps pipeline.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Legal AI startup Harvey released Tenet, its first post-trained model built specifically for law.</b> Tenet is optimized for long-horizon legal work and token efficiency, and is built on top of Moonshot AI's open-weight Kimi K3 — notable given OpenAI has been an investor in Harvey since 2022.",
+      "means": "Another data point that vendors are moving to open-weight bases instead of proprietary frontier models; useful if any client work touches legal-AI vendor selection or build-vs-buy decisions.",
+      "low": true,
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Google won the bidding war for Spirit Airlines' corporate data archive after the carrier's bankruptcy,</b> beating bids from Mercor ($7.5M) and Micro1 ($12.5M) with a $10M offer for a trove including 100M emails, 500M Teams messages, and 7.5B anonymized transaction records — real corporate workflow data that AI labs want for training. Micro1 has since submitted a higher bid after the auction closed, and it's unclear whether the judge will accept it.",
+      "means": "A reminder that any company's internal comms and workflow data is now a market asset for AI training — worth a clause on data-training rights in client engagement letters and vendor contracts, especially around bankruptcy or M&A scenarios.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "anthropic|launches|claude-mythos-5-security",
+    "harvey|releases|tenet-legal-model-on-kimi-k3",
+    "google-micro1-mercor|bid-for|spirit-airlines-data-archive",
+    "superhuman-ai|tip|imessages-in-chatgpt",
+    "superhuman-ai|tip|leadership-blind-spots-prompt"
+  ]
+}
