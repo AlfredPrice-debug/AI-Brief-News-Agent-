@@ -1,0 +1,97 @@
+{
+  "run": 1,
+  "runTime": "2026-08-24T07:28:00-04:00",
+  "title": "Anthropic's Possible $100B IPO, Nvidia's $7B Poolside Bet, and California's AI-Firing Ban",
+  "date_display": "Monday, August 24, 2026",
+  "date_slug": "8_24_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Aug 24)",
+  "tldr": [
+    "Anthropic's bankers reportedly say its IPO could raise over $100 billion at a $2 trillion valuation, potentially the largest stock debut ever.",
+    "Nvidia is paying $7 billion to build a US rival to Chinese open-weight models, even as it raises AI chip prices more than 15%.",
+    "California revived a bill banning employers from letting AI fire or discipline workers without human sign-off."
+  ],
+  "tips": [
+    {
+      "heading": "Make AI prove its homework before you publish its draft",
+      "steps": [
+        "Ask it to list every factual claim, number, quote, and named source in the draft, quoting the exact source language so you can Ctrl/Cmd+F it.",
+        "Open every source yourself and confirm it actually supports the claim; rewrite or delete anything that doesn't check out.",
+        "Never ask AI to \"repair\" an invented citation — start over from a real source."
+      ],
+      "prompt": "Audit this draft for factual risk. List every claim, number, quote, and named source I must verify manually. Give only URLs already present in the draft. Mark anything unsupported as DO NOT PUBLISH. Do not invent or repair sources.",
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Turn any spreadsheet into a shareable dashboard with Gemini Canvas",
+      "steps": [
+        "Open your spreadsheet in Google Sheets, launch Gemini in a new tab, click +, and select Canvas.",
+        "Prompt it to build the dashboard from your data, then copy the Canvas link to view or share it outside the chat.",
+        "Keep refining by talking to Gemini in the chat — anyone with the link sees your updates live.",
+        "Ask Gemini to turn the same tabs into slides, then export to Google Slides or PDF."
+      ],
+      "prompt": "Make me an interactive dashboard using the data from tabs one and two",
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Anthropic's IPO could be the largest stock market debut ever.</b> Bankers reportedly told investors the company could raise more than $100 billion, pushing its valuation to nearly $2 trillion, more than double its $965 billion private-round valuation in June. A listing could come as soon as October, with Anthropic beating OpenAI (which isn't planning to list until 2027) to public markets.",
+      "means": "If this holds, Anthropic becomes only the fourth company ever to cross a $2 trillion valuation, alongside Apple, Microsoft, and Nvidia. Worth tracking closely if any client work touches Claude, Anthropic partnerships, or competitive positioning against OpenAI.",
+      "source": "The Neuron"
+    },
+    {
+      "body": "<b>California lawmakers revived a bill banning AI from firing or disciplining workers without human sign-off.</b> The \"No Robo Bosses Act\" (SB 947) follows Governor Newsom's veto of an earlier version last October; a widely cited example involves an AI agent that recommended firing a worker based on a policy it had itself written and then \"forgot.\"",
+      "means": "A concrete signal for any client using or considering AI in HR/people-ops decisions — build a human-sign-off step into any AI-assisted disciplinary or termination workflow now, before more states follow California's lead.",
+      "source": "The Neuron"
+    },
+    {
+      "body": "<b>Nvidia is spending big to build a US rival to Chinese open-weight AI models, while also raising its own chip prices.</b> It's paying $6 billion to license AI startup Poolside's technology and hire its engineers, plus investing $1 billion more at a $12 billion valuation. Separately, Nvidia is raising prices on its next-generation Blackwell and Vera Rubin chips by 15-17% starting early next year, adding roughly $5 billion to the cost of a single large data center.",
+      "means": "Budget accordingly if any client's roadmap depends on next-gen Nvidia hardware — a 15-17% price hike on flagship chips will ripple into AI infrastructure costs across the board.",
+      "source": "The Neuron"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>US-Canada trade talks collapsed and new 50% tariffs on $20 billion of Canadian goods took effect Friday.</b> The tariffs hit forestry, alcohol, dairy, and textiles (even hockey sticks and dog leashes); Canada's PM Mark Carney vowed dollar-for-dollar retaliation effective September 8, saying \"you're at war when you get attacked... we got attacked.\" Trump responded on Truth Social that \"Canada wants the benefits of being a State, without being one.\"",
+      "angle": "Directly relevant for clients with cross-border supply chains — this moved from talks collapsing to tariffs actually in effect, with a firm retaliation date now on the calendar.",
+      "starter": "With Canada's retaliatory tariffs set for September 8, have we mapped which of our clients' supply chains are exposed?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>A humanoid robot broke Usain Bolt's 100m sprint record at China's World Humanoid Robot Games, then crashed into a wall.</b> Reports differ on the details: 1440 puts an unnamed robot at 9.39 seconds, while Morning Brew names the robot \"Lightning,\" built by smartphone maker Honor, at 9.32 seconds — both faster than Bolt's 9.58-second record. The Games feature over 2,000 humanoid robots, days after the US banned imports of foreign-made humanoid robots over national-security concerns.",
+      "angle": "No direct relevance to your work, general awareness only — though worth knowing if any client touches robotics, manufacturing automation, or is affected by the new US import ban.",
+      "starter": "Did you see the robot that broke Usain Bolt's speed record this weekend, then ran straight into a wall?",
+      "source": "1440 Daily Digest, Morning Brew"
+    },
+    {
+      "body": "<b>The federal government unveiled a new 10-year Colorado River water-management plan</b> after years of drought left Lake Mead and Lake Powell at record lows. California must cut water use 10%, Nevada 16%, and Arizona 27%; upstream states face no cuts yet, and lawsuits between states are possible.",
+      "angle": "Directly relevant if any client operates data centers, agriculture, or real estate development in the Southwest — water is becoming a hard constraint on growth there, AI data centers included.",
+      "starter": "Has anyone modeled what a 27% water-use cut means for growth plans in Arizona?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Paramount Skydance and California's attorney general were set to discuss settling an antitrust case</b> over Paramount's $111 billion takeover of Warner Bros. Discovery, brought by 12 state AGs. California wants \"robust structural remedies\"; pressure is mounting from the governor and the Directors Guild to resolve it.",
+      "angle": "Directly relevant if you advise media or entertainment clients — a live example of how far state AGs can push on merger conditions even after a deal closes.",
+      "starter": "If a client's merger closed and a state AG still wanted structural remedies after the fact, how would we advise them to respond?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Harvard Business School is charging $699 for an entrepreneur bootcamp that includes AI avatars of its professors,</b> which listen to pitches and give feedback.",
+      "angle": "Directly relevant — AI-driven training products are already commanding premium pricing; worth benchmarking against any learning and development work in our own pipeline.",
+      "starter": "Would our clients pay a premium for an AI-avatar version of our own training content, the way Harvard just did?",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "anthropic|could-raise-100b-ipo|2t-valuation",
+    "california|reintroduces|no-robo-bosses-act-sb947",
+    "nvidia|invests-7b-in-poolside-and-raises|chip-prices-15pct",
+    "neuron|tip|audit-ai-draft-before-publishing",
+    "rundown-ai|tip|gemini-canvas-dashboard",
+    "us-canada|tariffs-take-effect|carney-vows-retaliation-sept8",
+    "china|hosts-world-humanoid-robot-games|robot-beats-bolt-record-then-crashes",
+    "colorado-river|unveils|10-year-water-cuts-plan",
+    "paramount-california|discuss-settling|warner-bros-antitrust-case",
+    "harvard-business-school|charges-699-for|ai-avatar-entrepreneur-bootcamp"
+  ]
+}
