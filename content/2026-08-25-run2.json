@@ -1,0 +1,53 @@
+{
+  "run": 2,
+  "runTime": "2026-08-25T16:00:00-04:00",
+  "title": "Alibaba Bets $10B on AI Video While Chip Smugglers Face Charges",
+  "date_display": "Tuesday, August 25, 2026",
+  "date_slug": "8_25_26",
+  "sources": "<b>Superhuman AI</b> (Aug 25)",
+  "tldr": [
+    "Alibaba is raising $10.2B for AI investment and widening access to Wan 3.0, a video model that generates 30-second clips from almost any input.",
+    "Taiwan indicted nine people, including an Nvidia manager and two Super Micro employees, over an alleged scheme to smuggle US-controlled AI servers into China.",
+    "Sam Altman blames slow agentic AI adoption on 'economic inertia' -- companies that are scaling agents successfully share three specific practices worth copying."
+  ],
+  "tips": [
+    {
+      "heading": "Build and launch a website with ChatGPT Sites",
+      "steps": [
+        "Open the ChatGPT desktop app and switch to the Codex tab.",
+        "Click Sites in the left panel, then Create new site -- describe what you want built or upload a reference file for context.",
+        "Preview the site privately, tell ChatGPT what to change, then click Publish for a shareable URL.",
+        "Return to the same project any time you need an update -- describe the change, preview it, publish again."
+      ],
+      "prompt": "@Sites Create a website to build an interactive project tracker for my marketing team. Include task owners, deadlines, priorities, progress, and filters for status.\n\nAdd a dashboard showing completed, overdue, and upcoming tasks. Make the design cleaner and more professional.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Alibaba is raising $10.2B for AI investment and widened access to its new video model.</b> The stock fell on the fundraise news; Wan 3.0 can generate clips up to 30 seconds long from nearly any input -- text, video, documents, spreadsheets, slides, or webpages.",
+      "means": "Worth a quick eval alongside Sora/Veo for any client considering AI video for marketing or training content -- the input flexibility (docs/slides to video) is the differentiator to test.",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>Taiwan indicted nine people, including a senior Nvidia manager and two Super Micro employees, over an alleged AI chip smuggling scheme.</b> They're accused of concealing illegal shipments of US-controlled AI servers into China in violation of US export controls; the primary charges are breach of trust and document forgery.",
+      "means": "A reminder that export-control enforcement now reaches individual employees at major vendors, not just corporate compliance -- relevant context if a client sources AI hardware through resellers or distributors.",
+      "source": "Superhuman AI",
+      "low": true
+    },
+    {
+      "body": "<b>Sam Altman says slow agentic AI adoption comes down to 'economic inertia,' not a technology gap.</b> 66% of companies cite security risk as their top AI concern; the companies successfully scaling agents share three traits: single-responsibility agents with narrow scope, mandatory written logs of every agent decision, and human review checkpoints before high-stakes actions.",
+      "means": "A ready-made governance framework for client agent rollouts -- narrow scope, audit logs, and human checkpoints before high-stakes actions is a concrete pitch you can bring to a kickoff this week.",
+      "source": "Superhuman AI",
+      "low": false
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "alibaba|raises|10-2b-for-ai-plus-wan3-video-model",
+    "taiwan|indicts|nine-in-nvidia-smci-chip-smuggling",
+    "agentic-ai|adoption|slower-than-expected-three-traits",
+    "chatgpt|tip|sites-website-builder"
+  ]
+}
