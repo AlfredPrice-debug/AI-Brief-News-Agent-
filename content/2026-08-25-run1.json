@@ -1,0 +1,99 @@
+{
+  "run": 1,
+  "runTime": "2026-08-25T08:13:23-04:00",
+  "title": "Nvidia and SpaceX Aim for Orbit as Anthropic Cedes Ground to Cheaper Rivals",
+  "date_display": "Tuesday, August 25, 2026",
+  "date_slug": "8_25_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Aug 25)",
+  "tldr": [
+    "Nvidia and SpaceX are building orbital AI data centers (Starmind) around Nvidia's Vera Rubin racks, chasing a $200B standalone-chip market.",
+    "Anthropic's Fable 5 captured just 11% of corporate AI spend two months after launch as businesses default to cheaper tools like GPT-5.6.",
+    "The US unveiled sweeping new Iran sanctions ('Operation Economic Outcast') targeting oil, crypto, and shipping trade tied to Tehran."
+  ],
+  "tips": [
+    {
+      "heading": "Use Claude's /eli5 skill to build understanding before diving into details",
+      "steps": [
+        "Install once: `claude plugin marketplace add anthropics/claude-plugins-community`, then `claude plugin install eli5@claude-community`.",
+        "Before diving into unfamiliar code, an incident, or a tradeoff, ask Claude to /eli5 it first.",
+        "Claude replies with an HTML artifact using big pictures and few words, built for understanding rather than as a final answer."
+      ],
+      "prompt": "/eli5 how does this module work\n/eli5 why did we make this tradeoff\n/eli5 what caused this incident",
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Turn your brand identity into a reusable AI design system",
+      "steps": [
+        "Download Open Design and connect an AI agent such as Codex CLI.",
+        "Click Create New Design System, paste in your website, then Continue; add a logo or a DESIGN.md if it missed anything.",
+        "Select the design system and give it a concrete brief describing what you want built."
+      ],
+      "prompt": "Build a 10-second animation explaining our product",
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Nvidia and SpaceX are building orbital AI data centers.</b> SpaceX will build its Starmind satellite data centers around Nvidia's Vera Rubin NVL72 rack, targeting the first racks in space by late 2027; Nvidia says each 72-chip rack delivers up to 25x the compute of its older H100. Nvidia's new Vera CPU (88 cores) is also going into SpaceXAI's Grok agent infrastructure as Nvidia chases a $200 billion standalone-CPU market.",
+      "means": "Space-based compute was dismissed as 'ridiculous' by Sam Altman earlier this year; now two credible players are putting real hardware and timelines behind it, worth flagging to clients weighing long-term AI infrastructure bets.",
+      "source": "The Neuron, The Rundown AI",
+      "low": false
+    },
+    {
+      "body": "<b>Anthropic's flagship model is losing the spending war.</b> Fable 5 captured just 11% of corporate AI spend two months after launch, as businesses defaulted to cheaper tools like OpenAI's GPT-5.6, according to data from 70,000 companies.",
+      "means": "A useful data point when clients ask which model to standardize on: price and switching cost are currently beating raw capability in procurement decisions.",
+      "source": "The Neuron",
+      "low": false
+    },
+    {
+      "body": "<b>Thomson Reuters built its own legal AI model instead of renting one.</b> The two-year effort, built by retooling Alibaba's open-source Qwen and trained on decades of Westlaw and Reuters content, cost $40 million total (the latest training run alone cost $450k); Thomson Reuters says it benchmarked ahead of Claude Opus 4.8, Gemini 3.1 Pro, and GPT-5.5 in internal testing, though only tested in-house so far.",
+      "means": "A concrete build-vs-buy case study for any client with a deep proprietary content library: $40M is closer to a year of API bills than a moonshot budget as training costs on strong open base models keep falling.",
+      "source": "The Rundown AI",
+      "low": false
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>The US unveiled sweeping new Iran sanctions.</b> Treasury Secretary Scott Bessent announced 'Operation Economic Outcast,' targeting countries that help Iran trade oil, crypto, gold, aviation, technology, or shipping; the US immediately sanctioned 60 entities, individuals, and vessels, and the UAE already cut trade ties with Iran last week. China buys 80-90% of Iran's oil exports, but enforcement against China is uncertain given a trade truce and a planned Xi Jinping visit to the US next month.",
+      "angle": "If any client has exposure to Gulf shipping, energy pricing, or China trade flows, this is the kind of geopolitical shift that shows up in cost assumptions within a quarter, not a year.",
+      "starter": "Are we factoring a Strait of Hormuz risk premium into any energy or logistics cost forecasts right now?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Trump threatened 50% tariffs on Canadian autos, parts, and steel starting January 1.</b> The move follows the US and Canada failing to reach a deal averting new US tariffs on $20 billion of Canadian goods; Canada has vowed dollar-for-dollar retaliation, and Ontario's premier threatened to cut US access to the province's electricity and critical minerals.",
+      "angle": "Direct relevance for any client in automotive, manufacturing, or cross-border supply chains: a January 1 deadline is close enough to plan around now.",
+      "starter": "Does anyone have a client with Canadian manufacturing exposure that needs a tariff contingency plan before January?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Bitcoin rallied over 22% in a week, closing near $80,000.</b> The move followed the Treasury's bond buyback announcement and reflects what strategists are calling the 'debasement trade': investors rotating out of the dollar into bitcoin and gold as a hedge against growing US debt.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Anyone else notice bitcoin creeping back toward $80k while nobody's talking about it?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>NASA-funded researchers 3D-printed cookies out of recycled plastic for astronauts.</b> The process breaks down PET plastic into a carbon-rich liquid, feeds it to engineered yeast that produces protein and fat, then 3D-prints the result into cookies; researchers are still awaiting approval for humans to actually try one.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "If NASA can turn plastic bottles into cookies, what's the most 'wait, that's real?' innovation story you've heard this month?",
+      "source": "1440 Daily Digest"
+    },
+    {
+      "body": "<b>Gen Z is embracing deliberately slow messaging apps.</b> Carrier Pidge (virtual pigeons, up to 110 mph, a 0.2% chance of getting 'lost') and Roost (1,000 animal couriers, including a 1 mph snail) have each drawn tens of thousands of users since launching in April, part of a broader 'friction-maxxing' trend alongside dumb phones and social-blocking hardware.",
+      "angle": "A live data point for any conversation about digital fatigue or intentional-friction UX, if a client's product roadmap touches attention or engagement design.",
+      "starter": "Are we seeing any of this 'friction-maxxing' pushback show up in how younger users react to our own product's engagement features?",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "anthropic|teaches|eli5-skill",
+    "rundown-ai|tip|open-design-brand-system",
+    "nvidia-spacex|builds|starmind-orbital-datacenters",
+    "anthropic|loses-spend-share-to|cheaper-rivals",
+    "thomson-reuters|builds|in-house-legal-ai-on-qwen",
+    "us-treasury|unveils|iran-economic-outcast-sanctions",
+    "trump|threatens|50pct-canada-auto-tariffs",
+    "bitcoin|rallies-22pct-on|debasement-trade",
+    "nasa|funds|plastic-to-cookie-mubites-project",
+    "genz|adopts|carrier-pigeon-texting-apps"
+  ]
+}
