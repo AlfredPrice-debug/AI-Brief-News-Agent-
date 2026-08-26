@@ -1,0 +1,55 @@
+{
+  "run": 2,
+  "runTime": "2026-08-26T16:00:00-04:00",
+  "title": "Anthropic Pitches a $30 Trillion Market as Execs Admit AI Hasn't Moved the Needle",
+  "date_display": "Wednesday, August 26, 2026",
+  "date_slug": "8_26_26",
+  "sources": "<b>The Neuron</b> (Aug 26)",
+  "tldr": [
+    "Anthropic will pitch IPO investors on a $30 trillion market — 600x its current size — while a new report finds 90% of execs see no productivity gain from AI, yet layoffs keep coming.",
+    "A flaw in an Nvidia agent-deployment tool let attackers hijack AI agents with just one malicious webpage visit — a live reason to check your agent stack now.",
+    "Gemini in Sheets can now show its work before acting — a copy-paste prompt to scope its analysis and get an approval step before it touches your data."
+  ],
+  "tips": [
+    {
+      "heading": "Make Gemini show its work before it touches your spreadsheet",
+      "steps": [
+        "Highlight the exact table or range you want analyzed — don't let it scan the whole sheet.",
+        "Ask for the finding plus which rows or cells support it, then check the \"Analysis steps\" panel.",
+        "Preview any chart or action card before you let it insert or apply changes."
+      ],
+      "prompt": "Analyze only the selected range. For every finding, name the rows or cells that support it. Show your analysis steps before recommending any change. Do not apply edits until I approve them.",
+      "source": "The Neuron"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Anthropic will tell IPO investors its market is worth $30 trillion.</b> That tops SpaceX's $28.5T claim and would require Anthropic — currently at a $47B run rate, aiming for a ~$2T valuation — to grow 600x+ to capture even a sliver of it.",
+      "means": "Treat eye-popping TAM claims as sales pitches, not forecasts — useful context next time a vendor or client leadership cites one to justify AI spend.",
+      "source": "The Neuron"
+    },
+    {
+      "body": "<b>Over 90% of executives say AI hasn't moved productivity, and AI-blamed layoffs are continuing anyway,</b> per new reporting; separately, McKinsey finds company-wide profit impact from AI is stuck at 37%, unchanged from last year despite 80% of workers reporting personal productivity gains.",
+      "means": "This is the exact gap PM/consulting work should target — individual productivity is real, but it isn't reaching the P&L. A good line for any AI-ROI conversation with a client or leadership.",
+      "source": "The Neuron"
+    },
+    {
+      "body": "<b>A flaw in an Nvidia tool for deploying AI agents let attackers hijack agents just by getting them to visit a malicious webpage</b> — no further user action required.",
+      "means": "If any client or internal team is running Nvidia's agent-deployment tooling, flag this now — browsing-capable agents are a real attack surface, not a hypothetical one.",
+      "source": "The Neuron"
+    },
+    {
+      "body": "<b>Perplexity and Nvidia launched \"Portable Computer,\" a fully local AI agent with zero per-use token costs.</b> It runs on-device instead of calling a cloud model for every action.",
+      "means": "Worth watching as a cost-model alternative — local inference could undercut the usage-based pricing most AI tools bill clients on today.",
+      "source": "The Neuron"
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "anthropic|claims|30-trillion-tam-ipo",
+    "execs-mckinsey|report|ai-productivity-gains-not-reaching-profit",
+    "nvidia|discloses|agent-hijack-webpage-flaw",
+    "perplexity-nvidia|launches|portable-computer-zero-token-agent",
+    "the-neuron|tip|gemini-analysis-steps-sheets"
+  ]
+}
