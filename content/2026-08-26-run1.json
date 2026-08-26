@@ -1,0 +1,86 @@
+{
+  "run": 1,
+  "runTime": "2026-08-26T08:00:00-04:00",
+  "title": "OpenAI's In-House Chip Outguns Nvidia, ChatGPT Gets Password Access & Canada Strikes Back",
+  "date_display": "Wednesday, August 26, 2026",
+  "date_slug": "8_26_26",
+  "sources": "<b>Superhuman AI</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440</b> (Aug 26)",
+  "tldr": [
+    "OpenAI's custom Jalapeño chip beat Nvidia's flagship on inference speed and efficiency — its silicon bet is paying off.",
+    "ChatGPT Work can now log into your sites with saved passwords to book and fill forms itself — real agentic errand-running.",
+    "Canada hit back with tariffs up to 50% on $20B of US goods, effective after Labor Day — a live supply-chain risk for clients."
+  ],
+  "tips": [
+    {
+      "heading": "Rebuild your LinkedIn profile with Gemini",
+      "steps": [
+        "On LinkedIn: More → Save to PDF to export your profile.",
+        "Open Gemini (Pro model), enable Canvas + Thinking, upload the PDF, and paste the prompt below.",
+        "Answer Gemini's clarifying questions; it rewrites your headline, About, and experience — copy back into LinkedIn."
+      ],
+      "prompt": "[upload profile] Before rebuilding and optimizing my LinkedIn profile, ask me a few clarifying questions. Request my primary goal (sales calls, leads, job offers, newsletter growth, authority positioning, etc.). Ask for my target audience (be specific). Ask for my main offer (what I want people to buy, book, or join). Ask for up to two Featured links (URL + description). Ask for key social proof to highlight (audience size, revenue, brands, media mentions, etc.). Once you have this, rewrite my full LinkedIn profile including headline, About section, and experience.",
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Prototype a website hands-free with Claude Voice",
+      "steps": [
+        "Open Claude Desktop, start a chat, click Voice.",
+        "Describe the site; have Claude interview you until it has a design plan, then write that plan out in text.",
+        "Switch to text mode, drop in any photos, and say \"static site\" to build a lean prototype from the plan."
+      ],
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>OpenAI's first in-house chip beat Nvidia's flagship on inference.</b> The 700W \"Jalapeño\" chip answered up to 3.6x faster at 1.9x better power efficiency than Nvidia's 1,200W systems; OpenAI won't sell it and still trains on Nvidia.",
+      "means": "Inference cost and chip supply are becoming a real competitive lever — worth tracking for any client betting on AI unit economics.",
+      "source": "The Rundown AI"
+    },
+    {
+      "body": "<b>ChatGPT Work can log into your everyday sites and act for you.</b> Using password autofill, it signs into your most-used sites to book appointments and fill out forms while keeping credentials private.",
+      "means": "Mainstream agentic errand-running has arrived — worth a real trial before recommending it for client back-office automation.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Claude now has memory that follows you across tools.</b> It automatically remembers details from chats and carries them into Cowork; on by default, editable under Settings → Memory.",
+      "means": "Check what Claude has already inferred about how you work, and correct anything wrong now before it compounds.",
+      "source": "Superhuman AI, The Rundown AI"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Dolly Parton died August 25 at age 80.</b> She published roughly 3,000 songs, sold 100M+ records, and built Dollywood and the Imagination Library, which has given away 200M+ books.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Beyond the music, Dolly built one of entertainment's great licensing and philanthropy empires.",
+      "source": "1440, Morning Brew"
+    },
+    {
+      "body": "<b>Canada hit back with tariffs up to 50% on $20B of US goods</b> (steel, cheese, seafood), effective after Labor Day, mirroring Trump's tariffs after trade talks collapsed. $2B in goods cross the border daily.",
+      "angle": "A live supply-chain and pricing-risk example for any client sourcing from or selling into Canada.",
+      "starter": "Are we stress-testing any client's supply chain against the Canada tariff escalation?",
+      "source": "1440, Morning Brew"
+    },
+    {
+      "body": "<b>Up to 91% of former NFL players who donated their brains showed signs of CTE</b> in a new study (235 of 878 players who died 2016-2021 donated); the disease can only be diagnosed post-mortem.",
+      "angle": "A strong reference point for workplace-safety and long-tail liability conversations.",
+      "starter": "The NFL CTE numbers are a good case study in liability showing up decades after exposure.",
+      "source": "1440, Morning Brew"
+    },
+    {
+      "body": "<b>Australia banned wholly AI-generated songs from its official music charts</b> after an AI cover of Madonna's \"Like a Prayer\" spent 16 weeks in the national top 20.",
+      "angle": "A concrete example of an industry redrawing its rules around AI-generated content and IP.",
+      "starter": "Australia just banned AI songs from its charts after one spent 16 weeks in the top 20 — will other industries need a rule like that?",
+      "source": "1440"
+    }
+  ],
+  "fingerprints": [
+    "openai|launches|jalapeno-inference-chip",
+    "openai|adds|chatgpt-work-password-autofill",
+    "anthropic|adds|cross-tool-claude-memory",
+    "dolly-parton|dies-at|80",
+    "canada|imposes|retaliatory-tariffs-50pct",
+    "nfl-study|finds|cte-prevalence-up-to-91pct",
+    "australia|bans|ai-generated-songs-from-charts"
+  ]
+}

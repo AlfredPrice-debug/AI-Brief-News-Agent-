@@ -1027,6 +1027,25 @@
           "note": "Afternoon firing (run 2). Run 1 already delivered today at 08:13:23-04:00, so searched Claude AI News Recap since that timestamp. Found exactly 1 new message: Superhuman AI newsletter (subject FW: AI's creative funding continues), forwarded by Alfred at 1:20 PM ET. Body was 66,849 chars of HTML, handed to a subagent to slice and summarize. Deduped out the SpaceXAI/Nvidia Vera orbital-datacenter item (same Starmind story already delivered in run 1 as nvidia-spacex|builds|starmind-orbital-datacenters) and the Claude /eli5 skill trending mention (already delivered in run 1 tips as anthropic|teaches|eli5-skill). Skipped the newsletter's thin In the Know trending blurbs (Thrive Capital investor letter, a Codex meme-video Reddit post, a MacBook-unboxing video) as too insubstantial for AI News or Tips. Kept 3 new AI News items (Alibaba's $10.2B AI fundraise + Wan 3.0 video model, Taiwan's nine-person indictment over Nvidia/Super Micro chip smuggling, Sam Altman on slow agentic adoption and the three traits of companies scaling it) and 1 AI Tip (ChatGPT Sites website builder, with both verbatim sample prompts). Only 1 tip was available from the single source (below the 2-minimum target) but total surviving items (4) cleared the fewer-than-2 skip threshold, so shipped rather than skipped. No Morning Brew/1440/other general newsletter arrived this run, so beyond_ai is empty; page 2 was dropped automatically by the build script's empty-beyond_ai check (same precedent as 2026-08-24 run 3), landing at 1 page total -- verified via pypdf full-text readback (had to reinstall pypdf and cffi again in this fresh run environment). brand/build/brand.json cache absent, bundled Poppins/IM fallback palette used again."
         }
       ]
+    },
+    "2026-08-26": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-26T08:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "openai|launches|jalapeno-inference-chip",
+            "openai|adds|chatgpt-work-password-autofill",
+            "anthropic|adds|cross-tool-claude-memory",
+            "dolly-parton|dies-at|80",
+            "canada|imposes|retaliatory-tariffs-50pct",
+            "nfl-study|finds|cte-prevalence-up-to-91pct",
+            "australia|bans|ai-generated-songs-from-charts"
+          ],
+          "note": "Morning firing at scheduled time (~8:09 AM ET). No run-log entry existed yet for today, so searched Claude AI News Recap since yesterday run 2 (2026-08-25T16:00:00-04:00) per overnight-catch rule. Found exactly 4 new messages, all forwarded by Alfred 4:29-7:14 AM ET: Superhuman AI (ChatGPT Work password autofill, Claude cross-tool memory, Google industry AI agents, Apple Mac lineup overhaul, Perplexity/Nvidia Portable Computer, MIT higher-ed call, LinkedIn-rewrite and sales-proposal prompt tips), The Rundown AI (OpenAI Jalapeno inference chip vs Nvidia, Accelerated Understanding physics-AI startup, Perplexity/Nvidia Portable Computer, Anthropic 0T IPO market claim, quick hits incl. Claude memory and Google industry agents, Claude Voice website-building tip), Morning Brew (Canada-US tariff escalation, Dolly Parton death, PA measles deaths, NFL CTE study, Druckenmiller vs Bessent, Coca-Cola vs Mag7, Apple Mac AI lineup, Luffu Link eldercare wearable), and 1440 Daily Digest (Dolly Parton death, Canada-US tariffs, NFL CTE study, PA measles deaths, Apple M5 Ultra, Australia AI-song chart ban, Lego revenue, markets/Dick's Sporting Goods). All 4 bodies were large HTML (68k-76k chars) and handed to 4 parallel subagents to extract and summarize in full. Merged duplicate stories covered by multiple newsletters: Apple Mac/Studio AI lineup overhaul (Superhuman AI + Morning Brew, cut for page budget as lowest-impact of 4 AI News candidates), Claude cross-tool memory (Superhuman AI + Rundown AI, kept), Perplexity/Nvidia Portable Computer (Superhuman AI + Rundown AI, cut for page budget), Dolly Parton death / Canada tariffs / NFL CTE study / PA measles (1440 + Morning Brew, each merged into one item, measles cut for page budget as lower-impact than the other three). Cut for page-2 budget (target 4-5, picked top 4): Coca-Cola vs Mag7 stock story, PA measles deaths, Dick's Sporting Goods stock drop, Druckenmiller/Bessent bond dispute, Lego revenue. Cut for page-1 budget: Google industry AI agents (legal/finance), Accelerated Understanding startup, Anthropic $30T IPO claim, OpenAI exec departure, sales-proposal prompt tip (dropped to 2 tips to fit page budget after prompt block made page 1 overflow to 2 physical pages). Built at content/2026-08-26-run1.json, rendered to briefs/, verified at exactly 2 pages via pypdf before push."
+        }
+      ]
     }
   }
 }
