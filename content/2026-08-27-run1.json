@@ -1,0 +1,87 @@
+{
+  "run": 1,
+  "runTime": "2026-08-27T08:16:00-04:00",
+  "title": "Nvidia Bids for Hugging Face, Altman Puts a Date on AGI, and Meta Settles for Billions",
+  "date_display": "Thursday, August 27, 2026",
+  "date_slug": "8_27_26",
+  "sources": "<b>The Rundown AI</b>, <b>The Neuron</b>, <b>The AI Field</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Aug 26–27)",
+  "tldr": [
+    "Nvidia has agreed to buy Hugging Face for $12.9 billion, per The Information — tightening its grip on the AI developer ecosystem.",
+    "Sam Altman says an internal system meeting his personal AGI bar will exist by year-end; OpenAI's research chief puts the company \"80% of the way\" there.",
+    "Meta will pay up to $17.1–18 billion to settle child-safety lawsuits from dozens of states, with new usage limits for teens."
+  ],
+  "tips": [
+    {
+      "heading": "Turn a recurring ChatGPT task into a scheduled automation",
+      "steps": [
+        "In ChatGPT desktop: New chat > Work > Choose project > New project, name it, and point it at a local folder.",
+        "Tell ChatGPT what the project is for and let it propose a structure (e.g. turning meeting notes into action items and weekly plans).",
+        "Feed in real input documents and have it process them once manually, then ask it to turn that routine into three scheduled automations."
+      ],
+      "source": "The Rundown AI"
+    },
+    {
+      "heading": "Pressure-test a cheaper model before switching",
+      "steps": [
+        "Pick one task you send to a frontier model repeatedly (e.g. summarizing calls, drafting replies).",
+        "Paste the prompt below into a fresh chat with your current model, with the task and three real input/output examples.",
+        "Run ten real inputs through the cheaper model and score them against the checklist it generates; only switch if the stated dealbreaker never shows up."
+      ],
+      "prompt": "I want to test whether a cheaper model can replace my current one for a repeated task. The task is [TASK]. Here are three real examples of my inputs and the outputs I accepted: [PASTE]. Ask up to three short questions first if something important is missing. Then write five pass-or-fail checks describing what a good output must contain, based only on the examples I gave you. Do not invent standards I did not show you. Give me a plain checklist I can score by hand. End with the single failure that should stop me from switching.",
+      "source": "The AI Field"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Nvidia has agreed to buy Hugging Face for $12.9 billion</b>, per The Information, after Hugging Face turned down a $500M Nvidia stake offer (a $7B valuation) earlier this year. Neither side has confirmed the deal; Hugging Face was valued at $4.5B in its 2023 round.",
+      "means": "If confirmed, the \"GitHub of AI\" consolidates under one infrastructure vendor — worth flagging to any client who relies on Hugging Face for open models.",
+      "source": "The Neuron, The AI Field"
+    },
+    {
+      "body": "<b>Sam Altman told TIME an internal OpenAI system matching his personal AGI bar will exist by year-end 2026.</b> Research chief Mark Chen put the company \"80% of the way\" there; chief scientist Jakub Pachocki said the in-development \"Astra\" model can already do a week of research work solo.",
+      "means": "Useful language for when a client asks \"is AGI real yet\" — the honest answer is internal, contested, and self-defined, not a shippable roadmap item.",
+      "source": "The Neuron, The Rundown AI"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Meta agreed to pay up to $17.1–18 billion to settle child-safety lawsuits</b> from dozens of state attorneys general over child data collection and addictive design. Sources differ on the exact structure: Morning Brew reports $12.7B guaranteed plus a conditional $5.3B (total $18B, 47 states) if TikTok and YouTube adopt matching safeguards; 1440 reports $12.1B guaranteed rising to $17.1B (52 state AGs). Meta admits no wrongdoing. New rules include a 2-hour daily cap for under-18s and no notifications during school hours.",
+      "angle": "A live, detailed template for what regulators now consider reasonable guardrails on youth-facing digital products — directly useful if you're advising any client with a minors-touching platform or app.",
+      "starter": "Have you seen the guardrails in Meta's settlement — two-hour daily caps, no notifications during school hours? That might be the new baseline regulators expect.",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Nvidia forecasts 70% revenue growth for fiscal 2028</b>, well above the 45% Wall Street expected, after posting record Q2 revenue of $96.2 billion. CFO Colette Kress said actual demand is even stronger but supply is the constraint. The stock rose nearly 5% in after-hours trading.",
+      "angle": "A concrete demand signal if you're forecasting AI infrastructure costs or vendor lead times for clients — supply, not demand, is still the bottleneck.",
+      "starter": "Nvidia just guided to 70% growth next fiscal year and says demand outstrips even that — are we planning for GPU access to stay tight through 2028?",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>The US Department of Justice said it disrupted a yearslong Chinese state-sponsored hacking operation</b> that breached the DOJ, the Federal Reserve, the Senate, and NASA.",
+      "angle": "A sharp reminder to revisit vendor and third-party access reviews with clients in regulated or government-adjacent sectors — state-level actors are inside agencies at this scale.",
+      "starter": "Given the scale of the breach DOJ just disclosed, when did we last review our clients' third-party access controls?",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Flash floods killed at least 160 people in Nepal and Tibet</b>, likely triggered by a roughly 2,000-foot glacier chunk breaking off and causing an ice avalanche into the Bhotekoshi River. Over 340 tourists are among the hundreds still missing; officials warn a second flood may be imminent.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Did you see the scale of the Nepal glacier floods — over 160 dead and hundreds of tourists still missing?",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>The FDA approved Rasonque (daraxonrasib), the first drug from Revolution Medicines</b>, for metastatic pancreatic cancer after chemotherapy. In trials it extended median survival to 13.2 months versus 6.7 months on chemo. Price: $39,800/month, expected to be covered by insurance.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Did you catch the new pancreatic cancer drug the FDA approved — it nearly doubled median survival in trials.",
+      "source": "Morning Brew, 1440 Daily Digest"
+    }
+  ],
+  "fingerprints": [
+    "nvidia|acquires|hugging-face",
+    "openai|projects|agi-by-year-end",
+    "meta|settles|child-safety-lawsuit",
+    "nvidia|forecasts|70pct-revenue-growth",
+    "doj|disrupts|chinese-hacking-operation",
+    "nepal|floods-kill|160-plus",
+    "fda|approves|pancreatic-cancer-drug"
+  ]
+}

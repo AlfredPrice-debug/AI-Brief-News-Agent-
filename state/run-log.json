@@ -1059,6 +1059,24 @@
           "note": "Afternoon firing at scheduled time (4:06 PM ET). Searched Claude AI News Recap since run 1 (08:00:00). Found exactly 1 new message: a forwarded Neuron newsletter ('Anthropic's Boldest Number Yet'), 100% AI-focused with no Beyond AI content. Handed its HTML body (65KB+) to a subagent to extract and summarize in full. The newsletter's lead item (OpenAI's Jalapeno chip vs Nvidia) and its Claude cross-tool memory quick-hit were exact repeats of run 1's published fingerprints (openai|launches|jalapeno-inference-chip, anthropic|adds|cross-tool-claude-memory) and were dropped; likewise its ChatGPT-as-errand-agent quick-hit was the same underlying password-autofill feature as run 1's openai|adds|chatgpt-work-password-autofill and was dropped as a rehash. Used the newsletter's one tip-of-the-day (Gemini 'Analysis steps' in Sheets, with verbatim prompt) and 4 news items: Anthropic's $30T TAM/IPO claim (WSJ, via the newsletter's main feature -- note this same claim appeared in run 1's source material as 'Anthropic $30T IPO claim' but was cut there for page budget and never published, so it is not a duplicate), the McKinsey/Futurism finding that 90%+ of execs see no AI productivity payoff despite continuing AI-blamed layoffs, an Nvidia agent-deployment tool flaw enabling one-click agent hijacking, and the Perplexity/Nvidia 'Portable Computer' zero-token local agent (also present but unpublished in run 1's source material, so not a duplicate). Cut for page-1 budget (lowest impact): OpenAI's data-center chief departure (4th exec exit ahead of 2027 IPO), Apple's Mac mini M6 AI-performance refresh, and Google's Gemini Enterprise for Legal agents. Also excluded as ad/sponsor-adjacent product roundups: the 'Treats to Try' tool spotlights (ElevenLabs, BrowserOS neo, Coldtea, MulmoTerminal, Soloop, Nitro, Telerik) and 'Midweek Wisdom' curated reading links beyond the one productivity-gap stat used above. No non-AI newsletter arrived this run, so beyond_ai is empty -- page 1 alone (1 tip + 4 news, one with a full verbatim prompt) rendered as exactly 1 page via pypdf, comfortably clearing the 2-item dedup minimum, so shipped rather than skipped."
         }
       ]
+    },
+    "2026-08-27": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-08-27T08:16:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "nvidia|acquires|hugging-face",
+            "openai|projects|agi-by-year-end",
+            "meta|settles|child-safety-lawsuit",
+            "nvidia|forecasts|70pct-revenue-growth",
+            "doj|disrupts|chinese-hacking-operation",
+            "nepal|floods-kill|160-plus",
+            "fda|approves|pancreatic-cancer-drug"
+          ]
+        }
+      ]
     }
   }
 }
