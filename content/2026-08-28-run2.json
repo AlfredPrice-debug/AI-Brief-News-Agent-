@@ -1,0 +1,57 @@
+{
+  "run": 2,
+  "runTime": "2026-08-28T16:06:00-04:00",
+  "title": "Nvidia's Record Quarter, Claude Cowork Gets a Browser & Salesforce Debuts Claudeforce",
+  "date_display": "Friday, August 28, 2026",
+  "date_slug": "8_28_26",
+  "sources": "<b>Superhuman AI</b> (Aug 28)",
+  "tldr": [
+    "Nvidia posted $96.2B in quarterly revenue (+106% YoY) — Jensen Huang calls it an AI industry \"inflection point.\"",
+    "Claude Cowork can now browse the web itself in a side panel, and Salesforce's earnings-fueled \"Claudeforce\" brings 37 Claude skills into its platform.",
+    "Try the Grok Bot playbook below to delegate meeting prep, prospecting, and follow-ups to a team of purpose-built AI \"Bots.\""
+  ],
+  "tips": [
+    {
+      "heading": "Build an AI \"GTM Team\" with Grok Bot",
+      "steps": [
+        "Download the Grok Bot desktop app and sign in.",
+        "Go to Plugins and connect tools like Gmail, Drive, Slack, Salesforce, and Granola.",
+        "Click \"+\" → Create new Bot, describing its role and workflow in plain language — start with a Chief of Staff Bot for meetings, emails, and follow-ups.",
+        "Spin up more Bots for prospecting, forecasting, or sales coaching, and give each a clear name so they're easy to find in the sidebar."
+      ],
+      "prompt": "Manage my meeting prep, inbox, and follow-ups. Keep updates concise and draft responses in my writing style without sending them.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Nvidia posted $96.2B in quarterly revenue, up 106% YoY</b> — roughly $1B a day — with CEO Jensen Huang calling it an AI industry \"inflection point.\"",
+      "means": "Enterprise AI infrastructure spend shows no sign of slowing — a useful data point for budget conversations with clients weighing their own AI infra investment.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Anthropic's Claude Cowork can now open its own web browser</b> as a side panel inside chats to search and gather information, rolling out to paid desktop plans over the next week.",
+      "means": "Worth piloting for research-heavy workstreams — an agent that browses live while you supervise closes a real gap versus static chat answers.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Salesforce reported $11.3B in quarterly revenue (+11% YoY)</b>, sending its stock up 20%, and debuted \"Claudeforce\" — a Salesforce/Anthropic integration bringing 37 pre-built skills into Claude chats.",
+      "means": "If clients run Salesforce, this is a concrete new AI entry point to raise in scoping conversations — model providers are now integrating directly into major SaaS platforms.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>AI demand is pushing device prices up</b> — Nvidia plans to raise prices starting in 2027, and Apple's refreshed Mac mini (built for on-device AI workflows) costs more than its predecessor.",
+      "means": "A minor budgeting flag for teams planning hardware refreshes around on-device AI capability.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "nvidia|reports|q3-earnings-96b-revenue-inflection-point",
+    "anthropic|adds|claude-cowork-web-browser",
+    "salesforce|debuts|claudeforce-record-quarter",
+    "ai-demand|drives-up|hardware-prices-2027",
+    "grok|tip|ai-gtm-team-bots"
+  ]
+}
