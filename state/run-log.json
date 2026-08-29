@@ -1123,6 +1123,27 @@
           "note": "Afternoon firing at scheduled time (4:06 PM ET). Searched Claude AI News Recap since run 1 (08:13:00). Found exactly 1 new message: a forwarded Superhuman AI newsletter (\"Nvidia delivers\"), 100% AI-industry focused with no Beyond AI content. Handed its HTML body (74.5K chars) to a subagent to extract and summarize in full. Used the newsletter one tip-of-the-day (Grok Bot AI GTM team tutorial, with verbatim prompt) and 4 news items: Nvidia Q3 earnings ($96.2B revenue, +106% YoY, Jensen Huang inflection-point framing), Claude Cowork gaining a built-in browser side panel, Salesforce record quarter ($11.3B, +11% YoY) plus its new Claudeforce/Anthropic integration (37 skills), and AI-driven hardware price hikes (Nvidia 2027 price increases, pricier Mac mini), marked low. Excluded as a stale repeat: the ChatGPT Work password-autofill mention, which duplicates the openai|adds|chatgpt-work-password-autofill story already published 2026-08-26. Also excluded for thinness/no real news value: MIT higher-ed call to action, an unnamed-lab interpretability tool teaser, Time Top 100 AI voices list controversy, Nvidia-vs-Cheesecake-Factory stock trivia, a viral meme video, and a Dan Koe essay callout. All sponsor blocks (AWS, Lemon, Fluency/Vendo/Ninjo/OJO tools carousel) and housekeeping (feedback poll, Extras self-promo, unsubscribe footer) discarded per the no-ads rule. beyond_ai is empty (no non-AI newsletter arrived this run) -- page 1 alone (1 tip + 4 news) rendered as exactly 1 page via pymupdf, comfortably clearing the 2-item dedup minimum, so shipped rather than skipped. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
         }
       ]
+    },
+    "2026-08-29": {
+      "runs": [
+        {
+          "run": 2,
+          "timestamp": "2026-08-29T16:08:59-04:00",
+          "status": "delivered",
+          "covered": [
+            "huggingface|launches|microduck-robot",
+            "china|hosts|world-humanoid-robot-games",
+            "generalist|raises|3b-valuation-robotics",
+            "unitree|shares-plunge|45pct-post-ipo",
+            "fed-warsh|signals|september-rate-hike-jackson-hole",
+            "crispr|cuts|cholesterol-single-dose-trial",
+            "iran-war|reaches|six-month-mark",
+            "stripe-advent|drops|paypal-50b-bid",
+            "norway|king-harald-dies|succeeded-by-haakon"
+          ],
+          "note": "No run-log entry existed for today at all when this session fired (~4:08 PM ET) -- the 8:00 AM morning slot passed with no run. Treated this as run 2 based on the scheduled 4:00 PM afternoon slot (per the 2026-08-03 precedent of numbering by scheduled slot rather than assuming run 1 when a prior slot never fired), and searched mail since the last successful run in the log, 2026-08-28 run 2 (16:06:00-04:00), per the afternoon-firing fallback rule. Found exactly 3 new messages, all forwarded by Alfred: Superhuman AI's one-off 'Robotics Special' (74.5K chars, handed to context directly -- fully AI/robotics-hardware content, explicitly says 'Regular AI updates resume on Monday' so no tip-of-the-day), Morning Brew's Aug 29 daily edition (76.7K chars), and 1440 Daily Digest's Aug 29 edition (68K chars) -- the latter two handed to parallel subagents to extract and summarize in full. Zero AI Tips content anywhere (no verbatim prompt in any of the 3 newsletters; a 'Code' sponsor block advertising '100+ coding prompts' was excluded as an ad). Built 4 AI News items entirely from the Superhuman Robotics Special: Hugging Face's viral $399 Microduck robot ($1M in sales, Nvidia's rumored $13B HF acquisition noted as context only, not a separate fingerprint since that acquisition story was already published 2026-08-27), China's World Humanoid Robot Games (sprint records, long jump, tennis), Generalist's $3B robotics valuation, and Unitree's 45% post-IPO share decline (marked low as a market-trivia reality check). Merged overlapping Morning Brew/1440 stories into single beyond_ai items: the Fed Chair Warsh Jackson Hole speech and market reaction, and Norway's King Harald V death/succession. Built 5 beyond_ai items total (Fed/Warsh, CRISPR single-dose cholesterol gene-editing trial, Iran war six-month mark, Stripe/Advent dropping their $50B+ PayPal bid, Norway succession), landing at the top of the 4-5 target range. Excluded from beyond_ai for space (still valid for a future run, not fingerprinted): Nepal/Tibet flood toll update (feels tonally mismatched for a 'conversation starter' format), Venezuela oil deal, Mounjaro FDA cardiovascular approval, Coyote vs Acme movie release, Dolly Parton posthumous streaming surge, DC voting-rights rally, and assorted Morning Brew/1440 ICYMI/Etcetera filler. All sponsor blocks (BILL, Soar Flights, Puracy, Aura House, PwC/AI-governance sponsored blurb, Fisher Investments, Miso Robotics) and housekeeping/self-promo/polls discarded per the no-ads rule. Initial draft (0 tips + 4 news + 5 beyond_ai) rendered exactly 2 pages via pymupdf (pypdf failed again with the same missing _cffi_backend/cryptography rust-binding error seen 2026-08-25/2026-08-28; pymupdf installed fresh and used instead), so shipped as drafted with no further cuts needed. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
+        }
+      ]
     }
   }
 }

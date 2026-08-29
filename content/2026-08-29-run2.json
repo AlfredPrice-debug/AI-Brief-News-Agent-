@@ -1,0 +1,83 @@
+{
+  "run": 2,
+  "runTime": "2026-08-29T16:08:59-04:00",
+  "title": "A Viral Duck Robot, China's Robot Olympics, and the Fed's Rate-Hike Warning",
+  "date_display": "Saturday, August 29, 2026",
+  "date_slug": "8_29_26",
+  "sources": "<b>Superhuman AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Aug 29)",
+  "tldr": [
+    "Hugging Face's $399 \"Microduck\" robot went viral and banked $1M in sales, landing right as Nvidia reportedly eyes a $13B buyout of the company.",
+    "Fed Chair Warsh's first Jackson Hole speech pushed September rate-hike odds from 35% to 58% and sent stocks lower.",
+    "China's World Humanoid Robot Games showed robots breaking Usain Bolt's 100m record three times and playing live tennis."
+  ],
+  "tips": [],
+  "news": [
+    {
+      "body": "<b>Hugging Face's $399 \"Microduck\" robot goes viral, already banking $1M in sales.</b> The waddling, roller-skating home robot runs on an open reinforcement-learning stack the company frames as democratizing \"physical AI\" — the launch lands as Nvidia is reportedly eyeing a $13B acquisition of Hugging Face.",
+      "means": "Physical AI is becoming a real consumer category, not just a lab demo — worth tracking as a signal of where cheap AI-hardware plays are headed for client-facing IoT/robotics work.",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>China's World Humanoid Robot Games showed real capability gains, not just spectacle.</b> Tiangong Ultra long-jumped 7.97 meters, robots broke Usain Bolt's 9.58-second 100m record three times over two days, and humanoids played live tennis and table tennis, tracking and returning shots in real time.",
+      "means": "A useful data point for capability-timeline conversations with clients evaluating robotics or automation investment — the gap between demo and reliable is closing faster than headlines suggest.",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>Robotics startup Generalist raised roughly $200M more, reaching a $3B valuation in just two months.</b> Its Gen 1.5 model lets robots learn new tasks from video clips as short as 3 seconds; rivals Physical Intelligence ($11B) and Skild AI ($14B) are valued even higher.",
+      "means": "Robotics funding is moving at software-startup speed — a leading indicator that today's \"physical AI\" vendor shortlist won't survive to next year's RFP unchanged.",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>Unitree shares have plunged 45% from their IPO debut peak.</b> The drop is fueling concerns that China's humanoid robotics boom is running ahead of business fundamentals.",
+      "means": "A reality check worth keeping in your back pocket next time a client cites eye-popping robotics valuations as proof of adoption.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Fed Chair Kevin Warsh's first Jackson Hole speech signaled more rate hikes may be coming.</b> Warsh said inflation remains above the Fed's 2% target and that the Fed should prioritize inflation over jobs; odds of a September hike jumped from 35% to 58% (CME data) and stocks slid broadly (Nasdaq -0.52%, S&amp;P -0.25%).",
+      "angle": "Directly relevant — clients who budgeted around cheaper borrowing this fall should revisit those models now, not after the next FOMC meeting.",
+      "starter": "Are we still planning around a rate cut this fall, or should that assumption get pulled?",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>A single-dose CRISPR gene-editing treatment cut cholesterol for at least a year in an early trial.</b> In the highest-dose group of 15 patients with severe cholesterol disorders, LDL fell 53% and triglycerides fell 48%, with no serious side effects reported so far.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Anyone catch the CRISPR cholesterol trial? One-and-done gene editing instead of a daily pill is a wild direction for healthcare.",
+      "source": "1440 Daily Digest"
+    },
+    {
+      "body": "<b>The Iran-Israel-US conflict has now run six months with no diplomatic resolution.</b> At least 18 US service members have been killed and 750+ wounded; the Pentagon estimates the war has cost the US more than $37.5 billion.",
+      "angle": "Worth tracking if any client work touches defense, energy, or logistics — six months in with rising cost is a signal this isn't a short-term disruption.",
+      "starter": "Six months into the Iran conflict now with no resolution in sight — is that showing up in anyone's client risk planning yet?",
+      "source": "1440 Daily Digest"
+    },
+    {
+      "body": "<b>Advent and Stripe have reportedly walked away from a $50B+ bid for PayPal</b>, which would have been the largest fintech acquisition ever; PayPal had reportedly been holding out for a higher offer.",
+      "angle": "A live data point for fintech-adjacent client conversations on how far M&amp;A appetite actually stretches at today's valuations.",
+      "starter": "Did you see the PayPal buyout falling apart? Feels like a read on where fintech M&A pricing actually tops out right now.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Norway's King Harald V died yesterday at 89</b> after treatment for a blood disorder and a bacterial infection, ending a 35-year reign; his son Haakon succeeds him, with granddaughter Ingrid Alexandra, 22, now heir.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Small thing, but Norway has a new king this week — always strange to see a multi-decade reign end.",
+      "source": "Morning Brew, 1440 Daily Digest"
+    }
+  ],
+  "fingerprints": [
+    "huggingface|launches|microduck-robot",
+    "china|hosts|world-humanoid-robot-games",
+    "generalist|raises|3b-valuation-robotics",
+    "unitree|shares-plunge|45pct-post-ipo",
+    "fed-warsh|signals|september-rate-hike-jackson-hole",
+    "crispr|cuts|cholesterol-single-dose-trial",
+    "iran-war|reaches|six-month-mark",
+    "stripe-advent|drops|paypal-50b-bid",
+    "norway|king-harald-dies|succeeded-by-haakon"
+  ]
+}
