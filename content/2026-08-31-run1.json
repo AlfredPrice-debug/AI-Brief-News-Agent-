@@ -1,0 +1,97 @@
+{
+  "run": 1,
+  "runTime": "2026-08-31T08:00:00-04:00",
+  "title": "OpenAI Dumps Musk's Cursor, a Judge Guts the Pentagon's Anthropic Ban, and Sony Sues Claude's Maker",
+  "date_display": "Monday, August 31, 2026",
+  "date_slug": "8_31_26",
+  "sources": "<b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Aug 31)",
+  "tldr": [
+    "OpenAI is cutting Cursor off its models by Nov 12 after Elon Musk's SpaceX bought the coding tool — Musk says he \"couldn't care less.\"",
+    "A federal judge ruled the Pentagon's blacklisting of Anthropic was unconstitutional retaliation, though Claude's government wind-down still finishes Sept 30.",
+    "Sony and Warner sued Anthropic over alleged copyright theft, naming CEO Dario Amodei personally as a defendant."
+  ],
+  "tips": [
+    {
+      "heading": "Ship an iOS app end-to-end with Codex",
+      "steps": [
+        "Build a working app in Xcode, then give Codex the prompt below — it will build, archive, and distribute the app for you.",
+        "Have Codex open App Store Connect, sign in, and fill in your listing: description, screenshots, and the rest.",
+        "Complete the App Review contact, age-rating, and content-rights fields, checking each answer before continuing.",
+        "Set your price, click \"Add for Review,\" fix anything flagged, then submit."
+      ],
+      "prompt": "Build this app and send it to App Store Connect.",
+      "source": "The Rundown AI"
+    },
+    {
+      "heading": "Build a local file-converter with Claude before software gets retired",
+      "steps": [
+        "Spot files locked into software that's about to disappear, e.g. Microsoft retires Publisher on Oct 1, 2026.",
+        "Tell Claude what you need: scan a folder for the file type, convert each one, save the output next to its source.",
+        "Ask Claude to also write a batch file so a less technical colleague can run it without touching PowerShell.",
+        "Ask Claude to turn the exchange into a reusable prompt template for the next software sunset."
+      ],
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>OpenAI is cutting Cursor off its models by Nov 12, after Elon Musk's SpaceX bought the coding tool last month.</b> OpenAI cites Musk's history of breaking agreements as the reason; Cursor's CEO says OpenAI models are only about 5% of Cursor's usage. Musk's response: \"I couldn't care less.\"",
+      "means": "Platform access from a rival lab can vanish overnight once ownership changes hands — worth building client-facing AI tooling with a fallback model in mind, not single-vendor lock-in.",
+      "source": "The Rundown AI"
+    },
+    {
+      "body": "<b>A federal judge ruled the Pentagon's blacklisting of Anthropic as a \"supply chain risk\" was unconstitutional retaliation.</b> Judge Rita Lin found the June designation, the first ever applied to a U.S. firm, violated the First and Fifth Amendments. The label stands pending appeal, and the Pentagon's wind-down of Claude finishes Sept 30 regardless.",
+      "means": "A useful precedent if a client worries about a vendor being cut off for policy pushback — but Anthropic likely loses the government customer either way, so the legal win doesn't undo the commercial damage.",
+      "source": "The Rundown AI"
+    },
+    {
+      "body": "<b>Sony Music and Warner sued Anthropic over alleged copyright theft, naming CEO Dario Amodei personally as a defendant.</b> The suit calls it \"one of the largest and most blatant\" cases of AI training-data infringement to date.",
+      "means": "Add this to the running list of AI copyright suits (OpenAI, Suno, Udio, now Anthropic) — worth flagging to any client evaluating AI-vendor legal exposure before a procurement decision.",
+      "source": "The Rundown AI, 1440 Daily Digest"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>The U.S. secured a 100-year deal for access to more than a fifth of Venezuela's oil reserves, over 65 billion barrels across 17 fields.</b> The private venture, led by Venezuelan businessman Alejandro Betancourt, becomes the world's second-largest corporate holder of proven oil reserves after Saudi Aramco; Venezuela's government says it brings tens of billions in investment and $209B in tax revenue, while Sen. Tim Kaine called it \"corruption at epic scale.\"",
+      "angle": "A live case study in how fast energy-sector risk and opportunity can shift under a new political deal — relevant if any client touches energy, logistics, or Latin America market entry.",
+      "starter": "Did you see the U.S. just locked up a 100-year stake in Venezuelan oil? Curious how that shakes out for energy clients.",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Tim Cook's last day as Apple CEO was today; John Ternus, SVP of Hardware Engineering, takes over tomorrow.</b> Cook stays on as executive chairman. Per Bank of America, Apple's market cap grew roughly $32 million per hour, every hour, across his 15 years leading the company.",
+      "angle": "A clean case study in planned succession at a company that famously avoided founder-dependency risk — a good reference point for a client's own leadership-transition planning.",
+      "starter": "Tim Cook just handed Apple to John Ternus after 15 years — what does our own succession plan look like if a key leader stepped back tomorrow?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>NASA's Nancy Grace Roman Space Telescope launched Sunday on a SpaceX rocket, carrying a mirror repurposed from a donated spy satellite.</b> Its field of view is over 100x wider than Hubble's and it captures data roughly 1,000x faster, generating about 1.4 terabytes a day hunting dark matter, dark energy, and exoplanets; first images are expected in early 2027.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "NASA just launched a telescope built from a recycled spy satellite mirror — wild what gets a second life in space.",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>The economy unexpectedly lost 23,000 jobs in July; analysts expect a rebound of about 58,000 jobs when August's report lands Friday.</b> Markets dipped Monday (S&P 500 -0.3%, Nasdaq -0.5%) after new Fed Chair Kevin Warsh signaled rates could rise in September to fight inflation.",
+      "angle": "Directly relevant to budget and hiring conversations — a rate hike instead of a cut changes the calculus for any client planning fourth-quarter spend or headcount.",
+      "starter": "With the new Fed chair signaling a possible rate hike instead of a cut, are we still planning Q4 budgets around cheaper borrowing?",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Shiyazh Pete, an undrafted rookie offensive tackle, became the first member of the Navajo Nation to sign an NFL contract</b> — even after being cut from the Dallas Cowboys' final roster. He received a standing ovation from fans during a preseason game and says he plans to keep pursuing an opportunity elsewhere.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Did you catch the story about the first Navajo Nation player to sign an NFL contract? Great underdog story even though he didn't make the final roster.",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "rundown|tip|codex-ios-app-store-submission",
+    "rundown|tip|claude-publisher-to-pdf-converter",
+    "openai|cuts-off-cursor|post-spacex-acquisition",
+    "federal-judge|voids|pentagon-anthropic-blacklist",
+    "sony-warner|sues|anthropic-copyright-theft",
+    "us-venezuela|sign|100-year-oil-deal",
+    "apple|transitions-ceo|cook-to-ternus",
+    "nasa|launches|roman-space-telescope",
+    "jobs-report|misses-expectations|fed-signals-rate-hike",
+    "shiyazh-pete|becomes|first-navajo-nfl-player"
+  ]
+}
