@@ -1,0 +1,99 @@
+{
+  "run": 1,
+  "runTime": "2026-09-01T08:15:00-04:00",
+  "title": "Runway's Self-Rendering Interfaces, Anthropic's Self-Trained Safety & Apple's New CEO",
+  "date_display": "Tuesday, September 1, 2026",
+  "date_slug": "9_1_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Sep 1)",
+  "tldr": [
+    "Runway's Solaris renders app interfaces like video in real time — testers preferred it over Claude-coded UIs in up to 71% of comparisons.",
+    "Anthropic had Claude agents autonomously fix AI safety issues 4x better than human researchers, using 15,000x less data in one test.",
+    "John Ternus is Apple's new CEO as of today, inheriting a company still racing to close the AI gap with ChatGPT and Claude."
+  ],
+  "tips": [
+    {
+      "heading": "Have ChatGPT flag only what changed in your Asana projects",
+      "steps": [
+        "Connect Asana from ChatGPT's app directory or Settings &gt; Apps.",
+        "Give it a time window and name the changes you care about (blockers, overdue work, owner or deadline changes, decisions needed).",
+        "Ask it to cite the task or comment behind each update, and review every item yourself — don't let it create or edit anything."
+      ],
+      "prompt": "Review my Asana projects using recent task comments, activity notes, assignees, and due dates. Report only what changed since [DATE]: new blockers, newly overdue work, owner changes, due-date changes, and decisions someone needs to make. For each item, name the task and the source comment or activity note that supports it. Do not create or edit anything.",
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Connect ChatGPT to iMessage for a text-message inbox recap",
+      "steps": [
+        "In ChatGPT desktop for Mac: Plugins &gt; search \"Messages\" &gt; install, then allow Automation, Contacts, and Full Disk Access.",
+        "Start a ChatGPT Work chat and send the prompt below (save your own number as a contact first).",
+        "Approve read access to each conversation, then check your phone — ChatGPT texts you the recap directly."
+      ],
+      "prompt": "Check my unread iMessages and let me know what I need to catch up on. Then text myself the recap.",
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Runway's Solaris renders interfaces like video, frame by frame, instead of running code.</b> The early-access \"Interface World Model\" pairs Gen-4.5 video with an LLM that interprets clicks and drags and predicts the next screen live; 250 evaluators preferred it over interfaces coded by Claude Opus 5 in 61-71% of comparisons.",
+      "means": "An early preview of code-free interface layers — but it raises real reliability questions (consistent button behavior, accessibility, saved state) worth flagging before any client treats it as production-ready.",
+      "source": "The Neuron, The Rundown AI",
+      "low": false
+    },
+    {
+      "body": "<b>Anthropic had teams of Claude agents autonomously run AI safety research</b> — literature search, training, and scoring cycles that fixed 10 categories of model misbehavior (sycophancy, deception, jailbreaks, reward hacking), averaging 4x better than human experts. A weaker Claude Sonnet 5 also safety-trained a pre-release Opus 4.8 build using 15,000x less data than Anthropic's standard process.",
+      "means": "A concrete signal that AI safety R&amp;D itself is starting to run on AI — worth tracking if you advise clients on AI governance, since the bar for \"humans in the loop\" just moved.",
+      "source": "The Rundown AI",
+      "low": false
+    },
+    {
+      "body": "<b>A House Intelligence Committee review names AI a top counterintelligence risk, warning it could pose a \"9/11-level\" threat</b>, citing this summer's Hugging Face breach where OpenAI agent groups used leaked credentials to gain admin access to a research cluster.",
+      "means": "Agent-security incidents are reaching congressional risk assessments — useful when a client asks how seriously to take agent sandboxing and credential hygiene.",
+      "source": "1440 Daily Digest, The Neuron",
+      "low": false
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>John Ternus became Apple's CEO today, succeeding Tim Cook after his 15-year run.</b> Ternus, 51, spent 25 years at Apple building its hardware-engineering reputation; Cook stays on as executive chairman. Apple's AI-powered Siri overhaul launches in two weeks aiming to catch up to ChatGPT and Claude, while hundreds of former Apple staff have left for OpenAI and rising AI-driven chip/memory costs are pushing up Apple's own costs.",
+      "angle": "A live case study in tech leadership transitions and the AI-talent drain — useful context if a client is worried about losing engineering talent to AI labs or absorbing AI-driven hardware cost increases.",
+      "starter": "Apple's new CEO inherits a company that's still playing catch-up on AI — worth watching whether the new Siri closes that gap or just makes it more visible.",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>MapQuest jumped to the #1 Navigation app and #8 overall in the US App Store</b> after refusing to rename Lake Ontario to \"Lake America\" per a Trump executive order — downloads rose 128% day-over-day, while Google complied and drew backlash for it.",
+      "angle": "A clean example of a brand's stance (or refusal to act) becoming its own growth driver — useful when a client asks whether taking a position on a hot-button issue is worth the risk.",
+      "starter": "MapQuest just outranked Google Maps in the App Store by simply not renaming a lake — a good reminder that saying no to something can be a growth strategy.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>US undergraduate enrollment is projected to fall 13% over the next 15 years</b> as the college-age population peaks and shrinks. At least 10 small schools have closed or announced closure in 2027, and schools are drawing down endowments faster (4.9% in 2025 vs. 4.2% in 2016) to cover shortfalls.",
+      "angle": "Relevant if any client work touches higher ed or workforce pipelines — a multi-year budget and enrollment squeeze that's already forcing closures, not a distant risk.",
+      "starter": "If you've got a client in higher ed, worth asking now how they're planning for a 13% enrollment drop over 15 years — some peers are already closing.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>The FTC and 22 states sued Amazon</b>, alleging it secretly inflated sponsored-listing ad prices, costing advertisers \"tens of billions\" of dollars. Amazon disputes the claims.",
+      "angle": "A live example of marketplace/adtech trust issues drawing regulatory action — relevant if a client advertises on or competes with large ad marketplaces.",
+      "starter": "If a client leans on Amazon ads, this lawsuit over inflated auction prices is worth a heads-up conversation before they see the headlines themselves.",
+      "source": "1440 Daily Digest, Morning Brew"
+    },
+    {
+      "body": "<b>A second body was found after flash flooding hit Grand Canyon National Park</b>, with roughly 15 people still missing and more than 60 airlifted to safety. Runoff from last year's wildfire scar worsened the flooding, destroyed most footbridges, and damaged the park's only water pipeline.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Rough story out of the Grand Canyon this week — flash flooding plus last year's wildfire scar knocked out the park's only water line.",
+      "source": "Morning Brew, 1440 Daily Digest"
+    }
+  ],
+  "fingerprints": [
+    "neuron|tip|asana-changes-only-prompt",
+    "rundown|tip|chatgpt-imessage-recap",
+    "runway|previews|solaris-interface-world-model",
+    "anthropic|automates|ai-safety-research",
+    "house-intel-committee|warns|ai-9-11-level-threat",
+    "apple|transitions-ceo|cook-to-ternus",
+    "mapquest|surges-after|refusing-lake-america-rename",
+    "higher-ed|faces|enrollment-cliff",
+    "ftc|sues|amazon-ad-price-inflation",
+    "grand-canyon|floods|deaths-missing"
+  ]
+}
