@@ -1,0 +1,69 @@
+{
+  "run": 2,
+  "runTime": "2026-09-01T16:08:00-04:00",
+  "title": "Claude's Fable 5.1 and Mythos 5.1, OpenClaw's Agent Lockdown, and the Rise of the \"Meat Proxy\"",
+  "date_display": "Tuesday, September 1, 2026",
+  "date_slug": "9_1_26",
+  "sources": "<b>The AI Field</b>, <b>Superhuman AI</b> (Sep 1)",
+  "tldr": [
+    "Anthropic launched Claude Fable 5.1 (GA) and Mythos 5.1 (invite-only), cutting cache-read pricing 75% and promising up to 45% savings on agentic work.",
+    "OpenClaw 2.0 rebuilds its agent control layer with masked credential requests and revocable, one-operation permissions.",
+    "A viral \"meat proxy\" backlash over undisclosed AI writing collided with EY's $100M bonus pool for \"people skills,\" sharpening the line firms are drawing around AI use."
+  ],
+  "tips": [
+    {
+      "heading": "Let Claude manage your inbox and Drive for you",
+      "steps": [
+        "In Claude, go to Connectors &gt; Add Connector &gt; Browse Connectors and connect Gmail or Google Drive.",
+        "Ask Claude to find a thread, draft a reply, or organize files - always have it ask for your approval before sending or changing anything.",
+        "Review the drafted action, then approve it before Claude proceeds."
+      ],
+      "prompt": "Find the latest email thread from [Name], draft a concise reply based on the conversation, and ask for my approval before sending it.",
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Generate a vintage travel poster with ChatGPT Image 2.0",
+      "steps": [
+        "Open ChatGPT Image 2.0 and fill in the bracketed placeholders (city, region, landmarks, sky color) for your destination.",
+        "Paste the full prompt below verbatim - the aspect-ratio and \"no photorealism\" instructions are what keep the vintage screen-print look."
+      ],
+      "prompt": "Create a vintage mid-century travel poster illustration of {CITY, REGION/COUNTRY} in a refined 1950s–1960s screen-printed style.\nUse a tall vertical composition with a warm cream paper background and elegant dark navy typography at the top reading “{CITY}” in widely spaced letters, with smaller “{REGION/COUNTRY}” underneath.\nFeature the destination’s most iconic landmarks arranged as a stylized scenic collage: {LANDMARK 1} on the left, {LANDMARK 2} prominently centered, {LANDMARK 3} on the right, and {LANDMARK 4} in the lower foreground. Include {DISTANT LANDMARK OR NATURAL FEATURE} subtly in the background.\nSurround the landmarks with scenery characteristic of the destination, including {LANDSCAPE FEATURES}, {LOCAL VEGETATION}, and a winding {PATHWAY/ROAD/RIVER} leading through the foreground toward the landmarks. Add a calm {SKY COLOR} sky with a few simple cream-colored clouds.\nUse flat geometric shapes, subtle paper grain, slightly muted vintage colors, clean edges, minimal shading, elegant proportions, and a nostalgic screen-print texture.\nOverall aesthetic: sophisticated retro tourism poster, minimalist mid-century graphic design, hand-illustrated appearance, balanced composition, soft desaturated palette, archival print texture, charming and timeless, high detail, no photorealism. Aspect ratio: 2:3 vertical.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Anthropic launched Claude Fable 5.1 (generally available) and Claude Mythos 5.1 (invite-only via Project Glasswing) on September 1.</b> Fable holds its API price at $10/million input and $50/million output tokens but cuts cache-read pricing 75% to $0.25/million; Anthropic estimates 25% lower costs on typical workloads and up to 45% savings on heavily agentic work. It adds a one-million-token context window, up to 128,000 output tokens, readable progress updates between tool calls, and per-message effort controls.",
+      "means": "The version to benchmark against Opus 5 on cost-per-agentic-task, not raw capability - Anthropic itself still points most teams to Opus 5 by default.",
+      "source": "The AI Field",
+      "low": false
+    },
+    {
+      "body": "<b>OpenClaw 2.0 rebuilds its agent control layer around masked credentials and revocable permissions.</b> The August 30 release lets agent sessions move between devices and cloud workers without losing state, shows live progress cards for the main agent and its subagents, keeps passwords and API keys out of the model's context via masked credential requests, and lets recurring permissions be scoped to one exact operation and revoked later.",
+      "means": "A concrete answer for a client who asks \"how do we know what our agents are actually doing\" - worth citing as a pattern, even if you're not on OpenClaw specifically.",
+      "source": "The AI Field",
+      "low": false
+    },
+    {
+      "body": "<b>A backlash over undisclosed AI writing is sharpening the line between \"AI-assisted\" and \"AI-generated\" work.</b> Hedge fund manager Stanley Druckenmiller drew criticism after readers realized his WSJ op-ed was AI-written; people who ask AI a question and pass the answer off as their own are now being called \"meat proxies.\" Separately, Ernst &amp; Young committed $100 million in bonuses for employees who demonstrate \"people skills\" - a reversal from last year's messaging.",
+      "means": "Worth a gut-check on any client deliverable leaning heavily on AI drafting - the reputational cost of being caught as a \"meat proxy\" is rising just as firms like EY start paying a premium for the judgment AI can't fake.",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>Clipto raised $15 million at a $250 million valuation for AI-powered local file search.</b> Users describe what they're looking for in plain language and it surfaces the matching document, image, video, or audio; processing runs on-device (cloud sync is optional), and it's available on Mac, Windows, iPhone, and Android.",
+      "means": "A category worth knowing if a client asks about privacy-preserving AI search that doesn't ship files to the cloud.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "superhuman|tip|claude-inbox-drive-connector",
+    "superhuman|tip|chatgpt-vintage-travel-poster",
+    "anthropic|launches|fable-5.1-mythos-5.1",
+    "openclaw|launches|2.0-agent-control-layer",
+    "ai-authorship|debate-escalates|meat-proxy-ey-people-skills",
+    "clipto|raises|15m-local-ai-search"
+  ]
+}
