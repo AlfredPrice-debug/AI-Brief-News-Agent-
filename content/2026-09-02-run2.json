@@ -1,0 +1,48 @@
+{
+  "run": 2,
+  "runTime": "2026-09-02T16:00:00-04:00",
+  "title": "AI Moves Into Excavators & Two Prompts Worth Stealing",
+  "date_display": "Wednesday, September 2, 2026",
+  "date_slug": "9_2_26",
+  "sources": "<b>Superhuman AI</b> (Sep 2)",
+  "tldr": [
+    "Caterpillar is building AI directly into excavators with Nvidia, aiming at operators managing whole fleets remotely instead of one machine at a time.",
+    "A copy-paste ChatGPT prompt scores your resume against a job posting with a fit score and gap-analysis table before you apply.",
+    "Slash-command tricks turn one product photo into a full set of professional shot angles in ChatGPT."
+  ],
+  "tips": [
+    {
+      "heading": "Turn one product photo into a full shot list with ChatGPT",
+      "steps": [
+        "Upload a clear photo of your product to ChatGPT.",
+        "Request a camera angle or style with a slash command: <b>/lowangle</b>, <b>/topview</b>, <b>/birdseye</b>, <b>/groundlevel</b>, <b>/closeup</b>, <b>/crosssection</b>, <b>/microscope</b>, <b>/explodedview</b>, or <b>/blueprint</b>.",
+        "Send one command at a time — ChatGPT recreates the shot while preserving the product's design and key details.",
+        "Refine by asking it to adjust the lighting, background, composition, or styling."
+      ],
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Score your resume against a job posting before you apply",
+      "steps": [
+        "Open ChatGPT.",
+        "Paste the prompt below, then paste your resume where it says [PASTE RESUME] and the job posting where it says [PASTE JOB DESCRIPTION].",
+        "Use the fit score and gap-analysis table it returns to decide whether to apply now, revise your resume first, or reconsider the role."
+      ],
+      "prompt": "Act as an expert recruiter, hiring manager, and ATS resume strategist. Analyze my resume against the job description below and provide an honest, evidence-based assessment without inventing any skills, experience, or achievements. Give me an overall fit score from 0–100 and briefly explain the score based on my experience, skills, education, industry knowledge, leadership, and role-specific requirements. Identify my strongest matches, key weaknesses, missing required and preferred qualifications, and any potential hiring risks, such as insufficient experience, unclear impact, career gaps, job-title mismatch, or overqualification. Create a gap analysis table showing each job requirement, its importance, the evidence in my resume, whether it is a strong, partial, or missing match, and how I should address it. Then provide specific recommendations to improve my professional summary, skills section, experience bullets, measurable achievements, keyword usage, and overall resume structure. Finally, tell me whether I should apply now, improve my resume first, or reconsider the role.\nResume: [PASTE RESUME]\nJob Description: [PASTE JOB DESCRIPTION]",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Caterpillar is building AI directly into its excavators.</b> Its Cat AI Assistant, built with Nvidia, lets operators ask questions and pull up repair procedures on the machine itself; Caterpillar's CTO Jaime Mineart says the next step is operators managing whole fleets remotely instead of one machine at a time.",
+      "means": "A reusable roadmap for any client with field equipment or frontline ops: chatbot-in-the-cab first, remote fleet management next.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "caterpillar|integrates|ai-assistant-excavators-nvidia",
+    "superhuman|tip|chatgpt-product-photography-angles",
+    "superhuman|tip|chatgpt-resume-job-match-prompt"
+  ]
+}
