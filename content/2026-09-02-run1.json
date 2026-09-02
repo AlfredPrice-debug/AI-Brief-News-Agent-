@@ -1,0 +1,94 @@
+{
+  "run": 1,
+  "runTime": "2026-09-02T08:00:00-04:00",
+  "title": "Fable 5.1 Takes the Lead as Astra Nears Launch and Bond Yields Break Records",
+  "date_display": "Wednesday, September 2, 2026",
+  "date_slug": "9_2_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Sep 2)",
+  "tldr": [
+    "Claude Fable 5.1 is Anthropic's new top-ranked model, with much lower safety-filter friction and cheaper caching.",
+    "OpenAI's next model Astra finished training and got rated a \"Critical\" cyber risk, its first ever.",
+    "Global bond yields hit multi-decade highs (Japan's since 1996, UK's since 1998) as Fed rate-hike odds nearly double."
+  ],
+  "tips": [
+    {
+      "heading": "Retune your prompts for Claude Fable 5.1's cost and speed",
+      "steps": [
+        "Re-test your workflows starting at effort <b>high</b>, then sweep <b>low/medium/xhigh/max</b> — Anthropic says <b>medium</b> can roughly match old Fable 5 quality at lower cost.",
+        "Cache repeated context (system prompts, docs, code) — cache reads now cost $0.25 per million tokens, 75% cheaper.",
+        "State scope explicitly: tell Claude to finish the whole assignment without stopping to ask permission, and not to \"helpfully\" fix nearby bugs or expand scope."
+      ],
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Match your next AI hardware buy to the project size",
+      "steps": [
+        "Decide time commitment: an afternoon project, a weekend build, or a longer-term setup.",
+        "Set a total budget including storage, power, cooling, case, and cables — under $50, under $300, or $500+.",
+        "Pick hardware to match: an ESP32 for a small afternoon gadget, a Raspberry Pi for a weekend project or an always-on agent, a Mac Mini or MacBook for serious local AI."
+      ],
+      "prompt": "Whatever you buy, copy the product link into ChatGPT and tell it what you want to build. Ask it to help with setup, code, and troubleshooting.",
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Anthropic ships Claude Fable 5.1, its new top-ranked model.</b> It tops Artificial Analysis's Intelligence Index with a record score of 66, more than doubling Fable 5 on scientific-research tests. Cache reads now cost $0.25/M tokens (75% cheaper), and Anthropic estimates ~25% lower cost on typical work, up to 45% on agentic workloads. Safety-filter interventions dropped 60% on cybersecurity work and 85% on biology/medical questions. Anthropic also released Mythos 5.1 — the same model with fewer guardrails — restricted to vetted US cybersecurity and biology researchers.",
+      "means": "Worth re-benchmarking any Claude Code or agentic workflow against the new effort levels and caching behavior — the cost curve just shifted, which matters for any client-facing token-cost conversation.",
+      "source": "The Neuron, The Rundown AI"
+    },
+    {
+      "body": "<b>OpenAI's next model Astra finishes training, rated a \"Critical\" cyber risk.</b> Sam Altman said Astra finished training and will launch soon, after training was paused following a Hugging Face security breach. It's OpenAI's first model to receive a \"Critical\" cyber-risk rating, and reportedly uses a \"recurrent depth\" architecture that cuts memory costs but can obscure reasoning from safety monitors.",
+      "means": "Sets up a fresh OpenAI-Anthropic release cycle right behind Fable 5.1 — and the \"Critical\" rating signals tighter access and eval gates ahead, similar to Mythos 5.1's restricted rollout.",
+      "source": "The Neuron, The Rundown AI"
+    },
+    {
+      "body": "<b>Apple accuses ex-engineer of stealing trade secrets for OpenAI.</b> Apple filed evidence that former iPhone engineer Chang Liu used stolen Apple circuit designs at OpenAI and tried to wipe evidence; OpenAI calls the case \"a mess of Apple's making.\"",
+      "means": "A data point on IP and talent risk when engineers move between AI labs and hardware companies.",
+      "source": "The Rundown AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Global government bond selloff accelerates.</b> G7 average bond yields hit their highest level since 2000; the UK's 30-year gilt yield hit a 1998 high and Japan's 10-year yield broke 3% for the first time since 1996, amid reports Tokyo will expand its budget while cutting taxes. In the US, odds of a Fed rate hike at its next meeting nearly doubled to almost 70% this week, and G20 finance ministers are meeting in Asheville, NC.",
+      "angle": "Rising global borrowing costs squeeze capital projects and client budgets across the board — worth flagging interest-rate sensitivity in any business case or multi-year ROI model right now.",
+      "starter": "Japan's bond yield just hit a 26-year high and a Fed hike is back on the table — is that changing how we're pricing any long-term commitments?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>USPS whistleblower warns a rushed ballot-verification system risks blocking legitimate votes.</b> A whistleblower told Congress a new federal mail-voting system was built in about three months versus the typical year, and a single failed barcode check could reject an entire ballot batch; a federal judge has temporarily blocked it. About 30% of Americans voted by mail in 2024.",
+      "angle": "A textbook case of compressing a QA-critical system's timeline to hit a political deadline — a useful reference next time a client wants to skip testing cycles to hit a launch date.",
+      "starter": "USPS reportedly built a new ballot-verification system in three months instead of a year, and one bad barcode scan can reject a whole batch — sound familiar from any project where we cut the testing phase?",
+      "source": "1440 Daily Digest, Morning Brew"
+    },
+    {
+      "body": "<b>US launches new airstrikes on Iran near the Strait of Hormuz.</b> The strikes follow a month-long pause and alleged Iranian sea-mine attacks on commercial ships; Trump warned of a \"much harder\" response if Iran retaliates, and Jordan says it intercepted 10 ballistic missiles. Oil prices are up almost 6% this week, and more than 50,000 US troops are stationed in the Middle East, the largest buildup in decades.",
+      "angle": "Renewed Strait of Hormuz tensions are already moving oil prices — worth a quick check on any client with shipping, logistics, or energy cost exposure this quarter.",
+      "starter": "Oil's up almost 6% this week on the Iran strikes — has anyone on the client side flagged fuel or logistics cost pressure yet?",
+      "source": "1440 Daily Digest, Morning Brew"
+    },
+    {
+      "body": "<b>Dyson launches a $499 AI-powered toothbrush.</b> The CameraJet uses an endoscopic camera to spot plaque and auto-fire a targeted water jet between teeth, streaming a live view to the MyDyson app; it requires a special non-foaming toothpaste Dyson also sells (about $11). Chairman James Dyson told the WSJ, \"If it turns out not to be a good commercial idea like the car, we'll stop it.\"",
+      "angle": "A clean example of a hardware company bolting a captive consumable onto a premium device — worth flagging if you're advising on subscription or razor-and-blade product strategy.",
+      "starter": "Dyson's new $499 toothbrush only works with its own $11 toothpaste — anyone else noticing how many hardware launches are really consumable lock-in plays now?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Physicists examine a possible first-ever dark matter detection.</b> Using a tank of liquid xenon a mile underground, researchers recorded a 2023 event suggesting a particle over 200 times the mass of a proton; they estimate just a 0.5% chance it's explainable by other known physics, and the finding is now out for peer review.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Physicists think they may have finally detected dark matter, the stuff that's supposedly 85% of everything in the universe. Wild timing for a Wednesday.",
+      "source": "1440 Daily Digest"
+    }
+  ],
+  "fingerprints": [
+    "anthropic|releases|fable-5.1-benchmarks",
+    "openai|finishes-training|astra-critical-risk",
+    "apple|sues|openai-trade-secrets-engineer",
+    "bonds|hit|multi-decade-yield-highs",
+    "usps|whistleblower-warns|rushed-ballot-system",
+    "us|strikes|iran-strait-of-hormuz",
+    "dyson|launches|ai-camerajet-toothbrush",
+    "physicists|detect|possible-dark-matter"
+  ]
+}

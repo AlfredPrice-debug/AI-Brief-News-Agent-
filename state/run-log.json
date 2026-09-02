@@ -1255,6 +1255,26 @@
           "note": "Afternoon firing (4:00 PM ET slot). This session hit a container restart mid-run so wall-clock completion slipped past midnight into Sept 2, but all source mail and content are dated Sept 1, so this is logged as 2026-09-01 run 2, not a Sept 2 run. Searched mail since run 1 (08:15:00). Found exactly 2 new messages: The AI Field ('Anthropic just introduced their new Claude Fable 5.1 and Claude Mythos 5.1', 19:54 UTC) and a Superhuman AI edition Alfred forwarded to himself ('Runway swaps website code for live AI video', 13:16 UTC). Excluded Superhuman's lead item (Runway's Solaris Interface World Model) entirely as a same-day duplicate of run 1's 'runway|previews|solaris-interface-world-model' story; also excluded The AI Field's Pentagon/Anthropic blacklist quick-hit as a stale recap of the 2026-08-31 ruling with no new development. Also cut for space/impact: The AI Field's OpenAI-Cursor Nov 12 cutoff update (rehash of the 2026-08-31 story), Tencent's Hy4 open-source model, Australia's ARIA Charts AI-song policy, and MiniMax H3 Max's real-time video trend piece. Merged Superhuman's Druckenmiller/'meat proxy' item with its Ernst & Young people-skills-bonus item into one AI News story since both make the same point about firms drawing a harder line on AI authorship. No non-AI newsletter arrived this run, so beyond_ai is empty and page 2 was dropped by the build script; page 1 alone (2 tips with full verbatim prompts + 4 news items) still rendered 2 physical pages, verified via pypdf. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
         }
       ]
+    },
+    "2026-09-02": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-09-02T08:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "anthropic|releases|fable-5.1-benchmarks",
+            "openai|finishes-training|astra-critical-risk",
+            "apple|sues|openai-trade-secrets-engineer",
+            "bonds|hit|multi-decade-yield-highs",
+            "usps|whistleblower-warns|rushed-ballot-system",
+            "us|strikes|iran-strait-of-hormuz",
+            "dyson|launches|ai-camerajet-toothbrush",
+            "physicists|detect|possible-dark-matter"
+          ],
+          "note": "Morning firing at scheduled time (8:00 AM ET). No run-log entry existed yet for today, so searched Claude AI News Recap since yesterday's run 2 (2026-09-01T16:08:00-04:00). Found exactly 4 new messages, all Alfred-forwarded between 5:33-6:31 AM ET: The Neuron ('Fable 5.1 is here. What changed?'), The Rundown AI ('Fable 5.1 kicks off launch week at the frontier'), Morning Brew ('Global sale'), and 1440 Daily Digest ('Midterms Mail, Dark Matter, and the Loudest States'). All 4 bodies were large HTML and handed to 4 parallel subagents to extract and summarize in full. Merged the Fable 5.1 launch story (Neuron + Rundown, same launch, complementary benchmark/cost details) and the OpenAI Astra story (Neuron + Rundown, same training-finished/Critical-risk-rating news) into single AI News items -- treated as new content despite yesterday's run 2 having covered the initial Fable 5.1/Mythos 5.1 launch announcement, since today's coverage carried substantial new benchmark, cost, and safety-friction facts and fingerprints reset daily. Built 2 AI Tips with verbatim/paste-ready prompts (The Neuron's Fable 5.1 prompting-guide tips condensed to 3 steps; The Rundown's AI-hardware-picker tip with its verbatim 'Pro tip' line as the prompt block). Built 4 news items initially (Fable 5.1, Astra, Apple/OpenAI trade-secrets lawsuit, Sanders AI-pause op-ed) but cut the Sanders item for page-1 space after the first page-count check came back at 3 pages; also trimmed the Apple/OpenAI item and one Fable 5.1 sentence to reclaim a line. Beyond AI merged bond-selloff (Morning Brew only, most detailed), USPS ballot-system whistleblower (1440 + Morning Brew), Iran/Strait of Hormuz airstrikes (1440 + Morning Brew), Dyson AI toothbrush (Morning Brew), and dark matter detection (1440 only) -- 5 items, verified as page 2. Cut for space (not fingerprinted, may resurface): GoPro/Starman Optical $285M merger, Stan Kroenke's $4B LA Angels purchase, House's 370-48 short-term funding bill, Lindsay Clancy trial deliberations continuing, Waymo's Denver/Tampa/San Diego expansion, MIT striatum brain-mapping research, and various minor sports/culture items from 1440. Verified at exactly 2 pages via pymupdf (pypdf broken in this environment due to a cryptography/Rust binding issue, consistent with prior runs' pypdf install problems). brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
+        }
+      ]
     }
   }
 }
