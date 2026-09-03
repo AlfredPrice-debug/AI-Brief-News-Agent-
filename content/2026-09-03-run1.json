@@ -1,0 +1,90 @@
+{
+  "run": 1,
+  "runTime": "2026-09-03T08:08:00-04:00",
+  "title": "Meta and Google Duel for the AI Middle Tier, NYC Schools Ban AI, and OpenAI's Astra Hides Its Reasoning",
+  "date_display": "Thursday, September 3, 2026",
+  "date_slug": "9_3_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Sep 3)",
+  "tldr": [
+    "Meta's Muse Spark 1.3 and Google's Gemini 3.8 Flash launched hours apart -- Meta now scores ahead of Google on AA's Intelligence Index at a fraction of the cost.",
+    "New York City schools banned generative AI for pre-K through eighth grade, covering nearly 600,000 students.",
+    "Uber will cut 10% of its workforce, about 3,300 people, to fund reinvestment in growth and AI capabilities."
+  ],
+  "tips": [
+    {
+      "heading": "Turn your AI tabs into a status board",
+      "steps": [
+        "Give each active AI task its own tab or session, with its title kept updated to the format below (rules included in the prompt).",
+        "Scan your tab bar instead of reopening each session to see what needs you."
+      ],
+      "prompt": "For this task, keep the session title updated using:\n[optional 🖥️] [status emoji] [project emoji] [task title]\n\nRules:\n- ⚠️ = ongoing work or unresolved items.\n- ✅ = fully complete.\n- Use exactly one 🖥️ at the start only while you are actively controlling a browser or native app. Remove it when that phase ends.\n- Shell commands, API calls, and ordinary web searches do not count as computer use.\n- Preserve the project emoji and task title. Do not rename unrelated tasks.",
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Turn a workflow you already know into an interview asset",
+      "steps": [
+        "Pick one AI workflow you use well and record a 5-minute Loom walkthrough, in one take, emphasizing the human-in-the-loop steps.",
+        "Paste the transcript, Loom link, and job description into ChatGPT or Claude with the prompt below."
+      ],
+      "prompt": "Create a five-slide deck with the video embedded on one slide. Use the other slides to explain my thought process and how the workflow operates",
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Meta and Google both shipped new mid-tier models hours apart.</b> Meta's Muse Spark 1.3 scores 62 on Artificial Analysis's Intelligence Index, trailing only Claude Fable 5.1 and Opus 5. Google's Gemini 3.8 Flash kept its old pricing but cost ~40% more per completed task, since it did more work to score its 59.",
+      "means": "Judge these models by cost-to-completed-task, not price per token.",
+      "source": "The Neuron, The Rundown AI",
+      "low": false
+    },
+    {
+      "body": "<b>New York City Public Schools imposed a one-year ban on student-facing generative AI from pre-K through eighth grade,</b> covering nearly 600,000 students; high schoolers get required AI-literacy lessons instead. Mayor Zohran Mamdani pushed back on framing AI in education as inevitable.",
+      "means": "The largest US school district just drew a hard line on AI for kids -- a useful data point when clients ask where the regulatory wind is blowing.",
+      "source": "The Neuron, The Rundown AI, Morning Brew, 1440 Daily Digest",
+      "low": false
+    },
+    {
+      "body": "<b>OpenAI's next model, codenamed Astra and expected imminently, reportedly uses \"recurrent depth,\"</b> looping over the same text before answering, per The Information -- but the loops can produce reasoning that's \"pure math\" rather than readable, undermining safety monitors. OpenAI dialed it back so Astra still writes readable reasoning; Chief Scientist Jakub Pachocki wants to \"prevent a race into unmonitorability.\"",
+      "means": "Reasoning transparency is a real tradeoff against capability -- ask agentic-AI vendors if you can still audit a model's \"thinking,\" not just its output.",
+      "source": "The Rundown AI, The Neuron",
+      "low": false
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>A federal judge ruled Google will not be forced to sell its ad-tech business,</b> even after finding last year that the business was an illegal monopoly. Judge Leonie Brinkema rejected the Justice Department's breakup request but did impose new rules on how Google's ad server works with publishers; her full opinion stays sealed for two weeks pending redactions. It's the second major antitrust case in a row -- after search and Meta's social-networking case -- where a court has stopped short of a breakup.",
+      "angle": "Big Tech is on a real winning streak against structural remedies -- worth flagging to any client watching the parallel Amazon and Apple antitrust cases for a read on how aggressive US courts are actually willing to get.",
+      "starter": "Have you noticed courts keep finding the monopoly but not ordering the breakup? What does that pattern tell us about how enforceable an \"illegal monopoly\" ruling really is?",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Uber will lay off 10% of its workforce, about 3,300 people,</b> cutting two-person-or-smaller departments in half and managers by 20%. CEO Dara Khosrowshahi said the cuts free up savings to reinvest \"in growth, innovation, and the capabilities that will matter most\" -- and only 1% of remaining staff will be allowed to work remotely.",
+      "angle": "Another large employer is explicitly funding its next bet by shrinking headcount now -- worth watching if you're advising clients on how to frame AI-driven reorganizations to their own boards and staff.",
+      "starter": "Uber just tied a 3,300-person layoff directly to funding future capabilities -- is that the honest version of the AI-reorg story most companies are still dressing up as \"efficiency\"?",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Small restaurants and bodegas using AI-generated food photos to save on photography costs are finding the images repel customers instead.</b> One San Francisco coffee shop paid $700 to remove graffiti that appeared to be a response to its AI-generated marketing images, per SFGate, while a Wyoming business won online support after publicly pledging not to use AI in its marketing.",
+      "angle": "A clean case study for any client weighing AI content against brand trust: cheaper isn't free if customers can tell, and \"we don't use AI\" is starting to work as its own marketing claim in some markets.",
+      "starter": "We keep telling clients AI content saves money -- has anyone actually tested whether customers can tell, and what it costs them if they can?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Iran accused the US of a war crime after shrapnel from a US missile struck a home hosting a wedding near the Strait of Hormuz, killing four and wounding over 60,</b> part of an exchange that ended a months-long pause: US Central Command struck Iranian military targets Tuesday (14 other fatalities reported) after Iranian attacks on shipping and US forces, and Iran retaliated against US bases in Jordan, Iraq, and Kuwait -- most intercepted, no reported casualties.",
+      "angle": "No direct relevance to your work, general awareness only -- though worth watching if oil-price volatility from the Strait of Hormuz starts showing up in client cost assumptions.",
+      "starter": "Did you see the Strait of Hormuz situation escalated again this week? Curious whether anyone's re-running energy-cost sensitivity given it.",
+      "source": "1440 Daily Digest, Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "google-meta|launch|gemini-3.8-flash-muse-spark-1.3",
+    "nyc-schools|bans|generative-ai-pre-k-8",
+    "openai|develops|astra-recurrent-depth-safety-monitoring",
+    "neuron|tip|ai-tab-status-board",
+    "rundown|tip|proof-project-interview-deck",
+    "google|avoids|ad-tech-breakup-ruling",
+    "uber|lays-off|10pct-staff-reinvest-growth",
+    "ai-menu-photos|backfire-on|small-businesses",
+    "us-iran|escalates|strait-of-hormuz-strikes"
+  ]
+}
