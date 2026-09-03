@@ -1,0 +1,60 @@
+{
+  "run": 2,
+  "runTime": "2026-09-03T16:00:00-04:00",
+  "title": "Claude Goes Background as Nvidia's Chip Lead Narrows",
+  "date_display": "Thursday, September 3, 2026",
+  "date_slug": "9_3_26",
+  "sources": "<b>Superhuman AI</b> (Sep 3)",
+  "tldr": [
+    "Claude Cowork and Claude Code can now complete tasks in the background on macOS, in beta for Pro and Max plans.",
+    "Nvidia's AI-chip dominance is narrowing on multiple fronts, from OpenAI's own chip to Microsoft's Maia 300 to China's push for self-sufficiency.",
+    "Shopify's CEO is betting on small, task-specific models over frontier scale for narrow workflows."
+  ],
+  "tips": [
+    {
+      "heading": "Clean up a messy document with Claude in Word",
+      "steps": [
+        "Install the <b>Claude for Microsoft</b> add-in and open Claude in Word's sidebar, selecting <b>Opus 4.6</b>.",
+        "Upload the messy file — a Word doc, PDF, CSV, or image.",
+        "Paste the prompt below to have Claude reorganize, clean up, and format it.",
+        "Keep prompting in the sidebar to match a specific tone, brand style, or document format."
+      ],
+      "prompt": "Clean up this document and organize it into clear sections with headings. Fix the grammar and improve clarity. Add a summary of the key points at the top, highlight important insights or repeated ideas, and structure any data into clean tables. Then rewrite everything into a polished, professional document that's ready to share.",
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Run a prompt audit whenever a major model ships",
+      "steps": [
+        "When a new frontier model launches, gather your saved prompts and system instructions.",
+        "Ask the new model to review them for outdated rules, workarounds, or redundancies written for older, weaker models.",
+        "Strip what the new model no longer needs and keep the leaner version."
+      ],
+      "source": "Superhuman AI (via AI educator Peter Yang)"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Claude can now complete computer tasks in the background.</b> Claude Cowork and Claude Code can run tasks in the background on macOS, in beta for Pro and Max plans, limited to apps you've explicitly granted access to.",
+      "means": "A real step toward set-it-and-forget-it agent workflows — worth piloting on one low-risk, permissioned task to see how much it actually offloads.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Nvidia's AI-chip moat is narrowing on several fronts.</b> Quarterly revenue has grown from roughly $7B three years ago to $96B now, and Nvidia is on track for 75% of the 2026 AI-accelerator market, but chip startups have raised $8.3B since April, OpenAI is touting its own \"Jalapeño\" chip, Microsoft is expected to unveil \"Maia 300\" this month, and Nvidia's China market share is projected to fall from 66% in 2024 to 8% in 2026 as Beijing pushes chip self-sufficiency.",
+      "means": "Useful context if you're advising on AI infrastructure costs or vendor risk — pricing leverage may shift as alternatives mature, though Nvidia's CUDA software ecosystem still anchors most workloads.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Shopify's CEO says small, task-specific models can beat frontier models.</b> Tobi Lütke described an internal \"self-improving flywheel\" for training small models on niche tasks instead of defaulting to frontier models.",
+      "means": "A useful counter to \"bigger is always better\" in budget conversations — a scoped, cheaper model may outperform on a narrow workflow.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "anthropic|launches|claude-background-computer-use-macos-beta",
+    "nvidia|faces|rising-ai-chip-competition",
+    "shopify|bets-on|small-task-specific-models",
+    "superhuman|tip|word-doc-cleanup-claude-for-microsoft",
+    "superhuman|tip|prompt-audit-after-model-launch"
+  ]
+}
