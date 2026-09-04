@@ -1,0 +1,98 @@
+{
+  "run": 1,
+  "runTime": "2026-09-04T08:10:00-04:00",
+  "title": "OpenAI Declares the \"AGI Era,\" Nvidia Buys Hugging Face, and Tesla's Robotaxi Debuts",
+  "date_display": "Friday, September 4, 2026",
+  "date_slug": "9_4_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Sep 4)",
+  "tldr": [
+    "OpenAI launched GPT-6 Astra and its president called it the start of \"the AGI era\" -- but safety concerns limited the initial rollout.",
+    "Nvidia is buying open-source AI hub Hugging Face for $12.9 billion, deepening its grip on the open model ecosystem.",
+    "Tesla unveiled its steering-wheel-free Cybercab robotaxi, projecting 20-40 cents/mile rides as it chases Waymo's lead."
+  ],
+  "tips": [
+    {
+      "heading": "Give agents the \"why\" before the \"what\"",
+      "steps": [
+        "Before assigning agent work, write a short intent.md: the outcome, who it helps, non-negotiable constraints, and what \"done\" looks like.",
+        "Let the agent interview you until the fuzzy parts are gone before it starts.",
+        "Save the answers as intent.md and use it to generate the spec and plan.",
+        "Reuse the habit outside coding too -- give any long research or writing job a one-page brief it can keep returning to."
+      ],
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Run the \"loop method\" to fix an inconsistent AI workflow",
+      "steps": [
+        "Pick a workflow that works inconsistently -- a skill, project folder, or repeated process.",
+        "Feed your agent the prompt below and let it run three review loops (15 minutes to an hour).",
+        "Assign a concrete deliverable it should build toward before starting the loops.",
+        "Test the result; if it's still rough, have it codify the fix into a reusable script or skill."
+      ],
+      "prompt": "Improve this workflow in 3 loops. Have a panel of sub-agents adversarially review each loop. Done when [definition of done]",
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>OpenAI launched GPT-6 Astra, calling it \"the most intelligent and aligned model in the world.\"</b> It scored 99.9% on ARC-AGI-3 (vs. the prior model's 7.8%) and 100% on ExploitBench, but OpenAI says it crossed a \"Critical cybersecurity threshold,\" surfaced two previously unknown software flaws during testing, and produced reasoning that's \"harder to monitor\" -- limiting the rollout to paid plans \"over the coming days.\" President Greg Brockman called it reasonable to say Astra is the first AGI: \"Welcome to the AGI era.\"",
+      "means": "Astra's own safety notes are the story here, not just the benchmarks -- a useful example for client conversations that a model being more capable doesn't mean it's cleared for production without a model-risk review.",
+      "source": "The Neuron, The Rundown AI, Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Nvidia is acquiring open-source AI hub Hugging Face for $12.9 billion.</b> Hugging Face hosts 3M+ open models for 18M+ users across 200,000 companies; the deal is expected to close in the first half of 2027 pending regulatory approval.",
+      "means": "If a client's stack leans on Hugging Face-hosted open models, flag this as a vendor-concentration point to watch -- worth tracking whether Nvidia keeps the platform genuinely chip- and cloud-agnostic as promised.",
+      "source": "The Rundown AI, Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>OpenAI, Anthropic, Google, and xAI all went down simultaneously on Thursday</b> for reasons that were unclear at the time; service was restored by Thursday afternoon.",
+      "means": "A reminder to build fallback plans for any client-facing workflow that depends on a single AI vendor -- rare, but simultaneous multi-vendor outages just happened.",
+      "source": "The Rundown AI, Morning Brew",
+      "low": true
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Tesla unveiled its Cybercab robotaxi</b> -- a steering-wheel-free, pedal-less two-seater -- projecting rides around 20-40 cents a mile including tax. Waymo still runs the largest US driverless fleet (about 4,000 vehicles across 14 cities) versus Tesla's estimated 200 unsupervised vehicles, and NHTSA is investigating Tesla over automated-driving defects.",
+      "angle": "A concrete data point for any client debating autonomous-fleet economics -- the fleet-size and safety-oversight gap between Tesla and Waymo is the real story, not the reveal itself.",
+      "starter": "Tesla just showed off its robotaxi, but Waymo still has 20x the fleet on the road -- which one would you actually trust with your commute?",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Stocks had their best day in a month</b> (S&amp;P +1.1%, Dow +1.2%, Nasdaq +1.4%) after Fed Governor Christopher Waller signaled he could vote to hold rates steady this month if inflation keeps cooling.",
+      "angle": "Worth flagging in client budget conversations still hedging against another rate move -- the market read this as good news, not a warning sign.",
+      "starter": "Markets had their best day in a month on just a hint the Fed might hold steady -- are we still pricing in more rate uncertainty than the market is?",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Brands are trading free product for influencer content at the US Open</b> -- nearly 100 creators received event credentials, and sponsors are reportedly asking for first-party consumer data in exchange for freebies.",
+      "angle": "A live example of experiential marketing shifting from impressions to data capture -- relevant if you're advising clients on event sponsorship or influencer strategy.",
+      "starter": "Sponsors at the US Open aren't just handing out swag anymore, they want your data for it -- is that where our activation strategy is headed too?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Feminist icon Gloria Steinem died at 92.</b> She co-founded Ms. magazine in 1971, helped launch the National Women's Political Caucus, and received the Presidential Medal of Freedom in 2013.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Gloria Steinem passed away this week -- her Ms. magazine work basically wrote the playbook a lot of today's DEI programs still draw on.",
+      "source": "1440 Daily Digest, Morning Brew"
+    },
+    {
+      "body": "<b>Burning Man attendance is aging out</b> -- just 10% of this year's attendees were in their 20s, a record low, down from 30% in 2015, as ticket and trip costs have climbed past $1,000.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Burning Man's crowd has gotten a lot older and a lot pricier -- feels like the same cost-creep story playing out at a lot of cultural institutions right now.",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "openai|launches|gpt-6-astra",
+    "nvidia|acquires|hugging-face-12.9b",
+    "ai-services|suffer|simultaneous-outage",
+    "neuron|tip|intent-md-agent-brief",
+    "rundown|tip|loop-method-workflow-improvement",
+    "tesla|unveils|cybercab-robotaxi",
+    "markets|rally|fed-rate-hold-signal",
+    "morning-brew|reports|us-open-influencer-economy",
+    "steinem|dies-at-92|feminist-icon",
+    "burning-man|ages-out|record-low-20s-attendance"
+  ]
+}

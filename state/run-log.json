@@ -1320,6 +1320,28 @@
           "note": "Afternoon firing at scheduled time (4:00-4:05 PM ET, confirmed via wall clock). Run 1 already delivered today at 08:08:00-04:00, so searched Claude AI News Recap since that timestamp. Found exactly 1 new message: a Superhuman AI newsletter ('Never bet against Zuck'), forwarded by Alfred at 9:11 AM ET (originally sent 9:08 AM ET), 71.2K chars of HTML, handed to a subagent to extract and summarize in full. Its lead story (Meta Muse Spark 1.3 + Gemini 3.8 Flash dual launch) duplicated run 1's already-covered google-meta|launch|gemini-3.8-flash-muse-spark-1.3 fingerprint, so dropped entirely. Picked up Anthropic's Claude background computer use (Cowork/Code, macOS beta, Pro/Max) -- a story run 1 drafted and cut for page-1 space, not fingerprinted, so published fresh here. Built 3 AI News items (Claude background computer use; Nvidia's narrowing chip-market moat vs OpenAI's Jalapeno chip, Microsoft's Maia 300, and China's falling Nvidia share; Shopify CEO Tobi Lutke's small-task-specific-model strategy). Cut a 4th drafted news item (Google Pics image editor, marked low) for page-1 space -- not fingerprinted, may resurface. Built 2 AI Tips with verbatim prompts (Claude for Microsoft Word-doc cleanup; a prompt-audit habit attributed to Peter Yang). Cut a 3rd tip (an embroidery-art image-preservation prompt via ChatGPT Image 2.0/PromptLab, verbatim prompt captured) for page-1 space after a first page-count check came back at 2 pages (page 1 alone overflowing) -- not fingerprinted, may resurface. No non-AI newsletter arrived this run (Superhuman AI is 100% AI-focused), so beyond_ai is empty -- page 1 alone (2 tips + 3 news) rendered as exactly 1 page via pymupdf (installed fresh; pypdf still broken in this environment on the same cryptography/Rust binding issue as prior runs), comfortably clearing the 2-item dedup minimum, so shipped rather than skipped, matching the 8/26, 8/28, and 9/2 run-2 precedent for AI-only afternoon editions. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
         }
       ]
+    },
+    "2026-09-04": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-09-04T08:10:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "openai|launches|gpt-6-astra",
+            "nvidia|acquires|hugging-face-12.9b",
+            "ai-services|suffer|simultaneous-outage",
+            "neuron|tip|intent-md-agent-brief",
+            "rundown|tip|loop-method-workflow-improvement",
+            "tesla|unveils|cybercab-robotaxi",
+            "markets|rally|fed-rate-hold-signal",
+            "morning-brew|reports|us-open-influencer-economy",
+            "steinem|dies-at-92|feminist-icon",
+            "burning-man|ages-out|record-low-20s-attendance"
+          ],
+          "note": "Morning firing at scheduled time (8:00-8:10 AM ET). No run-log entry existed yet for today, so searched Claude AI News Recap since yesterday run 2 (2026-09-03T16:00:00-04:00). Found exactly 4 new messages, all Alfred-forwarded between 8:30-10:28 AM UTC (4:30-6:28 AM ET): The Neuron (GPT-6 Astra launch), The Rundown AI (GPT-6 Astra generational leap), Morning Brew (Cybercab), and 1440 Daily Digest (Gloria Steinem / college football). All 4 bodies were large HTML handed to 4 parallel subagents to extract and summarize in full. The GPT-6 Astra launch was covered by all 4 newsletters (AGI claims from OpenAI president Greg Brockman, ARC-AGI-3/ExploitBench benchmarks, Critical cybersecurity threshold, limited rollout) -- merged into a single lead news item. Nvidia acquiring Hugging Face for 2.9B was covered by 3 of 4 (Rundown, Morning Brew, 1440) -- merged into one item. Built 2 AI Tips (The Neuron intent.md agent-briefing habit, no verbatim prompt available; The Rundown AI loop-method workflow-improvement habit with a verbatim copy-paste prompt). Built a 4-item AI News draft including a simultaneous OpenAI/Anthropic/Google/xAI outage (Rundown + Morning Brew, marked low) and a Bernie Sanders/Greg Casar bill to outlaw superintelligent AI (Neuron + Rundown, marked low); first page-count check came back 3 pages, so cut the Sanders/Casar bill for page-1 space (not fingerprinted, may resurface) leaving 3 news items. Beyond AI built from Morning Brew + 1440: Tesla Cybercab robotaxi unveiling (merged across both), a Fed-rate-hold market rally (merged across both), Morning Brew-only US Open influencer-economy story, Gloria Steinem death (merged across both), and Burning Man attendance aging out (Morning Brew only) -- 5 items. Cut for space/relevance (not fingerprinted, may resurface): Google Sundar Pichai content-modality interview and Google WeatherNext 3 forecasting model (both Rundown-only), Nepal hydropower rescue and Dutch gold-reserve reallocation (1440-only). Verified at exactly 2 pages via pymupdf (pypdf not installed in this environment; pymupdf installed fresh and used, consistent with prior runs). brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
+        }
+      ]
     }
   }
 }
