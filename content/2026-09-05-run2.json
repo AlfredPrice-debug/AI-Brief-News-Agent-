@@ -1,0 +1,47 @@
+{
+  "run": 2,
+  "runTime": "2026-09-05T16:00:00-04:00",
+  "title": "Cybercabs Go Live as Autonomous Weapons Face a Ban Push",
+  "date_display": "Saturday, September 5, 2026",
+  "date_slug": "9_5_26",
+  "sources": "<b>Superhuman AI</b> (Sep 5, Robotics Special)",
+  "tldr": [
+    "Tesla's driverless Cybercab is now live on Austin streets, open to the public with no steering wheel or pedals.",
+    "The UN and Red Cross are pushing for a binding ban on autonomous weapons after an AI-guided drone strike killed 3 civilians in Ukraine.",
+    "ICE plans to spend up to $2M on Boston Dynamics robot dogs for immigration enforcement, a preview of the reputational risk vendors face once robotics reach government use."
+  ],
+  "tips": [],
+  "news": [
+    {
+      "body": "<b>Tesla's driverless Cybercab is now live on Austin streets.</b> The two-seat robotaxi has no steering wheel or pedals, runs through Tesla's Robotaxi app, and is the company's first vehicle built entirely for unsupervised self-driving; standard pricing hasn't been set and federal regulators are still reviewing how a car with zero manual controls fits existing rules.",
+      "means": "A real commercialization milestone, not a demo — a useful marker for how fast regulators are actually moving on autonomy, and a ready answer next time a client asks \"when will robotaxis be real.\"",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>The UN and Red Cross are pushing for a binding ban on autonomous weapons that target humans without human oversight.</b> They cite a July drone strike in Ukraine that killed three civilians and was allegedly guided entirely by AI; negotiators head to Geneva in November seeking binding rules before autonomous warfare becomes harder to rein in.",
+      "means": "AI governance is moving from corporate policy statements to international law — a concrete reference point if clients ask how seriously regulators are taking AI accountability.",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>ICE plans to spend up to $2M on Boston Dynamics robot dogs for immigration enforcement,</b> framed as hazard-assessment tools. The purchase is already drawing controversy over how a robotics vendor's products get used once sold to a government agency.",
+      "means": "A reminder that any AI or robotics vendor relationship carries reputational and ethical exposure once the product reaches government end-use — worth a line in vendor-risk or responsible-AI conversations.",
+      "source": "Superhuman AI",
+      "low": true
+    },
+    {
+      "body": "<b>Waymo and Zoox safety/test drivers have reportedly logged more than two dozen injuries from AV braking and swerving incidents.</b> The reports surface a human cost behind the rapid scaling of robotaxi fleets that rarely makes the headlines.",
+      "means": "A useful counterweight to robotaxi hype — if you're advising on AV or other safety-critical AI deployments, incident data like this is exactly what risk and legal teams will ask for.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "tesla|launches|cybercab-austin-public",
+    "un-red-cross|calls-for|autonomous-weapons-ban",
+    "ice|plans-to-spend|2m-boston-dynamics-robot-dogs",
+    "waymo-zoox|log|av-safety-driver-injuries"
+  ]
+}

@@ -1372,6 +1372,18 @@
             "wnba|commissioner-engelbert|announces-retirement",
             "clancy|case|ends-in-mistrial"
           ]
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-09-05T16:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "tesla|launches|cybercab-austin-public",
+            "un-red-cross|calls-for|autonomous-weapons-ban",
+            "ice|plans-to-spend|2m-boston-dynamics-robot-dogs",
+            "waymo-zoox|log|av-safety-driver-injuries"
+          ],
+          "note": "Afternoon firing (4:00 PM ET slot). Run-log showed run 1 already delivered today at 08:10:00-04:00, so searched Claude AI News Recap since that timestamp. Found exactly 1 new message: a Superhuman AI \"Robotics Special\" edition (forwarded by Alfred at 12:13 PM ET, sent 12:12 PM ET), which explicitly stated regular AI updates resume Monday. Body was read directly (moderate HTML size, no subagent needed). No tips section built -- the only prompt-like content was a sponsored ad link (\"150+ prompts that turn Claude into your best marketing hire\"), correctly discarded as an ad rather than an editorial tip. Built 4 AI News items: Tesla Cybercab robotaxi going live to the public in Austin, a UN/Red Cross push for a binding autonomous-weapons ban following a July AI-guided Ukraine drone strike that killed 3 civilians, ICE's planned M Boston Dynamics robot-dog purchase for immigration enforcement (marked low), and Waymo/Zoox safety-driver AV injury reports (marked low). None of the 4 fingerprints overlapped run 1's covered list. Cut for space/impact (not fingerprinted, may resurface): the viral Russian store-robot \"Syoma\" meme, Tau Robotics' 0/hr AI home-cleaning rollout, China robotics \"tech tourism\" (5K factory tours), a Chinese robot-training \"kindergarten\" (Tashan), Uber+Wayve's supervised robotaxi launch in London, Meta testing robots for data-center work, OpenAI VP Peter Welinder's Level-5-self-driving-is-5-10-years-away comment, the Hypershell Halo exoskeleton, and a viral Amazon drone-delivery-into-a-pool clip. No non-AI newsletter arrived this run (Superhuman AI Robotics Special is 100% AI/robotics-focused), so beyond_ai is empty -- page 1 alone (0 tips + 4 news) rendered as exactly 1 page via pymupdf (pypdf not installed in this environment, consistent with prior runs), clearing the 2-item dedup minimum comfortably. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
         }
       ]
     }
