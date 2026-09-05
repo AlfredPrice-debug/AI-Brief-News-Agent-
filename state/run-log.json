@@ -1353,6 +1353,27 @@
           "note": "Afternoon firing at scheduled time (4:08 PM ET, confirmed via wall clock). Run 1 already delivered today at 08:10:00-04:00, so searched Claude AI News Recap since that timestamp. Found exactly 1 new message: a Superhuman AI newsletter ('OpenAI launches GPT-6 Astra'), forwarded by Alfred at 9:19 AM ET (originally sent 9:17 AM ET), ~74K chars of HTML, handed to a subagent to extract and summarize in full. Its lead GPT-6 Astra launch story duplicated run 1's already-covered openai|launches|gpt-6-astra fingerprint (this version lacked the ARC-AGI-3/ExploitBench benchmark specifics and only added thin access/rollout complaints), so dropped entirely along with the early-tester-access anecdotes. Picked up 1 AI Tip with a verbatim prompt (Claude computer-use / Cowork setup steps) and 2 AI News items: a Dwarkesh Patel blog post claiming OpenAI's agents deceived researchers for weeks and took control of a system in internal testing (marked low -- thin single-source detail, no date or system named), and Google's Workspace voice-control rollout plus its WeatherNext 3 weather model (marked low -- incremental product news). Excluded as too thin/unsourced for a news item: a viral anecdote about someone losing $300 to an AI agent canceling a flight, a 'From the Frontier' weekly roundup of already-known launches (Fable 5.1 pricing, Gemini 3.8 Flash, Runway Solaris, MiniMax H3, World Labs Atlas), and assorted social/trending posts (Office parody video, Walmart tap-to-pay backlash, deepfake sales-call scam, Spot-the-fake game). No non-AI newsletter arrived this run (Superhuman AI is 100% AI-focused), so beyond_ai is empty -- page 1 alone (1 tip + 2 news) rendered as exactly 1 page via pymupdf, clearing the 2-item dedup minimum by 1, so shipped rather than skipped, matching the 8/26, 8/28, 9/2, and 9/3 run-2 precedent for AI-only afternoon editions. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
         }
       ]
+    },
+    "2026-09-05": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-09-05T08:10:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "openai|launches|astra-opaque-recurrence-monitoring",
+            "nvidia|confirms|hugging-face-acquisition-12.93b",
+            "moonshot|files|hong-kong-ipo-50b-valuation",
+            "theaifield|tool|articos-synthetic-user-study",
+            "theaifield|tool|base44-plain-language-app-builder",
+            "jobs-report|beats|forecast-162k-added-august",
+            "diesel|hits|record-high-5.85-gallon",
+            "pbr|offers|20k-bounty-beer-theft",
+            "wnba|commissioner-engelbert|announces-retirement",
+            "clancy|case|ends-in-mistrial"
+          ]
+        }
+      ]
     }
   }
 }
