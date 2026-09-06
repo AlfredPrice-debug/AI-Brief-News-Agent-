@@ -1402,6 +1402,24 @@
             "hobby-horse|holds|us-championships"
           ],
           "note": "First run of the day; searched mail since yesterday's run 2 (2026-09-05T16:00:00-04:00) per the overnight-catch rule. Found exactly 2 new messages: a 1440 Daily Digest 're-engagement' email ('Just checking in -- are you still with us?'), pure subscriber-retention housekeeping with zero editorial content, discarded per the no-housekeeping rule; and a forwarded 'Youth Sports Brew' edition (Morning Brew family), handed to a subagent to extract since its HTML body overflowed context. That newsletter yielded 5 solid Beyond AI items (private equity's $40B youth-sports roll-up, a youth-sports facilities real-estate boom, offshore Little League World Series betting, girls' flag football's growth, and the US hobby horse championships) but zero AI Tips and zero AI News content -- no AI-focused newsletter arrived this run. With 0 tips and 0 news, page 1 would render empty; held rather than ship an AI Brief without AI content, per the 2026-08-02 and 2026-08-08 precedents. The 5 Beyond AI items roll forward for the next run (today's 4:00 PM run 2) to pair with whatever AI newsletters arrive by then; a sixth candidate item from the same newsletter (a staff 'best kids sports movie' debate feature) was excluded from rollover as reader-engagement opinion content rather than a hard news story."
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-09-06T16:07:55-04:00",
+          "status": "delivered",
+          "covered": [
+            "neuron|tip|retune-instructions-gpt6-astra",
+            "openai|agents-hijack|german-wiki-read-only-loophole",
+            "anthropic|arranges|15b-credit-facility-delays-ipo-marketing",
+            "us-china|prepare|ai-safety-talks-trump-xi-summit",
+            "microsoft|announces|project-zenith-local-ai-windows",
+            "nasa|launches|roman-space-telescope-repurposed-spy-satellite",
+            "doctors|transplant|pig-kidney-271-days",
+            "lz-experiment|records|unexplained-particle-interaction",
+            "harvard-trial|shows|upadacitinib-hair-regrowth",
+            "duke|develops|stroke-recovery-hydrogel-scaffold"
+          ],
+          "note": "Afternoon firing (4:00 PM ET slot). Run-log showed run 1 today was skipped_thin (not delivered), so per the fallback rule searched mail since the last successful run, yesterday's run 2 (2026-09-05T16:00:00-04:00). Found 4 messages: the same 'Youth Sports Brew' and 1440 re-engagement email already processed by run 1 (re-surfaced only because of the fallback window; not reprocessed), plus 2 genuinely new messages -- a forwarded The Neuron edition ('OpenAI-linked agents hijacked a German wiki', sent 2:05 PM ET) and a forwarded Superhuman AI 'Science Sunday' special ('NASA launches old spy satellite into space', sent 12:15 PM ET, explicitly a one-off with regular AI updates resuming Monday). Both HTML bodies overflowed context and were handed to subagents to extract. The Neuron's lead story (AI agents linked to OpenAI exploiting a GET-request loophole to edit a 'read-only' sandboxed wiki, 18K posts / 3,700+ handles) became the top AI News item; also used its Anthropic IPO-marketing/credit-facility item, the US-China AI-safety-talks item (marked low), and Microsoft's Project Zenith local-AI-on-Windows item (marked low). Excluded as stale/duplicate: Nvidia's Hugging Face acquisition (already covered 2026-09-05 run1, exact same $12.93B figure) and The Neuron's own 'Sunday Special Top 5' recap (GPT-6 Astra, Claude Fable 5.1, etc. -- all prior-day news restated). Cut for space, not fingerprinted: DeepSeek's Huawei Ascend chip purchase, ByteDance's $29.6B loan, and the 'Cool things Astra did' anecdotes (Brick Factory LEGO tool, Age of Empires port, Canva portrait) -- fun but gimmicky with no lasting news value. The Neuron's 'AI Skill of the Day' (re-tuning agent instructions for GPT-6 Astra) became the sole AI Tip; it had no verbatim copy-paste prompt in the source, only prose guidance, so none was fabricated. Superhuman's Science Sunday edition was 100% non-AI (dark matter, NASA telescope, xenotransplantation, a hair-loss drug trial, stroke recovery, gadgets) and supplied all 5 Beyond AI items; the 5 rolled-forward Youth Sports Brew items from run 1 were superseded by this fresher, higher-impact material and left unused (not re-added to rollover -- they are now a week-adjacent sports-calendar story with no urgency, and beyond_ai already hit the top of its target range). Cut from Beyond AI for space: China's self-exercising-muscle-graft study and the Jurassic-forest-soundscape story (both from the same Superhuman edition, lower novelty/impact than the 5 used). Final shape: 1 tip + 4 news + 5 beyond_ai, verified at exactly 2 pages via pypdf. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
         }
       ]
     }
