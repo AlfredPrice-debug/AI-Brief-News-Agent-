@@ -1,0 +1,67 @@
+{
+  "run": 1,
+  "runTime": "2026-09-07T08:00:00-04:00",
+  "title": "OpenAI's Chief Scientist Warns of an Alignment Gap as Claude Cracks Fermat's Last Theorem",
+  "date_display": "Monday, September 7, 2026",
+  "date_slug": "9_7_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b> (Sep 7)",
+  "tldr": [
+    "OpenAI's chief scientist publicly called for an AI slowdown, warning no lab has solved alignment and monitoring well enough to keep scaling at full speed.",
+    "Claude agents produced the first computer-verified proof of Fermat's Last Theorem in 11 days, a job mathematicians had budgeted years for.",
+    "Nvidia's Jensen Huang declared \"AGI has arrived,\" citing OpenAI's newest model training on 100,000 GPUs, a figure quietly revised down from an initial 300,000 claim."
+  ],
+  "tips": [
+    {
+      "heading": "Run your own agent orchestration with just browser tabs",
+      "steps": [
+        "Planner pass: open a fresh chat, give it the full task, and ask it to break the work into 3-5 specific subtasks another AI could execute independently.",
+        "Worker passes: open a new chat per subtask and paste in only that subtask plus the context it needs, nothing from the other subtasks.",
+        "Verifier pass: open one more chat, paste in the original goal plus every worker's output, and ask it to catch contradictions, gaps, or quality issues before you ship it."
+      ],
+      "prompt": "Break this task into 3-5 specific, independent subtasks that a separate assistant could complete with no other context than what I give it: [YOUR TASK]\n\nVERIFIER PROMPT:\nHere's the original goal: [GOAL]\nHere's what each subtask produced: [PASTE ALL OUTPUTS]\nCheck for contradictions, gaps, or quality issues before I ship this.",
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Build a Lindy agent that never drops a follow-up",
+      "steps": [
+        "Create a Lindy account and connect one tool at a time, starting with Slack, Gmail, Calendar, Notion, or Drive instead of connecting everything.",
+        "Open Routines, then Discover, and pick a prebuilt workflow for meeting prep, follow-up, or weekly updates.",
+        "DM Lindy in Slack with a real task, then hand it a bigger assignment that can run in the background.",
+        "Add your phone number in Lindy so you can text your agent instead of opening the app."
+      ],
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>OpenAI's chief scientist calls for an AI slowdown.</b> Jakub Pachocki published an essay (\"An Alien Mind\") saying no lab has solved alignment and monitoring well enough to keep scaling responsibly; OpenAI's own data shows researchers now log 3.1 agent-workdays for every human workday (median researcher burning over $600/day in inference), and the company is targeting a fully automated AI researcher by 2028.",
+      "means": "This is a warning label from the company building the tech, not just outside critics -- worth citing when advising clients on how much human oversight to keep in the loop as they adopt agentic AI.",
+      "source": "The Neuron, The Rundown AI"
+    },
+    {
+      "body": "<b>Claude agents wrote the first computer-verified proof of Fermat's Last Theorem, done in 11 days.</b> The proof ran to 13 million lines of code, a job mathematicians had budgeted years for.",
+      "means": "A concrete data point for the \"how far can agentic coding actually go\" conversation with clients and leadership, even if it doesn't change your roadmap today.",
+      "source": "The Rundown AI"
+    },
+    {
+      "body": "<b>Nvidia's Jensen Huang declared \"AGI has arrived,\" citing OpenAI's newest model (GPT-6 Astra) training on 100,000 Nvidia GPUs, with 400,000 more coming online next.</b> Huang's post originally claimed 300,000 chips before being deleted and quietly reposted with the smaller number, no explanation given.",
+      "means": "Take the AGI framing with a grain of salt -- it's coming from OpenAI's chip supplier days after Nvidia posted $89B in quarterly AI hardware sales -- but the compute scale-up itself is real and worth tracking.",
+      "source": "The Neuron",
+      "low": true
+    },
+    {
+      "body": "<b>Microsoft rolled out Project Opal, a Copilot feature that hands off multi-step office tasks -- audit prep, IT ticket triage -- to an AI working on its own inside a virtual Windows PC.</b> Currently limited to Frontier program testers.",
+      "means": "Worth a pilot-program conversation with clients running Microsoft shops -- this is the kind of feature that will show up on Copilot roadmaps clients ask you about soon.",
+      "source": "The Neuron"
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "openai|warns|pachocki-alignment-slowdown",
+    "anthropic|proves|fermat-last-theorem-claude-agents",
+    "nvidia-openai|claims|agi-arrived-gpt6-astra-100k-gpus",
+    "microsoft|launches|project-opal-copilot-autonomous-tasks",
+    "theneuron|tip|browser-tab-agent-orchestration",
+    "therundown|tip|lindy-agent-follow-up-guide"
+  ]
+}
