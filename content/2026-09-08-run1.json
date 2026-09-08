@@ -1,0 +1,100 @@
+{
+  "run": 1,
+  "runTime": "2026-09-08T08:00:00-04:00",
+  "title": "AI-Designed Drug Reverses Aging Markers as OpenAI's Agents Hit a 3-to-1 Research Pace",
+  "date_display": "Tuesday, September 8, 2026",
+  "date_slug": "9_8_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Sep 8)",
+  "tldr": [
+    "An AI-designed lung drug from Insilico Medicine read as biologically younger across all six independent aging clocks tested in a Phase 2 trial, one of the strongest signals yet that AI drug discovery has real anti-aging side effects.",
+    "OpenAI says its coding agents now produce 3.1 workdays of research output per 1 human workday, at $600 to $7,000/day in token costs, hitting Sam Altman's 'automated research intern' milestone right on his September target.",
+    "GPT-6 Astra scored 99.9% on the ARC-AGI-3 benchmark under OpenAI's own setup but only 62.7% under a stripped-down configuration, the same model producing wildly different results depending on scaffolding."
+  ],
+  "tips": [
+    {
+      "heading": "Build your own AI benchmark before trusting a vendor's",
+      "steps": [
+        "Pick one real task you actually need done, not a generic demo.",
+        "Run it through the new model and your current tool side by side.",
+        "Score both on: did it finish correctly, how many manual corrections it needed, total time, and actual cost.",
+        "Don't assume faster-but-sloppier automatically beats slower-but-right."
+      ],
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Turn an app idea into a working prototype with Codex's /plan",
+      "steps": [
+        "Pick a workflow idea you want to test, like an internal tool, tracker, or small automation.",
+        "Open Codex, select Astra, and run /plan to get a requirements doc, asking it to pose multiple-choice questions to nail down details.",
+        "Request four design mockups (desktop and mobile) and pick a direction.",
+        "Have it build the chosen design, then test by adding data, reloading, and switching users to confirm it actually saves and shares."
+      ],
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>An AI-designed drug shows signs of reversing biological aging.</b> Insilico Medicine re-ran blood samples from its 12-week Phase 2a trial of rentosertib, an AI-designed drug for the lung-scarring disease idiopathic pulmonary fibrosis, through six independent aging-clock models; all six read patients as biologically younger, with some measures showing 3-6 years of apparent reversal at the four-week mark. Researchers caution the clocks can't fully separate slower aging from disease improvement.",
+      "means": "A concrete data point for any client conversation about AI's ROI in biotech and pharma R&D, worth having on hand as more than a hypothetical.",
+      "source": "The Neuron, The Rundown AI, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>OpenAI says its coding agents now out-produce human researchers 3-to-1.</b> Internal data shows agents logging 3.1 workdays of output per 1 human workday, with typical researchers spending $600+/day on agent tokens (90th percentile: $7,000+/day) and token output up 124x since December; OpenAI calls it the 'automated research intern' milestone Sam Altman targeted for this month.",
+      "means": "If OpenAI's own researchers are burning thousands a day per person on agent tokens, budget conversations with clients piloting agentic workflows need real cost guardrails, not just productivity promises.",
+      "source": "The Rundown AI"
+    },
+    {
+      "body": "<b>Nearly 130,000 tech jobs have disappeared in 2026 so far, with AI cited as a driver.</b> Uber, PayPal, Oracle, and Apple have all pointed to AI-driven restructuring in recent job cuts.",
+      "means": "A running tally worth tracking for client workforce-planning conversations, the number to have ready when someone asks whether this is actually happening at scale.",
+      "source": "The Neuron"
+    },
+    {
+      "body": "<b>GPT-6 Astra's benchmark score swung from 99.9% to 62.7% depending on setup.</b> The model aced ARC-AGI-3 at 99.9% under OpenAI's own scaffolding, but when ARC Prize ran the same model with a stripped-down configuration, the score dropped to 62.7%, same model, different harness, very different result.",
+      "means": "Vendor-reported benchmarks are only as good as the scaffolding behind them, worth a caveat any time a client cites a headline AI benchmark number.",
+      "source": "The Neuron"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Gas hit a record price for Labor Day.</b> The national average hit $4.15/gallon on Labor Day per AAA, the first time it's topped $4 on that holiday; diesel spiked to a record $5.85/gallon, driven partly by Iran's disruption of Strait of Hormuz tanker traffic and Ukrainian drone strikes on Russian refineries.",
+      "angle": "Fuel and logistics costs are a real line item in any client's operating budget right now, worth flagging before it shows up as a surprise in a Q3 review.",
+      "starter": "Anyone else's travel or shipping costs jump this month? Gas just hit a Labor Day record.",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>A 22-year-old faces a plea hearing over a $240M+ bitcoin heist.</b> Malone Lam and 17 accomplices allegedly used 'vishing,' fake security-warning phone calls, to steal a victim's wallet credentials, then spent the proceeds on luxury cars, private jets, and nightclubs, reportedly $569K in one night.",
+      "angle": "A vivid, concrete example for any client's security-awareness training, vishing works because it sounds exactly like a legitimate fraud alert.",
+      "starter": "Have you seen the $240M crypto vishing case? Worth using as a real example next time we talk security awareness training.",
+      "source": "1440 Daily Digest"
+    },
+    {
+      "body": "<b>Jaguar Land Rover is cutting 4,000 jobs, about 10% of its workforce.</b> The cuts, over two years, come amid intensifying competition from Chinese EV makers and the effects of Trump-era tariffs.",
+      "angle": "A live case study for clients in automotive or manufacturing on how tariff exposure and low-cost competition are forcing workforce decisions.",
+      "starter": "JLR just cut 4,000 jobs citing Chinese EV competition and tariffs, is that pressure showing up in any of our clients' sectors yet?",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>An Amazon cargo plane crash in Miami killed at least 5 people.</b> The Boeing 767, operated by contractor 21 Air, overshot the runway by roughly 1,300 feet and crossed a public road; Miami's airport lacks the 'crushable arresting system' now installed at 70 other airports.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Did you see the Amazon cargo plane crash in Miami? The airport apparently didn't have the runway safety system most others do now.",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Germany's far-right AfD won a landslide state election in Saxony-Anhalt.</b> It's the party's first shot at leading a state government since the Nazi era; Germany's intelligence agency classifies AfD as extremist in some regions.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Did you catch that Germany's AfD just won a state election outright? Worth watching if it changes the EU regulatory conversation.",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "insilico|designs|rentosertib-aging-drug",
+    "openai|hits|automated-research-intern-milestone",
+    "tech-layoffs|linked-to|ai-restructuring",
+    "gpt6-astra|scores-inconsistently|arc-agi-3-scaffolding",
+    "gas-prices|hit|labor-day-record",
+    "crypto-heist|steals|240m-bitcoin-vishing",
+    "jaguar-land-rover|cuts|4000-jobs",
+    "amazon-cargo-plane|crashes-into|miami-runway",
+    "germany|afd-wins|saxony-anhalt-election"
+  ]
+}
