@@ -1,0 +1,43 @@
+{
+  "run": 2,
+  "runTime": "2026-09-08T16:00:00-04:00",
+  "title": "The eco-scam app, Astra's opacity problem, and writing in your own voice",
+  "date_display": "Tuesday, September 8, 2026",
+  "date_slug": "9_8_26",
+  "sources": "<b>Superhuman AI</b> (Sep 8)",
+  "tldr": [
+    "A viral \"eco-friendly\" AI app got tagged a scam for reviving a debunked water-scarcity myth.",
+    "GPT-6 Astra's new \"opaque recurrence\" training method has safety researchers alarmed about lost transparency.",
+    "ChatGPT Work can now learn and reproduce your writing voice across Gmail, Slack, and Drive."
+  ],
+  "tips": [
+    {
+      "heading": "Make ChatGPT Work write in your voice",
+      "steps": [
+        "Open ChatGPT, toggle on Work, then go to <b>Settings &gt; Personalization &gt; Writing Style</b>.",
+        "Connect the apps with the best examples of your writing, such as Gmail, Google Drive, and Slack.",
+        "Let ChatGPT analyze the patterns in your writing, then return to Work and ask it to draft an email, message, or document as usual.",
+        "Review the output to confirm it sounds like you, and adjust the connected sources if it doesn't."
+      ],
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Viral \"eco-friendly\" AI app draws scam accusations.</b> EcoGPT has been downloaded more than 100,000 times on the back of videos claiming AI data centers will make fresh drinking water disappear, a claim Superhuman AI says has been \"repeatedly debunked.\" Critics are now calling the app a scam that uses greenwashing to exploit environmental guilt.",
+      "means": "Expect this specific water-scarcity myth to keep resurfacing in client conversations about AI's environmental cost; worth having the debunk ready rather than letting it pass unchallenged.",
+      "source": "Superhuman AI",
+      "low": true
+    },
+    {
+      "body": "<b>GPT-6 Astra's efficiency trick worries AI safety researchers.</b> Reporting ties Astra to a training method called \"recurrent depth\" (or \"opaque recurrence\"), which cycles a query through the same internal layers repeatedly instead of reasoning in visible steps. Redwood Research's chief scientist Ryan Greenblatt called it \"the single worst development for AI security/safety to date,\" though OpenAI says Astra's chain of thought \"remains largely readable\" for now.",
+      "means": "Chain-of-thought transparency is a selling point vendors use in AI-governance pitches; this is an early sign providers may trade it away for performance, worth flagging in any client AI-risk discussion.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "ecogpt|goes-viral|greenwashing-scam-accusations",
+    "openai|trains|astra-opaque-recurrence-safety-concern"
+  ]
+}
