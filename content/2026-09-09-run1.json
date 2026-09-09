@@ -1,0 +1,95 @@
+{
+  "run": 1,
+  "runTime": "2026-09-09T08:00:00-04:00",
+  "title": "OpenAI Claims a Millennium Math Prize as Anthropic Disputes the Credit",
+  "date_display": "Wednesday, September 9, 2026",
+  "date_slug": "9_9_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Sep 9)",
+  "tldr": [
+    "OpenAI says an unreleased model plus 10,000 parallel agents cracked the $1M Navier-Stokes math problem in 88 hours — an Anthropic researcher says he'd been chasing the same proof for a year and OpenAI won't confirm it never saw his drafts.",
+    "Qualcomm and Amazon struck an AI-chip deal reported at up to $60B, with Amazon also able to acquire up to $4B in Qualcomm stock — another crack in Nvidia's infrastructure lock.",
+    "The US-Canada trade war turned real: Canada's $20B in retaliatory tariffs took effect and Trump called for a ban on planemaker Bombardier, which sources parts from 2,800 US companies."
+  ],
+  "tips": [
+    {
+      "heading": "Audit your brand's visibility in AI search",
+      "steps": [
+        "Ask Google's AI Overviews and ChatGPT directly about your space and see whether/how your brand or work gets cited.",
+        "Run free audits with Peekaboo, HubSpot's AI Search Grader, or Semrush's SEO Checker.",
+        "Check Google Search Console for Generative-AI impression data on your site.",
+        "Hand the results to your AI agent and have it prioritize the gaps for you."
+      ],
+      "prompt": "Have Codex do these checks for you using the free tools and your accessible reports. Tell it to compile a one-page PDF with your top priorities, target queries, and a quick checklist of improvements.",
+      "source": "The Rundown AI"
+    },
+    {
+      "heading": "Give ChatGPT voice control over your desktop",
+      "steps": [
+        "Download the new ChatGPT desktop app.",
+        "Open Work/Codex, enable the Computer Use toggle, and grant permissions.",
+        "Start a task, turn on Voice, and direct it out loud.",
+        "To steer a task from your phone instead, enable Remote Control in settings and connect via the mobile app's QR scanner."
+      ],
+      "source": "The Neuron"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>OpenAI says it solved a $1M Millennium Prize problem — and a researcher already working on it isn't buying the story.</b> OpenAI ran ~10,000 agents in parallel for 88 hours to produce a proof of the Navier-Stokes singularity problem; an unreleased model handled the proof, then GPT-6 Astra formalized it in Lean. NYU's Tristan Buckmaster and Anthropic's Levent Alpöge say they'd pursued the same result for a year and fed drafts into OpenAI's Codex; OpenAI denies using their work but won't rule out that usage data helped.",
+      "means": "Judge frontier AI by what it can do with thousands of agents working in parallel over days, not single prompts — and expect credit disputes like this to recur as agentic research scales.",
+      "source": "The Neuron, The Rundown AI"
+    },
+    {
+      "body": "<b>Qualcomm and Amazon struck an AI-chip deal reported at up to $60B.</b> Amazon can also acquire up to $4B in Qualcomm stock as part of the arrangement, which covers custom AI-datacenter inference chips and high-speed connectivity for AWS.",
+      "means": "Compute supply keeps diversifying beyond Nvidia — worth flagging for clients on AI-infrastructure vendor risk.",
+      "source": "The Neuron, Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Meta launched Muse, an always-on personal AI agent.</b> It runs tasks — booking, email, shopping — from its own cloud VM via a texting-style interface, integrates with Gmail, Spotify, Ticketmaster, and OpenTable, and rolls out US-only with free and $20/$100-per-month tiers.",
+      "means": "A serious agent entrant from Meta — add it to the comparison set if clients are evaluating AI-agent vendors.",
+      "source": "The Rundown AI"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>The US-Canada trade war turned real.</b> Canada's retaliatory tariffs (15-50%) on roughly $20B of US goods — steel, dairy, appliances, electronics — took effect Sept. 8 after trade talks collapsed; the US countered with more tariffs plus bans on Canadian rye whisky and motorcycles, and Trump called for a ban on sales from planemaker Bombardier, which sources parts from about 2,800 US companies across 47 states.",
+      "angle": "If any client's supply chain touches Canadian imports or exports — steel, agriculture equipment, aerospace parts — this is a live cost and planning risk to flag now, not after Q4 numbers land.",
+      "starter": "Anyone have a client with Canadian suppliers? These tariffs just went from threatened to real — worth checking exposure.",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Apple is expected to debut its first foldable iPhone today</b> — its biggest redesign since the original 2007 launch, and new hardware chief John Ternus's first major event — at roughly $2,000, about double the iPhone 17 Pro's price.",
+      "angle": "A useful case study in premium-tier product bets: Apple is testing willingness-to-pay at 2x flagship price for a still-niche form factor, since foldables remain a small share of the smartphone market.",
+      "starter": "Would you pay double for a foldable, or is this an early-adopter tax that settles down over a few generations?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>The US Commerce Department took $100M minority stakes each in three quantum computing firms</b> — D-Wave Quantum, Rigetti Computing, and Quantinuum. Shares popped as much as 10% on the news but remain down 16-32% year-to-date.",
+      "angle": "Government-as-investor in frontier compute is a trend worth watching if you advise clients in tech-adjacent sectors on where public capital and policy attention are heading next.",
+      "starter": "Did you see the government's taking equity stakes in quantum computing startups now? Feels like a new playbook, not just AI chips.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Thieves stole two Renoir paintings</b> — 1910's portrait of actress Colonna Romano and 1886's Jeune femme au puits (Young Woman at the Well) — from the Renoir Museum in Cagnes-sur-Mer, France, breaching a garden fence and cutting frame bolts in under five minutes despite a fast police response; two other paintings were abandoned in the garden. Source estimates of the stolen works' value vary widely, from roughly $2.5M combined to $10.4M each. It follows a string of recent European museum thefts, including the Louvre's roughly $100M jewel heist last year.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Did you catch there's been a wave of European museum heists this year? The Louvre job wasn't a one-off.",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>US domestic box office hit a record $4.76B from May through Labor Day</b>, edging out the 2013 record, led by Spider-Man: Brand New Day ($923M) and The Odyssey ($589M) — though still down 17% versus pre-Covid 2019 once adjusted for inflation.",
+      "angle": "No direct relevance to your work, general awareness only — though for media/entertainment clients, the inflation-adjusted gap versus 2019 is worth having in your back pocket.",
+      "starter": "Box office had its best summer ever, nominally — but adjust for inflation and it's still below 2019. Good reminder to check which number a client is actually citing.",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "openai|claims|navier-stokes-millennium-prize-disputed-by-anthropic",
+    "qualcomm-amazon|strike|ai-chip-deal-60b",
+    "meta|launches|muse-personal-agent",
+    "canada-us|escalate|retaliatory-tariffs-bombardier",
+    "apple|unveils|foldable-iphone",
+    "us-commerce|takes-stakes|quantum-computing-firms",
+    "thieves|steal|renoir-paintings-riviera-museum",
+    "us-box-office|hits|record-summer-4.76b"
+  ]
+}

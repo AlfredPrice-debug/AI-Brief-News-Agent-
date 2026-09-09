@@ -1485,6 +1485,26 @@
           "note": "Afternoon firing (4:00 PM ET slot). Run 1 already delivered today at 08:00:00-04:00, so searched Claude AI News Recap since that timestamp. Found exactly 1 new message: a forwarded Superhuman AI newsletter (subject: AI 'scam' app goes viral, sent 9:11 AM ET), ~71.5K chars of HTML, handed to a subagent to extract and summarize in full. Its Insilico/rentosertib anti-aging drug item duplicated run 1's already-covered insilico|designs|rentosertib-aging-drug fingerprint and was dropped entirely. Built 1 AI Tip (ChatGPT Work personalized-writing-style setup, step-by-step UI walkthrough, no verbatim prompt in source since it is a settings flow not a prompt) and 2 AI News items: a viral EcoGPT app drawing scam/greenwashing accusations over a debunked AI-data-center water-scarcity claim (marked low, social-trend story), and GPT-6 Astra's opaque-recurrence/recurrent-depth training method drawing safety-researcher alarm (Redwood Research's Ryan Greenblatt quoted calling it the worst development for AI security to date) -- distinct from run 1's ARC-AGI-3-scaffolding Astra fingerprint, so not a duplicate. Excluded as ads/sponsor/housekeeping: Wispr Flow and Fluency sponsor blocks, a sponsored Claude custom-skills productivity blurb, a Midjourney community-art image prompt, the Extras self-promo links, and the feedback poll. Excluded as low-value social trivia with no real facts (consistent with 9/6 and 9/7 precedent): the IN THE KNOW bullets (Astra clearing CAPTCHA puzzles, a 3D-brain-explorer claim, a Paint-drawing portrait, Gemini video-editing prompts, a Google Calendar pop-star trick). No non-AI newsletter arrived this run (Superhuman AI is 100% AI-focused), so beyond_ai is empty -- page 1 alone (1 tip + 2 news) rendered as exactly 1 page via pymupdf (pypdf unavailable in this run environment due to a broken cryptography/cffi binding, consistent with prior runs). 3 total surviving items clears the 2-item dedup minimum. brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
         }
       ]
+    },
+    "2026-09-09": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-09-09T08:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "openai|claims|navier-stokes-millennium-prize-disputed-by-anthropic",
+            "qualcomm-amazon|strike|ai-chip-deal-60b",
+            "meta|launches|muse-personal-agent",
+            "canada-us|escalate|retaliatory-tariffs-bombardier",
+            "apple|unveils|foldable-iphone",
+            "us-commerce|takes-stakes|quantum-computing-firms",
+            "thieves|steal|renoir-paintings-riviera-museum",
+            "us-box-office|hits|record-summer-4.76b"
+          ],
+          "note": "Morning firing at scheduled time (8:00 AM ET). No run-log entry existed yet for today, so searched Claude AI News Recap since yesterday run 2 (2026-09-08T16:00:00-04:00). Found exactly 4 new messages, all Alfred-forwarded between 4:25-6:32 AM ET: The Neuron and The Rundown AI (both leading with OpenAI's disputed Navier-Stokes/Millennium-Prize proof), Morning Brew ('Tit for tat' US-Canada tariffs), and 1440 Daily Digest. All 4 bodies were large HTML handed to 4 parallel subagents to extract and summarize in full. The OpenAI Navier-Stokes proof and its credit dispute with Anthropic researcher Levent Alpoge (covered by all 4 newsletters, though Morning Brew/1440 only in passing) became the lead News item, merging Neuron+Rundown detail. The Qualcomm-Amazon AI chip deal (reported up to 0B) was covered by 3 of 4 newsletters (Neuron, Morning Brew, 1440) and merged into one item. Built 2 AI Tips (Rundown's AI-search-visibility audit with a verbatim Codex prompt; Neuron's ChatGPT voice/Computer-Use/Remote-Control walkthrough, no verbatim prompt in source). Built a 4th AI News draft item (Cognition's B raise at 8B valuation + Mistral's EUR3B raise, marked low) but cut it for page-1 space after the first page-count check came back 3 pages -- not fingerprinted, may resurface -- leaving 3 news items (2 tips + 3 news on page 1). Beyond AI built from Morning Brew + 1440: the US-Canada tariff escalation/Bombardier threat (merged across both), Apple's expected foldable-iPhone debut (Morning Brew), the US Commerce Dept taking 00M stakes in 3 quantum computing firms (Morning Brew), a French Renoir museum heist (merged across both, noting the two sources gave conflicting valuations -- roughly \\.5M combined per Morning Brew vs \u0000.4M each per 1440 -- so both estimates were reported rather than picking one), and a record .76B summer box office (Morning Brew) -- 5 items. Cut for space/relevance (not fingerprinted, may resurface): DeepMind's AlphaGenome Atlas, Google/Accenture's Gemini Enterprise unit, Houthi attacks on Saudi energy sites, the 9/11 Ground Zero air-quality document release, LIV Golf's Chapter 11 filing, and Canada/France/UK's Israeli-settlement import ban. Verified at exactly 2 pages via pymupdf (pypdf unavailable in this run environment due to a broken cryptography/cffi binding, consistent with prior runs). brand/build/brand.json cache absent, so the PDF used the bundled Poppins/IM fallback palette."
+        }
+      ]
     }
   }
 }
