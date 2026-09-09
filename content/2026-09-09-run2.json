@@ -1,0 +1,44 @@
+{
+  "run": 2,
+  "runTime": "2026-09-09T16:00:00-04:00",
+  "title": "ChatGPT Gets a Sketch Tool While an Anthropic Researcher Sounds the Alarm",
+  "date_display": "Wednesday, September 9, 2026",
+  "date_slug": "9_9_26",
+  "sources": "<b>Superhuman AI</b> (Sep 9)",
+  "tldr": [
+    "ChatGPT Images 2.5 adds a 'Sketch' mode — doodle a rough idea and let the model finish it.",
+    "An Anthropic researcher's public resignation over AI-risk fears went viral and drew backing from alignment lead Evan Hubinger.",
+    "New tip: turn raw meeting notes into a full project tracker with GPT-6 Astra using one structured prompt."
+  ],
+  "tips": [
+    {
+      "heading": "Turn meeting notes into a project plan with GPT-6 Astra",
+      "steps": [
+        "Open ChatGPT, toggle on <b>Work</b>, and choose GPT-6 Astra if it's available on your plan.",
+        "Upload your meeting notes, transcript, or supporting files.",
+        "Ask Astra to extract decisions, tasks, owners, deadlines, dependencies, risks, and open questions using the prompt below.",
+        "Have Astra build the result as an editable spreadsheet, then ask it to flag blocked tasks, missing owners, and conflicting deadlines before you finalize it."
+      ],
+      "prompt": "Turn these meeting notes into an actionable project plan. Extract every decision and task, assign the owner named in the notes, capture deadlines and dependencies, and flag anything that has no clear owner or due date. Do not invent missing information. Organize the output into a project tracker with these columns: Task, Owner, Status, Deadline, Dependency, Priority, and Risk.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>OpenAI ships ChatGPT Images 2.5 with a new 'Sketch' mode.</b> The upgrade promises sharper detail and up to 50% faster generation than Images 2.0, and lets users doodle a rough idea directly in ChatGPT for the model to turn into a polished image.",
+      "means": "A fast way to mock up visual concepts (wireframes, diagrams, marketing sketches) in client-facing work without leaving the chat window — worth a quick trial before your next visual deliverable.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Anthropic researcher's resignation over AI-risk fears goes viral.</b> Researcher Jacob Coxon publicly quit Anthropic citing safety concerns; his resignation post (29M+ views) drew public backing from alignment-science lead Evan Hubinger, who said he sees a greater than 10% chance AI could \"kill all humans\" within a decade.",
+      "means": "A senior safety researcher publicly stating that number is a data point worth having ready for any client conversation about AI governance or existential-risk framing — expect this to keep surfacing.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "openai|launches|chatgpt-images-2.5-sketch-mode",
+    "anthropic|researcher-resigns|ai-risk-warning-viral",
+    "superhuman|tip|meeting-notes-to-project-plan-astra"
+  ]
+}
