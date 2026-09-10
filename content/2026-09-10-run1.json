@@ -1,0 +1,79 @@
+{
+  "run": 1,
+  "runTime": "2026-09-10T08:00:00-04:00",
+  "title": "Anthropic's Extinction Debate, Apple's All-AI Keynote, and Oil Breaks $100",
+  "date_display": "Thursday, September 10, 2026",
+  "date_slug": "9_10_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Superhuman AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Sep 10)",
+  "tldr": [
+    "An Anthropic researcher's viral resignation post has the company's own alignment lead publicly estimating a greater than 10% chance AI kills everyone within a decade.",
+    "Apple's first keynote under new CEO John Ternus rebrands the entire lineup as \"AI devices,\" led by a $1,999 foldable iPhone Duo.",
+    "Oil just broke $100 a barrel on Iran-related escalation, dragging US markets down for a third straight day."
+  ],
+  "tips": [
+    {
+      "heading": "Audit your spreadsheets before you trust them",
+      "steps": [
+        "Open ChatGPT (or your LLM of choice) and attach the spreadsheet you want checked.",
+        "Use the prompt below, filling in the bracketed context for your use case.",
+        "Review the audit table it returns: Sheet/Cell, Issue, Why It Matters, Severity, Recommended Fix.",
+        "Fix flagged issues before the numbers go into a client deliverable."
+      ],
+      "prompt": "Act as a meticulous spreadsheet auditor specializing in [finance/operations/budgeting/forecasting]. Audit the attached [Excel/Google Sheets] file for errors, inconsistencies, and risks. The spreadsheet is used for [describe purpose], and the most important outputs are [revenue forecast/cash balance/budget variance/KPIs/etc.].\n\nReview every relevant worksheet and check for:\n\nBroken, inconsistent, or suspicious formulas\nHard-coded values where formulas would normally be expected\nMissing, blank, duplicated, or incorrectly formatted data\nInconsistent assumptions, units, dates, currencies, or percentages\nTotals or subtotals that do not reconcile\nErrors that could materially affect the spreadsheet's key outputs\n\nCreate an audit table containing: Sheet/Cell, Issue, Why It Matters, Severity, and Recommended Fix.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Anthropic researcher's viral resignation reignites the AI extinction debate.</b> Jacob Coxon, who worked on pretraining at both OpenAI and Anthropic, quit this week (two months before his equity vested) and told NBC News the industry believes recursive self-improvement is roughly a year away and isn't fully understood. Anthropic's Alignment Science lead Evan Hubinger publicly backed the concern, writing he believes there is a greater than 10% chance AI kills all humans within the next decade.",
+      "means": "This isn't fringe commentary anymore — it's a frontier lab's own alignment lead putting a number on existential risk in public. Expect more clients to start asking what \"responsible AI\" commitments actually mean in practice.",
+      "source": "The Neuron, The Rundown AI, Morning Brew"
+    },
+    {
+      "body": "<b>Apple's first Ternus-era keynote rebrands the whole lineup as \"AI devices.\"</b> New CEO John Ternus unveiled the foldable iPhone Duo starting at $1,999 (Morning Brew reports a $2,000-3,000 range depending on storage), an upgraded Siri AI, a photo-authentication feature called Reference Image, and new AI features across Apple Watch and AirPods. Morgan Stanley estimates 6.5 million Duo units will ship in fiscal Q1 alone, about $14 billion in sales.",
+      "means": "AI is now table stakes on consumer hardware, not a differentiator — worth updating any client narrative that still treats AI as an add-on feature rather than the baseline expectation.",
+      "source": "Superhuman AI, Morning Brew, 1440 Daily Digest"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Oil breaks $100 a barrel for the first time since July.</b> Brent and US crude both hit their highest levels since late May after the US said it struck Iranian oil tankers and Iran attacked ships in the Strait of Hormuz; Saudi oil exports fell to a 13-year low after Houthi strikes on its energy infrastructure. US stocks fell for a third straight day.",
+      "angle": "A real cost-pressure signal for any client with fuel, logistics, or travel exposure heading into Q4 planning.",
+      "starter": "Anyone else re-checking Q4 travel and logistics budgets now that oil's back over $100?",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Trump escalates the trade fight with Canada.</b> New executive orders ban imports of Canadian whey products, several alcohol categories, and motorcycles starting Sept. 29, on top of a recent tariff hike on $20 billion of Canadian goods. Canada has already retaliated dollar-for-dollar.",
+      "angle": "Worth a proactive check-in with any client whose supply chain or vendor base touches Canada.",
+      "starter": "Have any of our clients with Canadian suppliers flagged the new tariffs yet?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>The 10-year Treasury yield hit its highest level in about three years,</b> prompting the Treasury Department to launch a $6 billion buyback of its own long-dated debt, triple its usual size, to try to steady the bond market.",
+      "angle": "Rising borrowing costs are a live variable for any client currently pricing financing on a new initiative or capital project.",
+      "starter": "With the 10-year at a three-year high, is anyone re-underwriting project financing assumptions?",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Trump pledged a $5,000 payment to every American adult</b> if Republicans keep control of Congress, in his keynote at the GOP's first midterm convention in Dallas.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Did you catch Trump's $5K pledge at the RNC convention? Curious whether anyone takes that as real policy.",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>A Utah judge ordered Tyler Robinson, 23, to stand trial on seven counts, including aggravated murder,</b> in the killing of Charlie Kirk, as the one-year anniversary of the shooting passed this week.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Hard to believe it's been a year since the Kirk shooting — did you see the trial news this week?",
+      "source": "1440 Daily Digest"
+    }
+  ],
+  "fingerprints": [
+    "anthropic|researcher-resigns|coxon-extinction-risk-viral",
+    "apple|holds|first-ternus-keynote-ai-devices",
+    "oil|breaks|100-barrel-iran-escalation",
+    "us-canada|escalate|import-bans-tariffs",
+    "treasury|launches|6b-debt-buyback-yields-3yr-high",
+    "rnc|pledges|5000-dividend-midterm-convention",
+    "charlie-kirk|anniversary|gunman-ordered-trial"
+  ]
+}
