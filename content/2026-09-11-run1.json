@@ -1,0 +1,96 @@
+{
+  "run": 1,
+  "runTime": "2026-09-11T08:00:00-04:00",
+  "title": "Anthropic Exposes Global Claude Misuse as OpenAI Courts Wall Street",
+  "date_display": "Friday, September 11, 2026",
+  "date_slug": "9_11_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440</b> (Sep 11)",
+  "tldr": [
+    "Anthropic's new threat report discloses bioweapons-research attempts blocked on Claude and accuses Chinese labs of mass-distilling it via fraudulent accounts.",
+    "OpenAI launched ChatGPT for Financial Services, while Visa, Mastercard, and Ant International moved to verify AI agents making payments.",
+    "Oil topped $100/barrel and US wholesale prices jumped 5.4% year-over-year, rattling markets ahead of next week's Fed meeting."
+  ],
+  "tips": [
+    {
+      "heading": "Set up a recurring ChatGPT Work project for repeat tasks",
+      "steps": [
+        "Create a local folder with a two-digit prefix for the project.",
+        "In ChatGPT desktop: New chat &gt; Work &gt; Choose project &gt; New project, name it, and select that folder.",
+        "Tell ChatGPT about the project and ask it to propose a structure (e.g. turning meeting notes into action items and weekly plans), then feed it your input documents once.",
+        "Once it's processed correctly, ask it to turn the workflow into three scheduled automations, then into callable \"skills\" triggered by a slash command."
+      ],
+      "source": "The Rundown AI"
+    },
+    {
+      "heading": "Turn your AI corrections into a personal benchmark",
+      "steps": [
+        "Pick one recurring task and save the original prompt plus source files.",
+        "Review the first output and turn each correction into one yes-or-no check, like &quot;one idea per slide.&quot;",
+        "Grade the output yourself, then have AI grade the same checklist without seeing your scores.",
+        "Tighten any check where you disagree, then rerun the same test across models."
+      ],
+      "source": "The Neuron"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Anthropic discloses global Claude misuse, accuses Chinese labs of mass-distillation.</b> A 150+ page threat report details 8 months of disrupted misuse, including 5 bioweapons-research cases (no intent asserted), a Yemen actor building rocket-guidance software, and a consultant surveilling 25M Mali phone lines. Separately, Anthropic named seven Chinese labs (Alibaba, DeepSeek, Moonshot, Xiaomi, and others) running thousands of fraudulent accounts to distill Claude's outputs, with Moonshot and DeepSeek allegedly reselling Claude responses as their own.",
+      "means": "A live case study for any client conversation on AI governance, model-provenance risk, or vendor competitive dynamics.",
+      "source": "The Rundown AI, The Neuron, Morning Brew, 1440"
+    },
+    {
+      "body": "<b>OpenAI launches ChatGPT for Financial Services.</b> Built on GPT-6 Astra, the new tier bundles PitchBook, Crunchbase, and LSEG data for valuation models, research, and pitch decks; OpenAI is pausing new $200 Pro signups to preserve Astra capacity for existing users.",
+      "means": "A direct template for vertical AI products worth referencing when advising finance or consulting clients on their own AI packaging.",
+      "source": "The Neuron, The Rundown AI"
+    },
+    {
+      "body": "<b>Visa, Mastercard, and Ant International back AI-agent payment verification.</b> The three launched a joint effort to identify and verify AI agents making purchases on a user's behalf.",
+      "means": "Foundational infrastructure for agentic commerce &mdash; worth tracking if any client roadmap touches AI checkout or agent-initiated transactions.",
+      "source": "The Neuron"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>The US marks 25 years since 9/11.</b> Ceremonies were held at the Pentagon, the NYC ground zero memorial, and Shanksville for the nearly 3,000 killed; NYC's mayor also released 170,000 pages of documents suggesting officials knew the post-attack air was toxic while telling the public otherwise.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Hard to believe it's been 25 years &mdash; did your team do anything to mark it today?",
+      "source": "Morning Brew, 1440"
+    },
+    {
+      "body": "<b>Oil tops $100/barrel and inflation data pushes rates higher.</b> US wholesale (PPI) prices rose 5.4% year-over-year in August, the 30-year mortgage rate topped 7% for the first time since May 2025, and the ECB hiked its deposit rate to 2.5% on surging energy costs &mdash; all ahead of next week's Fed meeting.",
+      "angle": "A live data point for any client budget conversation banking on rate relief this quarter &mdash; borrowing costs are still climbing, not falling.",
+      "starter": "Are we still modeling a rate cut this quarter, or should we build the plan around costs staying elevated?",
+      "source": "1440, Morning Brew"
+    },
+    {
+      "body": "<b>Houthi rebels seize the Yemeni port city of Mokha.</b> The Iran-backed group's advance risks a return to full civil war after the 2022 ceasefire, adding to Red Sea shipping-route tension.",
+      "angle": "Worth flagging to any client with Red Sea-dependent shipping or logistics exposure.",
+      "starter": "Anyone tracking Red Sea shipping costs &mdash; is this Yemen news already showing up in freight rates?",
+      "source": "Morning Brew, 1440"
+    },
+    {
+      "body": "<b>Oracle reports about 30% year-over-year revenue growth,</b> boosting its stock price.",
+      "angle": "A concrete data point on enterprise cloud demand worth citing in tech-market conversations.",
+      "starter": "Oracle's posting 30% growth right now &mdash; is that showing up anywhere in our cloud-spend conversations with clients?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>LeBron James signs with prediction-market platform Polymarket</b> as his DraftKings deal expires; the NBA may announce its own prediction-market partnership next month, while several states are suing over whether such platforms must follow gambling law.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Prediction markets keep creeping into sports &mdash; curious how long before that regulatory fight lands somewhere closer to home.",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "anthropic|discloses|claude-misuse-and-chinese-distillation",
+    "openai|launches|chatgpt-financial-services",
+    "visa-mastercard-ant|launch|ai-agent-payment-verification",
+    "rundown|tip|chatgpt-work-project-automation",
+    "theneuron|tip|ai-benchmark-from-corrections",
+    "911|marks|25th-anniversary",
+    "markets|slide-as|oil-tops-100-and-rates-rise",
+    "houthi-rebels|seize|red-sea-port-mokha",
+    "oracle|reports|30pct-revenue-growth",
+    "lebron-james|partners-with|polymarket"
+  ]
+}

@@ -1542,6 +1542,28 @@
           "note": "Afternoon firing at scheduled time (4:00 PM ET). Searched Claude AI News Recap since run 1 (2026-09-10T08:00:00-04:00). The newest message in the folder was received at 11:11 UTC (7:11 AM ET), before the run 1 cutoff -- zero new messages arrived this run."
         }
       ]
+    },
+    "2026-09-11": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-09-11T08:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "anthropic|discloses|claude-misuse-and-chinese-distillation",
+            "openai|launches|chatgpt-financial-services",
+            "visa-mastercard-ant|launch|ai-agent-payment-verification",
+            "rundown|tip|chatgpt-work-project-automation",
+            "theneuron|tip|ai-benchmark-from-corrections",
+            "911|marks|25th-anniversary",
+            "markets|slide-as|oil-tops-100-and-rates-rise",
+            "houthi-rebels|seize|red-sea-port-mokha",
+            "oracle|reports|30pct-revenue-growth",
+            "lebron-james|partners-with|polymarket"
+          ],
+          "note": "Morning firing at scheduled time (8:00 AM ET). No run-log entry existed yet for today; yesterday run 2 (2026-09-10T16:05:00-04:00) was skipped_no_mail, so per the fallback rule searched since the most recent successful run, yesterday run 1 (2026-09-10T08:00:00-04:00). Found exactly 4 new messages, all forwarded 8:28-10:33 AM ET today: The Neuron, The Rundown AI, Morning Brew, and 1440. All 4 bodies were large HTML (67k-81k chars) handed to 4 parallel subagents to slice and summarize in full. Anthropic's new Claude-misuse threat report (bioweapons research cases, Yemen rocket-guidance actor, Mali surveillance) and its accusation that seven Chinese labs (Alibaba, DeepSeek, Moonshot, Xiaomi, others) mass-distilled Claude via fraudulent accounts were covered by all 4 newsletters and merged into one lead news item. OpenAI's ChatGPT for Financial Services launch was covered by both The Neuron and The Rundown AI and merged into one item. Beyond AI overlaps merged across Morning Brew + 1440: the 9/11 25th-anniversary coverage, the mortgage-rate/PPI/ECB rate story, and the Houthi Mokha seizure were each reported by both and combined into single items. Built 2 AI Tips (Rundown's ChatGPT Work project workflow, Neuron's AI-correction benchmark method, its steps quoted directly from the newsletter) and 3 AI News items (Anthropic report, ChatGPT for Financial Services, Visa/Mastercard/Ant AI-agent payment verification). A 4th news item (OpenAI's claimed \"substantial progress\" on a second, unnamed Millennium Prize problem, The Neuron only, speculative/unconfirmed per the newsletter itself) was drafted and marked low-impact, but caused the last news card's source line to overlap the page-1 footer on visual render (pymupdf page-image check, not just page count) -- cut for space, not fingerprinted, may resurface. Beyond AI built from Morning Brew + 1440: 9/11 anniversary, the oil/PPI/mortgage/ECB rate-rise cluster, Houthi seizure of Mokha, Oracle's ~30% revenue growth, and LeBron James/Polymarket -- 5 items, mixing direct-relevance and general-awareness items per the instructions. Cut for space (not fingerprinted, may resurface): OpenAI Agents API/Codex harness, DeepSeek V4.1-Flash pricing, Cognition SWE-2/Devin Voice, UMG+ElevenLabs remix platform, Andrew Tulloch's Anthropic move, Character.AI companion-wellbeing study, NVIDIA Australia data-center deal, Trump's \\,000 dividend promise, Bayeux Tapestry, Kimmel/FCC dispute, record August heat, NFL kickoff, Algeria-UAE break. Verified at exactly 2 pages via pymupdf page-image renders (pypdf and its cryptography/cffi dependency are broken in this run environment via pip network timeout, consistent with prior runs -- installed pymupdf instead, which built cleanly). build/brand.json cache absent, so the PDF used the bundled Poppins/Impact Makers fallback palette."
+        }
+      ]
     }
   }
 }
