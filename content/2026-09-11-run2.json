@@ -1,0 +1,51 @@
+{
+  "run": 2,
+  "runTime": "2026-09-11T16:08:15-04:00",
+  "title": "AI Music Gets Licensed, Nvidia Bets on 70% Growth, and a Digital Human Learns to Listen",
+  "date_display": "Friday, September 11, 2026",
+  "date_slug": "9_11_26",
+  "sources": "<b>The AI Field</b>, <b>Superhuman AI</b> (Sep 11)",
+  "tldr": [
+    "Suno relaunched on music licensed from Warner, BMG, and Believe, and Universal Music Group separately signed ElevenLabs for a fan-remix platform — the two biggest AI-audio bets both leaned toward paying labels rather than fighting them.",
+    "Nvidia's Jensen Huang told a Goldman Sachs conference the company expects roughly 70% revenue growth next year, saying it's \"tracking every gigawatt\" of power and land the major labs will need.",
+    "Tavus launched Phoenix 4.5, a hyper-realistic AI human model with lifelike nonverbal cues that generates video in 134ms — plus a tip for turning ChatGPT Work into a recurring Monday-morning brief."
+  ],
+  "tips": [
+    {
+      "heading": "Automate a recurring Monday work brief in ChatGPT Work",
+      "steps": [
+        "Open ChatGPT and toggle on <b>Work</b>.",
+        "Go to Plugins and connect the sources you want reviewed, such as Gmail or Slack.",
+        "Start a new Work chat and tell ChatGPT exactly what should appear in your Monday brief using the sample prompt below.",
+        "Review the proposed instructions and schedule, confirm the task, then turn on notifications under Settings &gt; Notifications so the brief reaches you automatically each Monday."
+      ],
+      "prompt": "Every Monday at [add time], create my weekly work brief. Review relevant activity from the previous week in [Gmail/Slack/Teams]. Summarize important decisions, unfinished tasks, requests that need a response, blockers, and anything I should follow up on. Organize the brief into: Top Priorities, Follow-Ups, Decisions, Blockers, and Recommended Next Actions. Schedule the task for every Monday at [your preferred time].",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>AI music gets licensed as Suno retrains and Universal signs ElevenLabs.</b> Suno launched v6, built entirely on licensed music from Warner Music Group, BMG, and Believe, and is retiring every previous model (v6-mini stays free). A day later, Universal Music Group signed a multi-year deal with the $11B voice-AI company ElevenLabs to build a platform where fans can remix and reinterpret songs from artists who opt in — ElevenLabs' first major-label deal. Universal and Sony are still suing Suno over how its earlier models were trained.",
+      "means": "A concrete precedent for any client using AI-generated media commercially: the direction of travel is licensed training data, not fair-use arguments — worth checking what your own AI tools were trained on before scaling usage.",
+      "source": "The AI Field"
+    },
+    {
+      "body": "<b>Tavus launches Phoenix 4.5, its most realistic AI human model yet.</b> The model renders lifelike AI humans using nonverbal cues — micro-movements and subtle expression shifts — to signal active listening, and claims to be the fastest human-rendering model available at 134ms.",
+      "means": "Worth a look if any client project involves AI-driven customer-facing avatars or video agents — latency and \"presence\" are becoming real differentiators, not just a demo gimmick.",
+      "source": "The AI Field"
+    },
+    {
+      "body": "<b>Nvidia expects about 70% revenue growth next year.</b> CEO Jensen Huang told a Goldman Sachs conference that Nvidia powers \"every model\" at the major labs and is \"tracking every single gigawatt of land, power, shell around the world.\"",
+      "means": "A useful data point on how much runway the major labs still expect — useful context if a client asks whether AI infrastructure spending is peaking.",
+      "source": "The AI Field",
+      "low": true
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "superhuman|tip|monday-work-brief-automation",
+    "ai-music|gets-licensed|suno-v6-umg-elevenlabs",
+    "tavus|launches|phoenix-4.5-human-model",
+    "nvidia|forecasts|70pct-revenue-growth"
+  ]
+}
