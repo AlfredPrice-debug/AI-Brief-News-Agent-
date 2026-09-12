@@ -1,0 +1,44 @@
+{
+  "run": 2,
+  "runTime": "2026-09-12T16:00:00-04:00",
+  "title": "Robots Protest AI Oversight in Warsaw, Tesla's Cybercab Hits Turbulence",
+  "date_display": "Saturday, September 12, 2026",
+  "date_slug": "9_12_26",
+  "sources": "<b>Superhuman AI</b> (Sep 12)",
+  "tldr": [
+    "About 30 humanoid and quadruped robots marched outside Poland's Digital Affairs Ministry demanding stricter AI regulation, and the video went viral.",
+    "Tesla's week-old Cybercab robotaxi is already under federal investigation, with reports of software glitches and a hidden manual-override joystick.",
+    "China is raising the IPO bar for robotics startups after Unitree's shares surged over 5x then crashed roughly 45%, now requiring real revenue proof before going public."
+  ],
+  "tips": [],
+  "news": [
+    {
+      "body": "<b>Robots stage a protest in Poland to demand AI oversight.</b> About 30 humanoid and quadruped robots marched outside Poland's Digital Affairs Ministry in Warsaw waving signs calling for stricter AI regulation, organized by the group Democratism to highlight fears that AI and robotics could replace physical and cognitive jobs. The video went viral on social media.",
+      "means": "A useful data point on public sentiment: the optics of automation anxiety are becoming shareable spectacle, which shapes the regulatory and client conversations you'll be walking into.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Tesla's Cybercab draws a federal investigation and safety concerns a week into its Austin launch.</b> Regulators are auditing the robotaxi's certification under US safety rules, some riders have reported software glitches and a hidden virtual joystick they \"weren't supposed to see,\" and Austin firefighters warned that a disabled Cybercab could be hard to move without physical controls.",
+      "means": "A cautionary case study for any client rolling out autonomous or AI-driven products fast: launch-week incidents and safety-agency pushback can dominate the narrative regardless of the underlying tech's quality.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>China raises the IPO bar for robotics startups after Unitree's volatile debut.</b> Chinese regulators are reportedly asking robotics companies seeking to go public to show recurring revenue, shrinking losses, or genuine technological breakthroughs, following Unitree's stock surging more than 5x before tumbling roughly 45%.",
+      "means": "A signal that investor enthusiasm for humanoid robotics may be getting ahead of business fundamentals, worth flagging if clients are evaluating robotics or embodied-AI vendors on hype rather than unit economics.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Figure AI signs a $3.5B compute deal for up to 100,000 Nvidia Vera Rubin GPUs.</b> The deal gives the humanoid-robotics company more capacity to train its Helix AI models.",
+      "means": "Another sign of how much capital is flowing into humanoid-AI training infrastructure, though the deal itself is more a scale marker than something that changes your day-to-day work.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "poland|robots-stage|ai-oversight-protest",
+    "tesla|cybercab-draws|federal-investigation-and-glitches",
+    "china|raises-bar-for|robotics-ipos",
+    "figure-ai|signs|3.5b-nvidia-compute-deal"
+  ]
+}
