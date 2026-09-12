@@ -1,0 +1,67 @@
+{
+  "run": 1,
+  "runTime": "2026-09-12T08:08:23-04:00",
+  "title": "Altman Opens the Door to Slowing AI Down as Oil Tops $100 and the Fed Eyes a Hike",
+  "date_display": "Saturday, September 12, 2026",
+  "date_slug": "9_12_26",
+  "sources": "<b>Morning Brew</b>, <b>1440</b> (Sep 12)",
+  "tldr": [
+    "Sam Altman told OpenAI staff the company is open to slowing AI development and hopes rivals do too, as both OpenAI and Anthropic prepare for IPOs.",
+    "Anthropic disclosed it stopped Iran-linked operators who were trying to use Claude to help target US ships.",
+    "Hot August CPI data (+3.4% y/y) has traders pricing an 85-90% chance the Fed hikes rates next week, while Houthi advances in the Red Sea pushed oil past $100/barrel."
+  ],
+  "tips": [],
+  "news": [
+    {
+      "body": "<b>Sam Altman signals OpenAI is open to slowing AI development.</b> Per Bloomberg, the OpenAI CEO told employees the company would consider slowing its pace and hopes other labs do the same, though sources say they may not follow. It comes as OpenAI and rival Anthropic (which has publicly called for a global slowdown) both prepare for IPOs, and after departing staff at both companies raised safety concerns.",
+      "means": "A rare public signal from OpenAI's leadership on pacing, not just capability. Worth keeping in your back pocket for client conversations about vendor roadmaps and how seriously labs are treating safety messaging ahead of their IPOs.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Anthropic says it stopped Iran-linked operators trying to use Claude to target US ships.</b> The disclosure came in Anthropic's latest threat intelligence report.",
+      "means": "Another data point in Anthropic's pattern of publishing misuse disclosures. Useful when clients ask how AI vendors are handling nation-state abuse of their models, especially with the Iran conflict escalating elsewhere in today's news.",
+      "source": "Morning Brew"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Hot inflation data makes a Fed rate hike look near-certain.</b> The CPI rose 0.4% in August and 3.4% over the past 12 months (core CPI +0.3%). Traders are pricing in an 85-90% chance the Fed raises rates a quarter point next week, per CME Group data and futures markets, up from roughly 70% before the report. New Fed Chair Kevin Warsh would be hiking for the first time in three years.",
+      "angle": "If you have clients modeling budgets or capex around cheaper borrowing this year, this is a live reason to revisit those assumptions.",
+      "starter": "Anyone still planning around a rate cut this year, or is everyone bracing for a hike now?",
+      "source": "Morning Brew, 1440"
+    },
+    {
+      "body": "<b>Houthi rebels seize a key Red Sea island as oil tops $100 a barrel.</b> Iran-backed Houthi forces captured Perim Island in the Bab el-Mandeb Strait, a vital corridor for Saudi oil shipments, a day after taking a nearby Yemeni port. Saudi Arabia also shut down a major oil pipeline following a drone strike it blames on Iraq. Oil crossed $100/barrel for the first time since May, up nearly 8% this week, and diesel prices hit record highs above $6/gallon.",
+      "angle": "Worth flagging to any client with freight, logistics, or fuel-exposed cost lines — this is the kind of input-cost shock that shows up in Q4 budget reviews.",
+      "starter": "Has anyone's ops team started pricing in higher fuel and freight costs yet, or are we waiting to see if this holds?",
+      "source": "Morning Brew, 1440"
+    },
+    {
+      "body": "<b>CDC declares the nation's largest-ever cyclosporiasis outbreak over.</b> The outbreak totaled 12,883 lab-confirmed cases across 21 states since May, traced in part to iceberg lettuce grown by Taylor Farms in Mexico, which issued a voluntary recall in July. The FDA is still investigating other potential sources.",
+      "angle": "A good real-world case study if you're advising anyone in food, retail, or restaurants on supply-chain traceability and recall response.",
+      "starter": "Did you see how long it took to trace that lettuce outbreak back to one grower? Good test case for how fast a supply chain can actually respond.",
+      "source": "Morning Brew, 1440"
+    },
+    {
+      "body": "<b>US Open finals set for the weekend.</b> Aryna Sabalenka, the two-time defending champion, faces new world No. 1 Elena Rybakina in today's women's final. Ben Shelton, who beat Frances Tiafoe in four sets, plays Alexander Zverev tomorrow for the men's title -- Shelton would be the first Black man to win the US Open since Arthur Ashe in 1972.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Are you watching the US Open final this weekend? Shelton's run has been fun to follow.",
+      "source": "Morning Brew, 1440"
+    },
+    {
+      "body": "<b>CIA releases pre-9/11 intelligence sent to the White House.</b> The agency released 69 previously unseen briefs warning about Osama bin Laden and al-Qaida, including one that warned President Clinton of a potential plot to fly an explosive-packed plane into a US city. Experts say the documents reaffirm the US failed to act on several warnings before the attacks.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Wild that they're still declassifying pre-9/11 warnings 25 years later. Makes you wonder what else is sitting in a file somewhere.",
+      "source": "1440"
+    }
+  ],
+  "fingerprints": [
+    "altman|signals-openness-to|slowing-ai-development",
+    "anthropic|stops|iran-linked-operators-targeting-us-ships",
+    "fed|likely-hikes-rates|cpi-inflation-3.4pct",
+    "houthis|seize|perim-island-red-sea-oil-chokepoint",
+    "cdc|declares-over|cyclosporiasis-outbreak",
+    "us-open|hosts|shelton-zverev-sabalenka-rybakina-finals",
+    "cia|releases|pre-9-11-intelligence-briefs"
+  ]
+}
