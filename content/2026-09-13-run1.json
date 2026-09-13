@@ -1,0 +1,47 @@
+{
+  "run": 1,
+  "runTime": "2026-09-13T08:00:00-04:00",
+  "title": "AI Screens 90% of Job Applications as Work Trials and LinkedIn DMs Make a Comeback",
+  "date_display": "Sunday, September 13, 2026",
+  "date_slug": "9_13_26",
+  "sources": "<b>Hiring Brew</b> (Morning Brew), Sep 13",
+  "tldr": [
+    "AI now touches nearly every stage of hiring — 90% of US employers screen applications with AI, and nearly two-thirds of job seekers say they've been interviewed by an AI bot, even though most hiring managers can't actually spot AI-written applications.",
+    "With AI-polished résumés flooding applicant pools, more employers are turning to paid work trials to genuinely vet candidates — about two-thirds already use some form of skill-based hiring for entry-level roles.",
+    "Morning Brew's own talent chief says referrals drive 8 of 10 hires, and job seekers get better odds cold-DMing mid-level employees on LinkedIn than reaching for the top."
+  ],
+  "tips": [],
+  "news": [
+    {
+      "body": "<b>AI now touches nearly every stage of the hiring funnel — and most managers can't tell.</b> Job seekers increasingly use AI to write résumés and cover letters, get screened by AI-powered applicant tracking systems, are interviewed by AI bots, and undergo AI background checks. A Stanford study found 90% of US employers now use AI in screening, and Greenhouse data shows nearly two-thirds of job seekers say they've been interviewed by an AI bot. Yet a Software Finder survey found 60% of hiring managers believe they can spot AI-written applications, while only about 25% actually can — and the average job posting now draws 243 applications versus 89 three years ago.",
+      "means": "Relevant to any hiring-process or workforce-advisory work: naive AI screening is likely both over-filtering good candidates and under-catching AI-generated ones. Worth raising with clients leaning on AI ATS tools without validating their actual detection accuracy.",
+      "source": "Hiring Brew (Morning Brew)"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Paid work trials are making a comeback as AI-polished résumés flood applicant pools.</b> More employers are testing candidates with real work before hiring — anywhere from a short off-site task to a full week in-office (trials must be paid if the work benefits the company). About two-thirds of companies now use some form of skill-based hiring for entry-level roles, per a 2025 NACE survey.",
+      "angle": "Directly relevant — skill-based hiring and work-trial design sits squarely in workforce-strategy consulting territory, especially for clients rethinking screening funnels flooded by AI-generated applications.",
+      "starter": "Some companies are running week-long paid work trials instead of just interviewing — worth floating to any client rethinking their screening funnel?",
+      "source": "Hiring Brew (Morning Brew)"
+    },
+    {
+      "body": "<b>Morning Brew's own talent chief says referrals — and the right LinkedIn DM — beat cold applying.</b> Lily Mittman, VP of Talent Acquisition, says about 8 of 10 hires at the company come through internal referrals. Her advice for job seekers without a direct connection: target a mid-level employee on LinkedIn rather than a senior one — they get fewer inbound messages and are more likely to respond, especially where a referral bonus creates mutual incentive.",
+      "angle": "Useful for our own recruiting and practice growth — referral-based outreach and targeting mid-level employees over senior ones is a cheap, concrete tactic worth testing.",
+      "starter": "Apparently the smart LinkedIn move is DMing mid-level folks, not the VP — anyone tried that for referrals?",
+      "source": "Hiring Brew (Morning Brew)"
+    },
+    {
+      "body": "<b>A field guide to 2026's LinkedIn hiring vocabulary.</b> Job-hugging: staying put in your current role through the hiring slowdown. Lily-padding: hopping role-to-role, sometimes across industries, to build skills toward a senior role (can raise red flags with employers). Career catfishing: candidates exaggerating qualifications or ghosting after accepting a job — or employers misrepresenting the role/culture. Doomjobbing: compulsively mass-applying for a dopamine hit, often ineffective.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Have you heard 'job-hugging'? Apparently staying put is the new hiring-slowdown strategy.",
+      "source": "Hiring Brew (Morning Brew)"
+    }
+  ],
+  "fingerprints": [
+    "ai|screens|90pct-us-employers-hiring",
+    "employers|revive|paid-work-trials-ai-resumes",
+    "morning-brew|shares|referral-linkedin-mid-level-tip",
+    "linkedin|coins|job-hugging-lily-padding-buzzwords"
+  ]
+}
