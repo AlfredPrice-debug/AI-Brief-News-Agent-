@@ -73,6 +73,15 @@ python build/build_brief.py content/2026-07-24-run1.json
 
 **Want it to run automatically, twice a day?** See **[ROUTINE.md](ROUTINE.md)** — it has the two copy-paste prompts and how the pair of cloud Routines is scheduled for 8 AM / 4 PM Eastern (including a ready-made `/ai-brief` command for a manual test run).
 
+## Optional: post to Discord
+Every run that pushes a new `content/*.json` to `main` also triggers `.github/workflows/discord-notify.yml`, which posts the brief's title, TL;DR, and every Tips/News/Beyond AI item as a Discord embed — text only, the PDF is linked (via its GitHub URL) and never uploaded.
+
+**Setup (one-time):**
+1. In the target Discord channel: **Channel Settings → Integrations → Webhooks → New Webhook**, then **Copy Webhook URL**.
+2. In this repo: **Settings → Secrets and variables → Actions → New repository secret**, name it `DISCORD_WEBHOOK_URL`, and paste the webhook URL.
+
+That's it — no further changes needed; skipped runs (no new `content/*.json`) don't trigger a post. To test it manually against an existing brief: `DISCORD_WEBHOOK_URL=... python build/notify_discord.py content/2026-09-13-run1.json "briefs/<matching pdf filename>.pdf" <owner>/<repo>`.
+
 ## Repo layout
 | Path | Purpose |
 |---|---|
@@ -82,6 +91,8 @@ python build/build_brief.py content/2026-07-24-run1.json
 | `prompt-afternoon.txt` | Prompt for the 4 PM Routine (run 2). |
 | `template/brief_template.html` | 2-page layout (AI page + Beyond AI page) + brand CSS. |
 | `build/build_brief.py` | Renders a content JSON → branded PDF via headless Chrome. |
+| `build/notify_discord.py` | Posts a brief's content as a Discord embed (see **Optional: post to Discord**). |
+| `.github/workflows/discord-notify.yml` | Triggers the Discord post on every push that adds a `content/*.json`. |
 | `build/brand.example.json` | Shape of the brand-folder cache (`build/brand.json`, gitignored). |
 | `content/2026-07-24-run1.json` | Example of a run's content (v2 schema). |
 | `state/run-log.json` | Per-day run/dedup state; read and updated on every run. |

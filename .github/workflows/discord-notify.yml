@@ -1,0 +1,49 @@
+name: Notify Discord on new AI Brief
+
+# Fires whenever a run pushes a new content/*.json to main (every AI Brief
+# run does this in the same commit as its briefs/*.pdf). Posts the brief's
+# title/TL;DR/items as a Discord embed with a link to the PDF -- text only,
+# the PDF itself is never uploaded to Discord.
+#
+# Setup: add a repo secret named DISCORD_WEBHOOK_URL with a webhook URL from
+# the target channel (Discord: channel settings > Integrations > Webhooks >
+# New Webhook > Copy Webhook URL), under Settings > Secrets and variables >
+# Actions > New repository secret.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/*.json"
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Post one Discord message per commit that added a brief
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          REPO: ${{ github.repository }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: |
+          set -e
+          if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            COMMITS="$AFTER"
+          else
+            COMMITS=$(git rev-list --reverse "$BEFORE..$AFTER")
+          fi
+
+          for sha in $COMMITS; do
+            FILES=$(git diff-tree --no-commit-id --name-only -r "$sha")
+            CONTENT_FILE=$(echo "$FILES" | grep -E '^content/.*\.json$' | head -n1 || true)
+            PDF_FILE=$(echo "$FILES" | grep -E '^briefs/.*\.pdf$' | head -n1 || true)
+            if [ -z "$CONTENT_FILE" ]; then
+              continue
+            fi
+            echo "Notifying for $sha: content=$CONTENT_FILE pdf=$PDF_FILE"
+            python3 build/notify_discord.py "$CONTENT_FILE" "$PDF_FILE" "$REPO"
+          done
