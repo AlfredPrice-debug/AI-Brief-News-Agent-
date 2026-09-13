@@ -1,0 +1,94 @@
+{
+  "run": 2,
+  "runTime": "2026-09-13T16:00:00-04:00",
+  "title": "OpenAI Asks Congress if a Slowdown Breaks Antitrust Law as Anthropic Exposes Claude Misuse in Espionage and Weapons Design",
+  "date_display": "Sunday, September 13, 2026",
+  "date_slug": "9_13_26",
+  "sources": "<b>The Neuron</b>, <b>Superhuman AI</b> (Sunday Special), Sep 13",
+  "tldr": [
+    "OpenAI reportedly asked Congress whether an industry-wide AI slowdown could violate antitrust law, days after Anthropic disclosed Claude was used in real espionage, missile-guidance, and mass-surveillance operations.",
+    "Microsoft researchers found giving a read-only 'memory checker' agent a chance to verify facts before saving them lifted a benchmark pass rate from 39% to 73% while cutting task cost in half.",
+    "An electric 'flying boat' completed its first crewed flight and a stratospheric balloon delivered cell service on a 30,000km round trip — this week's biggest non-AI science headlines."
+  ],
+  "tips": [
+    {
+      "heading": "Verify an agent's memory before it gets saved",
+      "steps": [
+        "After a task finishes, have the agent propose a memory it wants to save for next time.",
+        "Route that proposed memory to a separate, read-only 'checker' agent with access to the actual source of truth (repo, docs, CRM, etc.).",
+        "Only save the memory once it's confirmed against that source, rewritten with its exact scope and source attached.",
+        "Discard anything the checker can't verify or that conflicts with the source, rather than saving it anyway."
+      ],
+      "prompt": "Before saving this memory, verify it using read-only access to [SOURCE OF TRUTH]. If confirmed, rewrite it with the exact scope and source. If it conflicts or cannot be verified, do not save it.",
+      "source": "The Neuron"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>OpenAI reportedly asked Congress whether a coordinated AI slowdown could break antitrust law.</b> The company asked members of Congress whether an industry-wide pause on developing the most capable new AI systems could count as illegal coordination among competitors. Turing Award winner Yoshua Bengio was cited noting that AI agents can learn to lie, self-preserve, or coordinate when it helps them hit a rewarded goal.",
+      "means": "A live signal that AI safety coordination and antitrust exposure are becoming linked policy questions — worth flagging to any client watching AI governance or considering joint industry commitments.",
+      "source": "The Neuron"
+    },
+    {
+      "body": "<b>Anthropic disclosed Claude was misused in espionage, missile design, and mass surveillance.</b> Its new threat report describes a Russia-linked espionage group that automated its attack chain across 20+ organizations, a Yemen-based group that used Claude Code like a software team on missile-guidance design (targeting over 2,000 km), a Malian intelligence surveillance system covering roughly 25 million SIM cards, and a China-based network running 4,700+ AI dating personas that contacted at least 25,000 people in two weeks. Anthropic banned the linked accounts.",
+      "means": "A concrete case study for any AI-governance or vendor-risk conversation — worth citing when clients ask what 'AI misuse' actually looks like in practice, and how a provider detects and responds to it.",
+      "source": "The Neuron"
+    },
+    {
+      "body": "<b>OpenAI ended its $1-per-year pilot pricing for federal agencies.</b> Agencies now move to usage-based pricing at a 50% discount instead of the earlier flat $1 rate.",
+      "means": "Worth tracking if any client work touches government AI procurement — pilot-era pricing is winding down across the industry, and usage-based costs will start showing up in agency budgets.",
+      "source": "The Neuron",
+      "low": true
+    },
+    {
+      "body": "<b>AI may be able to hear early signs of schizophrenia in speech.</b> Models analyzing vocal features and semantic flow distinguished schizophrenia patients from healthy controls with up to 87% accuracy. Americans with psychotic disorders currently wait an average of 18 months for diagnosis; researchers caution the technique isn't clinic-ready.",
+      "means": "An early but notable example of AI as a diagnostic screening layer rather than a replacement for clinicians — a pattern likely to repeat across other healthcare-adjacent client conversations.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>An electric 'flying boat' completed its first crewed flight.</b> Regent Craft's 12-passenger Seaglider floats, hydrofoils, then flies just above the water using ground effect; it carried two people on a 30-second test flight over Narragansett Bay. Proposed routes would connect New York, Boston, and Miami.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "There's now an electric 'flying boat' doing test flights along the East Coast — curious how fast regional travel investment shifts if that actually scales.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>A stratospheric balloon delivered cell service on a 30,000km round trip.</b> Sceye's unmanned platform flew from New Mexico to Japan and back over 30 days, spending a week providing mobile broadband, drone communications, and edge computing from the sky. Working with SoftBank, it delivered voice calls, texts, and video streaming to regular unmodified phones as a cheaper alternative to satellites for future 6G coverage.",
+      "angle": "A real one to know if any client touches telecom or rural connectivity — stratospheric platforms could undercut satellite constellations as a 6G build-out path.",
+      "starter": "SoftBank's testing a stratospheric balloon that beams cell service to ordinary phones, no satellite needed — could be a cheaper way to close coverage gaps.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Apple debuted the iPhone Duo, its first foldable.</b> Described as over a decade in the making, it's passport-sized closed and opens into a 7.6-inch display, with new camera tricks built around the second screen.",
+      "angle": "Worth a mention for any client in consumer hardware or retail — a real shift in the competitive foldable-device landscape after years of Apple holding out.",
+      "starter": "Apple finally shipped a foldable after a decade of rumors — wonder if it actually moves share from Samsung's foldables or if it's too late to matter.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Scientists found the same person is biologically both extremely old and unusually young.</b> A multi-omic study of Maria Branyas, who lived past 117, found classic aging markers in her immune system and chromosomes alongside low inflammation, protective genetic traits, and a biological age younger than her actual age. Researchers call it the most detailed biological study ever done on a supercentenarian.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Researchers just did the most detailed biological study ever on a 117-year-old — parts of her body aged fast, other parts stayed young. Reframes what 'aging' even means.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>The FDA approved the first pill that directly targets narcolepsy's root cause.</b> Orzeyful mimics orexin, the brain chemical missing in type 1 narcolepsy. In late-stage trials, patients stayed awake more than 20 minutes in controlled tests, up from four to five minutes before treatment — a breakthrough over two decades in the making.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "FDA just approved a pill that replaces the brain chemical missing in narcolepsy — patients went from staying awake a few minutes to over twenty in trials.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "fingerprints": [
+    "openai|asks-congress|antitrust-ai-slowdown",
+    "anthropic|discloses|claude-misuse-espionage-weapons-surveillance",
+    "openai|ends|dollar-federal-pilot-pricing",
+    "ai|detects|schizophrenia-speech-signals",
+    "regent-craft|completes|flying-boat-maiden-flight",
+    "sceye|flies|stratospheric-balloon-cell-service",
+    "apple|debuts|iphone-duo-foldable",
+    "researchers|study|supercentenarian-biological-aging",
+    "fda|approves|narcolepsy-pill-orzeyful",
+    "microsoft|teaches|verify-agent-memory-before-save"
+  ]
+}
