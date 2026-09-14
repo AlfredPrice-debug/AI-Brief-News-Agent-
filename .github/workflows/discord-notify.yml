@@ -2,31 +2,64 @@ name: Notify Discord on new AI Brief
 
 # Fires whenever a run pushes a new content/*.json to main (every AI Brief
 # run does this in the same commit as its briefs/*.pdf). Posts the brief's
-# title/TL;DR/items as a Discord embed with a link to the PDF -- text only,
-# the PDF itself is never uploaded to Discord.
+# full text -- title, TL;DR, and every Tips/News/Beyond AI item -- as a
+# sequence of plain Discord messages, with the PDF linked on the last one.
+# The PDF itself is never uploaded.
 #
-# Setup: add a repo secret named DISCORD_WEBHOOK_URL with a webhook URL from
-# the target channel (Discord: channel settings > Integrations > Webhooks >
-# New Webhook > Copy Webhook URL), under Settings > Secrets and variables >
-# Actions > New repository secret.
+# Can also be run by hand (Actions > this workflow > Run workflow) to post
+# any past brief, or to preview one without posting.
+#
+# Setup:
+#   DISCORD_WEBHOOK_URL (secret, required) -- Discord: channel settings >
+#     Integrations > Webhooks > New Webhook > Copy Webhook URL.
+#   DISCORD_ROLE_ID (secret, optional) -- the role to ping on the first
+#     message. Unset means the brief posts with no ping.
+#   Both go in Settings > Secrets and variables > Actions.
 on:
   push:
     branches: [main]
     paths:
       - "content/*.json"
+  workflow_dispatch:
+    inputs:
+      content_file:
+        description: "Brief to post, e.g. content/2026-09-13-run2.json"
+        required: true
+        type: string
+      dry_run:
+        description: "Preview the messages in the log without posting"
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   notify:
     runs-on: ubuntu-latest
+    env:
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      DISCORD_ROLE_ID: ${{ secrets.DISCORD_ROLE_ID }}
+      REPO: ${{ github.repository }}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Post one Discord message per commit that added a brief
+      - name: Post a brief chosen by hand
+        if: github.event_name == 'workflow_dispatch'
         env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          REPO: ${{ github.repository }}
+          CONTENT_FILE: ${{ inputs.content_file }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+        run: |
+          set -e
+          if [ ! -f "$CONTENT_FILE" ]; then
+            echo "::error::No such file: $CONTENT_FILE"
+            exit 1
+          fi
+          python3 build/notify_discord.py "$CONTENT_FILE" "" "$REPO"
+
+      - name: Post one brief per commit that added one
+        if: github.event_name == 'push'
+        env:
           BEFORE: ${{ github.event.before }}
           AFTER: ${{ github.sha }}
         run: |
