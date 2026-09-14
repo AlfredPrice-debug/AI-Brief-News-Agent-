@@ -74,13 +74,18 @@ python build/build_brief.py content/2026-07-24-run1.json
 **Want it to run automatically, twice a day?** See **[ROUTINE.md](ROUTINE.md)** — it has the two copy-paste prompts and how the pair of cloud Routines is scheduled for 8 AM / 4 PM Eastern (including a ready-made `/ai-brief` command for a manual test run).
 
 ## Optional: post to Discord
-Every run that pushes a new `content/*.json` to `main` also triggers `.github/workflows/discord-notify.yml`, which posts the brief's title, TL;DR, and every Tips/News/Beyond AI item as a Discord embed — text only, the PDF is linked (via its GitHub URL) and never uploaded.
+Every run that pushes a new `content/*.json` to `main` triggers `.github/workflows/discord-notify.yml`, which posts the brief's **full text** — title, TL;DR, and every Tips/News/Beyond AI item — as a sequence of plain Discord messages. Nothing is truncated: the text is split on item boundaries so a news item never breaks across two messages. The PDF is linked on the last message (via its GitHub URL) and never uploaded.
 
 **Setup (one-time):**
 1. In the target Discord channel: **Channel Settings → Integrations → Webhooks → New Webhook**, then **Copy Webhook URL**.
 2. In this repo: **Settings → Secrets and variables → Actions → New repository secret**, name it `DISCORD_WEBHOOK_URL`, and paste the webhook URL.
+3. *(Optional)* To ping a role when a brief lands, add a second secret named `DISCORD_ROLE_ID` holding the role's numeric ID (Discord: **Settings → Advanced → Developer Mode** on, then right-click the role → **Copy ID**). The role must be **mentionable** in its Discord role settings. With the secret unset, briefs post without a ping.
 
-That's it — no further changes needed; skipped runs (no new `content/*.json`) don't trigger a post. To test it manually against an existing brief: `DISCORD_WEBHOOK_URL=... python build/notify_discord.py content/2026-09-13-run1.json "briefs/<matching pdf filename>.pdf" <owner>/<repo>`.
+Skipped runs (no new `content/*.json`) don't trigger a post.
+
+**Posting a past brief, or previewing one:** **Actions → Notify Discord on new AI Brief → Run workflow**, then give it a `content_file` such as `content/2026-09-13-run2.json`. Tick **dry run** to see the exact messages in the workflow log without posting them. Locally the same preview is `DRY_RUN=1 python build/notify_discord.py content/2026-09-13-run2.json "" <owner>/<repo>`.
+
+**Message details:** posts appear as **Corduroy the Claude Bot** (set per-post, so it overrides the webhook's own name). Discord caps a message at 2,000 characters — a typical brief lands in 2–5 messages. Link previews are suppressed, and only the configured role can be pinged (no accidental `@everyone`).
 
 ## Repo layout
 | Path | Purpose |
@@ -91,8 +96,8 @@ That's it — no further changes needed; skipped runs (no new `content/*.json`) 
 | `prompt-afternoon.txt` | Prompt for the 4 PM Routine (run 2). |
 | `template/brief_template.html` | 2-page layout (AI page + Beyond AI page) + brand CSS. |
 | `build/build_brief.py` | Renders a content JSON → branded PDF via headless Chrome. |
-| `build/notify_discord.py` | Posts a brief's content as a Discord embed (see **Optional: post to Discord**). |
-| `.github/workflows/discord-notify.yml` | Triggers the Discord post on every push that adds a `content/*.json`. |
+| `build/notify_discord.py` | Posts a brief's full text to Discord as plain messages (see **Optional: post to Discord**). |
+| `.github/workflows/discord-notify.yml` | Triggers the Discord post on every push that adds a `content/*.json`; also runnable by hand. |
 | `build/brand.example.json` | Shape of the brand-folder cache (`build/brand.json`, gitignored). |
 | `content/2026-07-24-run1.json` | Example of a run's content (v2 schema). |
 | `state/run-log.json` | Per-day run/dedup state; read and updated on every run. |
