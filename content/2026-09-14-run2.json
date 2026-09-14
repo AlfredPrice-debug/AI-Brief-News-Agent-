@@ -1,0 +1,51 @@
+{
+  "run": 2,
+  "runTime": "2026-09-14T16:00:00-04:00",
+  "title": "ChatGPT Sites Hits 5M Pages as Anthropic's Threat Report Goes Viral",
+  "date_display": "Monday, September 14, 2026",
+  "date_slug": "9_14_26",
+  "sources": "<b>Superhuman AI</b> (Sep 14)",
+  "tldr": [
+    "OpenAI's ChatGPT Sites platform passed 5M published sites and shipped faster deploys plus a new GPT-6 Astra prompting guide.",
+    "Anthropic's threat report went viral over the weekend (42M views) with new specifics: a Yemen group building missile-stabilization software and a 70-site disinformation network, both shut down.",
+    "A ready-to-use ChatGPT prompt turns the model into a salary negotiation coach that builds your opening ask, target, and walk-away point."
+  ],
+  "tips": [
+    {
+      "heading": "Turn ChatGPT into a salary negotiation coach",
+      "steps": [
+        "Open ChatGPT and paste the prompt below, filling in your role, company, location, current offer, and target comp.",
+        "Review the leverage assessment, opening ask, realistic target, and walk-away point it returns.",
+        "Use the objection-handling responses it drafts to prep for employer pushback.",
+        "Take the closing negotiation script it writes into your actual call."
+      ],
+      "prompt": "Act as a salary negotiation coach. Help me plan a negotiation for:\n\nRole: [job title]\nCompany: [company]\nLocation: [location]\nOffer: [base + bonus + equity]\nTarget: [desired compensation]\nKey achievements: [2–3 strongest achievements]\nLeverage: [competing offer / scarce skills / strong interview feedback]\nMinimum acceptable: [amount]\n\nAssess my leverage, recommend an opening ask, realistic target, and walk-away point, and tell me which parts of the package to prioritize. Anticipate likely employer objections and give me concise responses. Finish with a short negotiation script for the call. Do not recommend bluffing or unsupported claims.",
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Get better-looking output from AI app builders",
+      "steps": [
+        "Feed the tool reference images of the look you want instead of describing it in a text prompt.",
+        "Let two or three different LLMs each take a first pass at the initial design, then pick the strongest starting point."
+      ],
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>OpenAI's ChatGPT Sites platform passed 5M published sites.</b> The site-building/hosting tool added teammate collaboration, shareable private sites, and deploys that are 2x faster; OpenAI also published a developer guide, \"Rethinking Prompts and Skills for GPT-6 Astra,\" with best practices for its newest model.",
+      "means": "Worth a look as a fast way to stand up a client-facing prototype or microsite without a dev handoff — and the Astra prompting guide is a quick read if you're already building on that model.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Anthropic's threat intelligence report went viral over the weekend (42M views)</b>, with new specifics on the real-world misuse cases it disclosed: a Yemen-based group used Claude Code to build software stabilizing flying vehicles for ballistic missile development (one of six similar instances found), and a separate influence-as-a-service operation ran disinformation across roughly 70 fabricated websites reaching six continents. Anthropic says it disrupted every operation in the report and shared findings with authorities and other AI labs.",
+      "means": "Good material for client conversations on AI governance and misuse risk — concrete, disclosed cases carry more weight than hypotheticals when you're making the case for guardrails.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "openai|passes|5m-chatgpt-sites-gpt6-astra-guide",
+    "anthropic|details|threat-report-yemen-missile-disinfo-network"
+  ]
+}
