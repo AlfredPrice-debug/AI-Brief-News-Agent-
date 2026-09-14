@@ -59,6 +59,23 @@ def split_headline(body_html: str):
     return None, md(body_html)
 
 
+def check_webhook(url: str) -> None:
+    """Catch the common mixup of pasting the channel link (the address you see
+    in a browser) instead of the webhook URL (the thing that can post)."""
+    if re.match(r"https://(?:ptb\.|canary\.)?discord(?:app)?\.com/api/(?:v\d+/)?webhooks/\d+/\S+", url):
+        return
+    if "/channels/" in url:
+        sys.exit(
+            "DISCORD_WEBHOOK_URL looks like a Discord channel link, not a webhook URL. "
+            "A webhook URL looks like https://discord.com/api/webhooks/<id>/<token> and comes "
+            "from the channel's Settings > Integrations > Webhooks > Copy Webhook URL."
+        )
+    sys.exit(
+        "DISCORD_WEBHOOK_URL does not look like a Discord webhook URL "
+        "(expected https://discord.com/api/webhooks/<id>/<token>)."
+    )
+
+
 def gh_blob_url(repo: str, path: str) -> str:
     quoted = "/".join(urllib.parse.quote(part) for part in path.split("/"))
     return f"https://github.com/{repo}/blob/main/{quoted}"
@@ -223,12 +240,18 @@ def main():
     repo = sys.argv[3] if len(sys.argv) > 3 else os.environ.get("GITHUB_REPOSITORY", "")
 
     dry_run = os.environ.get("DRY_RUN") == "1"
-    webhook = os.environ.get("DISCORD_WEBHOOK_URL")
-    if not webhook and not dry_run:
-        sys.exit(
-            "DISCORD_WEBHOOK_URL is not set. Add it as a repo secret: "
-            "Settings > Secrets and variables > Actions > New repository secret."
-        )
+    webhook = os.environ.get("DISCORD_WEBHOOK_URL", "").strip()
+    if not webhook:
+        if not dry_run:
+            sys.exit(
+                "DISCORD_WEBHOOK_URL is not set. Add it as a repo secret: "
+                "Settings > Secrets and variables > Actions > New repository secret."
+            )
+        print("DISCORD_WEBHOOK_URL: not set (dry run, so nothing would be posted).")
+    else:
+        # Shape only. The value itself is a credential and is never printed.
+        check_webhook(webhook)
+        print("DISCORD_WEBHOOK_URL: set, and its shape looks like a webhook URL.")
 
     with open(content_path, encoding="utf-8") as f:
         content = json.load(f)
