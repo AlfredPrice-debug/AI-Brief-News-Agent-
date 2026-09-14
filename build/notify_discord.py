@@ -35,6 +35,10 @@ MSG_LIMIT = 1900
 DEFAULT_USERNAME = "Corduroy the Claude Bot"
 SUPPRESS_EMBEDS = 1 << 2  # keep the PDF link from expanding into a preview card
 PAUSE_BETWEEN_POSTS = 0.7  # webhooks allow ~5 requests per 2 seconds
+# Discord is fronted by Cloudflare, which 403s urllib's default
+# "Python-urllib/3.x" agent string outright -- especially from datacenter IPs
+# like GitHub Actions runners. Discord documents this header's shape.
+USER_AGENT = "DiscordBot (https://github.com/AlfredPrice-debug/AI-Brief-News-Agent-, 1.0)"
 
 
 def md(s: str) -> str:
@@ -211,7 +215,10 @@ def post(webhook: str, body: dict) -> None:
     data = json.dumps(body).encode("utf-8")
     for attempt in range(5):
         req = urllib.request.Request(
-            url, data=data, headers={"Content-Type": "application/json"}, method="POST"
+            url,
+            data=data,
+            headers={"Content-Type": "application/json", "User-Agent": USER_AGENT},
+            method="POST",
         )
         try:
             with urllib.request.urlopen(req) as resp:
@@ -227,8 +234,20 @@ def post(webhook: str, body: dict) -> None:
                 print(f"  rate limited, retrying in {wait:.1f}s")
                 time.sleep(wait + 0.1)
                 continue
-            print(f"Discord webhook error {e.code}: {payload}", file=sys.stderr)
-            raise
+            snippet = payload.strip()[:400] or "(empty response body)"
+            hint = ""
+            if e.code == 403 and "<html" in payload.lower():
+                hint = (
+                    "\nThis looks like a Cloudflare block rather than Discord itself "
+                    "rejecting the post. Check that the request sets a User-Agent header."
+                )
+            elif e.code in (401, 404):
+                hint = (
+                    "\nDiscord did not recognize the webhook. The URL in DISCORD_WEBHOOK_URL "
+                    "is probably wrong, or the webhook was deleted in the channel's "
+                    "Settings > Integrations > Webhooks."
+                )
+            sys.exit(f"Discord rejected the post, HTTP {e.code}: {snippet}{hint}")
     raise SystemExit("Gave up after repeated Discord rate limits.")
 
 
