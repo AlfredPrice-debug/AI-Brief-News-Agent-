@@ -1,0 +1,99 @@
+{
+  "run": 1,
+  "runTime": "2026-09-15T08:06:17-04:00",
+  "title": "Trump and Beijing Dismiss the AI Slowdown as Microsoft Drafts 'Humanist AI' Rules",
+  "date_display": "Tuesday, September 15, 2026",
+  "date_slug": "9_15_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Sep 15)",
+  "tldr": [
+    "Trump and China's government both dismissed Anthropic's call to slow AI development as \"fear-mongering\" and a \"hoax,\" and AI-linked stocks sold off on the uncertainty.",
+    "Microsoft AI drafted a \"Humanist AI\" code of conduct requiring its future models to always yield to human control — a template worth borrowing for your own client guardrails.",
+    "The 10-year Treasury yield topped 5% for the first time since 2023, raising borrowing costs behind any client business case built on cheap debt."
+  ],
+  "tips": [
+    {
+      "heading": "Let AI draft freely, then check constraints in a second pass",
+      "steps": [
+        "Ask the AI to solve or draft its best answer first, with no rules applied yet.",
+        "Give it your non-negotiables afterward: word count, required facts, formatting, tests, safety rules.",
+        "Have it check and revise the final result against every constraint before returning it."
+      ],
+      "prompt": "Solve this for quality first. Then run a separate final pass against these non-negotiable constraints: [RULES]. Fix every violation before giving me the final answer.",
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Prove one agent can't do the job before building it an org chart",
+      "steps": [
+        "Give one long-context agent the entire job end-to-end before splitting it into specialized sub-agents.",
+        "Only build an agent \"org chart\" if that single agent demonstrably fails.",
+        "If you split it, watch the handoffs — a summary can silently drop a detail the next agent needed.",
+        "Polylane made this swap and cut median time-to-PR from 2.2 hours to 35 minutes, cost from $111 to $18."
+      ],
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Trump and China's government both dismissed Anthropic CEO Dario Amodei's call to slow AI development.</b> Trump called it a \"hoax\" on Truth Social and said a \"high IQ\" president is the only guardrail AI needs; China's Foreign Ministry and state media called the plan \"fear-mongering.\" AI-linked stocks (Nvidia, the Philadelphia Semiconductor Index, SoftBank) sold off on the uncertainty.",
+      "means": "The Trump-Xi meeting this month was the natural venue for a coordinated pause — both governments now treat the idea as a scare campaign instead. Don't bank on regulation slowing anything down soon.",
+      "source": "The Rundown AI, The Neuron, Morning Brew, 1440 Daily Digest",
+      "low": false
+    },
+    {
+      "body": "<b>Microsoft AI published a draft \"Code of Conduct\" for its own future models</b>, built around CEO Mustafa Suleyman's \"Humanist AI\" stance: models must stop the moment a human pauses or shuts them down, stay inside the permissions actually granted, and never claim feelings, consciousness, or legal personhood.",
+      "means": "A useful template for writing your own AI-usage guardrails into client engagements — but treat it as one vendor's aspiration, not an industry standard, until competing labs sign on.",
+      "source": "The Neuron, The Rundown AI",
+      "low": false
+    },
+    {
+      "body": "<b>Nvidia, Palantir, and Booz Allen Hamilton are reportedly limiting use of Anthropic's Fable on sensitive work</b>, per The Information, because Anthropic keeps 30 days of usage logs; Microsoft is pitching worried clients on private servers instead.",
+      "means": "If you're recommending an AI vendor to a client handling sensitive data, log retention just became a live differentiator — worth confirming before you make the call.",
+      "source": "The Rundown AI",
+      "low": false
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>EPA moves to repeal pollution limits on coal and gas power plants</b> — a sector responsible for roughly a quarter of US climate pollution — saying the rollback saves industry over $300 billion; a separate proposed rule would argue greenhouse gases don't endanger public health, which could block future administrations from reinstating the rules.",
+      "angle": "Cheaper, dirtier power lines up with the tech industry's push for more energy for AI data centers — worth watching if any client's cost model assumes power prices keep falling.",
+      "starter": "If power gets cheaper because environmental rules just got rolled back, is anyone actually re-running their data-center cost assumptions?",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>The 10-year Treasury yield briefly topped 5% Monday</b>, the first time since 2023, as rising oil prices from the Iran conflict stoked inflation fears; it eased back below 5% before the close.",
+      "angle": "Higher yields mean higher borrowing costs — revisit any client business case built on cheap debt before your next budget conversation.",
+      "starter": "Is anyone still pricing client projects assuming last year's borrowing costs?",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Workers without a college degree are enjoying one of the best job markets in 20 years, while unemployment climbs for bachelor's-degree holders.</b> The Burning Glass Institute ties it to fewer immigrant and retiring blue-collar workers, and AI is cited as replacing some entry-level white-collar roles.",
+      "angle": "A live data point for any workforce-planning conversation — entry-level hiring plans built around a degree requirement may need a second look.",
+      "starter": "Has anyone else noticed hiring managers getting more open to non-degree candidates lately, or is that just us?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Houthi rebels captured two Red Sea islands and forced Saudi Arabia to shut a 750-mile oil pipeline for repairs</b>, threatening a key oil-transit route through the Bab el-Mandeb Strait; fighting has reportedly killed over 500 people and displaced roughly 94,000.",
+      "angle": "Another squeeze on oil supply on top of the existing Iran conflict — flag it for any client with global shipping or fuel-sensitive logistics costs.",
+      "starter": "With two separate Middle East chokepoints under pressure now, is anyone stress-testing shipping costs for next quarter?",
+      "source": "1440 Daily Digest"
+    },
+    {
+      "body": "<b>Apple TV's \"Widow's Bay\" swept the Emmys with 14 wins</b>, a new record for a comedy series; Matthew Rhys became the first person to win lead-actor Emmys in two categories the same night, and Jean Smart won Best Actress in a Comedy for a fifth straight year on \"Hacks.\"",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Did you catch that Apple TV had the biggest night at the Emmys? Feels like the streaming wars keep shifting.",
+      "source": "Morning Brew, 1440 Daily Digest"
+    }
+  ],
+  "fingerprints": [
+    "neuron|tip|hardflow-quality-then-constraints",
+    "rundown|tip|single-agent-before-org-chart",
+    "trump-china|dismiss|ai-pacing-slowdown-calls",
+    "microsoft|drafts|humanist-ai-code-of-conduct",
+    "enterprises|limit|fable-claude-log-retention",
+    "epa|repeals|power-plant-pollution-limits",
+    "treasury-yield|tops|5-percent",
+    "job-market|diverges-by|education-level-ai-displacement",
+    "houthis|capture|red-sea-islands-oil-pipeline",
+    "emmys|sweep|widows-bay-apple"
+  ]
+}
