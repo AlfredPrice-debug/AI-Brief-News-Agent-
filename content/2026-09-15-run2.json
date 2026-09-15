@@ -1,0 +1,63 @@
+{
+  "run": 2,
+  "runTime": "2026-09-15T13:14:31-04:00",
+  "title": "Meta's Muse Cracks the App Store Top 3 as a Chinese Lab Ships an Open-Weight Rival",
+  "date_display": "Tuesday, September 15, 2026",
+  "date_slug": "9_15_26",
+  "sources": "<b>Superhuman AI</b> (Sep 15)",
+  "tldr": [
+    "Meta's Muse agent jumped to #2 on the App Store's free chart, behind only ChatGPT and ahead of Threads and WhatsApp.",
+    "Shanghai AI Lab released an open-weight model, Atria Dawn Preview, claimed to rival Kimi K3 and Claude Opus 5.",
+    "Claude's Projects feature can double as a standing research assistant that keeps context across sessions — worth setting up once, reusing constantly."
+  ],
+  "tips": [
+    {
+      "heading": "Turn a Claude Project into a standing research assistant",
+      "steps": [
+        "In Claude, open Cowork and go to Projects in the left sidebar.",
+        "Create a new project with a focused name (e.g. \"AI Industry Research\" or \"Competitor Intelligence\").",
+        "Add reference files (reports, papers, notes, prior analyses) and set project instructions.",
+        "Start each research task inside that project — Claude carries context across tasks within it."
+      ],
+      "prompt": "Act as my research assistant for [topic]. Prioritize credible primary sources, distinguish facts from interpretation, cite sources, flag conflicting evidence, and summarize findings into Key Findings, Evidence, Implications, and Open Questions. Remember useful context from previous work in this project.\n\nResearch the latest developments in [topic] and update my existing analysis with anything materially new.",
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Use a structured template prompt for polished product photography",
+      "steps": [
+        "Swap in your own product, brand name, and background/color scheme in the template below.",
+        "Generate it in ChatGPT Images (or a comparable image model)."
+      ],
+      "prompt": "a jar of cosmetic cream is placed on moss, surrounded by wood and leaves, with the brand name \"decorate\" written in white letters on it. the background color is pure white, with a front view and high-definition photography style. high-quality product shooting images, soft lighting, natural tones, green plant embellishments, and a fresh atmosphere with natural elements. -- ar 55:98",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Meta's Muse personal AI agent climbed to #2 in the App Store's free apps chart</b>, behind only ChatGPT and ahead of Threads, WhatsApp, and Facebook, per Sensor Tower US iOS data (83,000+ downloads). Meta chief AI officer Alexandr Wang credits the jump to Meta's newest Muse model family.",
+      "means": "Meta going from also-ran to a top-3 consumer AI app is a real shift in the assistant landscape — worth a mention if you're advising clients on which platforms are actually gaining everyday users, not just headlines.",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>Shanghai Artificial Intelligence Laboratory released \"Atria Dawn Preview,\"</b> an open-weight model built for verifiable, reproducible research results, claimed (unverified) to be comparable to Kimi K3 and Claude Opus 5 on certain metrics.",
+      "means": "Another entrant in the open-weight field widens build-vs-buy options for clients wary of vendor lock-in — but treat the benchmark claims as unverified until independent evals land.",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>Researchers at HHMI Janelia and Google mapped the complete brain of a male fruit fly</b> — 166,000 neurons and 125 million connections — calling it a milestone on the way to eventually mapping mouse, monkey, and human brains (86 billion neurons). Hobbyists have already used the simulated neurons to build a Minecraft project and play Beat Saber in VR.",
+      "means": "A striking research milestone, but several orders of magnitude from anything client-relevant today — good general-awareness talking point, not a near-term business signal.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "meta-muse|climbs-to|number-2-app-store",
+    "shanghai-ai-lab|releases|atria-dawn-preview",
+    "janelia-google|maps|fruit-fly-brain-connectome",
+    "superhuman|tip|claude-projects-research-assistant",
+    "superhuman|tip|product-photography-image-prompt"
+  ]
+}
