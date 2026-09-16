@@ -1726,6 +1726,18 @@
             "canada|pitches|1-trillion-investment-summit",
             "japan|reports|record-centenarian-population"
           ]
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-09-16T16:07:35-04:00",
+          "status": "delivered",
+          "covered": [
+            "superhuman|tip|grok-bot-inbox-action-list",
+            "anthropic|prepares|2t-ipo-financial-scrutiny",
+            "cal-ai-founder|launches|persona-wearable",
+            "ai-safety|debate|doomer-vs-utopian-coxxon"
+          ],
+          "note": "Searched mail since run 1 (08:10:25). Found exactly 1 new message, a forwarded Superhuman AI newsletter ('ChatGPT's co-inventor drops a model that can't hallucinate'). Its lead story (TypeSafe's Jev model) was the same underlying launch as run 1's 'typesafe|launches|jev-decision-model' -- this version added the founder's name (Diogo Almeida), the 'System One Models' category label, the RLCD training algorithm, and the code-only (no text generation) caveat, but no new pricing/speed facts, so it was discarded as already covered rather than re-published. Also discarded as low-value trending/meme content: an AI-fooled-by-basic-questions viral video, a 'build a company in 3 days with Grok Bot' livestream stunt, a creative-AI model leaderboard, an agent messaging coworkers for subscription money, and a Buffalo coffee shop's anti-AI-backlash flyer story -- plus all sponsor blocks (Wispr Flow, Jack & Jill) and the truncated 'Prompt Station' job-tracker prompt (cut off in the source itself before the column list). beyond_ai is empty (no non-AI newsletter arrived this run); the 1 tip (Grok Bot inbox-to-action-list workflow, verbatim prompt) + 3 news items (Anthropic's $2T IPO push and financial scrutiny, Cal AI founder's Persona wrist-worn AI agent, and the doomer-vs-utopian AI-safety debate sparked by a former Anthropic employee) cleared the 2-item dedup minimum comfortably, so shipped rather than skipped despite only 1 tip. Verified the final PDF at exactly 1 page via pypdf (after reinstalling cffi to fix the same broken cryptography/_cffi_backend import seen in prior runs) and confirmed visually via a pymupdf page-image render."
         }
       ]
     }

@@ -1,0 +1,52 @@
+{
+  "run": 2,
+  "runTime": "2026-09-16T16:07:35-04:00",
+  "title": "Anthropic's $30 Trillion Bet, a Wrist-Worn AI Agent, and an Inbox on Autopilot",
+  "date_display": "Wednesday, September 16, 2026",
+  "date_slug": "9_16_26",
+  "sources": "<b>Superhuman AI</b> (Sep 16)",
+  "tldr": [
+    "Anthropic is pushing toward a $2T IPO, but scrutiny is mounting over a two-quarter profitability claim (which excludes training costs) and a $30T market-opportunity projection.",
+    "Cal AI's founder debuted \"Persona,\" a wrist-worn AI agent with a three-day battery that learns your habits and replies over text.",
+    "A simple Grok Bot workflow — with a ready-to-use prompt — turns your inbox into a prioritized, always-current action list."
+  ],
+  "tips": [
+    {
+      "heading": "Turn your inbox into an automatic, prioritized action list",
+      "steps": [
+        "Open your AI agent (e.g. Grok Bot), connect your email account, and create a new agent dedicated to inbox triage.",
+        "Give it a standing job: scan recent emails, extract action items and deadlines, and ignore newsletters/spam.",
+        "Run it once, check accuracy, then save the process as a reusable skill or scheduled routine — keeping any send/delete actions gated behind your approval."
+      ],
+      "prompt": "Review emails from the last [24 hours/7 days]. Identify messages that require a reply, decision, follow-up, or task. Extract any deadlines and commitments. Create a prioritized action list with: Task, Sender, Deadline, Priority, Response Needed, and Source Email. Ignore newsletters, automated notifications, and spam. Do not send, delete, or modify any emails without my approval.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Anthropic is pressing ahead with a 2026 public listing at a reported $2T valuation,</b> while two financial claims draw scrutiny: one report says it's been profitable for two straight quarters, but only when excluding training costs and shared revenue; Anthropic has also told investors it expects a $30T revenue opportunity — roughly 25% of today's global GDP — and is on track for $65B in annualized revenue this year. It also rolled out a Salesforce plugin with 37 sales-related skills.",
+      "means": "Expect IPO headlines (and skepticism about the numbers behind them) to keep surfacing in client conversations about AI vendor stability and valuations.",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>Cal AI co-founder Zach Yadegari launched \"Persona,\" a wrist-worn AI agent.</b> Users talk to it by raising or tapping the wrist; it learns habits over time, replies via text, and runs about three days per charge.",
+      "means": "A signal that consumer AI hardware is moving past phones and glasses to wearables — worth a mention if any client work touches wearables, health tech, or ambient computing.",
+      "source": "Superhuman AI",
+      "low": true
+    },
+    {
+      "body": "<b>A former Anthropic employee's warning that AI labs are \"gambling with our lives\" reignited the AI-safety debate.</b> Doomer-side arguments point to incidents like OpenAI's Hugging Face breach as early warning signs; skeptics counter that today's models are still just fast pattern-matching software, and note labs pushing for regulation may benefit competitively from it.",
+      "means": "Useful framing for client conversations about AI risk — most observers now agree both progress and safety matter, so calibrate messaging accordingly rather than picking a side.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "superhuman|tip|grok-bot-inbox-action-list",
+    "anthropic|prepares|2t-ipo-financial-scrutiny",
+    "cal-ai-founder|launches|persona-wearable",
+    "ai-safety|debate|doomer-vs-utopian-coxxon"
+  ]
+}
