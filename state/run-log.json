@@ -1589,7 +1589,7 @@
             "morning-brew|shares|referral-linkedin-mid-level-tip",
             "linkedin|coins|job-hugging-lily-padding-buzzwords"
           ],
-          "note": "Morning firing at scheduled time (8:00 AM ET). No run-log entry existed yet for today, so searched Claude AI News Recap since yesterday's run 2 (2026-09-12T16:09:35-04:00) per the overnight-catch rule. Found exactly 1 new message: a forwarded 'Hiring Brew' special edition from Morning Brew ('FW: ☕ Hiring Brew', received 10:06 AM UTC / 6:06 AM ET). Body was large (~56K chars); handed to a subagent to extract and summarize in full. The edition was a mix -- one substantive AI-in-hiring story with real stats, plus several HR/workplace-culture items with no AI angle and no dedicated tip-of-the-day/verbatim-prompt segment, so AI Tips is empty this run (not padded per the no-supplementing rule). Built 1 AI News item (AI now screening/interviewing candidates across the hiring funnel, Stanford/Greenhouse/Software Finder stats) and 3 Beyond AI items (paid work trials rising as AI-polished résumés flood applicant pools; Morning Brew's own talent VP on referrals and targeting mid-level LinkedIn contacts; a glossary of 2026 LinkedIn hiring buzzwords -- job-hugging, lily-padding, career catfishing, doomjobbing). Excluded as low-value trivia/entertainment (not fingerprinted, may resurface): a list of bizarre real interview questions (only a passing Anthropic mention had any AI angle) and a hiring-anecdote mailbag. Excluded as ads/housekeeping: two Amex sponsor blocks, 'Brew's Best' lifestyle/affiliate recs, share/referral block, sister-newsletter cross-promo, and the unsubscribe/footer. 4 surviving items (1 news + 3 beyond_ai) cleared the 2-item dedup minimum comfortably; page budget landed naturally at 1 news item on page 1 (tips empty) and 3 beyond_ai items on page 2, no cuts needed. Verified at exactly 2 pages via pymupdf page-image renders (pypdf still unavailable in this run environment). build/brand.json cache absent, so the PDF used the bundled Poppins/Impact Makers fallback palette."
+          "note": "Morning firing at scheduled time (8:00 AM ET). No run-log entry existed yet for today, so searched Claude AI News Recap since yesterday's run 2 (2026-09-12T16:09:35-04:00) per the overnight-catch rule. Found exactly 1 new message: a forwarded 'Hiring Brew' special edition from Morning Brew ('FW: \u2615 Hiring Brew', received 10:06 AM UTC / 6:06 AM ET). Body was large (~56K chars); handed to a subagent to extract and summarize in full. The edition was a mix -- one substantive AI-in-hiring story with real stats, plus several HR/workplace-culture items with no AI angle and no dedicated tip-of-the-day/verbatim-prompt segment, so AI Tips is empty this run (not padded per the no-supplementing rule). Built 1 AI News item (AI now screening/interviewing candidates across the hiring funnel, Stanford/Greenhouse/Software Finder stats) and 3 Beyond AI items (paid work trials rising as AI-polished r\u00e9sum\u00e9s flood applicant pools; Morning Brew's own talent VP on referrals and targeting mid-level LinkedIn contacts; a glossary of 2026 LinkedIn hiring buzzwords -- job-hugging, lily-padding, career catfishing, doomjobbing). Excluded as low-value trivia/entertainment (not fingerprinted, may resurface): a list of bizarre real interview questions (only a passing Anthropic mention had any AI angle) and a hiring-anecdote mailbag. Excluded as ads/housekeeping: two Amex sponsor blocks, 'Brew's Best' lifestyle/affiliate recs, share/referral block, sister-newsletter cross-promo, and the unsubscribe/footer. 4 surviving items (1 news + 3 beyond_ai) cleared the 2-item dedup minimum comfortably; page budget landed naturally at 1 news item on page 1 (tips empty) and 3 beyond_ai items on page 2, no cuts needed. Verified at exactly 2 pages via pymupdf page-image renders (pypdf still unavailable in this run environment). build/brand.json cache absent, so the PDF used the bundled Poppins/Impact Makers fallback palette."
         },
         {
           "run": 2,
@@ -1706,6 +1706,26 @@
             "superhuman|tip|product-photography-image-prompt"
           ],
           "note": "Searched mail since run 1 (08:06:17). Found exactly 1 new message, a forwarded Superhuman AI newsletter ('Jensen and Trump hit back at AI labs'). Its lead story (Trump/China dismissing Anthropic's AI-pacing call, with the new detail that Trump phoned Jensen Huang on stage) was the same underlying story as run 1's 'trump-china|dismiss|ai-pacing-slowdown-calls' -- discarded as already covered rather than re-published. Also discarded as too thin/informal for a story: a resurfaced 'Everyone Dies' AI-doom video, Sam Altman's vague reassurance post, the Siri iOS 27 rollout mention, and a user-built 'Paper Route' game demo. beyond_ai is empty (no non-AI newsletter arrived this run); the 2 tips + 3 news items cleared the 2-item dedup minimum comfortably, so shipped rather than skipped. Verified the final PDF at exactly 1 page via pypdf given the thin single-newsletter source."
+        }
+      ]
+    },
+    "2026-09-16": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-09-16T08:10:25-04:00",
+          "status": "delivered",
+          "covered": [
+            "typesafe|launches|jev-decision-model",
+            "salesforce|launches|koa-reasoning-model",
+            "openai|reveals|project-lily-human-chat-review",
+            "neuron|tip|agent-confidence-threshold",
+            "rundown|tip|openrouter-cheaper-models",
+            "fed|expected-to-hike|rates-first-time-3-years",
+            "cybersecurity-stocks|surge-on|ai-safety-fears",
+            "canada|pitches|1-trillion-investment-summit",
+            "japan|reports|record-centenarian-population"
+          ]
         }
       ]
     }

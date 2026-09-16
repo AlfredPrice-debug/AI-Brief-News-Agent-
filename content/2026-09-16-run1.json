@@ -1,0 +1,91 @@
+{
+  "run": 1,
+  "runTime": "2026-09-16T08:10:25-04:00",
+  "title": "TypeSafe's Zero-Hallucination Model, Salesforce's In-House AI, and the Fed's First Hike in Three Years",
+  "date_display": "Wednesday, September 16, 2026",
+  "date_slug": "9_16_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Sep 16)",
+  "tldr": [
+    "TypeSafe's new Jev model, from a ChatGPT co-creator, answers with confidence scores instead of prose — claimed zero hallucinations at $42 per billion tokens, up to 200x faster than typical LLM workflows.",
+    "Salesforce built its own in-house reasoning model, Koa, trained entirely on synthetic data — 3x fewer CRM errors than top models, with no customer data used.",
+    "The Fed is expected to hike rates today for the first time in three years as Treasury yields hit 19-year highs — worth revisiting any client budgeting assumptions."
+  ],
+  "tips": [
+    {
+      "heading": "Add confidence thresholds to your agent's decisions",
+      "steps": [
+        "Ask the agent for a fixed decision, not an essay.",
+        "Require a confidence score from 0 to 1 alongside the decision.",
+        "Set an escalation rule — route anything below a chosen threshold (e.g. 0.85) to a human or a stronger model."
+      ],
+      "prompt": "Classify this request as APPROVE, REVIEW, or REJECT. Return only the decision, a confidence score from 0 to 1, and one sentence explaining the most important uncertainty. If confidence is below 0.85, choose REVIEW.",
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Give your coding agent access to cheaper models via OpenRouter",
+      "steps": [
+        "Sign in to OpenRouter, filter its catalog for your task, and sort low to high price.",
+        "Create a project-scoped API key with a spending limit and expiration date.",
+        "Give the key to your agent (Codex, Claude Code, etc.), run a small test task, then compare cost and quality before switching."
+      ],
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>A ChatGPT co-creator's startup launched \"Jev,\" an AI that answers with confidence scores instead of prose.</b> TypeSafe's Jev picks among pre-set options, responds in 70–500ms, and claims 40–200x faster, up to 238x cheaper results than typical LLM workflows, at $42 per billion input tokens with free output.",
+      "means": "A different tool category for narrow, high-volume decisions like routing, scoring, or screening — worth a look before defaulting to a full LLM for structured judgment calls.",
+      "source": "The Neuron, The Rundown AI",
+      "low": false
+    },
+    {
+      "body": "<b>Salesforce built its own in-house reasoning model, Koa, trained entirely on synthetic data.</b> Running on a customized Nvidia Nemotron 3 Super, Koa made 3x fewer errors than top models on Salesforce's internal CRM benchmark, with no customer data used.",
+      "means": "Competitive intel if clients run on Salesforce — a build-vs-buy example of a vendor keeping AI and data in-house.",
+      "source": "The Rundown AI",
+      "low": false
+    },
+    {
+      "body": "<b>OpenAI contractors have been reading real ChatGPT conversations to rate them, often without users' knowledge.</b> A 404 Media investigation, \"Project Lily,\" found hundreds of human reviewers sampling and grading live chats.",
+      "means": "A concrete data point for the privacy question enterprise clients eventually ask about AI chat tools — worth having ready before they ask.",
+      "source": "The Rundown AI",
+      "low": false
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>The Fed is expected to raise interest rates today for the first time in three years.</b> Chair Kevin Warsh cited a worse-than-expected inflation report and an oil price spike tied to the Iran war; markets are pricing a 92% chance of a 0.25% hike, and the 10-year Treasury yield hit 5.04% this week, its highest in 19 years.",
+      "angle": "Revisit any client budgeting or financing conversations that assumed rates would hold or fall this quarter.",
+      "starter": "Are we still planning around steady rates, or does today's Fed move change the borrowing math for this project?",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>Cybersecurity stocks are surging as AI leaders warn their own tools could enable sophisticated hacks.</b> CrowdStrike is up 17.6% and Palo Alto Networks up 13.5% this week, even as chip stocks fell; Gartner projects global cybersecurity spending will grow from $51B this year to $86B by 2027.",
+      "angle": "A market signal worth citing when clients ask whether AI-driven security risk is real enough to budget for — investors are already voting with capital.",
+      "starter": "Have you noticed security spend is now tracking the same AI-risk headlines that used to just spook chip stocks?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Canada pitched CAD$1 trillion in investment projects to global asset managers,</b> including a $10 billion AI data center and a $25 billion oil pipeline in Alberta, backed by a cut in effective tax rates on depreciating assets from 13% to 6.4%.",
+      "angle": "A live example of a government using tax policy to court AI infrastructure investment — a useful comparison point if clients are weighing where to site data-heavy operations.",
+      "starter": "Are we tracking how aggressively Canada is courting AI infrastructure investment right now?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Japan now has over 100,000 people age 100 or older for the first time,</b> nearly 90% of them women, after 56 straight years of growth. The country needs an estimated 2.4 million elder-care workers in 2026, up from 2.1 million in 2024, and is nearly tripling foreign care-worker visas to fill the gap.",
+      "angle": "A workforce-planning case study in aging demographics and immigration policy — relevant if any client work touches eldercare, healthcare staffing, or the Japan market.",
+      "starter": "If Japan's care workforce gap is this steep, what does that mean for any healthcare staffing clients eyeing that market?",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "typesafe|launches|jev-decision-model",
+    "salesforce|launches|koa-reasoning-model",
+    "openai|reveals|project-lily-human-chat-review",
+    "neuron|tip|agent-confidence-threshold",
+    "rundown|tip|openrouter-cheaper-models",
+    "fed|expected-to-hike|rates-first-time-3-years",
+    "cybersecurity-stocks|surge-on|ai-safety-fears",
+    "canada|pitches|1-trillion-investment-summit",
+    "japan|reports|record-centenarian-population"
+  ]
+}
