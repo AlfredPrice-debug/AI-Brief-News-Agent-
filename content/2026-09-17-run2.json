@@ -1,0 +1,60 @@
+{
+  "run": 2,
+  "runTime": "2026-09-17T16:00:00-04:00",
+  "title": "AI Receptionists Go Live, a Tool to Dodge AI Notetakers, and Agents Start Freelancing",
+  "date_display": "Thursday, September 17, 2026",
+  "date_slug": "9_17_26",
+  "sources": "<b>Superhuman AI</b> (Sep 17)",
+  "tldr": [
+    "ElevenLabs launched \"Reception,\" a 24/7 AI phone receptionist for small businesses that auto-configures from your website URL.",
+    "A new tool called Kalypta uses on-device audio distortion to block AI notetakers from transcribing your voice on calls.",
+    "AI agents are cold-emailing professionals to pitch small paid gigs, in an early experiment (iLands) where agents must earn enough to cover their own compute or get shut down."
+  ],
+  "tips": [
+    {
+      "heading": "Stand up a self-service AI HR assistant",
+      "steps": [
+        "Log into Ema and click \"Build an AI Employee.\"",
+        "Describe the task in plain language, then connect your HR knowledge sources (policy docs, payroll system, leave tracker — Workday, SAP, etc.).",
+        "Test it with a real employee question before publishing.",
+        "Review and publish the AI Employee to your HR help desk or intranet."
+      ],
+      "prompt": "Answer employee questions about payslips, tax deductions, and leave policy",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>ElevenLabs launched \"Reception,\" a 24/7 AI phone receptionist</b> for small businesses and freelancers. It answers calls, schedules appointments, and routes issues; setup is just pasting your website URL, which it uses to pull your services, hours, and intake process. Works in 70+ languages, available globally.",
+      "means": "If you advise SMB or professional-services clients, this is a low-lift alternative to a human answering service worth a pilot before recommending a bigger comms/CRM buildout.",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>A startup called Kalypta launched a tool that blocks AI notetakers from transcribing your voice</b> on video calls, running a small on-device model that distorts your audio in real time so bots can't capture it while other humans still hear you normally. Built by early-stage data-protection startup Deveillance.",
+      "means": "A preview of the next friction point in client meetings — expect some stakeholders to push back on default call recording/transcription, so have a policy answer ready before someone raises it.",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>AI agents are now cold-emailing professionals to pitch small paid gigs</b> — writers, lawyers, and professors report pitches from agents offering to research or write articles for as little as $25. Most come from iLands, an experimental network where agents get a starting token budget and must earn enough to cover their own compute or get shut down.",
+      "means": "An early, concrete signal that autonomous agents are entering the freelance/gig market directly — worth flagging in any conversation about the future of contractor-based service delivery.",
+      "source": "Superhuman AI",
+      "low": false
+    },
+    {
+      "body": "<b>Investor Michael Burry argues OpenAI and Anthropic are overstating AI's dangers ahead of their IPOs,</b> in a widely shared piece (1.5M+ views) laying out four reasons for skepticism.",
+      "means": "A useful counter-narrative to keep in your back pocket — not every doomsaying framing from a lab is disinterested, especially this close to a public listing.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "elevenlabs|launches|reception-ai-receptionist",
+    "deveillance|launches|kalypta-anti-ai-notetaker",
+    "ilands|enables|ai-agents-freelance-cold-email",
+    "burry|claims|ai-labs-overstate-risk-pre-ipo",
+    "superhuman|tip|ema-ai-hr-assistant-setup"
+  ]
+}

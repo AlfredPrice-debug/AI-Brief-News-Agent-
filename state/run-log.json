@@ -1759,6 +1759,18 @@
             "suno|staged|oreo-gate-marketing-hoax",
             "us-retail-sales|rise|1.2pct-august"
           ]
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-09-17T16:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "elevenlabs|launches|reception-ai-receptionist",
+            "deveillance|launches|kalypta-anti-ai-notetaker",
+            "ilands|enables|ai-agents-freelance-cold-email",
+            "burry|claims|ai-labs-overstate-risk-pre-ipo",
+            "superhuman|tip|ema-ai-hr-assistant-setup"
+          ]
         }
       ]
     }
