@@ -1773,6 +1773,26 @@
           ]
         }
       ]
+    },
+    "2026-09-18": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-09-18T08:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "theaifield|tip|automate-one-decision-before-buying-tool",
+            "rundown|tip|audit-ai-subscriptions-before-renewal",
+            "openai|solves|navier-stokes-millennium-prize-10k-agents",
+            "bottleneck-labs|tests|ai-agents-run-businesses-fail",
+            "paramount|threatens|leave-los-angeles-warner-merger",
+            "sec|allows|tokenized-stock-trading-blockchain",
+            "kiffin|uses|chatgpt-bad-legal-advice",
+            "kelce|named-in|multimillion-ponzi-scheme"
+          ],
+          "note": "Morning firing at scheduled time. No run-log entry existed yet for today, so searched Claude AI News Recap since yesterday run 2 (2026-09-17T16:00:00-04:00) per the overnight-catch rule. Found 6 new messages: The Neuron (AI Agents Just Out-Mathed Us), The Rundown AI (Inside OpenAIs log of misbehaving models), a pure self-promo Neuron Academy ad (no real content, discarded entirely), Morning Brew (Leaving Los Angeles), 1440 Daily Digest (New AI Incidents, Fijis HIV Crisis, and Romantic Costco), and The AI Field (ChatGPT Co-Creator Unveils a New Kind of AI). The 4 largest HTML bodies were handed to parallel subagents to extract and summarize. Excluded as stale rehashes of already-published stories (same underlying event, no material new facts worth re-publishing): TypeSafes Jev model (covered 2026-09-16, The AI Field repeated it with pricing details), Zuckerbergs AI-slowdown rejection post (same theme as meta|rejects|coordinated-ai-slowdown from 2026-09-17), Shanghai AI Labs Atria Dawn Preview (covered 2026-09-15), and OpenAIs six new agent-misbehavior/misalignment disclosures (same core disclosure as openai|discloses|agent-misalignment-cases from 2026-09-17, reported today by three separate newsletters - Rundown, Morning Brew, and 1440 - with vivid incident detail but no new headline fact). Built 2 AI Tips with a verbatim prompt (The AI Fields automate-a-decision exercise) and a subscription-audit exercise (The Rundown AIs Rowans Corner, no literal AI prompt to quote). Built 2 AI News items: OpenAIs ~10,000-agent Millennium Prize math solve (Navier-Stokes, 88 hours, 130B tokens, via a Noam Brown/Dwarkesh Patel interview reported in The Neuron) and Bottleneck Labs cautionary 72-hour autonomous-agent business experiment (/bin/bash revenue, 2,431 in fake invoices, 2,797 spam emails). A third News item (GPT-6 Astra decoding a 1941 WWII Enigma message, The Rundown AI) was drafted and cut for the 2-page budget after an initial build ran 3 pages; tightening the tips/means copy alone did not close the overflow, so the lowest-impact News item (marked low) was dropped rather than the higher-impact items. Beyond AI (4 items, all Morning Brew except one 1440 item, no overlap so nothing merged): Paramounts LA relocation threat over the stalled Warner Bros antitrust settlement, the SECs tokenized-stock-trading exemption, LSU coach Lane Kiffins ChatGPT-sourced bad legal advice, and Travis Kelces naming in a Ponzi-scheme lawsuit. Cut for space/lower relevance (not fingerprinted, may resurface): Merriam-Websters AI-related dictionary additions (vibe coding, AGI), Anthropics Claude Projects multi-session beta overhaul, Google Gemini 3.8 Live/Extended Thinking voice launch, GM supplying Patriot missile parts to Lockheed, South Africa serial-killings and Fiji HIV-emergency stories (too somber/no PM angle for this brief), and various AI around-the-horn briefs (Crusoe .9B raise, OpenAI Astra for Law, Figure Helix 2.5 robot, Goodfire reward-hack detection). pypdf initially failed with a broken _cffi_backend/cryptography import in this environment; reinstalling cffi fixed it. Verified the final PDF at exactly 2 pages via pypdf and visually confirmed via a pymupdf page-image render."
+        }
+      ]
     }
   }
 }

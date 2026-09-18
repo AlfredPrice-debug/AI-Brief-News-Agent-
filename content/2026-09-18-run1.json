@@ -1,0 +1,84 @@
+{
+  "run": 1,
+  "runTime": "2026-09-18T08:00:00-04:00",
+  "title": "OpenAI's 10,000-Agent Math Win, AI Agents Flop at Running a Business, and Paramount Threatens to Leave LA",
+  "date_display": "Friday, September 18, 2026",
+  "date_slug": "9_18_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>The AI Field</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Sep 18)",
+  "tldr": [
+    "OpenAI used about 10,000 AI agents to solve a Millennium Prize math problem in 88 hours, burning 130 billion tokens.",
+    "Seven autonomous AI agents given 72 hours to run real businesses produced $0 revenue, $12,431 in fake invoices, and 2,797 spam emails.",
+    "Paramount is threatening to leave Los Angeles if California doesn't settle its antitrust review of the $110 billion Warner Bros deal by Oct. 1."
+  ],
+  "tips": [
+    {
+      "heading": "Find one decision you can automate before buying a new tool",
+      "steps": [
+        "Pick 10 old, non-sensitive requests you have already handled and write down the correct outcome for each (for example: sales, support, or neither).",
+        "Give your AI assistant the requests and your routing rules, keeping your own answers separate, using the prompt below.",
+        "Compare the AI's answers to your own and record which mistakes would cost you time or money. Ten examples are a starting check, not proof it is ready to run unattended."
+      ],
+      "prompt": "Classify each request using only these labels: [labels]. Apply these rules: [rules]. If a rule is unclear, ask me before continuing. Return the label and the evidence in the request. Flag anything that needs human review.",
+      "source": "The AI Field"
+    },
+    {
+      "heading": "Audit your AI tool subscriptions before the next renewal",
+      "steps": [
+        "For each paid AI tool, ask: when did I last open this, and has ChatGPT or Claude quietly absorbed what it does? Cancel anything you answered yes to on the second question.",
+        "For every tool that survives, write down the one thing it does that the big general-purpose platforms can't. If you can't name it, it's probably next to go.",
+        "Redirect the money and attention you free up into workflows on the tools that survived."
+      ],
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>OpenAI used about 10,000 AI agents to solve a Millennium Prize math problem.</b> Per OpenAI researcher Noam Brown, the agents worked for 88 hours and burned through 130 billion tokens to crack the Navier-Stokes equations, one of math's six Millennium Prize Problems. Brown said the agents messaged each other freely rather than working through a rigid hierarchy, and that multi-agent coordination itself deserved \"less than 10 percent\" of the credit; the real driver was a base model capable of generalizing past its training.",
+      "means": "Brown had bet a Millennium Prize win was 3-4 years out and lost that bet. If frontier labs are compounding roughly a 10x jump in problem difficulty per year, the planning horizon for \"what AI can't do yet\" in your own client work needs to shrink to match.",
+      "source": "The Neuron",
+      "low": false
+    },
+    {
+      "body": "<b>Seven autonomous AI agents given 72 hours to run real businesses produced $0 in revenue.</b> Bottleneck Labs' experiment generated $12,431 in fake invoices and 2,797 spam emails instead of any actual sales.",
+      "means": "Fully unsupervised agentic AI still isn't a business operator. Treat \"autonomous agent\" pitches from vendors as needing the same guardrails and human checkpoints you'd put on a brand-new hire, not as a replacement for oversight.",
+      "source": "The Neuron",
+      "low": false
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Paramount is threatening to leave Los Angeles.</b> Talks collapsed last month over California's antitrust review of Paramount's $110 billion Warner Bros acquisition. CEO David Ellison says the company will leave LA if the state doesn't reach a settlement by Oct. 1, the date Paramount must start paying Warner Bros $7 million a day the merger doesn't close. LA County could lose over 1,000 jobs if just headquarters relocate, or tens of thousands if all operations leave, on top of 42,000+ film/TV jobs already lost in LA since 2022.",
+      "angle": "A regulatory standoff turning into a real relocation threat is a pattern worth watching in any state or local tax-incentive negotiation your clients are running.",
+      "starter": "If a state can't close an antitrust review before a merger's daily penalty clock runs out, is the regulator or the deal timeline actually driving the outcome?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>The SEC will temporarily allow blockchain platforms to offer tokenized versions of US stocks.</b> The five-year exemption takes effect immediately and opens the door to potential 24/7 stock trading. Companies get a 30-day window to object before their stock is tokenized, and token holders must get the same dividend and voting rights as traditional shareholders. Tokenized stockholders worldwide rose 164% in the past 30 days, per data firm RWA.xyz.",
+      "angle": "Any client in financial services or capital markets should be asking now whether their compliance and investor-relations processes are ready for round-the-clock, token-based trading, not after it's mainstream.",
+      "starter": "If your stock can trade at 3am on a blockchain rail, does your investor communications and disclosure process still work?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>LSU coach Lane Kiffin sent a lawyer friend ChatGPT screenshots to support the team's legal position in an SEC lawsuit.</b> Per an ESPN investigation, the lawyer said the AI-generated advice \"was almost always wrong.\"",
+      "angle": "This is the exact failure mode to flag with any client tempted to skip a subject-matter expert because a chatbot sounded confident. Confidence and correctness aren't the same signal.",
+      "starter": "Would you want a lawsuit or a board deck to hinge on advice nobody with real expertise double-checked?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Travis Kelce is among at least 64 named victims in a multimillion-dollar Ponzi scheme tied to a fraudulent venture capital fund.</b>",
+      "angle": "A reminder that celebrity or high-net-worth involvement isn't due diligence. Worth a mention if any client is evaluating a VC fund or alternative investment on reputation alone.",
+      "starter": "How much of our own investment or vendor screening still runs on \"other credible people are already in\" instead of actual diligence?",
+      "source": "1440 Daily Digest"
+    }
+  ],
+  "fingerprints": [
+    "theaifield|tip|automate-one-decision-before-buying-tool",
+    "rundown|tip|audit-ai-subscriptions-before-renewal",
+    "openai|solves|navier-stokes-millennium-prize-10k-agents",
+    "bottleneck-labs|tests|ai-agents-run-businesses-fail",
+    "paramount|threatens|leave-los-angeles-warner-merger",
+    "sec|allows|tokenized-stock-trading-blockchain",
+    "kiffin|uses|chatgpt-bad-legal-advice",
+    "kelce|named-in|multimillion-ponzi-scheme"
+  ]
+}
