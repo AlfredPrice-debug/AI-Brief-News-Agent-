@@ -1,0 +1,42 @@
+{
+  "run": 2,
+  "runTime": "2026-09-19T16:06:21-04:00",
+  "title": "Figure's Robots Learn Any Home, UBTECH Scales to 10,000 Units, and Robots Get Their Own Ambulance",
+  "date_display": "Saturday, September 19, 2026",
+  "date_slug": "9_19_26",
+  "sources": "<b>Superhuman AI</b> (Sep 19)",
+  "tldr": [
+    "Figure AI's Helix 2.5 let humanoid robots do real chores in 30 homes they'd never seen before — a major leap in generalization.",
+    "UBTECH opened a plant designed to mass-produce humanoid robots at 10,000-unit scale, using robots to help build robots.",
+    "Agility's safety-certified Digit 5 humanoid landed $300M in orders ahead of a North America launch in early 2027."
+  ],
+  "news": [
+    {
+      "body": "<b>Figure AI's Helix 2.5 model lets its humanoid robots walk into homes they've never seen and start working immediately.</b> In a test across 30 unfamiliar homes, the robots tidied living rooms, folded and stored towels, and made beds with no prior mapping or training on that specific space.",
+      "means": "Generalizing to unfamiliar environments has been the main thing keeping robots out of homes and small businesses — this is early evidence that barrier is breaking. Worth flagging to any client evaluating physical automation timelines.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>UBTECH opened a plant built to manufacture humanoid robots at 10,000-unit scale</b> — the first of its kind, using robots on the assembly line to help build more robots. Each unit gets over four hours of testing; UBTECH credits China's supply chain for making the scale possible. Separately, Goldman Sachs now projects 6.5M humanoid robots could ship globally by 2035.",
+      "means": "A dedicated high-volume humanoid factory signals falling unit costs ahead. Useful context for client conversations about how soon humanoid labor becomes commercially viable rather than a pilot curiosity.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Agility Design's Digit 5 humanoid is built to work safely alongside people without barriers</b> — it detects nearby humans and slows, stops, or powers down if approached. The company reports $300M in multiyear orders and plans a North America launch in early 2027, with Europe and the UK following later that year.",
+      "means": "Real, paid orders for a safety-certified humanoid (not just a demo) is a concrete signal that industrial and warehouse clients are already buying, not only piloting. A good reference point if a client asks who's actually deploying these today.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Japanese company GMO unveiled a \"humanoid ambulance\"</b> — a repair van stocked with diagnostic tools, spare parts, and a backup humanoid ready to swap in when a robot breaks down mid-shift, while engineers haul the broken unit back to base.",
+      "means": "The maintenance and uptime layer is quietly becoming its own business line. If a client deploys robot labor, budget for a support/repair contract the same way they would for industrial equipment, not as an afterthought.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "fingerprints": [
+    "figure-ai|launches|helix-2.5-zero-shot-home-chores",
+    "ubtech|builds|10000-unit-humanoid-plant",
+    "agility|launches|digit-5-safety-humanoid",
+    "gmo|unveils|humanoid-robot-ambulance-service"
+  ]
+}
