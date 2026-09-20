@@ -1,0 +1,46 @@
+{
+  "run": 1,
+  "runTime": "2026-09-20T08:07:18-04:00",
+  "title": "Gaming Goes Digital-Only, Hollywood Cashes In on Game IP, Fans Vibe-Code with Claude",
+  "date_display": "Sunday, September 20, 2026",
+  "date_slug": "9_20_26",
+  "sources": "<b>Morning Brew</b> (Gaming Brew special edition, Sep 20)",
+  "tldr": [
+    "Sony ends physical PS5 game sales in 2028 and GTA VI ships digital-only, accelerating gaming's shift to subscription-style cloud play, with usage caps and ads already arriving on Xbox.",
+    "Hollywood's biggest recent hits are built on video-game IP - Mario, Minecraft, Sonic, Fallout, and The Last of Us have each cleared $960M+ - and studios are launching in-house game arms to mine their own catalogs.",
+    "Consumers are vibe-coding their own small games with AI apps like Claude, Meta's Pocket, and Roblox's Build, though one builder's DIY GTA clone hit real technical and legal limits."
+  ],
+  "news": [
+    {
+      "body": "<b>Consumers are vibe-coding their own video games with AI apps.</b> Tools like Meta's Pocket and Roblox's Build let anyone prompt their way to a small, playable game; an Inc. reporter built a browser game after an hour of prompting Claude, while another builder tried to vibe-code a GTA clone to beat GTA VI to market but hit technical and legal walls and bought a PS5 instead.",
+      "means": "Low-code, prompt-built creation is moving from business tools into consumer entertainment - a live example of how fast a prototype can go from novelty to real product, and where the IP/legal guardrails still bite.",
+      "source": "Morning Brew (Gaming Brew)"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Sony will sell new PlayStation games as digital downloads only starting in 2028, and Grand Theft Auto VI will launch digital-only too.</b> Take-Two's CEO predicts a coming cloud-gaming surge, but Xbox already added monthly streaming limits to Game Pass and is testing ad-supported streaming to offset rising costs.",
+      "angle": "The tension here - you don't fully own what you 'buy,' and usage caps arrive only after adoption - mirrors the pushback clients hit when moving customers to consumption-based SaaS pricing. A live case study for pricing and governance conversations.",
+      "starter": "Sony's going digital-only on PS5 games by 2028 - anyone else think the 'you don't actually own it' backlash is a preview of what happens when we push clients toward usage-based pricing?",
+      "source": "Morning Brew (Gaming Brew)"
+    },
+    {
+      "body": "<b>Video-game adaptations are now some of Hollywood's biggest hits.</b> The Super Mario Galaxy Movie and A Minecraft Movie each topped $960M worldwide, the Sonic franchise has cleared $1B since 2020, and Fallout and The Last of Us succeeded on TV - prompting Paramount and Warner Bros. Discovery to each launch in-house game studios to mine their own film/TV IP for games.",
+      "angle": "A clean example of an IP portfolio monetized across every channel instead of siloed by medium - worth citing when a client asks how to get more value out of an existing brand or content library.",
+      "starter": "Paramount and Warner Bros. Discovery are both building game studios just to reuse their own movie and TV IP - is there a version of that inside our own content or product portfolio?",
+      "source": "Morning Brew (Gaming Brew)"
+    },
+    {
+      "body": "<b>Collegiate esports scholarships are scaling fast.</b> The National Association of Collegiate Esports now covers 200+ schools and 16,000 student-athletes with $20,000-$30,000 scholarships typical; at one New Jersey recruiting event, 29 colleges made 181 offers totaling $99,000, including two full rides.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Did you know kids are getting full-ride scholarships for esports now? Recruiting for gaming talent is basically running like a varsity sports program.",
+      "source": "Morning Brew (Gaming Brew)"
+    }
+  ],
+  "fingerprints": [
+    "sony|ends|physical-ps5-sales-2028",
+    "hollywood|mines|video-game-ip-hits",
+    "gamers|vibe-code|ai-generated-games",
+    "collegiate-esports|awards|scholarships-to-gamers"
+  ]
+}
