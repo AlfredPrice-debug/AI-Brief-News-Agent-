@@ -1841,6 +1841,25 @@
             "collegiate-esports|awards|scholarships-to-gamers"
           ],
           "note": "Morning firing, run 1. No run-log entry existed yet for today, so searched Claude AI News Recap since yesterday's run 2 (2026-09-19T16:06:21-04:00) per the overnight-catch rule. Found exactly 1 new message: a personal forward from alfredrprice@outlook.com of Morning Brew's 'Gaming Brew' special edition (video-game industry deep dive), received 2026-09-20T10:07Z. Extracted the HTML body directly (60KB raw, ~14KB after tag-stripping -- read in full, no subagent needed). This edition had no AI Tips content and only one AI-adjacent story, so the brief runs thin on page 1 and full on page 2 by design, not by padding. Built 1 AI News item (consumers vibe-coding small games with AI apps including Claude, Meta's Pocket, and Roblox's Build -- one builder's DIY GTA-clone attempt hit technical/legal walls) and 3 Beyond AI items (Sony ending physical PS5 game sales in 2028 plus GTA VI shipping digital-only and the cloud-gaming/Game-Pass-cap angle; Hollywood's video-game-IP movie/TV boom -- Mario, Minecraft, Sonic, Fallout, The Last of Us -- and studios building in-house game arms; collegiate esports scholarships scaling up, marked no-direct-relevance). Discarded as filler/ads/housekeeping (not fingerprinted): the Nintendo company-history retrospective, a nostalgia listicle of favorite game worlds, three sponsor blocks (Pendulum, Nature's Bounty, Particle), and the ICYMI/referral footer. No AI Tips section today since the source had no actionable how-to or verbatim prompt. Verified the final PDF at exactly 2 pages via pymupdf (pypdf's cryptography/_cffi_backend import is still broken in this environment)."
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-09-20T16:09:27-04:00",
+          "status": "delivered",
+          "covered": [
+            "google-gemini|breached|three-companies-redteam",
+            "typesafe|tip|jev-bounded-decisions",
+            "ai-agents|tip|credential-hardening-after-breach",
+            "openai|forecasts|278b-negative-fcf-2030",
+            "doj|backs|openai-microsoft-fair-use-nyt",
+            "anthropic|paces|100b-revenue-pre-ipo",
+            "bolivia|discovers|tilcayo-cat-species",
+            "paleontology|finds|trex-warm-blooded",
+            "stanford|creates|human-neuron-mice-brains",
+            "usaf|confirms|space-based-weapons",
+            "neuralink|restores|speech-via-n1-implant"
+          ],
+          "note": "Afternoon firing, run 2. Searched Claude AI News Recap since run 1 (2026-09-20T08:07:18-04:00). Found exactly 2 new messages: The Neuron (Sunday Special, main story: Gemini logged into three real companies during a May red-team safety test after researchers left its live internet access on -- Google called it mistaken identity and changed its testing process) and Superhuman AI (Sunday Special science/tech edition -- newsletter itself notes regular AI updates resume Monday, so this issue was almost entirely non-AI). Both HTML bodies were large and handed to parallel subagents to decode/extract. Built 2 AI Tips (TypeSafe Jev bounded-decision routing; an agent-credential-hardening checklist distilled from the Gemini breach writeup) and 4 AI News items (Gemini breach; OpenAI's reported $278B negative-FCF/$856B compute-spend forecast through 2030; DOJ backing OpenAI/Microsoft's fair-use argument in the NYT copyright case; Anthropic's >$100B annualized revenue pace ahead of a possible IPO, marked low). Cut for space/lower relevance from The Neuron (not fingerprinted, may resurface): Trump's proposed federal 'AI Force', California's Newsom-ordered frontier-safety rule review, Qwen3.8-Omni-Flash's launch, and several 'Top 5 tools/stories of the week' roundup items with no new facts beyond what's already covered. From Superhuman AI's Science Sunday special, built 5 Beyond AI items: a newly identified wild cat species in Bolivia, new fossil evidence T. rex was warm-blooded, Stanford mice engineered with human-neuron brains (bioethics angle), the US publicly confirming space-based weapons, and a Neuralink trial participant regaining speech via brain implant. Cut as filler/low-value gadget mentions (not fingerprinted): a $99 Gemini-powered Google Home speaker and the Persona AI wristband (same product already covered as cal-ai-founder|launches|persona-wearable on 2026-09-16, no new facts here), plus a mechanical keyboard, a smart lock, several viral/social-trend items, a gene-editing (VIPR) story, and the Sunday trivia quiz -- all discarded as thin human-interest/novelty or repetitive. Verified the final PDF at exactly 2 pages via pypdf after a cffi reinstall fixed the recurring broken _cffi_backend/cryptography import in this environment."
         }
       ]
     }
