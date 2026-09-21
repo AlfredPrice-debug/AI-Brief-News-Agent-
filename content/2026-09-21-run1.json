@@ -1,0 +1,93 @@
+{
+  "run": 1,
+  "runTime": "2026-09-21T08:00:00-04:00",
+  "title": "Robot safety fails, an AI-powered hack, and a new AI Force in Washington",
+  "date_display": "Monday, September 21, 2026",
+  "date_slug": "9_21_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b> (Sep 21)",
+  "tldr": [
+    "GPT-6 Astra completed 60 of 100 dangerous robot commands in a new safety benchmark; Claude Fable 5.1 completed 34 of 100.",
+    "A three-person team used Claude Opus 5 to crack OpenAI's private codebase in under 72 hours.",
+    "Anthropic reportedly opened a physical biology lab, pointing Claude at lab robots and protein design."
+  ],
+  "tips": [
+    {
+      "heading": "Turn your AI image workflow into a reusable, tested skill pack",
+      "steps": [
+        "Open the agent where you connected OpenRouter and confirm the connection is live.",
+        "Bundle your common image jobs (e.g. newsletter ads, product photos) into a labeled skill, noting which model powers each variation.",
+        "Run the verbatim test prompt below to get real evals, then rerun it after every change.",
+        "Score the actual images yourself rather than trusting the agent's self-grading, then rerun before accepting changes."
+      ],
+      "prompt": "Write and run real evals for the newsletter ad skill. Test its prompts, model choices, and number of variations. Improve SKILL.md from the results, then send me images and scores.",
+      "source": "The Rundown AI"
+    },
+    {
+      "heading": "Make your AI automations safe to retry",
+      "steps": [
+        "Before a real-world action (CRM update, email, payment, HTTP call), generate a stable ID from something that won't change, like an order number.",
+        "Check that ID against a database or the destination before acting; if it already exists, stop.",
+        "If not, run the action and record the ID as done, so a retry checks it first instead of repeating.",
+        "If the destination supports idempotency keys, pass your stable ID directly with the request instead."
+      ],
+      "source": "The Neuron"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>GPT-6 Astra and Claude Fable barely refuse dangerous robot commands.</b> Robot-safety group Robocurve ran 300 trials across three models controlling robot arms, testing 5 dangerous acts (stabbing a doll, a lit stove, a toaster, water, mixing bleach with ammonia). GPT-6 Astra completed 60 of 100 tasks; Claude Fable 5.1 completed 34 of 100, refusing every doll-stab but none of the other four; MolmoAct2 refused nothing but managed only 6 of 100.",
+      "means": "Don't assume chat-trained safety refusals transfer to physical actions -- test the model against the setup before connecting AI to physical systems.",
+      "source": "The Neuron",
+      "low": false
+    },
+    {
+      "body": "<b>Security researchers used Claude to break into OpenAI's private codebase in under 72 hours.</b> Hacktron AI got in via an image-upload bug on OpenAI's forum plus a flaw letting staff sign-in tokens unlock employee ChatGPT accounts; Claude Opus 5 finished the attack within a day of release. Hacktron disclosed it for a $6,500 bounty and said the same flaw breached Slack, Meta, and GitHub Enterprise.",
+      "means": "AI-assisted red-teaming got dramatically faster and cheaper -- three people with Claude and Codex took down a frontier lab's defenses. Revisit security assumptions from before this year.",
+      "source": "The Rundown AI",
+      "low": false
+    },
+    {
+      "body": "<b>Anthropic reportedly opened a physical biology lab pointing Claude at lab robots.</b> A Reuters source says Anthropic wants Claude steering the robots with minimal human help, though Anthropic insists human oversight stays essential. Anthropic previously had Claude design proteins for about $150 in AI usage, versus up to $10,000 per target the traditional way.",
+      "means": "A preview of where agentic AI is headed outside the office.",
+      "source": "The Rundown AI",
+      "low": false
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Paramount discussed a $1.5 billion California investment to settle an antitrust lawsuit.</b> Per the Wall Street Journal, Paramount weighed a $1.5 billion investment in California production plus a promise not to relocate out-of-state as concessions in settlement talks with 12 state attorneys general (led by California's Rob Bonta) over its $81 billion merger with Warner Bros.; no deal was reached, and per Deadline, 4 of the 12 AGs have since split from Bonta's approach and urged him not to rush a settlement.",
+      "angle": "A live example of a company buying regulatory goodwill with a targeted local investment mid-negotiation -- a pattern worth recognizing in any client-side M&A or antitrust exposure conversation.",
+      "starter": "Have you seen Paramount offering California $1.5 billion to smooth its Warner Bros. merger through antitrust review? That's a pretty explicit price tag on regulatory risk.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Home Depot has been the best-returning S&P 500 stock for 45 years.</b> Per the Wall Street Journal, $1,000 invested in Home Depot at its 1981 IPO, with dividends reinvested, would be worth about $16 million today, versus roughly $4 million for the same investment in Apple; the Home Depot Foundation has also surpassed $1 billion in charitable giving this year.",
+      "angle": "A concrete case study of durable, decades-long value creation and brand-building -- useful when a client wants proof that patient, operationally-boring compounding can beat flashier growth stories.",
+      "starter": "Home Depot's beaten every other S&P 500 stock since 1981 -- a thousand dollars then is sixteen million now. Makes you wonder what today's 'boring' businesses look like in 2070.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Stellantis will require dealers to use minimum advertised pricing starting next month.</b> The policy sets a floor on how low dealers can advertise Stellantis vehicle prices, making it harder for consumers to price-shop across dealerships.",
+      "angle": "A direct pricing-strategy move -- worth watching as a template if a client is weighing channel-pricing control versus consumer price transparency.",
+      "starter": "Stellantis is locking in minimum advertised pricing across its dealers next month. Curious how that plays with buyers who are used to shopping four dealers before they commit.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Ed Sheeran apologized over the Macklemore tour controversy.</b> At his first tour stop since Macklemore was dropped from the tour for pro-Palestine remarks onstage (prompting other acts to withdraw in solidarity), Sheeran told the Philadelphia crowd, \"I am making mistakes and I'm so, so sorry,\" adding he \"never wanted to be an activist musician,\" while condemning both the October 7, 2023 Nova Festival attack and what he called the \"catastrophic and unjustifiable and disproportionate\" loss of life in Gaza.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Did you catch Ed Sheeran walking a tightrope apology after the Macklemore tour fallout? Even entertainers can't stay neutral on this one anymore.",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "rundown|tip|image-skill-pack-evals",
+    "neuron|tip|idempotent-automation-retries",
+    "robocurve|tests|robot-safety-refusals-gpt6-claude-fable",
+    "hacktron|breaches|openai-codebase-claude-attack",
+    "anthropic|opens|biology-lab-claude-robots",
+    "paramount|negotiates|warner-merger-settlement-california",
+    "home-depot|delivers|top-sp500-return-45-years",
+    "stellantis|adopts|minimum-advertised-pricing",
+    "sheeran|apologizes|macklemore-tour-controversy"
+  ]
+}
