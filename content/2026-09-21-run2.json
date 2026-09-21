@@ -1,0 +1,55 @@
+{
+  "run": 2,
+  "runTime": "2026-09-21T16:07:00-04:00",
+  "title": "Claude Projects Levels Up, Meta Muse Opens to Developers, and the Real AI ROI Problem",
+  "date_display": "Monday, September 21, 2026",
+  "date_slug": "9_21_26",
+  "sources": "<b>Superhuman AI</b> (Sep 21)",
+  "tldr": [
+    "Anthropic redesigned Claude's projects so you can hand it several tasks at once and it delegates and assembles the work itself, starting in Claude Code.",
+    "Meta opened Muse to developers via new Muse Connectors, as Muse holds the #1 free spot in Apple's App Store.",
+    "90% of companies use AI but only 6% report capturing real value from it — here's what the ones who do are doing differently."
+  ],
+  "tips": [
+    {
+      "heading": "Run a personal follow-up system with an AI agent",
+      "steps": [
+        "Connect the email, calendar, and messaging accounts you want monitored to a tool like Instinct.",
+        "Tell it which relationships matter most (clients, partners, candidates, vendors, key colleagues) and define what counts as a dropped follow-up, e.g. an unanswered email after 3 days.",
+        "Forward important threads to its inbox or add it to group threads so it can track decisions and outstanding actions.",
+        "Ask for a daily or weekly brief showing who needs attention, why, and the recommended next action, and review before it sends anything."
+      ],
+      "prompt": "Keep track of my important professional follow-ups. Watch conversations with [people/companies/clients] and flag anything I've promised to do, messages awaiting my reply, and threads that have gone quiet for more than [X days]. Prioritize by urgency and relationship importance. Draft follow-ups when useful, but do not send anything without my approval.",
+      "source": "Superhuman AI"
+    },
+    {
+      "heading": "Fix your AI spend before it becomes another line-item nobody can defend",
+      "steps": [
+        "Build a usage dashboard with clear per-employee token caps so spend is visible, not just approved.",
+        "Route routine, high-volume tasks to cheaper models and reserve frontier models for the work that needs them.",
+        "Sort AI use cases into three buckets (daily work, autonomous agents, one-time strategic projects) and pick the most efficient model for each bucket rather than defaulting to one model everywhere."
+      ],
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Anthropic redesigned Claude's projects for multi-step work.</b> You can now hand Claude several tasks at once, in any order; it outlines the project, delegates the work, and assembles the final product, building shared memory over time. It's rolling out in Claude Code first, with Claude to follow.",
+      "means": "Worth testing on a real multi-part deliverable (a research-then-draft-then-review chain) before you assume you still need to manually sequence Claude's work.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Meta opened Muse to outside developers.</b> New \"Muse Connectors\" let companies link their services into Meta's personal agent, which is now the #1 free app in Apple's App Store; Meta Superintelligence Labs also published 50 sample Muse prompts.",
+      "means": "A consumer AI agent platform reaching developer-ecosystem scale is a competitive signal worth flagging in any client conversation about assistant/agent strategy.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "instinct|tip|personal-follow-up-system",
+    "ai-spend|advises|usage-tracking-model-routing-roi",
+    "anthropic|redesigns|claude-projects-multistep",
+    "meta|launches|muse-connectors-developer-ecosystem"
+  ]
+}
