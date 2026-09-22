@@ -1,0 +1,90 @@
+{
+  "run": 1,
+  "runTime": "2026-09-22T08:00:00-04:00",
+  "title": "Amazon Shuts Out Meta's Muse, the FAA's AI Rollout Skips Training, and McKinsey Bets on AI Skills Over the MBA",
+  "date_display": "Tuesday, September 22, 2026",
+  "date_slug": "9_22_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Sep 22)",
+  "tldr": [
+    "Amazon blocked Meta's Muse AI shopping agent from Amazon.com, opening a platform fight over who controls agentic commerce.",
+    "The FAA rolled out its new AI air-traffic tool without training or consulting controllers first, and a member of Congress is now calling for it to be pulled.",
+    "McKinsey is recruiting more for AI fluency than the traditional MBA, a signal about where consulting hiring is heading."
+  ],
+  "tips": [
+    {
+      "heading": "Stop manually compacting your coding agent's context",
+      "steps": [
+        "Let your agent harness auto-compact at its own tuned threshold instead of triggering it out of habit (e.g. Codex compacts once it hits its token limit).",
+        "Reserve manual compaction for when context pressure is measurably hurting answer quality, not for tidiness or a break.",
+        "Manual compaction runs a full, costly summarization pass and loses your cache savings &mdash; weigh that cost first."
+      ],
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Set up ChatGPT to write in your own voice",
+      "steps": [
+        "In ChatGPT Work, turn on Settings &gt; Plugins &gt; Skills &gt; \"Humanize Writing.\" Draft, then run /humanize-writing and compare to the original.",
+        "Test the model's default voice with a plain writing exercise (see prompt below) before layering on style rules.",
+        "For a second pass, run <code>npx skills add blader/humanizer --global</code> in a terminal, then /humanizer on a copy of the same draft.",
+        "If it still reads fluffy, add a plain-style directive (see prompt below) and save that rule in your project instructions or AGENTS.md."
+      ],
+      "prompt": "Write me a memo about the history of the moon\n\nWrite in Technical English. Use ASD-STE100 as a style reference.",
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Amazon has blocked Meta's Muse AI agent from shopping on Amazon.com</b>, citing missing permission, an unidentified browsing agent, and concerns it captures customer credentials. Meta disputes this, saying Muse runs in a secure sandbox and never sees passwords or payment details. The block landed just 12 days after Muse hit #1 on the App Store, and follows earlier Amazon moves against Perplexity, Google, and OpenAI shopping agents.",
+      "means": "The platform fight to watch: whoever controls the checkout/agent layer becomes the aggregator. If you're advising on agentic commerce, expect permissioning, not model quality, to be the next battleground.",
+      "source": "The Neuron, The Rundown AI"
+    },
+    {
+      "body": "<b>The FAA has deployed SMART, an $875M AI tool that scans 200 data feeds to route air traffic around weather and capacity bottlenecks</b>, piloting it at Reagan National, Dulles, and BWI. A member of Congress wants it suspended immediately: controllers were never consulted or trained on it before rollout.",
+      "means": "A change-management failure clients hire you to prevent: no consultation, no training, before go-live.",
+      "source": "Morning Brew, The Rundown AI"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>McKinsey is recruiting more from non-MBA backgrounds</b> &mdash; math/CS majors, non-degreed founders &mdash; prioritizing AI fluency. Peers PwC and Deloitte cut job postings ~24% YoY even as AI-related postings grew from 1.4% to 5% of listings.",
+      "angle": "A signal about your own profession, not just a client's: the postings data suggests firms are now pricing AI fluency above the traditional MBA credential.",
+      "starter": "Would our own hiring bar hold up if we graded it on AI fluency instead of the MBA?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>California and 11 other states settled their antitrust suit against the roughly $110B Paramount/Warner Bros. Discovery merger.</b> Paramount agreed to an independent, journalist-only editorial board for CNN and CBS News, minimum film-distribution commitments, added U.S. production spend, and staying headquartered in California with both studio lots kept for five years; the combined company emerges with up to $87B in debt.",
+      "angle": "A clean case study for post-merger integration work &mdash; regulator-imposed conditions like an independent editorial board and tracked spending commitments are exactly the kind of compliance obligations a PMO has to operationalize on day one.",
+      "starter": "If you were running PMO for Paramount-WBD, how would you track compliance with a regulator-mandated editorial board for the next five years?",
+      "source": "Morning Brew, 1440"
+    },
+    {
+      "body": "<b>Novo Nordisk shares fell 8%</b> after it laid out plans to launch five or more new obesity and diabetes drugs by 2030, two years before its Ozempic and Wegovy patents expire. Those two drugs made up roughly two-thirds of last year's sales.",
+      "angle": "A textbook patent-cliff story: the market punished the reveal of the succession plan itself, not bad news. A good example for clients weighing how transparently to communicate a roadmap that depends on future launches replacing today's cash cow.",
+      "starter": "Would you rather the market saw your product succession plan early and reacted, or found out later that there wasn't one?",
+      "source": "1440"
+    },
+    {
+      "body": "<b>MIT researchers built batteries that safely dissolve in the GI tract</b>, powering a wireless tracking capsule that transmits data up to 5 feet and a capsule that boosts a hunger-suppressing hormone by about 50% after 20 minutes. The batteries run for up to three days before breaking down over the following weeks.",
+      "angle": "A new ingestible-device component category worth flagging to any digital-health or medtech client &mdash; monitoring and drug-delivery products no longer need a battery you have to retrieve.",
+      "starter": "Has anyone on the health-tech side looked at ingestible power sources yet, or are we all still assuming implants and wearables?",
+      "source": "1440"
+    },
+    {
+      "body": "<b>A radio-communications failure at a Philadelphia air-traffic facility, worsened by an inoperative backup after an unrelated New Jersey fiber cut,</b> disrupted flights at Philadelphia, Newark, LaGuardia, and JFK. Morning Brew reported about 430 cancellations at the affected airports, while 1440 cited over 1,000 cancellations and 6,000 delays nationwide.",
+      "angle": "A real business-continuity case: the backup system existed but had never been tested until it was needed. A good prompt for any resilience or disaster-recovery engagement.",
+      "starter": "When's the last time we actually tested a client's backup system instead of just confirming it existed?",
+      "source": "Morning Brew, 1440"
+    }
+  ],
+  "fingerprints": [
+    "neuron|tip|skip-manual-context-compaction",
+    "rundown|tip|chatgpt-humanize-writing-voice",
+    "amazon|blocks|meta-muse-shopping-agent",
+    "faa|deploys|smart-ai-tool-without-training",
+    "mckinsey|shifts-hiring|ai-skills-over-mba",
+    "paramount|settles-antitrust-suit|warner-bros-merger",
+    "novo-nordisk|falls-on-guidance|obesity-drug-pipeline",
+    "mit|develops|dissolvable-ingestible-batteries",
+    "atc|fails|east-coast-airports"
+  ]
+}
