@@ -1,0 +1,58 @@
+{
+  "run": 2,
+  "runTime": "2026-09-22T16:00:00-04:00",
+  "title": "OpenAI's Math Breakthrough, Apple's $250M Siri Settlement, and a Notion AI Project Tracker",
+  "date_display": "Tuesday, September 22, 2026",
+  "date_slug": "9_22_26",
+  "sources": "<b>Superhuman AI</b> (Sep 22)",
+  "tldr": [
+    "OpenAI says the model behind its disputed Navier-Stokes claim has now allegedly cracked 100+ other long-standing open math problems, and outside mathematicians are reviewing it.",
+    "Apple agreed to a $250M settlement over claims it marketed Siri AI features that arrived late — a preview of the accountability wave hitting anyone who oversells \"AI-powered\" timelines.",
+    "Build a self-updating project database in Notion AI that auto-summarizes status and surfaces risk from your own notes — verbatim prompts included."
+  ],
+  "tips": [
+    {
+      "heading": "Build a self-updating project tracker with Notion AI",
+      "steps": [
+        "In Notion, create a new page, choose Table, then select Build with AI.",
+        "Ask Notion AI to generate the database fields (see prompt below), then drop each project's briefs, notes, decisions, and updates into its own entry page.",
+        "Turn on AI Autofill for the Summary field (AI Autofill &gt; Basic &gt; Summary) and for Keywords so Notion extracts them automatically from what you've pasted in.",
+        "For judgment-call fields like Risks or Priority, use AI Autofill &gt; Custom Agent with an instruction such as <code>\"Identify the biggest current risk and classify priority as High, Medium, or Low.\"</code> Set AI properties to refresh manually, on page edit, or on a schedule."
+      ],
+      "prompt": "Create a project tracker for my team with Project, Owner, Status, Due Date, Priority, Summary, Risks, and Keywords. I want AI to help summarize each project and surface potential risks from the information stored in each project page.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>OpenAI's internal model shocks the math community.</b> OpenAI says the same model behind its disputed Navier-Stokes claim has allegedly cracked more than 100 other long-standing open math problems; the lab is now working with an outside advisory group of mathematicians to review, verify, and decide how to communicate the findings.",
+      "means": "Worth watching before citing it anywhere client-facing — this is an unverified claim under active review, not a confirmed result. If it holds up, it's a real jump in how much trust to place in frontier-model reasoning claims generally.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Apple agreed to a $250M settlement</b> over allegations it marketed Siri AI features that arrived later than buyers were told to expect. Affected US iPhone owners can now file claims for a share of it.",
+      "means": "A concrete precedent for what happens when \"AI-powered\" roadmap promises slip — useful leverage the next time a client or vendor wants to advertise an AI capability that isn't shipped yet.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>xAI released Grok 4.7</b>, its most capable model yet for knowledge work, at the same price and speed as Grok 4.6. The lab says it can work longer on hard tasks, check its own work more carefully, and produce better documents and presentations; it's available now via Grok Build, Cursor, or the API.",
+      "means": "Another frontier model claiming better self-checking on long tasks — worth a quick trial run if you're already using Grok or Cursor, but not urgent.",
+      "source": "Superhuman AI",
+      "low": true
+    },
+    {
+      "body": "<b>Google opened pre-orders for the Googlebook</b>, its new line of AI-first laptops built around Gemini. Headline features include Magic Pointer (summons Gemini anywhere on screen) and Rambler (voice transcription), plus tighter handoff with Android phones.",
+      "means": "General awareness only for now — a hardware bet on AI-native UX worth knowing about if a client asks what \"AI-first\" devices actually look like in practice.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "openai|cracks|100-plus-open-math-problems",
+    "apple|settles|siri-ai-marketing-lawsuit-250m",
+    "xai|releases|grok-4.7",
+    "google|opens-preorders|googlebook-ai-laptop",
+    "notion|tip|ai-project-database-tracker"
+  ]
+}
