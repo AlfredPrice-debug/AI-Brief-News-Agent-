@@ -1,0 +1,98 @@
+{
+  "run": 1,
+  "runTime": "2026-09-23T08:00:00-04:00",
+  "title": "A Frontier AI Price War, a Pentagon AI Strike Investigation & MIT Dethrones Princeton",
+  "date_display": "Wednesday, September 23, 2026",
+  "date_slug": "9_23_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440</b> (Sep 23)",
+  "tldr": [
+    "Anthropic and OpenAI cut frontier model prices 40-50% within 90 minutes of each other — Opus 5.5, GPT-6 Sol, and GPT-6 Luna all landed the same day.",
+    "Bloomberg: flawed AI intel from Palantir's Maven system contributed to a US strike that killed 123 children at an Iranian school.",
+    "MIT ended Princeton's 15-year run atop the US News college rankings, now weighted toward post-grad earnings by major."
+  ],
+  "tips": [
+    {
+      "heading": "Split agent work across a two-tier model stack",
+      "steps": [
+        "Use your strongest model to write the technical plan, architecture, and acceptance criteria.",
+        "Hand well-scoped implementation tasks to a cheaper model, parallelizing independent pieces.",
+        "Bring the result back to the strong model for code review, security review, and final synthesis."
+      ],
+      "prompt": "Plan this task in phases. Prioritize quality, but do not be wasteful. Identify which steps need frontier-level judgment and which can be delegated to cheaper subagents. Write clear acceptance criteria for every delegated step, then review the combined result for correctness, security, and missed requirements.",
+      "source": "The Neuron"
+    },
+    {
+      "heading": "Ship an iOS app from Codex without leaving the chat",
+      "steps": [
+        "No app yet? Ask Codex to build one, e.g. <i>\"Build me a calendar planning iOS app for couples. No database or payments.\"</i>",
+        "Install Xcode plus at least one iOS simulator, then have Codex test the app there.",
+        "Prompt Codex to scan for App Store readiness, fix what's missing, and package it for Xcode.",
+        "Enroll in the Apple Developer Program ($99/yr) and push the finished project via App Store Connect."
+      ],
+      "prompt": "Scan for App Store readiness, list what's missing, then fix it and package it for Xcode",
+      "source": "The Rundown AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Anthropic and OpenAI turned frontier AI into a price war.</b> Anthropic shipped Claude Opus 5.5 at $4/$20 per million input/output tokens (about 40% cheaper per task than Opus 5) and took the top spot on AA's Intelligence Index at 58. About 90 minutes later, OpenAI answered with GPT-6 Sol ($2/$10 per million tokens) and Luna ($0.10/$0.50 per million tokens) — both roughly half the price of the models they replace.",
+      "means": "Model choice is now a cost-per-task decision, not a single-vendor pick. Worth testing your own workflows against both Opus 5.5 and Sol/Luna before you lock a client recommendation to one vendor.",
+      "source": "The Neuron, The Rundown AI",
+      "low": false
+    },
+    {
+      "body": "<b>OpenAI says one internal model has resolved 100+ open math problems since Aug. 28</b>, spanning most branches of mathematics including its earlier Navier-Stokes claim. It's forming an advisory group of nine mathematicians, hosted at Princeton's Institute for Advanced Study, to help vet and release the results — though the advisors aren't paid by OpenAI and have no say over how fast the model produces them. Earlier this month, 27 Fields Medalists signed a letter accusing AI labs of rushing out results without proper credit or review.",
+      "means": "A preview of a governance problem you'll see in enterprise AI too: output speed is outpacing the human review needed to trust it. Ask any AI vendor how they verify claims before you repeat them to a client.",
+      "source": "The Rundown AI, 1440",
+      "low": false
+    },
+    {
+      "body": "<b>Bloomberg: flawed AI intelligence contributed to a US strike on an Iranian school that killed 123 children.</b> Pentagon investigators cited outdated imagery and overreliance on Palantir's Maven AI system among the causes.",
+      "means": "A stark reminder that AI-assisted decisions still need a human accountable for the call, especially anywhere the stakes are irreversible — a useful data point when clients push to automate high-stakes judgment.",
+      "source": "The Neuron",
+      "low": false
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>MIT dethroned Princeton as the No. 1 US college</b>, ending Princeton's 15-year run atop the US News & World Report national rankings. The new formula compares graduates' earnings by major (among federal aid recipients only) four years out, replacing a prior debt-based metric; Harvard and Yale followed at No. 3 and No. 4. Dozens of top law and medical schools, including Harvard, Yale, and Stanford, have stopped submitting data since 2022–23, and lower birth rates are projected to shrink enrollment 13% by 2041.",
+      "angle": "Higher ed is facing the same value-proof pressure AI is putting on every credential-based industry — worth tracking if any clients hire heavily from specific schools or fund employee degree programs.",
+      "starter": "With MIT overtaking Princeton on a post-grad-earnings metric, are we still weighting the 'brand name' school the same way in hiring?",
+      "source": "Morning Brew, 1440"
+    },
+    {
+      "body": "<b>Microsoft's Xbox division is laying off another 268 employees</b> and moving development of the next Halo game to Activision (which Microsoft bought for $69B in 2023), part of an ongoing 'reset' aimed at improving margins. Xbox has now cut or plans to cut up to 3,200 workers total.",
+      "angle": "A live case study in post-acquisition consolidation — useful if you're advising any client mid-integration on where headcount actually gets absorbed.",
+      "starter": "Xbox just folded Halo development into the Activision team it acquired two years ago — how long should we expect integration decisions like that to take?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Apple is reportedly prototyping a screenless fitness tracker</b>, similar to Whoop's wristband, per Bloomberg — though Apple hasn't decided whether to ship it, and a release likely wouldn't land before 2028.",
+      "angle": "A textbook 'defend the core, hedge the edges' move — worth citing when a client debates whether to compete on features or launch a stripped-down adjacent product.",
+      "starter": "Apple prototyping a screenless Whoop competitor is a good example of a category leader hedging instead of doubling down — anyone else seeing that pattern with our clients?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Peloton is betting its turnaround on treadmills</b>, launching three new models Oct. 1 (Tread Flex $2,195, Tread Vision $3,495, Tread+ Vision $6,695 with AI form-coaching), plus New York City Marathon and Miley Cyrus/Spotify tie-ins. The company's market cap has collapsed 97% from its 2021 peak, and it's lost roughly 500,000 paid subscribers in three years despite recently returning to profitability.",
+      "angle": "A clean product-diversification-to-survive story — good reference point for clients weighing a pivot away from a single hero product.",
+      "starter": "Peloton just went all-in on treadmills after losing half a million subscribers — is that smart diversification or a company chasing its last good idea?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>A recruiter's TikTok warning against bringing iced coffee to interviews went viral</b>, splitting opinion on hiring-norm nitpicks. Buried in the same roundup: a Stanford Digital Economy Lab study found employment among 22-25-year-olds in highly AI-exposed jobs is about 19% below less-exposed occupations.",
+      "angle": "The interview-etiquette debate is noise, but the Stanford stat is a real, citable data point for any conversation about entry-level hiring and AI exposure.",
+      "starter": "There's now a real stat behind the 'AI is hitting entry-level jobs first' narrative — 19% lower employment for 22-25 year-olds in AI-exposed roles. Are we seeing that in our own junior hiring?",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "anthropic-openai|launch|price-war-opus55-sol-luna",
+    "openai|forms|math-advisory-committee",
+    "pentagon|struck|iranian-school-flawed-ai-intel",
+    "mit|overtakes|princeton-us-news-ranking",
+    "microsoft|lays-off|xbox-268-halo-to-activision",
+    "apple|prototypes|screenless-fitness-tracker",
+    "peloton|launches|tread-lineup-pivot",
+    "stanford|finds|ai-exposed-jobs-19pct-lower-employment"
+  ]
+}

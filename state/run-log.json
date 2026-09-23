@@ -1929,6 +1929,25 @@
           "note": "Afternoon firing, run 2. Searched Claude AI News Recap since today's run 1 (2026-09-22T08:00:00-04:00). Found 3 new messages: two were 1440 Daily Digest re-engagement/win-back nags ('4.7 million readers stay informed with this', 'Too much email?') with zero editorial content, both discarded entirely. The one substantive newsletter, Superhuman AI (Zain Kahn, sent 9:11 AM), was read directly (HTML stripped to ~8.3K chars of plain text, well under the subagent-slicing threshold). Built 1 AI Tip (Notion AI self-updating project tracker, with the verbatim database-creation prompt plus the verbatim Custom Agent risk/priority instruction) + 4 AI News items (OpenAI's internal model allegedly cracking 100+ open math problems, framed with a caution that this is an unverified claim under review; Apple's 50M Siri-marketing settlement; Grok 4.7's release, marked low; Google's Googlebook AI laptop pre-orders, marked low). Dropped for dedup: the newsletter's lead item, Amazon blocking Meta's Muse agent from making purchases (plus Shopify's counter-partnership), since this is the same story already published in today's run 1 under fingerprint 'amazon|blocks|meta-muse-shopping-agent'. Excluded as low-substance/non-actionable: the 'IN THE KNOW' trending-socials blurbs (Jev Rush copy/paste demo, an AI-voiced Big Mouth Billy Bass, a Reddit face-swap demo, a fan-made DuckTales trailer), the sponsor blocks (Clarify, Consicum/VerifyAX), the 'Productivity' tool mentions (Hoogly, Sai, Streva), and the Prompt Station/Image sections, which only show a truncated prompt behind a click-through link and so can't be reproduced verbatim per the no-paraphrase rule. No Beyond AI newsletter (e.g. Morning Brew) arrived this run, so beyond_ai is empty and the PDF is 1 page by design (build_brief.py drops page 2 when beyond_ai is empty, per its existing behavior) -- verified page count with pymupdf (pypdf still fails with the known _cffi_backend/cryptography import panic in this environment)."
         }
       ]
+    },
+    "2026-09-23": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-09-23T08:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "anthropic-openai|launch|price-war-opus55-sol-luna",
+            "openai|forms|math-advisory-committee",
+            "pentagon|struck|iranian-school-flawed-ai-intel",
+            "mit|overtakes|princeton-us-news-ranking",
+            "microsoft|lays-off|xbox-268-halo-to-activision",
+            "apple|prototypes|screenless-fitness-tracker",
+            "peloton|launches|tread-lineup-pivot",
+            "stanford|finds|ai-exposed-jobs-19pct-lower-employment"
+          ]
+        }
+      ]
     }
   }
 }
