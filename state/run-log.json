@@ -1946,6 +1946,16 @@
             "peloton|launches|tread-lineup-pivot",
             "stanford|finds|ai-exposed-jobs-19pct-lower-employment"
           ]
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-09-23T16:09:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "mirage|launches|tesseract-agent-video-editing",
+            "superhuman|tip|grok-bot-onboarding-automation"
+          ],
+          "note": "Afternoon firing, run 2. Searched Claude AI News Recap since today's run 1 (2026-09-23T08:00:00-04:00). Found exactly 1 new message: a forwarded Superhuman AI newsletter ('Anthropic's Opus 5.5 matches Fable, but cheaper', sent 9:13 AM). Its lead stories (Opus 5.5 launch, GPT-6 Sol/Luna launch) duplicated today's run 1 item under fingerprint 'anthropic-openai|launch|price-war-opus55-sol-luna' and were dropped. Two genuinely new items survived: Mirage's Tesseract agentic video-editing suite (AI News) and a tutorial on building a Grok Bot to run new-hire onboarding, with its verbatim sample prompt (AI Tip). Excluded as low-substance trending/social blurbs with no citable specifics: the Opus 5.5 prompting-guide bookmark count, a Meta Muse flight-delay anecdote, the Bracket22 AI-run hedge fund clip, an unnamed lab's 'Narrative World Model', and an IPO-valuation stat -- plus the WorkOS and Plaid sponsor blocks, the Productivity tool blurbs, and the Prompt Station/Image sections (prompts truncated behind click-through links, can't be reproduced verbatim). No Beyond AI newsletter arrived this run, so beyond_ai is empty and the PDF is 1 page by design. Exactly 2 items survived dedup, right at the minimum -- shipped a short brief rather than skipping, per the 'ship a short brief on a quiet day' guidance. Verified page count with pymupdf."
         }
       ]
     }

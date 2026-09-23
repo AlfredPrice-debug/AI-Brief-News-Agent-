@@ -1,0 +1,39 @@
+{
+  "run": 2,
+  "runTime": "2026-09-23T16:09:00-04:00",
+  "title": "An Agentic Video Studio and a Blueprint for AI-Run Onboarding",
+  "date_display": "Wednesday, September 23, 2026",
+  "date_slug": "9_23_26",
+  "sources": "<b>Superhuman AI</b> (Sep 23)",
+  "tldr": [
+    "Mirage launched Tesseract, a creative suite that lets Claude and ChatGPT agents edit video with real compositions, keyframes, and audio.",
+    "Superhuman's tutorial shows how to stand up a Grok Bot that runs new-hire onboarding end to end, with a reusable prompt.",
+    "Today's other big story — the Opus 5.5 / GPT-6 Sol & Luna price war — was already covered in this morning's run; no repeat here."
+  ],
+  "tips": [
+    {
+      "heading": "Stand up an AI bot to run new-hire onboarding",
+      "steps": [
+        "Create a bot (e.g. an Onboarding Manager) in your agent platform, from a template or from scratch.",
+        "Connect it to the systems holding your onboarding material — Google Drive, Notion, SharePoint, Outlook, or Teams.",
+        "Give it access only to the approved onboarding checklist, handbook, IT guides, and team docs.",
+        "Test it with real questions, correct mistakes, then save it as a reusable Skill for future hires."
+      ],
+      "prompt": "Onboard [Name], our new [Role], starting [Date]. Build a checklist for their first week using our approved onboarding documents. Pull the relevant policies, tools, training, and team resources into one place. Answer questions only from those sources, flag anything unclear, and identify blockers that need HR, IT, or their manager. Do not send messages, create accounts, or make changes without approval.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Mirage shipped Tesseract, a creative suite built for agents to edit video.</b> Agents now work with real editing primitives — compositions, keyframes, audio tracks — to create and refine video assets, with a live preview as the agent works and local rendering of the finished file. It's available now inside both ChatGPT and Claude.",
+      "means": "Worth a trial run if you produce any client-facing video (demo reels, case-study clips, social cuts) — this closes the gap between \"AI generates a clip\" and an actual editable timeline you can direct and revise.",
+      "source": "Superhuman AI",
+      "low": false
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "mirage|launches|tesseract-agent-video-editing",
+    "superhuman|tip|grok-bot-onboarding-automation"
+  ]
+}
