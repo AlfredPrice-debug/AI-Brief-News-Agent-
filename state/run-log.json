@@ -1958,6 +1958,27 @@
           "note": "Afternoon firing, run 2. Searched Claude AI News Recap since today's run 1 (2026-09-23T08:00:00-04:00). Found exactly 1 new message: a forwarded Superhuman AI newsletter ('Anthropic's Opus 5.5 matches Fable, but cheaper', sent 9:13 AM). Its lead stories (Opus 5.5 launch, GPT-6 Sol/Luna launch) duplicated today's run 1 item under fingerprint 'anthropic-openai|launch|price-war-opus55-sol-luna' and were dropped. Two genuinely new items survived: Mirage's Tesseract agentic video-editing suite (AI News) and a tutorial on building a Grok Bot to run new-hire onboarding, with its verbatim sample prompt (AI Tip). Excluded as low-substance trending/social blurbs with no citable specifics: the Opus 5.5 prompting-guide bookmark count, a Meta Muse flight-delay anecdote, the Bracket22 AI-run hedge fund clip, an unnamed lab's 'Narrative World Model', and an IPO-valuation stat -- plus the WorkOS and Plaid sponsor blocks, the Productivity tool blurbs, and the Prompt Station/Image sections (prompts truncated behind click-through links, can't be reproduced verbatim). No Beyond AI newsletter arrived this run, so beyond_ai is empty and the PDF is 1 page by design. Exactly 2 items survived dedup, right at the minimum -- shipped a short brief rather than skipping, per the 'ship a short brief on a quiet day' guidance. Verified page count with pymupdf."
         }
       ]
+    },
+    "2026-09-24": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-09-24T08:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "anthropic|discovers|art-crispr-like-enzyme-system",
+            "anthropic|reports|claude-leads-26pct-ai-rd",
+            "openai-agent|breaches|australia-medicare-portal",
+            "theneuron|tip|fanout-research-funnel-down",
+            "rundown|tip|loop-method-workflow-improvement",
+            "xi-trump|summit|ai-trade-taiwan-truce-extended",
+            "mcdonalds|announces|8.5b-renovation-archiq-ai-rollout",
+            "markets|selloff|bond-yields-highest-since-2007",
+            "meta|unveils|camera-free-rayban-vr-glasses-muse"
+          ],
+          "note": "First run of the day; searched mail since yesterday run 2 (2026-09-23T16:09:00-04:00) per the overnight-catch rule. Read 5 newsletters (2x The Neuron, The Rundown AI, Morning Brew, 1440 Daily Digest, all sent 4:25-6:32 AM). Excluded as pure self-promotion/no content: a second Neuron issue that was solely a video-course ad (vibe-coding pitch), with no tips/news/beyond-ai material. Merged 3 duplicate cross-newsletter stories into single items: the Anthropic 950-agent ART enzyme discovery (Neuron + Rundown), the OpenAI agent breach of an Australian government Medicare portal (Neuron + Rundown), and the Xi-Trump summit / bond-yield selloff (Morning Brew + 1440, split into two beyond_ai items: the summit itself and the market reaction). An initial draft (2 tips + 4 news + 5 beyond_ai) rendered 3 pages; cut a low-impact news item (Sen. Sanders ASI-ban bill, marked low) and a beyond_ai item (FDA Galleri cancer test, marked no direct relevance) to fit the 2-page budget, then trimmed remaining copy further after a visual check showed the last news item colliding with the page-1 footer despite pypdf reporting 2 pages -- verified final render with pymupdf (page count + rendered PNG of both pages) before shipping. Cut items were not fingerprinted since they were never published."
+        }
+      ]
     }
   }
 }
