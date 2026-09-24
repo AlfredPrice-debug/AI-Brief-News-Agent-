@@ -1,0 +1,45 @@
+{
+  "run": 2,
+  "runTime": "2026-09-24T16:00:00-04:00",
+  "title": "ChatGPT Voice Learns to Act, Google Previews Gemini 4, and a 15-Minute AI Helpdesk",
+  "date_display": "Thursday, September 24, 2026",
+  "date_slug": "9_24_26",
+  "sources": "<b>Superhuman AI</b> (Sep 24)",
+  "tldr": [
+    "ChatGPT Voice now runs on GPT-6 and can act on your email, calendar, and Slack from a spoken prompt.",
+    "Google confirmed it's actively building Gemini 4, with new models shipping roughly every three weeks.",
+    "A StackAI tutorial shows how to stand up a cited, on-prem-capable AI IT helpdesk in 15 minutes."
+  ],
+  "tips": [
+    {
+      "heading": "Stand up an AI IT helpdesk in 15 minutes",
+      "steps": [
+        "Log in to StackAI and open the IT Support Chatbot template.",
+        "Connect the knowledge base hosting your IT documentation (Google Drive, Confluence, SharePoint, or Notion).",
+        "Pick your LLM (OpenAI, Anthropic, or another supported model) and test with real employee questions, checking that answers cite the correct policy and read attached files accurately.",
+        "Publish to Slack, Microsoft Teams, or your intranet — on-premises, fully air-gapped deployment is supported if your security requirements need it."
+      ],
+      "prompt": "I'm getting a \"VPN connection failed\" error on my work laptop after the latest update. Walk me through the troubleshooting steps in order. Use our internal IT documentation where relevant, cite the policy or guide you're relying on, and tell me when I should escalate the issue to IT.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>ChatGPT Voice can now take action through voice prompts.</b> Running on GPT-6, it can access your email, calendar, and Slack, letting you verbally tell it to send emails, build websites, search for information, or contact customer support.",
+      "means": "A voice interface that executes multi-step tasks end to end, not just answers questions, raises the bar for what a client-facing \"voice assistant\" pilot should be able to do.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Google confirmed it's actively building Gemini 4.</b> Gemini product chief Tulsee Doshi said the team is \"really excited about what's coming in the next 10 months,\" noted Gemini's last three models shipped within three weeks of each other, and pointed to Gemini 3.8 Flash as the model built for teams watching token budgets.",
+      "means": "A direct read on Google's release cadence and price/performance positioning — useful the next time a client asks how Gemini stacks up against Claude or GPT on cost-sensitive workloads.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "openai|upgrades|chatgpt-voice-gpt6-agentic-actions",
+    "google-deepmind|previews|gemini-4-roadmap-doshi-interview",
+    "superhuman|tip|stackai-it-helpdesk-tutorial"
+  ]
+}
