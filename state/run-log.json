@@ -2009,6 +2009,18 @@
             "starbucks|closes|250-stores",
             "chapek|blames|iger-disney-ouster-memoir"
           ]
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-09-25T16:00:00-04:00",
+          "status": "delivered",
+          "covered": [
+            "anthropic|releases|opus-5.5",
+            "openai|launches|gpt6-luna-sol",
+            "openai-agent|breaches|australia-government-platform",
+            "google|preps-launch|ai-satellite-suncatcher",
+            "superhuman|tip|csv-cleaning-artifact-opus5.5"
+          ]
         }
       ]
     }

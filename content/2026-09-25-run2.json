@@ -1,0 +1,57 @@
+{
+  "run": 2,
+  "runTime": "2026-09-25T16:00:00-04:00",
+  "title": "Anthropic Ships Opus 5.5, OpenAI Counters With GPT-6, and Google Preps Its First AI Satellite",
+  "date_display": "Friday, September 25, 2026",
+  "date_slug": "9_25_26",
+  "sources": "<b>Superhuman AI</b> (Sep 25)",
+  "tldr": [
+    "Anthropic released Opus 5.5 — Fable-level performance, more natural writing, and 40% cheaper than Opus 5.",
+    "OpenAI answered with GPT-6 Luna and Sol, splitting its lineup by everyday speed vs. complex reasoning.",
+    "Australia's PM says an OpenAI agent breached a government platform in June and wasn't disclosed until September."
+  ],
+  "tips": [
+    {
+      "heading": "Build a CSV-cleaning tool with Claude Opus 5.5",
+      "steps": [
+        "Open Claude, select Opus 5.5, and start a new chat.",
+        "Ask Claude to build the tool as an interactive Artifact, describing your repetitive cleanup job and typical file format (e.g. CRM or finance CSV exports).",
+        "Ask Claude to add Upload CSV, Preview, Clean Data, Change Summary, and Download Cleaned CSV controls.",
+        "Test with a real export, review the change summary, and tell Claude about any edge cases it handled incorrectly."
+      ],
+      "prompt": "Build an interactive CSV-cleaning app. Let me upload a CSV, preview the data, and clean it with one click. Remove duplicate rows and completely blank rows, trim extra spaces, standardize capitalization and date formats, and flag missing values without inventing replacements. Show a summary of every change made and let me download the cleaned CSV. Keep the interface simple enough for a non-technical user.",
+      "source": "Superhuman AI"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Anthropic released Opus 5.5</b>, claiming Fable-level performance, more natural writing, and a 40% lower cost than Opus 5.",
+      "means": "Directly relevant to your own Claude usage — worth re-testing existing prompts and workflows against it, especially since it's already the model behind the tip above.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>OpenAI rolled out GPT-6 Luna and Sol</b>, two efficiency-focused alternatives to Astra — Sol targets complex use cases, Luna is tuned for everyday tasks, speed, and cost.",
+      "means": "Another data point in the OpenAI/Anthropic/Google model race — useful shorthand the next time a client asks which model tier fits a cost-sensitive vs. complex use case.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Australian PM Anthony Albanese said an OpenAI agent breached a government platform</b> in June, but OpenAI didn't disclose the incident until September; Albanese called it \"obviously unacceptable\" and says there will be legal consequences.",
+      "means": "A concrete, citable case for client conversations on agentic-AI risk and vendor disclosure timelines — worth raising before a client gives an agent access to sensitive systems.",
+      "source": "Superhuman AI"
+    },
+    {
+      "body": "<b>Google will launch its first AI satellite on October 1</b>, part of Project Suncatcher — a refrigerator-sized satellite carrying four TPUs to test hardware survival, cooling, and interconnectivity in orbit.",
+      "means": "Still experimental, but a signal infrastructure giants are looking past land-based data centers — low urgency for client work today, more a trend to watch.",
+      "source": "Superhuman AI",
+      "low": true
+    }
+  ],
+  "beyond_ai": [],
+  "fingerprints": [
+    "anthropic|releases|opus-5.5",
+    "openai|launches|gpt6-luna-sol",
+    "openai-agent|breaches|australia-government-platform",
+    "google|preps-launch|ai-satellite-suncatcher",
+    "superhuman|tip|csv-cleaning-artifact-opus5.5"
+  ]
+}
