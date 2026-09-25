@@ -1,0 +1,98 @@
+{
+  "run": 1,
+  "runTime": "2026-09-25T08:13:33-04:00",
+  "title": "Meta Puts Muse In Your Pocket, Google Ships AI to Orbit & Oracle's Data Center Bet Wobbles",
+  "date_display": "Friday, September 25, 2026",
+  "date_slug": "9_25_26",
+  "sources": "<b>The Neuron</b>, <b>The Rundown AI</b>, <b>Morning Brew</b>, <b>1440 Daily Digest</b> (Sep 25)",
+  "tldr": [
+    "Meta's pocket AI device \"Muse Charm\" ships in December with glasses integration coming soon — a hardware race worth tracking if you advise on AI UX.",
+    "Oracle may delay payments on its $165B \"Project Jupiter\" AI data center over permitting fights — a real signal of strain in the AI infrastructure buildout.",
+    "Mortgage rates just hit 7% for the first time since January 2025 — a good prompt to revisit any client budgeting assumptions built on cheaper borrowing."
+  ],
+  "tips": [
+    {
+      "heading": "Turn a Google Sheet into an interactive dashboard with Gemini Canvas",
+      "steps": [
+        "Open the spreadsheet you want to visualize (e.g. a project tracker or content calendar) in Google Sheets.",
+        "Launch Gemini in a new tab, click the <b>+</b> button, and select <b>Canvas</b>.",
+        "Prompt Gemini with the template below to build the dashboard from your data.",
+        "Copy the Canvas link to view or share it outside the chat — edits you make later update live for anyone with the link."
+      ],
+      "prompt": "Make me an interactive dashboard using the data from tabs one and two",
+      "source": "The Rundown AI"
+    },
+    {
+      "heading": "Audit your AI tool's instructions before they quietly wreck your outputs",
+      "steps": [
+        "Gather every instruction file, outline, or feedback note you've fed the AI over time.",
+        "Have the AI flag duplicated, conflicting, or outdated rules, citing the specific files.",
+        "Review its proposal and decide what to keep, archive, or rewrite — approve before anything is edited.",
+        "Keep the surviving set lean (e.g. one structure guide + one voice guide) instead of stacking every draft version."
+      ],
+      "prompt": "Review the instructions and examples in [project/folder]. Identify duplicated, conflicting, and outdated rules, citing the specific files and short excerpts. Propose what to keep, archive, or rewrite. Do not modify files until I approve.",
+      "source": "The Neuron"
+    }
+  ],
+  "news": [
+    {
+      "body": "<b>Meta unveiled \"Muse Charm,\" a pocket AI-agent device, plus Muse integration into Ray-Ban glasses</b> — announced at Meta Connect and shipping December. New Muse partners include PayPal, Walmart, Shopify, GitHub, and Box.",
+      "means": "Meta is betting AI agents belong on your body, not just your phone. Worth watching as a UX reference point if you're scoping AI hardware or agent-assistant features for clients.",
+      "source": "The Rundown AI, The Neuron, 1440"
+    },
+    {
+      "body": "<b>Oracle warned it may delay payments on its $165B \"Project Jupiter\" AI data center</b> if the project isn't operational by 2028 — a key natural-gas pipeline permit keeps getting denied amid local opposition. Oracle stock fell ~3.5% on the news; the project's debt is trading at 90 cents on the dollar.",
+      "means": "A concrete example of AI infrastructure spending running into real-world permitting and financing friction — a useful, specific data point for any client conversation about AI capex timelines.",
+      "source": "Morning Brew, 1440"
+    },
+    {
+      "body": "<b>The White House reportedly asked OpenAI and Anthropic to withhold new frontier models from U.K. testers until the U.S. government reviews them first.</b>",
+      "means": "A concrete first move toward the U.S. asserting review authority over frontier model releases — worth flagging if you track AI governance for clients with multinational AI rollouts.",
+      "source": "The Neuron"
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>Trump hosted Xi Jinping for Oval Office talks and a state dinner</b>, with AI, Iran, and Taiwan on the agenda; OpenAI's Sam Altman, Nvidia's Jensen Huang, and Google's Sundar Pichai were among the guests. Separately, a federal judge restored White House press access for CNN, MS NOW, and Politico after a ban.",
+      "angle": "Top AI executives sitting at a US-China state dinner underscores how central AI policy now is to great-power diplomacy — relevant context for any client work touching trade, supply chain, or cross-border AI deployment.",
+      "starter": "Did you catch that Altman, Huang, and Pichai were all at the Xi state dinner? AI's fully a geopolitical chess piece now.",
+      "source": "Morning Brew, 1440"
+    },
+    {
+      "body": "<b>The 30-year fixed mortgage rate hit 7.03%</b>, its highest since January 2025, as the 10-year Treasury yield rose above 5% amid inflation and oil-price pressure from the Iran conflict.",
+      "angle": "Directly relevant — any client budgeting or real-estate planning that assumed cheaper borrowing this quarter should be revisited now.",
+      "starter": "Are we still planning around lower borrowing costs, or should we push that assumption out given rates just hit 7%?",
+      "source": "Morning Brew, 1440"
+    },
+    {
+      "body": "<b>New York's gambling regulator sued Polymarket US</b> for operating without a license, following a similar suit against Kalshi two months ago; Polymarket argues prediction markets fall under federal, not state, jurisdiction.",
+      "angle": "A live state-vs-federal jurisdiction fight worth knowing if you have fintech or prediction-market-adjacent clients watching regulatory arbitrage.",
+      "starter": "Have you been following the Polymarket/Kalshi gambling-law fights? Could reshape how prediction markets operate state by state.",
+      "source": "Morning Brew, 1440"
+    },
+    {
+      "body": "<b>Starbucks is closing 250 more North American stores</b>, on top of 627 closed last year, as part of an ongoing footprint rationalization.",
+      "angle": "A useful current case study if you're advising retail or restaurant clients on store-footprint and cost-structure decisions.",
+      "starter": "Starbucks just closed another 250 stores — anyone else seeing more retail clients quietly right-sizing their footprint this year?",
+      "source": "Morning Brew, 1440"
+    },
+    {
+      "body": "<b>Former Disney CEO Bob Chapek's new memoir claims successor Bob Iger ran a \"three-year campaign\" to push him out</b> before his 2022 ouster; Disney insiders call the account revisionist.",
+      "angle": "A vivid, recognizable case study in CEO succession failure and board governance — good material if you do leadership or transition-planning work.",
+      "starter": "Have you read about the Chapek-Iger memoir feud? It's a pretty stark example of how badly a CEO succession can go sideways.",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "meta|launches|muse-charm-ai-device",
+    "oracle|warns-delay|project-jupiter-datacenter",
+    "white-house|seeks|first-review-frontier-models",
+    "gemini|tip|canvas-sheets-dashboard",
+    "neuron|tip|clean-conflicting-ai-instructions",
+    "trump-xi|hold|summit-ai-taiwan-press-access",
+    "mortgage-rates|hit|7-percent-high",
+    "ny|sues|polymarket-gambling",
+    "starbucks|closes|250-stores",
+    "chapek|blames|iger-disney-ouster-memoir"
+  ]
+}

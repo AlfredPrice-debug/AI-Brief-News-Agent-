@@ -1990,6 +1990,27 @@
           "note": "Afternoon firing, run 2. Searched Claude AI News Recap since today run 1 (2026-09-24T08:00:00-04:00). Found exactly 1 new message: a forwarded Superhuman AI newsletter (Anthropic first major scientific discovery, sent 9:15 AM). Its lead Anthropic ART/CRISPR-enzyme story and its Meta Connect 2026 Muse Charm/VR glasses item both duplicated story fingerprints already covered by run 1 (anthropic|discovers|art-crispr-like-enzyme-system and the meta Ray-Ban/VR/Muse item) and were dropped. Three genuinely new items survived: a ChatGPT Voice upgrade that can act on email/calendar/Slack via GPT-6 (AI News), a Gemini product-chief interview previewing Gemini 4 and Google shipping cadence (AI News, marked low), and a StackAI IT-helpdesk tutorial with its verbatim sample prompt (AI Tip). Excluded as low-substance trending/social blurbs with no citable specifics: the Alexandr Wang posting-spree meme, Opus 5.5 fan-project roundup, a16z University blurb, a Claude usage-limit anecdote, and an AI-generated Mad Max recap video -- plus the Bolter and PriorLabs sponsor blocks, the Productivity tool blurbs (Solid/ToneBird/AgentScore), and the Prompt Station/Image sections (prompts truncated behind click-through links, cannot be reproduced verbatim). No Beyond AI newsletter arrived this run, so beyond_ai is empty and the PDF is 1 page by design. Verified page count and render with pymupdf (page count + rendered PNG)."
         }
       ]
+    },
+    "2026-09-25": {
+      "runs": [
+        {
+          "run": 1,
+          "timestamp": "2026-09-25T08:13:33-04:00",
+          "status": "delivered",
+          "covered": [
+            "meta|launches|muse-charm-ai-device",
+            "oracle|warns-delay|project-jupiter-datacenter",
+            "white-house|seeks|first-review-frontier-models",
+            "gemini|tip|canvas-sheets-dashboard",
+            "neuron|tip|clean-conflicting-ai-instructions",
+            "trump-xi|hold|summit-ai-taiwan-press-access",
+            "mortgage-rates|hit|7-percent-high",
+            "ny|sues|polymarket-gambling",
+            "starbucks|closes|250-stores",
+            "chapek|blames|iger-disney-ouster-memoir"
+          ]
+        }
+      ]
     }
   }
 }
