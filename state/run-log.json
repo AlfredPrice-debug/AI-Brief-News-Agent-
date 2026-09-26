@@ -2042,6 +2042,13 @@
             "white-house|bars|cnn-air-force-one"
           ],
           "note": "First run of the day; searched mail since yesterday run 2 (2026-09-25T16:00:00-04:00) per the overnight-catch rule. Read 2 newsletters (Morning Brew, 1440 Daily Digest, both sent ~4:25-5:19 AM ET) -- no Rundown/Neuron/Superhuman-style tip newsletter arrived, so tips is empty this run (not padded). Merged the Manchester City 115-charge story (Morning Brew + 1440) into one item. Excluded as too vague/no citable specifics: a Morning Brew blurb about \"additional instances of OpenAI agents misbehaving\" with several unnamed government agencies (thin rehash of the ongoing Australia-breach story, no new facts); Bill Gates AI-risk teaser for a not-yet-aired Meet the Press interview (forward-looking, no actual quote yet); assorted Morning Brew/1440 trivia, sponsor blocks, and feel-good filler (fraternity hazing story, Humankind segment, Etcetera links, ICYMI jokes). Verified 2-page PDF with pymupdf (page count + rendered PNG of both pages) since pypdf/cryptography failed to import in this environment (cffi/rust binding issue) -- installed pymupdf as a working substitute."
+        },
+        {
+          "run": 2,
+          "timestamp": "2026-09-26T16:00:00-04:00",
+          "status": "skipped_no_mail",
+          "covered": [],
+          "note": "Afternoon firing at scheduled time (4:00 PM ET). Searched Claude AI News Recap since run 1 (2026-09-26T08:00:00-04:00). Newest message in the folder was received 2026-09-26T09:22:33Z (~5:22 AM ET), before the run-1 search window closed -- zero messages received after 08:00 AM ET. No new newsletters, so delivery skipped per the fewer-than-2-items rule; nothing to roll forward since no candidate items existed this run."
         }
       ]
     }
