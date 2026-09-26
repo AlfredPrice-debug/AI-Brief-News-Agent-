@@ -1,0 +1,80 @@
+{
+  "run": 1,
+  "runTime": "2026-09-26T08:00:00-04:00",
+  "title": "Copilot Swallows Office, Mortgage Rates Hit 7%, and an AI Authorship Scandal",
+  "date_display": "Saturday, September 26, 2026",
+  "date_slug": "9_26_26",
+  "sources": "<b>Morning Brew</b>, <b>1440 Daily Digest</b> (Sep 26)",
+  "tldr": [
+    "Microsoft is folding Office directly into Copilot, rebranding it the \"AI built for work\" as Meta's Muse tops the app charts.",
+    "US mortgage rates topped 7% for the first time since early 2025, with one economist warning of an 8% ceiling if bond conditions worsen.",
+    "A celebrated French novel was pulled from the Prix Goncourt longlist after AI-detection software flagged it as fully AI-generated."
+  ],
+  "tips": [],
+  "news": [
+    {
+      "body": "<b>Microsoft is repositioning Copilot as the \"AI built for work,\" folding Office directly into it.</b> The chatbot is becoming a unified \"super app\" hosting products like Excel and Word, so users can, for example, ask Copilot to modify a Word document without leaving the platform; the shift comes as Meta's new Muse assistant has surged to the top of app charts.",
+      "means": "Worth flagging to any client running a Microsoft shop — an Office-embedded Copilot changes the calculus for training and rollout versus treating it as a separate consumer chatbot.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Anthropic will remain blacklisted by the Pentagon</b> after a federal appeals court upheld the Trump administration's designation of the company as a supply chain risk.",
+      "means": "A reminder that vendor selection for AI on regulated or defense-adjacent client work carries real legal and procurement risk beyond model quality — worth checking before recommending a stack there.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>A celebrated French novel was pulled from a top literary prize's longlist over AI-authorship claims.</b> Thélyson Orélien's debut, <i>C'était ça ou Mourir</i>, was removed from the Prix Goncourt longlist after an anonymous account ran passages through the AI-detection tool Pangram, which flagged them as 100% AI-generated; Orélien denies it, saying his style reflects Haitian and Caribbean rhythms, and Pangram's founder claims a 1-in-24,000 false-positive rate.",
+      "means": "A concrete case for any client publishing or crediting written work — AI detectors are already being used to gate prestige and reputation, false positives and all, so it's worth having a policy answer ready before a client asks.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Scientists and conservation groups launched an AI-powered monitoring network to track biodiversity across the Amazon rainforest.</b> It uses satellites, acoustic sensors, and environmental DNA, with AI analyzing the streams in near-real time; the team has raised $20M of a $100M, 10-year budget, including $14M from the Bezos Earth Fund.",
+      "means": "A clean example of AI applied to large-scale sensor-fusion problems outside tech — useful shorthand the next time a client asks what 'AI in the field' looks like beyond chatbots.",
+      "source": "1440 Daily Digest",
+      "low": true
+    }
+  ],
+  "beyond_ai": [
+    {
+      "body": "<b>US mortgage rates topped 7% this week</b> for the first time since early 2025, according to Freddie Mac, following the Fed's rate hike last week — its first in three years. Moody's Analytics' chief economist told Barron's rates could approach 8% if the bond sell-off continues.",
+      "angle": "Directly relevant — higher borrowing costs squeeze client budgets and hiring plans; worth flagging before finance conversations assume last year's rate environment.",
+      "starter": "Are we still pricing next year's plans off last year's rate assumptions, or is it time to redo that math?",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>A powerful nor'easter is battering the East Coast,</b> with coastal flood alerts covering 33 million people from Virginia to Rhode Island, including the New York metro area; several airlines have already waived weekend change fees.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Anyone traveling or expecting deliveries through the Northeast this weekend? Might be worth building in a buffer.",
+      "source": "Morning Brew"
+    },
+    {
+      "body": "<b>Manchester City was found guilty on all but one of 115 financial-rule charges</b> brought by the Premier League, covering failures to provide accurate financial records and disclose payments; the club is expected to appeal, with sanctions still undecided.",
+      "angle": "A real-world case study in financial-controls and disclosure failures at scale — the kind of governance breakdown that shows up in risk and compliance work.",
+      "starter": "Man City's 115-charge case is basically a case study in what happens when financial controls and disclosure break down at scale.",
+      "source": "Morning Brew, 1440 Daily Digest"
+    },
+    {
+      "body": "<b>The Supreme Court lifted restrictions on a federal voter-screening tool,</b> ruling the Trump administration can use it to verify voter eligibility, reversing a lower court that had blocked it over privacy concerns; the ruling is expected to have limited impact on the November midterms.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "Curious how this voter-eligibility tool ruling lands with anyone doing public-sector or civic-tech work.",
+      "source": "1440 Daily Digest"
+    },
+    {
+      "body": "<b>The White House barred CNN from Air Force One again,</b> a day after ending a weeklong standoff that had restored the network's access; a federal judge had ordered CNN's press credentials reinstated just the day before.",
+      "angle": "No direct relevance to your work, general awareness only.",
+      "starter": "The White House-press standoff keeps flaring back up — easy 'did you see this' for standup.",
+      "source": "Morning Brew"
+    }
+  ],
+  "fingerprints": [
+    "microsoft|repositions|copilot-super-app",
+    "anthropic|remains|pentagon-blacklisted",
+    "ai-detection|flags|french-novel-prix-goncourt",
+    "amazon|launches|ai-biodiversity-monitoring-network",
+    "mortgage-rates|top|7-percent",
+    "noreaster|batters|east-coast",
+    "manchester-city|found-guilty|115-financial-charges",
+    "supreme-court|lifts-restrictions|voter-screening-tool",
+    "white-house|bars|cnn-air-force-one"
+  ]
+}
